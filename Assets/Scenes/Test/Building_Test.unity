@@ -199,7 +199,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -1823,6 +1823,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfc88976e85cde8409ff83e8dd0f0f69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  layoutGrid: {fileID: 1499885775}
+  FloorSelect: {fileID: 865834281}
+  highlightTile: {fileID: 11400000, guid: f5a0efe4287f5244e926c95cf90e777f, type: 2}
 --- !u!61 &1501830157
 BoxCollider2D:
   m_ObjectHideFlags: 0

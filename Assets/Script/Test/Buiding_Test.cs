@@ -27,7 +27,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     {
         Vector3 worldPos = transform.position;
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(eventData.position);
-        Debug.Log("OnDrag");
+      
         transform.position = eventData.position;
         transform.position = mousePos + offset;
 
@@ -39,6 +39,8 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             FloorSelect.SetTile(cellPosition, highlightTile);
             previousCellPos = cellPosition;
         }
+
+        Debug.Log($"OnDrag{cellPosition}");
     }
 
     public void OnEndDrag(PointerEventData eventData)

@@ -13,13 +13,17 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
     void Start()
     {
-        //GridSelect.gameObject.SetActive(false);
+
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
+
+        Vector3 worldPos = transform.position;
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(eventData.position);
-        Debug.Log("BeginDrag");
+        Vector3Int cellPosition = layoutGrid.WorldToCell(worldPos);
+        Debug.Log($"BeginDrag{cellPosition}");
         offset = transform.position - mousePos;
+        CheckGrid.instance.RemoveObject(cellPosition);
 
     }
 
@@ -40,7 +44,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             previousCellPos = cellPosition;
         }
 
-        Debug.Log($"OnDrag{cellPosition}");
+        //Debug.Log($"OnDrag{cellPosition}");
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -48,10 +52,18 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         Vector3 worldPos = transform.position;
         Vector3Int cellPosition = layoutGrid.WorldToCell(worldPos);
         Vector3 snapPos = layoutGrid.GetCellCenterWorld(cellPosition);
-        transform.position = snapPos;
-        FloorSelect.SetTile(cellPosition, null);
         Debug.Log("EndDrag");
-        //transform.position = offset;
+        if(CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) == null)
+        {
+            transform.position = snapPos;
+            FloorSelect.SetTile(cellPosition, null);
+            CheckGrid.instance.PlaceObject(cellPosition);
+            Debug.Log($"{cellPosition} empty");
+        }
+        else if (CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) != null)
+        {
+            Debug.Log($"{cellPosition} not empty");
+        }
 
 
     }

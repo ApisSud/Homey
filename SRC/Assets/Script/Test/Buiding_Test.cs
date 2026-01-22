@@ -8,14 +8,19 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     [SerializeField] private Grid layoutGrid;
     [SerializeField] private Tilemap FloorSelect;
     [SerializeField] private TileBase highlightTile;
+    private Rigidbody2D rb;
     private Vector3 offset;
     private Vector3Int previousCellPos;
+    [SerializeField] private SpriteRenderer bodyColor;
+    private Color32 originalColor;
 
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         Vector3 worldPos = transform.position;
         Vector3Int cellPosition = layoutGrid.WorldToCell(worldPos);
-        Debug.Log(worldPos);
+        CheckGrid.instance.PlaceObject(cellPosition);
+        Debug.Log(cellPosition);
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -26,6 +31,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         Debug.Log($"BeginDrag{cellPosition}");
         offset = transform.position - mousePos;
         CheckGrid.instance.RemoveObject(cellPosition);
+        originalColor = bodyColor.color;
 
     }
 
@@ -38,7 +44,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         transform.position = mousePos + offset;
 
         Vector3Int cellPosition = layoutGrid.WorldToCell(worldPos);
-
+        bodyColor.color = new Color32(245, 114, 255, 255);
         if (cellPosition != previousCellPos)
         {
             FloorSelect.SetTile(previousCellPos, null);
@@ -55,18 +61,19 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         Vector3Int cellPosition = layoutGrid.WorldToCell(worldPos);
         Vector3 snapPos = layoutGrid.GetCellCenterWorld(cellPosition);
         Debug.Log("EndDrag");
+        bodyColor.color = originalColor;
 
-        if(CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) == null)
+        if (CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) == null)
         {
             transform.position = snapPos;
             FloorSelect.SetTile(cellPosition, null);
             CheckGrid.instance.PlaceObject(cellPosition);
             Debug.Log($"{cellPosition} empty");
         }
-        else if (CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) != null)
+       /* else if (CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) != null)
         {
             Debug.Log($"{cellPosition} not empty");
-        }
+        }*/
 
 
     }

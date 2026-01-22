@@ -13,7 +13,8 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
     void Start()
     {
-
+        Vector3 worldPos = transform.position;
+        Debug.Log(worldPos);
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -53,6 +54,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         Vector3Int cellPosition = layoutGrid.WorldToCell(worldPos);
         Vector3 snapPos = layoutGrid.GetCellCenterWorld(cellPosition);
         Debug.Log("EndDrag");
+
         if(CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) == null)
         {
             transform.position = snapPos;

@@ -14,6 +14,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     void Start()
     {
         Vector3 worldPos = transform.position;
+        Vector3Int cellPosition = layoutGrid.WorldToCell(worldPos);
         Debug.Log(worldPos);
     }
     public void OnBeginDrag(PointerEventData eventData)

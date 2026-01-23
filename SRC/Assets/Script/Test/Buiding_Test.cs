@@ -14,6 +14,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     private Vector3Int previousCellPos;
     [SerializeField] private SpriteRenderer bodyColor;
     private Color32 originalColor;
+    private bool Flip;
 
     void Start()
     {
@@ -23,6 +24,20 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         Debug.Log(cellPosition);
         CheckGrid.instance.PlaceObject(cellPosition);
         originalColor = bodyColor.color;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E) && Flip == false)
+        {
+            transform.eulerAngles = new Vector3(0, -180, 0);
+            Flip = true;
+        }
+        else if(Input.GetKeyDown(KeyCode.E) && Flip == true)
+        {
+            transform.eulerAngles = new Vector3(0, 0, 0);
+            Flip = false;
+        }
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -61,6 +76,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
              bodyColor.color = originalColor;
         }
 
+    
         //Debug.Log($"OnDrag{cellPosition}");
     }
 

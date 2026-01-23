@@ -65,13 +65,13 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         Vector3Int cellPosition = layoutGrid.WorldToCell(worldPos);
         CheckGrid.instance.CheckEmpty(cellPosition);
         Draged = true;
-        if (cellPosition != previousCellPos && cellPosition.y < 3)
+        if (cellPosition != previousCellPos && cellPosition.y < 3 && cellPosition.y > -8 && cellPosition.x <= 2 && cellPosition.x > -7)
         {
             FloorSelect.SetTile(previousCellPos, null);
             FloorSelect.SetTile(cellPosition, highlightTile);
             previousCellPos = cellPosition;
         }
-        if (cellPosition.y > 2)
+        if (cellPosition.y > 2 || cellPosition.y > 2 || cellPosition.y <= -8 || cellPosition.x > 2 || cellPosition.x <= -7)
         {
             FloorSelect.SetTile(previousCellPos, null);
         }

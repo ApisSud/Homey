@@ -1,13 +1,14 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Taskcontroller : MonoBehaviour
 {
     public Image[] Taskimage;
     public GameObject[] pages;
-
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
+ 
     void Start()
     {
         ActivateTask(0);
@@ -22,5 +23,10 @@ public class Taskcontroller : MonoBehaviour
         }
         pages[taskNo].SetActive(true);
         Taskimage[taskNo].color = Color.white;
+    }
+
+    public void SelectLevel(string scenename)
+    {
+        SceneManager.LoadScene(scenename);
     }
 }

@@ -25,6 +25,6 @@ public class Trashmanager : MonoBehaviour
 
     void UpdateScoreUI()
     {
-        scoreText.text = "Total Trash :  " + totalTrash + " / 3";
+        scoreText.text = "Total Trash :  " + totalTrash + " / 4";
     }
 }

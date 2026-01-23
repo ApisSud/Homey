@@ -1346,6 +1346,54 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5460130112959175971, guid: 0c70fd129d13e1a41b0d0857706e56e0, type: 3}
+      propertyPath: spawneffect
+      value: 
+      objectReference: {fileID: 2791598157488073921, guid: 665006e76e4db1f4e94449f3d8d18ecb, type: 3}
+    - target: {fileID: 5460130112959175971, guid: 0c70fd129d13e1a41b0d0857706e56e0, type: 3}
+      propertyPath: FurniturePF.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5460130112959175971, guid: 0c70fd129d13e1a41b0d0857706e56e0, type: 3}
+      propertyPath: 'FurniturePF.Array.data[0]'
+      value: 
+      objectReference: {fileID: 87802928133605186, guid: e3aee1f84d45b38409ccbe2e3dcf358b, type: 3}
+    - target: {fileID: 5460130112959175971, guid: 0c70fd129d13e1a41b0d0857706e56e0, type: 3}
+      propertyPath: 'FurniturePF.Array.data[1]'
+      value: 
+      objectReference: {fileID: 87802928133605186, guid: f332fadc8397578459f263cb95d8f8ff, type: 3}
+    - target: {fileID: 5460130112959175971, guid: 0c70fd129d13e1a41b0d0857706e56e0, type: 3}
+      propertyPath: 'FurniturePF.Array.data[2]'
+      value: 
+      objectReference: {fileID: 87802928133605186, guid: 3cdf08758a8a5ec428290c1e2b02cb68, type: 3}
+    - target: {fileID: 5460130112959175971, guid: 0c70fd129d13e1a41b0d0857706e56e0, type: 3}
+      propertyPath: 'FurniturePF.Array.data[3]'
+      value: 
+      objectReference: {fileID: 87802928133605186, guid: fe34d36854105e2468a46dc5bf08c300, type: 3}
+    - target: {fileID: 5460130112959175971, guid: 0c70fd129d13e1a41b0d0857706e56e0, type: 3}
+      propertyPath: 'FurniturePF.Array.data[4]'
+      value: 
+      objectReference: {fileID: 87802928133605186, guid: 93731e13dbe95074e8a8e1d1e768ce88, type: 3}
+    - target: {fileID: 5460130112959175971, guid: 0c70fd129d13e1a41b0d0857706e56e0, type: 3}
+      propertyPath: 'FurniturePF.Array.data[5]'
+      value: 
+      objectReference: {fileID: 87802928133605186, guid: 3f76b615ba9b495448e1b3f68ec8c943, type: 3}
+    - target: {fileID: 5460130112959175971, guid: 0c70fd129d13e1a41b0d0857706e56e0, type: 3}
+      propertyPath: 'FurniturePF.Array.data[6]'
+      value: 
+      objectReference: {fileID: 87802928133605186, guid: e4d62db1470a67849af99fb07ecf7729, type: 3}
+    - target: {fileID: 5460130112959175971, guid: 0c70fd129d13e1a41b0d0857706e56e0, type: 3}
+      propertyPath: 'FurniturePF.Array.data[7]'
+      value: 
+      objectReference: {fileID: 87802928133605186, guid: c635b81aefcdc184295862463588c1c1, type: 3}
+    - target: {fileID: 5460130112959175971, guid: 0c70fd129d13e1a41b0d0857706e56e0, type: 3}
+      propertyPath: 'FurniturePF.Array.data[8]'
+      value: 
+      objectReference: {fileID: 87802928133605186, guid: 201b8b9c02feeba419b180b30d4aa09b, type: 3}
+    - target: {fileID: 5460130112959175971, guid: 0c70fd129d13e1a41b0d0857706e56e0, type: 3}
+      propertyPath: 'FurniturePF.Array.data[9]'
+      value: 
+      objectReference: {fileID: 87802928133605186, guid: c29e0095724a0d343becfe2641ead2f5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

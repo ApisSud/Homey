@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Intro.unity
     guid: 4cf557c4ca16ea842a1aa7a68c7fd269
   - enabled: 1
+    path: Assets/Scenes/Task_Select.unity
+    guid: b0ca09254da47854f9b40d525d6dc1a4
+  - enabled: 1
     path: Assets/Scenes/Level01.unity
     guid: efb2133938f8d1f44a989f534fa134a9
   - enabled: 1

@@ -3,13 +3,12 @@ using TMPro;
 
 public class Trashmanager : MonoBehaviour
 {
-    public static Trashmanager instance; // ทำเป็น Singleton ให้เรียกใช้ง่ายๆ
-    public TextMeshProUGUI scoreText; // ลาก Text มาใส่ตรงนี้
-    public int totalTrash = 0; // จำนวนขยะทั้งหมดที่เก็บได้
-
+    public static Trashmanager instance; 
+    public TextMeshProUGUI scoreText; 
+    public int totalTrash = 0;
     void Awake()
     {
-        instance = this; // ตั้งค่าตัวมันเองเป็นตัวหลัก
+        instance = this; 
     }
 
     void Start()

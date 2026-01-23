@@ -6,16 +6,16 @@ public class CheckGrid : MonoBehaviour
     public Grid Grid;
     public Dictionary<Vector3Int, bool> occupiedTiles = new Dictionary<Vector3Int, bool>();
     public static CheckGrid instance;
-    void Start()
+    void Awake()
     {
         instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void Start()
+    { 
+
     }
+    
 
     public void PlaceObject(Vector3Int gridPos)
     {
@@ -30,8 +30,8 @@ public class CheckGrid : MonoBehaviour
     {
         if (occupiedTiles.ContainsKey(gridPos))
         {
+            Debug.Log($"Grid {gridPos} status is: remove");
             occupiedTiles.Remove(gridPos);
-            Debug.Log($"Grid {gridPos} status is: {occupiedTiles[gridPos]}");
         }
     }
 
@@ -39,8 +39,12 @@ public class CheckGrid : MonoBehaviour
     {
         if (!occupiedTiles.ContainsKey(gridPos))
         {
-            occupiedTiles.Add(gridPos, true);
-            Debug.Log($"Grid {gridPos} status is: {occupiedTiles[gridPos]}");
+            Debug.Log($"{gridPos} empty");
         }
+        else if (occupiedTiles.ContainsKey(gridPos))
+        {
+            Debug.Log($"{gridPos} not empty");
+        }
+    
     }
 }

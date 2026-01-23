@@ -15,6 +15,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     [SerializeField] private SpriteRenderer bodyColor;
     private Color32 originalColor;
     private bool Flip;
+    private bool Draged;
 
     void Start()
     {
@@ -28,15 +29,18 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && Flip == false)
+        if (Draged)
         {
-            transform.eulerAngles = new Vector3(0, -180, 0);
-            Flip = true;
-        }
-        else if(Input.GetKeyDown(KeyCode.E) && Flip == true)
-        {
-            transform.eulerAngles = new Vector3(0, 0, 0);
-            Flip = false;
+            if (Input.GetKeyDown(KeyCode.E) && Flip == false)
+            {
+                transform.eulerAngles = new Vector3(0, -180, 0);
+                Flip = true;
+            }
+            else if (Input.GetKeyDown(KeyCode.E) && Flip == true)
+            {
+                transform.eulerAngles = new Vector3(0, 0, 0);
+                Flip = false;
+            }
         }
     }
     public void OnBeginDrag(PointerEventData eventData)
@@ -60,20 +64,24 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         transform.position = mousePos + offset;
         Vector3Int cellPosition = layoutGrid.WorldToCell(worldPos);
         CheckGrid.instance.CheckEmpty(cellPosition);
-
-        if (cellPosition != previousCellPos)
+        Draged = true;
+        if (cellPosition != previousCellPos && cellPosition.y < 3)
         {
             FloorSelect.SetTile(previousCellPos, null);
             FloorSelect.SetTile(cellPosition, highlightTile);
             previousCellPos = cellPosition;
         }
-        if (CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
+        if (cellPosition.y > 2)
         {
-            bodyColor.color = new Color32(245, 114, 255, 255);
+            FloorSelect.SetTile(previousCellPos, null);
+        }
+        if (CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) || cellPosition.y > 2 || cellPosition.y <= -8 || cellPosition.x > 2 || cellPosition.x <= -7)
+        {
+            bodyColor.color = new Color32(255, 0, 0, 255);
         }
         else if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
         {
-             bodyColor.color = originalColor;
+            bodyColor.color = originalColor;
         }
 
     
@@ -88,14 +96,15 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         Debug.Log("EndDrag");
         bodyColor.color = originalColor;
         FloorSelect.SetTile(cellPosition, null);
-
-        if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
+        Draged = false;
+        Debug.Log(cellPosition.y);
+        if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) && cellPosition.y <= 2 && cellPosition.y > -8 && cellPosition.x <= 2 && cellPosition.x > -7)
         {
             transform.position = snapPos;
             CheckGrid.instance.PlaceObject(cellPosition);
             Debug.Log($"{cellPosition} empty");
         }
-        else if (CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
+        else 
         {
             transform.position = OriginalPosition;
             cellPosition = layoutGrid.WorldToCell(OriginalPosition);

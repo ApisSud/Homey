@@ -243,6 +243,7 @@ MonoBehaviour:
   layoutGrid: {fileID: 1499885775}
   FloorSelect: {fileID: 865834281}
   highlightTile: {fileID: 11400000, guid: f5a0efe4287f5244e926c95cf90e777f, type: 2}
+  bodyColor: {fileID: 1078473091}
 --- !u!61 &460210948
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -298,7 +299,7 @@ Transform:
   m_GameObject: {fileID: 460210946}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.128, y: -0.036, z: 0}
+  m_LocalPosition: {x: -1.492, y: -0.083, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -383,6 +384,7 @@ MonoBehaviour:
   layoutGrid: {fileID: 1499885775}
   FloorSelect: {fileID: 865834281}
   highlightTile: {fileID: 11400000, guid: f5a0efe4287f5244e926c95cf90e777f, type: 2}
+  bodyColor: {fileID: 403634893}
 --- !u!61 &791205962
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -438,7 +440,7 @@ Transform:
   m_GameObject: {fileID: 791205960}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.143, y: -0.036, z: 0}
+  m_LocalPosition: {x: 0.12, y: 0.127, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2235,7 +2237,6 @@ GameObject:
   - component: {fileID: 1501830158}
   - component: {fileID: 1501830157}
   - component: {fileID: 1501830156}
-  - component: {fileID: 1501830159}
   m_Layer: 0
   m_Name: Item
   m_TagString: Untagged
@@ -2258,6 +2259,7 @@ MonoBehaviour:
   layoutGrid: {fileID: 1499885775}
   FloorSelect: {fileID: 865834281}
   highlightTile: {fileID: 11400000, guid: f5a0efe4287f5244e926c95cf90e777f, type: 2}
+  bodyColor: {fileID: 1785935587}
 --- !u!61 &1501830157
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2320,19 +2322,6 @@ Transform:
   - {fileID: 1785935586}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1501830159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1501830155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1df0671b29051ca4d895645a549c454d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CheckGrid
-  Grid: {fileID: 0}
 --- !u!1 &1763893657
 GameObject:
   m_ObjectHideFlags: 0

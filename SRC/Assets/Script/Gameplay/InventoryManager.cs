@@ -2,23 +2,35 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
-    
-    public GameObject objectPrefab;
-    public GameObject spawnEffect;
+    public GameObject[] FurniturePF;
+    public int maxSpawnLimit = 10;
+    public GameObject spawneffect;
+    private int currentClickIndex = 0;
 
     void OnMouseDown()
     {
-        if (objectPrefab != null)
-        {
-            
-            Vector3 spawnPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            spawnPos.z = 0;
 
-            if (spawnEffect != null)
+        if (currentClickIndex < maxSpawnLimit && currentClickIndex < FurniturePF.Length)
+        {
+
+            if (FurniturePF[currentClickIndex] != null)
             {
-                Instantiate(spawnEffect, spawnPos, Quaternion.identity);
+
+                Vector3 spawnPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                spawnPos.z = 0;
+
+
+                Instantiate(FurniturePF[currentClickIndex], spawnPos, Quaternion.identity);
+
+                if (spawneffect != null)
+                {
+                    Instantiate(spawneffect, spawnPos, Quaternion.identity);
+                }
+                currentClickIndex++;
+
+
             }
-            Instantiate(objectPrefab, spawnPos, Quaternion.identity);
         }
+       
     }
 }

@@ -12,10 +12,16 @@ EditorBuildSettings:
     path: Assets/Scenes/Intro.unity
     guid: 4cf557c4ca16ea842a1aa7a68c7fd269
   - enabled: 1
+    path: Assets/Scenes/Task_Select.unity
+    guid: b0ca09254da47854f9b40d525d6dc1a4
+  - enabled: 1
     path: Assets/Scenes/Level01.unity
     guid: efb2133938f8d1f44a989f534fa134a9
   - enabled: 1
     path: Assets/Scenes/Level02.unity
     guid: c1114e8274fe3ea498828bde9ba0c9be
+  - enabled: 1
+    path: Assets/Scenes/Test/PuzzleTest.unity
+    guid: 851ceb1970198154c89c465d2b957e20
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

@@ -10,6 +10,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     [SerializeField] private TileBase highlightTile;
     private Rigidbody2D rb;
     private Vector3 offset;
+    private Vector3 OriginalPosition;
     private Vector3Int previousCellPos;
     [SerializeField] private SpriteRenderer bodyColor;
     private Color32 originalColor;
@@ -19,19 +20,19 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         rb = GetComponent<Rigidbody2D>();
         Vector3 worldPos = transform.position;
         Vector3Int cellPosition = layoutGrid.WorldToCell(worldPos);
-        CheckGrid.instance.PlaceObject(cellPosition);
         Debug.Log(cellPosition);
+        CheckGrid.instance.PlaceObject(cellPosition);
+        originalColor = bodyColor.color;
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
-
+        OriginalPosition = transform.position;
         Vector3 worldPos = transform.position;
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(eventData.position);
         Vector3Int cellPosition = layoutGrid.WorldToCell(worldPos);
         Debug.Log($"BeginDrag{cellPosition}");
         offset = transform.position - mousePos;
         CheckGrid.instance.RemoveObject(cellPosition);
-        originalColor = bodyColor.color;
 
     }
 
@@ -42,14 +43,22 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
       
         transform.position = eventData.position;
         transform.position = mousePos + offset;
-
         Vector3Int cellPosition = layoutGrid.WorldToCell(worldPos);
-        bodyColor.color = new Color32(245, 114, 255, 255);
+        CheckGrid.instance.CheckEmpty(cellPosition);
+
         if (cellPosition != previousCellPos)
         {
             FloorSelect.SetTile(previousCellPos, null);
             FloorSelect.SetTile(cellPosition, highlightTile);
             previousCellPos = cellPosition;
+        }
+        if (CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
+        {
+            bodyColor.color = new Color32(245, 114, 255, 255);
+        }
+        else if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
+        {
+             bodyColor.color = originalColor;
         }
 
         //Debug.Log($"OnDrag{cellPosition}");
@@ -62,18 +71,21 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         Vector3 snapPos = layoutGrid.GetCellCenterWorld(cellPosition);
         Debug.Log("EndDrag");
         bodyColor.color = originalColor;
+        FloorSelect.SetTile(cellPosition, null);
 
-        if (CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) == null)
+        if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
         {
             transform.position = snapPos;
-            FloorSelect.SetTile(cellPosition, null);
             CheckGrid.instance.PlaceObject(cellPosition);
             Debug.Log($"{cellPosition} empty");
         }
-       /* else if (CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) != null)
+        else if (CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
         {
+            transform.position = OriginalPosition;
+            cellPosition = layoutGrid.WorldToCell(OriginalPosition);
+            CheckGrid.instance.PlaceObject(cellPosition);
             Debug.Log($"{cellPosition} not empty");
-        }*/
+        }
 
 
     }

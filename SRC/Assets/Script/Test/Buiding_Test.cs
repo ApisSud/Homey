@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Tilemaps;
+
+public enum SizeFurniture
+{
+    small,
+    large
+}
 public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler, IPointerDownHandler
 {
     [SerializeField] private Grid layoutGrid;
@@ -17,13 +23,22 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     private bool Flip;
     private bool Draged;
 
+
+    [SerializeField]
+    private SizeFurniture Size;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         Vector3 worldPos = transform.position;
         Vector3Int cellPosition = layoutGrid.WorldToCell(worldPos);
         Debug.Log(cellPosition);
+
         CheckGrid.instance.PlaceObject(cellPosition);
+        if(Size == SizeFurniture.large)
+        {
+
+        }
         originalColor = bodyColor.color;
     }
 
@@ -64,6 +79,12 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         transform.position = mousePos + offset;
         Vector3Int cellPosition = layoutGrid.WorldToCell(worldPos);
         CheckGrid.instance.CheckEmpty(cellPosition);
+
+        if (Size == SizeFurniture.large)
+        {
+
+        }
+
         Draged = true;
         if (cellPosition != previousCellPos && cellPosition.y < 3 && cellPosition.y > -8 && cellPosition.x <= 2 && cellPosition.x > -7)
         {

@@ -1,20 +1,52 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Task_menu : MonoBehaviour
 {
     public GameObject menucanvas;
+    [SerializeField] AudioSource Clicking;
     void Start()
     {
-        menucanvas.SetActive(false);
+        if (menucanvas != null)
+        {
+            menucanvas.SetActive(false);
+        }
     }
 
-    // Update is called once per frame
+  
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            menucanvas.SetActive(!menucanvas.activeSelf);
+            ToggleMenu();
         }
 
+    }
+
+    public  void Backtomenu()
+    {
+        if (menucanvas != null)
+        {
+            menucanvas.SetActive(false); 
+            Time.timeScale = 1f; 
+        }
+        Clicking.Play();
+    }
+
+    void ToggleMenu()
+    {
+        if (menucanvas != null)
+        {
+            bool isActive = !menucanvas.activeSelf;
+            menucanvas.SetActive(isActive);
+
+           
+            if (isActive) 
+                Time.timeScale = 0f; // หยุดเวลา
+            else 
+                Time.timeScale = 1f; // เวลาเดินต่อ
+          
+        }
+        Clicking.Play();
     }
 }

@@ -5,7 +5,7 @@ public class MainMenu : MonoBehaviour
 {
 
     public string game_scene = "intro";
-
+    
    
     public void PlayGame()
     {
@@ -19,4 +19,6 @@ public class MainMenu : MonoBehaviour
         Debug.Log("ออกจากเกมแล้ว");
         Application.Quit();
     }
+
+ 
 }

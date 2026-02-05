@@ -1,16 +1,17 @@
 using UnityEngine;
+using DG.Tweening;
 
 public class Uimanager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public float fadetime = 1f;
+    public CanvasGroup canvasGroup;
+    public RectTransform rectTransform;
 
-    // Update is called once per frame
-    void Update()
+    public void Panelfadein()
     {
-        
+        canvasGroup.alpha = 0f;
+        rectTransform.transform.localPosition = new Vector3(0f , -1000f , 0f);
+        rectTransform.DOAnchorPos(new Vector2(0f, 0f), fadetime, false).SetEase(Ease.OutElastic);
+        canvasGroup.DOFade(1, fadetime);
     }
 }

@@ -38,7 +38,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         CheckGrid.instance.PlaceObject(cellPosition);
         if(Size == SizeFurniture.large)
         {
-
+            CheckGrid.instance.PlaceObject(cellPosition + new Vector3Int(0, 1, 0));
         }
         originalColor = bodyColor.color;
     }
@@ -68,6 +68,13 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         Debug.Log($"BeginDrag{cellPosition}");
         offset = transform.position - mousePos;
         CheckGrid.instance.RemoveObject(cellPosition);
+        if (Size == SizeFurniture.large)
+        {
+            if (Flip == false)
+                CheckGrid.instance.RemoveObject(cellPosition + new Vector3Int(0, 1, 0));
+            else
+                CheckGrid.instance.RemoveObject(cellPosition + new Vector3Int(-1, 0, 0));
+        }
 
     }
 
@@ -89,7 +96,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             FloorSelect.SetTile(cellPosition, highlightTile);
             previousCellPos = cellPosition;
 
-            if (Size == SizeFurniture.large )
+            if (Size == SizeFurniture.large && Flip == false)
             {
                 
                 FloorSelect.SetTile(previousCellPos, null);
@@ -98,6 +105,15 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                 FloorSelect.SetTile(cellPosition + new Vector3Int(0, 1, 0), highlightTile);
                 previousCellPos = cellPosition;
                 previousCellPos2 = cellPosition + new Vector3Int(0, 1, 0);
+            }
+            else if (Size == SizeFurniture.large && Flip == true)
+            {
+                FloorSelect.SetTile(previousCellPos, null);
+                FloorSelect.SetTile(previousCellPos2, null);
+                FloorSelect.SetTile(cellPosition, highlightTile);
+                FloorSelect.SetTile(cellPosition + new Vector3Int(-1, 0, 0), highlightTile);
+                previousCellPos = cellPosition;
+                previousCellPos2 = cellPosition + new Vector3Int(-1, 0, 0);
             }
 
         }
@@ -126,13 +142,25 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         Debug.Log("EndDrag");
         bodyColor.color = originalColor;
         FloorSelect.SetTile(cellPosition, null);
+
+        if(Flip ==false)
         FloorSelect.SetTile(cellPosition + new Vector3Int(0, 1, 0), null);
+        else
+        FloorSelect.SetTile(cellPosition + new Vector3Int(-1, 0, 0), null);
+
         Draged = false;
         Debug.Log(cellPosition.y);
         if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) && cellPosition.y <= 2 && cellPosition.y > -8 && cellPosition.x <= 2 && cellPosition.x > -7)
         {
             transform.position = snapPos;
             CheckGrid.instance.PlaceObject(cellPosition);
+            if (Size == SizeFurniture.large)
+            {
+                if (Flip == false)
+                    CheckGrid.instance.PlaceObject(cellPosition + new Vector3Int(0, 1, 0));
+                else
+                    CheckGrid.instance.PlaceObject(cellPosition + new Vector3Int(-1, 0, 0));
+            }
             Debug.Log($"{cellPosition} empty");
         }
         else 
@@ -140,6 +168,13 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             transform.position = OriginalPosition;
             cellPosition = layoutGrid.WorldToCell(OriginalPosition);
             CheckGrid.instance.PlaceObject(cellPosition);
+            if (Size == SizeFurniture.large)
+            {
+                if(Flip == false)
+                CheckGrid.instance.PlaceObject(cellPosition + new Vector3Int(0, 1, 0));
+                else
+                CheckGrid.instance.PlaceObject(cellPosition + new Vector3Int(-1, 0, 0));
+            }
             Debug.Log($"{cellPosition} not empty");
         }
 

@@ -9,8 +9,7 @@ public class InventoryManager : MonoBehaviour
     private int currentClickIndex = 0;
 
 
-    [SerializeField]
-    private Scrollbar processFurniture;
+    
 
     void OnMouseDown()
     {

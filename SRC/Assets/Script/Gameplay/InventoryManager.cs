@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -6,6 +7,10 @@ public class InventoryManager : MonoBehaviour
     public int maxSpawnLimit = 10;
     public GameObject spawneffect;
     private int currentClickIndex = 0;
+
+
+    [SerializeField]
+    private Scrollbar processFurniture;
 
     void OnMouseDown()
     {

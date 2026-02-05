@@ -36,7 +36,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         Debug.Log(cellPosition);
 
         CheckGrid.instance.PlaceObject(cellPosition);
-        if(Size == SizeFurniture.large)
+        if (Size == SizeFurniture.large)
         {
             CheckGrid.instance.PlaceObject(cellPosition + new Vector3Int(0, 1, 0));
         }
@@ -51,11 +51,13 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             {
                 transform.eulerAngles = new Vector3(0, -180, 0);
                 Flip = true;
+                UpdateHighlight(layoutGrid.WorldToCell(transform.position));
             }
             else if (Input.GetKeyDown(KeyCode.E) && Flip == true)
             {
                 transform.eulerAngles = new Vector3(0, 0, 0);
                 Flip = false;
+                UpdateHighlight(layoutGrid.WorldToCell(transform.position));
             }
         }
     }
@@ -73,7 +75,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             if (Flip == false)
                 CheckGrid.instance.RemoveObject(cellPosition + new Vector3Int(0, 1, 0));
             else
-                CheckGrid.instance.RemoveObject(cellPosition + new Vector3Int(-1, 0, 0));
+                CheckGrid.instance.RemoveObject(cellPosition + new Vector3Int(1, 0, 0));
         }
 
     }
@@ -89,32 +91,10 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         CheckGrid.instance.CheckEmpty(cellPosition);
         Draged = true;
 
-       
+
         if (cellPosition != previousCellPos && cellPosition.y < 3 && cellPosition.y > -8 && cellPosition.x <= 2 && cellPosition.x > -7)
         {
-            FloorSelect.SetTile(previousCellPos, null);
-            FloorSelect.SetTile(cellPosition, highlightTile);
-            previousCellPos = cellPosition;
-
-            if (Size == SizeFurniture.large && Flip == false)
-            {
-                
-                FloorSelect.SetTile(previousCellPos, null);
-                FloorSelect.SetTile(previousCellPos2, null);
-                FloorSelect.SetTile(cellPosition, highlightTile);
-                FloorSelect.SetTile(cellPosition + new Vector3Int(0, 1, 0), highlightTile);
-                previousCellPos = cellPosition;
-                previousCellPos2 = cellPosition + new Vector3Int(0, 1, 0);
-            }
-            else if (Size == SizeFurniture.large && Flip == true)
-            {
-                FloorSelect.SetTile(previousCellPos, null);
-                FloorSelect.SetTile(previousCellPos2, null);
-                FloorSelect.SetTile(cellPosition, highlightTile);
-                FloorSelect.SetTile(cellPosition + new Vector3Int(-1, 0, 0), highlightTile);
-                previousCellPos = cellPosition;
-                previousCellPos2 = cellPosition + new Vector3Int(-1, 0, 0);
-            }
+            UpdateHighlight(cellPosition);
 
         }
         if (cellPosition.y > 2 || cellPosition.y > 2 || cellPosition.y <= -8 || cellPosition.x > 2 || cellPosition.x <= -7)
@@ -130,7 +110,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             bodyColor.color = originalColor;
         }
 
-    
+
         //Debug.Log($"OnDrag{cellPosition}");
     }
 
@@ -143,10 +123,10 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         bodyColor.color = originalColor;
         FloorSelect.SetTile(cellPosition, null);
 
-        if(Flip ==false)
-        FloorSelect.SetTile(cellPosition + new Vector3Int(0, 1, 0), null);
+        if (Flip == false)
+            FloorSelect.SetTile(cellPosition + new Vector3Int(0, 1, 0), null);
         else
-        FloorSelect.SetTile(cellPosition + new Vector3Int(-1, 0, 0), null);
+            FloorSelect.SetTile(cellPosition + new Vector3Int(1, 0, 0), null);
 
         Draged = false;
         Debug.Log(cellPosition.y);
@@ -159,21 +139,21 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                 if (Flip == false)
                     CheckGrid.instance.PlaceObject(cellPosition + new Vector3Int(0, 1, 0));
                 else
-                    CheckGrid.instance.PlaceObject(cellPosition + new Vector3Int(-1, 0, 0));
+                    CheckGrid.instance.PlaceObject(cellPosition + new Vector3Int(1, 0, 0));
             }
             Debug.Log($"{cellPosition} empty");
         }
-        else 
+        else
         {
             transform.position = OriginalPosition;
             cellPosition = layoutGrid.WorldToCell(OriginalPosition);
             CheckGrid.instance.PlaceObject(cellPosition);
             if (Size == SizeFurniture.large)
             {
-                if(Flip == false)
-                CheckGrid.instance.PlaceObject(cellPosition + new Vector3Int(0, 1, 0));
+                if (Flip == false)
+                    CheckGrid.instance.PlaceObject(cellPosition + new Vector3Int(0, 1, 0));
                 else
-                CheckGrid.instance.PlaceObject(cellPosition + new Vector3Int(-1, 0, 0));
+                    CheckGrid.instance.PlaceObject(cellPosition + new Vector3Int(1, 0, 0));
             }
             Debug.Log($"{cellPosition} not empty");
         }
@@ -193,4 +173,32 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     {
         Debug.Log("OnPoint");
     }
+
+    void UpdateHighlight(Vector3Int cellPosition)
+    {
+        FloorSelect.SetTile(previousCellPos, null);
+        FloorSelect.SetTile(cellPosition, highlightTile);
+        previousCellPos = cellPosition;
+
+        if (Size == SizeFurniture.large && Flip == false)
+        {
+
+            FloorSelect.SetTile(previousCellPos, null);
+            FloorSelect.SetTile(previousCellPos2, null);
+            FloorSelect.SetTile(cellPosition, highlightTile);
+            FloorSelect.SetTile(cellPosition + new Vector3Int(0, 1, 0), highlightTile);
+            previousCellPos = cellPosition;
+            previousCellPos2 = cellPosition + new Vector3Int(0, 1, 0);
+        }
+        else if (Size == SizeFurniture.large && Flip == true)
+        {
+            FloorSelect.SetTile(previousCellPos, null);
+            FloorSelect.SetTile(previousCellPos2, null);
+            FloorSelect.SetTile(cellPosition, highlightTile);
+            FloorSelect.SetTile(cellPosition + new Vector3Int(1, 0, 0), highlightTile);
+            previousCellPos = cellPosition;
+            previousCellPos2 = cellPosition + new Vector3Int(1, 0, 0);
+        }
+    }
+
 }

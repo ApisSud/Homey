@@ -329,6 +329,7 @@ MonoBehaviour:
   FloorSelect: {fileID: 865834281}
   highlightTile: {fileID: 11400000, guid: f5a0efe4287f5244e926c95cf90e777f, type: 2}
   bodyColor: {fileID: 1078473091}
+  Size: 0
 --- !u!61 &460210948
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -470,6 +471,7 @@ MonoBehaviour:
   FloorSelect: {fileID: 865834281}
   highlightTile: {fileID: 11400000, guid: f5a0efe4287f5244e926c95cf90e777f, type: 2}
   bodyColor: {fileID: 403634893}
+  Size: 1
 --- !u!4 &791205963
 Transform:
   m_ObjectHideFlags: 0
@@ -2387,6 +2389,7 @@ MonoBehaviour:
   FloorSelect: {fileID: 865834281}
   highlightTile: {fileID: 11400000, guid: f5a0efe4287f5244e926c95cf90e777f, type: 2}
   bodyColor: {fileID: 1785935587}
+  Size: 0
 --- !u!61 &1501830157
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2449,6 +2452,208 @@ Transform:
   - {fileID: 1785935586}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1536788166
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1536788168}
+  - component: {fileID: 1536788167}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1536788167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536788166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe285eb979331124fbe5714bfb0bf23e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoundManager
+  musicSorce: {fileID: 0}
+  SFXSorce: {fileID: 0}
+  Intro: {fileID: 0}
+  BackgroundMusic1: {fileID: 0}
+  BackgroundMusic2: {fileID: 0}
+  BackgroundMusic3: {fileID: 0}
+  BadEnd: {fileID: 0}
+  Logo: {fileID: 0}
+  BeforeTheStories: {fileID: 0}
+  Failcutscene: {fileID: 0}
+  PassButFailcutscene: {fileID: 0}
+  Passcutscene: {fileID: 0}
+  Secretcutscene: {fileID: 0}
+  Endcreditscene: {fileID: 0}
+  ButtonPressed: {fileID: 0}
+  MiniSuccess: {fileID: 0}
+  Success: {fileID: 0}
+  SuperSuccess: {fileID: 0}
+  Failed: {fileID: 0}
+  MomWalking: {fileID: 0}
+  MomBox: {fileID: 0}
+  MomWindow: {fileID: 0}
+  Snore: {fileID: 0}
+  Switch: {fileID: 0}
+  Treadmill: {fileID: 0}
+  Hulahoop: {fileID: 0}
+  Dumbbell: {fileID: 0}
+  Sing: {fileID: 0}
+--- !u!4 &1536788168
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536788166}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 555.305, y: 697.569, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1687820022}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1687820021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1687820022}
+  - component: {fileID: 1687820023}
+  m_Layer: 0
+  m_Name: SFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1687820022
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687820021}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1536788168}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1687820023
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687820021}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1763893657
 GameObject:
   m_ObjectHideFlags: 0
@@ -2936,3 +3141,4 @@ SceneRoots:
   - {fileID: 1501830158}
   - {fileID: 633722658}
   - {fileID: 280722386}
+  - {fileID: 1536788168}

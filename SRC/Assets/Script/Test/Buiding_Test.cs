@@ -133,6 +133,14 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             Debug.Log($"{cellPosition} not empty");
         }
 
+        if (Size == SizeFurniture.large)
+        {
+            SoundManager.instance.playSFX(SoundManager.instance.PutDownHeavyFur);
+        }
+        if (Size == SizeFurniture.small)
+        {
+            SoundManager.instance.playSFX(SoundManager.instance.PutDownFur);
+        }
 
     }
 

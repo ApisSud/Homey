@@ -6,41 +6,22 @@ public class SoundManager : MonoBehaviour
     public static SoundManager instance;
 
     [Header("AudioBehaviour sources")]
-    [SerializeField] AudioSource musicSorce;
-    [SerializeField] AudioSource SFXSorce;
+    [SerializeField] AudioSource musicSource;
+    [SerializeField] AudioSource SFXSource;
 
 
     [Header("Music")]
     public AudioClip Intro;
     public AudioClip BackgroundMusic1;
-    public AudioClip BackgroundMusic2;
-    public AudioClip BackgroundMusic3;
-    public AudioClip BadEnd;
 
     [Header("Cutscene Sound")]
     public AudioClip Logo;
-    public AudioClip BeforeTheStories;
-    public AudioClip Failcutscene;
-    public AudioClip PassButFailcutscene;
-    public AudioClip Passcutscene;
-    public AudioClip Secretcutscene;
-    public AudioClip Endcreditscene;
 
     [Header("SFX")]
     public AudioClip ButtonPressed;
-    public AudioClip MiniSuccess;
-    public AudioClip Success;
-    public AudioClip SuperSuccess;
-    public AudioClip Failed;
-    public AudioClip MomWalking;
-    public AudioClip MomBox;
-    public AudioClip MomWindow;
-    public AudioClip Snore;
-    public AudioClip Switch;
-    public AudioClip Treadmill;
-    public AudioClip Hulahoop;
-    public AudioClip Dumbbell;
-    public AudioClip Sing;
+    public AudioClip PutDownHeavyFur;
+    public AudioClip PutDownFur;
+
 
 
 
@@ -57,7 +38,7 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    void OnEnable()
+  /*  void OnEnable()
     {
         // เริ่มฟัง Event "เมื่อโหลดฉากเสร็จ"
         SceneManager.sceneLoaded += OnSceneLoaded;
@@ -116,19 +97,20 @@ public class SoundManager : MonoBehaviour
             default:
                 break;
         }
-    }
+    }*/
     public void playSFX(AudioClip clip)
-    { 
-        SFXSorce.PlayOneShot(clip);
+    {
+        //SFXSorce.PlayOneShot(clip);
+        SFXSource.clip = clip;
+        SFXSource.Play();
     }
-
     public void ChangeBGM(AudioClip newMusic)
     {
-        if (musicSorce.clip == newMusic) return;
+        if (musicSource.clip == newMusic) return;
 
-        musicSorce.Stop();          
-        musicSorce.clip = newMusic; 
-        musicSorce.Play();         
+        musicSource.Stop();          
+        musicSource.clip = newMusic; 
+        musicSource.Play();         
     }
     
 }

@@ -18,6 +18,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     private Vector3 offset;
     private Vector3 OriginalPosition;
     private Vector3Int previousCellPos;
+    private Vector3Int previousCellPos2;
     [SerializeField] private SpriteRenderer bodyColor;
     private Color32 originalColor;
     private bool Flip;
@@ -74,23 +75,31 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     {
         Vector3 worldPos = transform.position;
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(eventData.position);
-      
+
         transform.position = eventData.position;
         transform.position = mousePos + offset;
         Vector3Int cellPosition = layoutGrid.WorldToCell(worldPos);
         CheckGrid.instance.CheckEmpty(cellPosition);
-
-        if (Size == SizeFurniture.large)
-        {
-
-        }
-
         Draged = true;
+
+       
         if (cellPosition != previousCellPos && cellPosition.y < 3 && cellPosition.y > -8 && cellPosition.x <= 2 && cellPosition.x > -7)
         {
             FloorSelect.SetTile(previousCellPos, null);
             FloorSelect.SetTile(cellPosition, highlightTile);
             previousCellPos = cellPosition;
+
+            if (Size == SizeFurniture.large )
+            {
+                
+                FloorSelect.SetTile(previousCellPos, null);
+                FloorSelect.SetTile(previousCellPos2, null);
+                FloorSelect.SetTile(cellPosition, highlightTile);
+                FloorSelect.SetTile(cellPosition + new Vector3Int(0, 1, 0), highlightTile);
+                previousCellPos = cellPosition;
+                previousCellPos2 = cellPosition + new Vector3Int(0, 1, 0);
+            }
+
         }
         if (cellPosition.y > 2 || cellPosition.y > 2 || cellPosition.y <= -8 || cellPosition.x > 2 || cellPosition.x <= -7)
         {
@@ -117,6 +126,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         Debug.Log("EndDrag");
         bodyColor.color = originalColor;
         FloorSelect.SetTile(cellPosition, null);
+        FloorSelect.SetTile(cellPosition + new Vector3Int(0, 1, 0), null);
         Draged = false;
         Debug.Log(cellPosition.y);
         if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) && cellPosition.y <= 2 && cellPosition.y > -8 && cellPosition.x <= 2 && cellPosition.x > -7)

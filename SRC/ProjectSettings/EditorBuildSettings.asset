@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Task_Select.unity
     guid: b0ca09254da47854f9b40d525d6dc1a4
   - enabled: 1
+    path: Assets/Scenes/Test/Building_Test.unity
+    guid: b4df087ed3f5b484bb7c28620c5b66e5
+  - enabled: 1
     path: Assets/Scenes/Level01.unity
     guid: efb2133938f8d1f44a989f534fa134a9
   - enabled: 1

@@ -9,6 +9,15 @@ public enum SizeFurniture
     small,
     large
 }
+
+public enum TypeFurniture
+{
+    woodSmall,
+    woodlarge,
+    glass,
+    pot
+}
+
 public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler, IPointerDownHandler
 {
     [SerializeField] private Grid layoutGrid;
@@ -27,6 +36,8 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
     [SerializeField]
     private SizeFurniture Size;
+    [SerializeField]
+    private TypeFurniture Type;
 
     void Start()
     {
@@ -158,13 +169,21 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             Debug.Log($"{cellPosition} not empty");
         }
 
-        if (Size == SizeFurniture.large)
+        if (Type == TypeFurniture.woodlarge)
         {
             SoundManager.instance.playSFX(SoundManager.instance.PutDownHeavyFur);
         }
-        if (Size == SizeFurniture.small)
+        if (Type == TypeFurniture.woodSmall)
         {
             SoundManager.instance.playSFX(SoundManager.instance.PutDownFur);
+        }
+        if (Type == TypeFurniture.pot)
+        {
+            SoundManager.instance.playSFX(SoundManager.instance.PutDownPotWitch);
+        }
+        if (Type == TypeFurniture.glass)
+        {
+            SoundManager.instance.playSFX(SoundManager.instance.PutDownGlassBottle);
         }
 
     }

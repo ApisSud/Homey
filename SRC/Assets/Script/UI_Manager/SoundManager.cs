@@ -21,6 +21,8 @@ public class SoundManager : MonoBehaviour
     public AudioClip ButtonPressed;
     public AudioClip PutDownHeavyFur;
     public AudioClip PutDownFur;
+    public AudioClip PutDownPotWitch;
+    public AudioClip PutDownGlassBottle;
 
 
 

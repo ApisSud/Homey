@@ -9,6 +9,15 @@ public enum SizeFurniture
     small,
     large
 }
+
+public enum TypeFurniture
+{
+    woodSmall,
+    woodlarge,
+    glass,
+    pot
+}
+
 public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler, IPointerDownHandler
 {
     [SerializeField] private Grid layoutGrid;
@@ -27,6 +36,8 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
     [SerializeField]
     private SizeFurniture Size;
+    [SerializeField]
+    private TypeFurniture Type;
 
     void Start()
     {

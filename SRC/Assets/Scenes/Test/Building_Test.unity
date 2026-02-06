@@ -3349,9 +3349,9 @@ MonoBehaviour:
   BackgroundMusic1: {fileID: 0}
   Logo: {fileID: 0}
   ButtonPressed: {fileID: 0}
-  PutDownHeavyFur: {fileID: 8300000, guid: 612afd152f35eaa448f7bbe9346c1bb3, type: 3}
+  PutDownHeavyFur: {fileID: 8300000, guid: b19760dd61942d94f9c2cc45ff1a1a8e, type: 3}
   PutDownFur: {fileID: 8300000, guid: 130f680515fd2ea49828b7097cc91647, type: 3}
-  PutDownPotWitch: {fileID: 8300000, guid: f025a0e0a2c0e534c869d2d7c0d6bcd4, type: 3}
+  PutDownPotWitch: {fileID: 8300000, guid: 804092379e02358499fe34fa7efb4cdf, type: 3}
   PutDownGlassBottle: {fileID: 8300000, guid: bad2a4edd2250c94099c9db9e1332fd0, type: 3}
 --- !u!4 &1536788168
 Transform:

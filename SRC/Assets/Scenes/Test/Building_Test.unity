@@ -2970,7 +2970,7 @@ MonoBehaviour:
   Logo: {fileID: 0}
   ButtonPressed: {fileID: 0}
   PutDownHeavyFur: {fileID: 8300000, guid: 612afd152f35eaa448f7bbe9346c1bb3, type: 3}
-  PutDownFur: {fileID: 8300000, guid: b19760dd61942d94f9c2cc45ff1a1a8e, type: 3}
+  PutDownFur: {fileID: 8300000, guid: 130f680515fd2ea49828b7097cc91647, type: 3}
 --- !u!4 &1536788168
 Transform:
   m_ObjectHideFlags: 0

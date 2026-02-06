@@ -181,6 +181,10 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         {
             SoundManager.instance.playSFX(SoundManager.instance.PutDownPotWitch);
         }
+        if (Type == TypeFurniture.glass)
+        {
+            SoundManager.instance.playSFX(SoundManager.instance.PutDownGlassBottle);
+        }
 
     }
 

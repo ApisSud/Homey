@@ -3351,6 +3351,8 @@ MonoBehaviour:
   ButtonPressed: {fileID: 0}
   PutDownHeavyFur: {fileID: 8300000, guid: 612afd152f35eaa448f7bbe9346c1bb3, type: 3}
   PutDownFur: {fileID: 8300000, guid: 130f680515fd2ea49828b7097cc91647, type: 3}
+  PutDownPotWitch: {fileID: 8300000, guid: f025a0e0a2c0e534c869d2d7c0d6bcd4, type: 3}
+  PutDownGlassBottle: {fileID: 0}
 --- !u!4 &1536788168
 Transform:
   m_ObjectHideFlags: 0

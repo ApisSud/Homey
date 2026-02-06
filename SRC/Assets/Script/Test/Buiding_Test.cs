@@ -169,13 +169,17 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             Debug.Log($"{cellPosition} not empty");
         }
 
-        if (Size == SizeFurniture.large)
+        if (Type == TypeFurniture.woodlarge)
         {
             SoundManager.instance.playSFX(SoundManager.instance.PutDownHeavyFur);
         }
-        if (Size == SizeFurniture.small)
+        if (Type == TypeFurniture.woodSmall)
         {
             SoundManager.instance.playSFX(SoundManager.instance.PutDownFur);
+        }
+        if (Type == TypeFurniture.pot)
+        {
+            SoundManager.instance.playSFX(SoundManager.instance.PutDownPotWitch);
         }
 
     }

@@ -6,6 +6,7 @@ public class CheckGrid : MonoBehaviour
 {
     public Grid Grid;
     public Dictionary<Vector3Int, bool> occupiedTiles = new Dictionary<Vector3Int, bool>();
+    public Dictionary<Vector3Int, bool> CheckFurniture = new Dictionary<Vector3Int, bool>();
     public static CheckGrid instance;
     [SerializeField]
     private Scrollbar processFurnitureBar;
@@ -33,7 +34,7 @@ public class CheckGrid : MonoBehaviour
         {
             occupiedTiles.Add(gridPos, true);
             Debug.Log($"Grid {gridPos} status is: {occupiedTiles[gridPos]}");
-            Debug.Log($"Num Fur : {furnitureItems.Length}");
+            //Debug.Log($"Num Fur : {furnitureItems.Length}");
 
         }
         UpdateFurnitureBar(furnitureItems.Length);
@@ -45,25 +46,38 @@ public class CheckGrid : MonoBehaviour
 
 
     }
+    public void addFurnitureInScene(Vector3Int gridPos)
+    {
+        if(!CheckFurniture.ContainsKey(gridPos))
+        {
+            CheckFurniture.Add(gridPos, true);
+            Debug.Log($"Num Fur In Scene: {CheckFurniture.Count}");
+        }
+    }
 
     public void RemoveObject(Vector3Int gridPos)
     {
-        if (occupiedTiles.ContainsKey(gridPos))
+        if (CheckFurniture.ContainsKey(gridPos))
         {
-            Debug.Log($"Grid {gridPos} status is: remove");
-            occupiedTiles.Remove(gridPos);
+            CheckFurniture.Remove(gridPos);
         }
+    }
+
+    public void removeFurnitureInScene(Vector3Int gridPos)
+    {
+        if (CheckFurniture.ContainsKey(gridPos))
+        { CheckFurniture.Add(gridPos, true); }
     }
 
     public void CheckEmpty(Vector3Int gridPos)
     {
         if (!occupiedTiles.ContainsKey(gridPos))
         {
-            Debug.Log($"{gridPos} empty");
+            //Debug.Log($"{gridPos} empty");
         }
         else if (occupiedTiles.ContainsKey(gridPos))
         {
-            Debug.Log($"{gridPos} not empty");
+            //Debug.Log($"{gridPos} not empty");
         }
     
     }

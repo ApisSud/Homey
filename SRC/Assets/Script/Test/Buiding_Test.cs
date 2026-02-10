@@ -9,6 +9,15 @@ public enum SizeFurniture
     small,
     large
 }
+
+public enum TypeFurniture
+{
+    woodSmall,
+    woodlarge,
+    glass,
+    pot
+}
+
 public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler, IPointerDownHandler
 {
     [SerializeField] private Grid layoutGrid;
@@ -27,6 +36,8 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
     [SerializeField]
     private SizeFurniture Size;
+    [SerializeField]
+    private TypeFurniture Type;
 
     void Start()
     {
@@ -36,6 +47,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         Debug.Log(cellPosition);
 
         CheckGrid.instance.PlaceObject(cellPosition);
+        CheckGrid.instance.addFurnitureInScene(cellPosition);
         if (Size == SizeFurniture.large)
         {
             CheckGrid.instance.PlaceObject(cellPosition + new Vector3Int(0, 1, 0));
@@ -70,6 +82,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         Debug.Log($"BeginDrag{cellPosition}");
         offset = transform.position - mousePos;
         CheckGrid.instance.RemoveObject(cellPosition);
+        CheckGrid.instance.removeFurnitureInScene(cellPosition);
         if (Size == SizeFurniture.large)
         {
             if (Flip == false)
@@ -119,7 +132,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         Vector3 worldPos = transform.position;
         Vector3Int cellPosition = layoutGrid.WorldToCell(worldPos);
         Vector3 snapPos = layoutGrid.GetCellCenterWorld(cellPosition);
-        Debug.Log("EndDrag");
+        //Debug.Log("EndDrag");
         bodyColor.color = originalColor;
         FloorSelect.SetTile(cellPosition, null);
 
@@ -129,11 +142,11 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             FloorSelect.SetTile(cellPosition + new Vector3Int(1, 0, 0), null);
 
         Draged = false;
-        Debug.Log(cellPosition.y);
         if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) && cellPosition.y <= 2 && cellPosition.y > -8 && cellPosition.x <= 2 && cellPosition.x > -7)
         {
             transform.position = snapPos;
             CheckGrid.instance.PlaceObject(cellPosition);
+            CheckGrid.instance.addFurnitureInScene(cellPosition);
             if (Size == SizeFurniture.large)
             {
                 if (Flip == false)
@@ -141,13 +154,14 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                 else
                     CheckGrid.instance.PlaceObject(cellPosition + new Vector3Int(1, 0, 0));
             }
-            Debug.Log($"{cellPosition} empty");
+            //Debug.Log($"{cellPosition} empty");
         }
         else
         {
             transform.position = OriginalPosition;
             cellPosition = layoutGrid.WorldToCell(OriginalPosition);
             CheckGrid.instance.PlaceObject(cellPosition);
+            CheckGrid.instance.addFurnitureInScene(cellPosition);
             if (Size == SizeFurniture.large)
             {
                 if (Flip == false)
@@ -155,23 +169,31 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                 else
                     CheckGrid.instance.PlaceObject(cellPosition + new Vector3Int(1, 0, 0));
             }
-            Debug.Log($"{cellPosition} not empty");
+            //Debug.Log($"{cellPosition} not empty");
         }
 
-        if (Size == SizeFurniture.large)
+        if (Type == TypeFurniture.woodlarge)
         {
             SoundManager.instance.playSFX(SoundManager.instance.PutDownHeavyFur);
         }
-        if (Size == SizeFurniture.small)
+        if (Type == TypeFurniture.woodSmall)
         {
             SoundManager.instance.playSFX(SoundManager.instance.PutDownFur);
+        }
+        if (Type == TypeFurniture.pot)
+        {
+            SoundManager.instance.playSFX(SoundManager.instance.PutDownPotWitch);
+        }
+        if (Type == TypeFurniture.glass)
+        {
+            SoundManager.instance.playSFX(SoundManager.instance.PutDownGlassBottle);
         }
 
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("OnPoint");
+        //Debug.Log("OnPoint");
     }
 
     void UpdateHighlight(Vector3Int cellPosition)

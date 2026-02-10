@@ -18,16 +18,16 @@ public class Inventory : MonoBehaviour
         {
             if (FurniturePF[currentClickIndex] != null)
             {
-                // *** จุดสำคัญ *** // ใช้ spawnPoint.position (ตำแหน่งของจุดที่เราวางไว้) แทน MousePosition
+               
                 Instantiate(FurniturePF[currentClickIndex], spawnPoint.position, Quaternion.identity);
 
-                // เล่นเอฟเฟกต์ที่จุดเดียวกัน
+                
                 if (spawneffect != null)
                 {
                     Instantiate(spawneffect, spawnPoint.position, Quaternion.identity);
                 }
 
-                currentClickIndex++; // เลื่อนไปชิ้นถัดไป
+                currentClickIndex++; 
             }
         }
         else

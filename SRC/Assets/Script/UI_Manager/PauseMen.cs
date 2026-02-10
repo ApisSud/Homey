@@ -24,7 +24,7 @@ public class PauseMen : MonoBehaviour
     public async void Home()
     {
         await FadeOutScene();
-        SceneManager.LoadScene("Mainmenu");
+        SceneManager.LoadScene("Main_Menu");
         Time.timeScale = 1f;
     }
 
@@ -47,13 +47,13 @@ public class PauseMen : MonoBehaviour
     {
         CanvasGroup.DOFade(1 , TweenDuration).SetUpdate(true);
         PausepanelRect.DOAnchorPosY(middlePosY, TweenDuration).SetUpdate(true);
-        PausebuttonRect.DOAnchorPosX(115 , TweenDuration).SetUpdate(true);
+        PausebuttonRect.DOAnchorPosX(200 , TweenDuration).SetUpdate(true);
     }
     async Task pausepaneloutro()
     {
         CanvasGroup.DOFade(0, TweenDuration).SetUpdate(true);
         await PausepanelRect.DOAnchorPosY(topPosY, TweenDuration).SetUpdate(true).AsyncWaitForCompletion();
-        PausebuttonRect.DOAnchorPosX(260, TweenDuration).SetUpdate(true);
+        PausebuttonRect.DOAnchorPosX(-120, TweenDuration).SetUpdate(true);
     }
 
     private async Task FadeOutScene()
@@ -69,7 +69,7 @@ public class PauseMen : MonoBehaviour
         screenFaderCanvasGroup.gameObject.SetActive(true); 
 
 
-        await screenFaderCanvasGroup.DOFade(1f, TweenDuration)
+        await screenFaderCanvasGroup.DOFade(1.5f, TweenDuration)
             .SetUpdate(true) 
             .AsyncWaitForCompletion();
     }

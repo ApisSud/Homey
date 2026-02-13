@@ -29,7 +29,11 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     [SerializeField] private Grid layoutGrid;
     [SerializeField] private Tilemap FloorSelect;
     [SerializeField] private TileBase highlightTile;
+    [SerializeField] private Grid TableGrid;
+    [SerializeField] private Tilemap FloorTableSelect;
+
     private Rigidbody2D rb;
+    [SerializeField] private SpriteRenderer sr;
     private Vector3 offset;
     private Vector3 OriginalPosition;
     private Vector3Int previousCellPos;
@@ -38,6 +42,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     private Color32 originalColor;
     private bool Flip;
     private bool Draged;
+
 
 
     [SerializeField]
@@ -74,13 +79,13 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             {
                 transform.eulerAngles = new Vector3(0, -180, 0);
                 Flip = true;
-                UpdateHighlight(layoutGrid.WorldToCell(transform.position));
+                UpdateHighlight(layoutGrid.WorldToCell(transform.position), FloorSelect);
             }
             else if (Input.GetKeyDown(KeyCode.E) && Flip == true)
             {
                 transform.eulerAngles = new Vector3(0, 0, 0);
                 Flip = false;
-                UpdateHighlight(layoutGrid.WorldToCell(transform.position));
+                UpdateHighlight(layoutGrid.WorldToCell(transform.position), FloorSelect);
             }
         }
 
@@ -110,10 +115,14 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     {
         Vector3 worldPos = transform.position;
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(eventData.position);
+        mousePos.z = 0;
+        Vector3Int cellPosition = layoutGrid.WorldToCell(mousePos);
+        Vector3 snapPos = layoutGrid.GetCellCenterWorld(cellPosition);
 
-        transform.position = eventData.position;
-        transform.position = mousePos + offset;
-        Vector3Int cellPosition = layoutGrid.WorldToCell(worldPos);
+        /*transform.position = eventData.position;
+        transform.position = mousePos + offset;*/
+        transform.position = snapPos;
+
         CheckGrid.instance.CheckEmpty(cellPosition);
         Draged = true;
 
@@ -122,19 +131,19 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         {
             if (CheckGrid.instance.occupiedTiles.TryGetValue(cellPosition, out string itemName))
             {
-
+                sr.sortingOrder = 5;
                 if (itemName == "woodlarge")
                 {
                     Debug.Log("‡®Õ‚µÍ–‰¡È¢π“¥„À≠Ë·≈È«!");
                 }
                 if (cellPosition != previousCellPos && IsWithinBounds(cellPosition))
                 {
-                    UpdateHighlight(cellPosition);
+                    UpdateHighlight(cellPosition, FloorTableSelect);
 
                 }
                 if (!IsWithinBounds(cellPosition))
                 {
-                    FloorSelect.SetTile(previousCellPos, null);
+                    FloorTableSelect.SetTile(previousCellPos, null);
                 }
                 if (CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) || !IsWithinBounds(cellPosition))
                 {
@@ -150,7 +159,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         {
             if (cellPosition != previousCellPos && IsWithinBounds(cellPosition))
             {
-                UpdateHighlight(cellPosition);
+                UpdateHighlight(cellPosition, FloorSelect);
 
             }
             if (!IsWithinBounds(cellPosition))
@@ -241,28 +250,28 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         //Debug.Log("OnPoint");
     }
 
-    void UpdateHighlight(Vector3Int cellPosition)
+    void UpdateHighlight(Vector3Int cellPosition, Tilemap highlight_Tile)
     {
-        FloorSelect.SetTile(previousCellPos, null);
-        FloorSelect.SetTile(cellPosition, highlightTile);
+        highlight_Tile.SetTile(previousCellPos, null);
+        highlight_Tile.SetTile(cellPosition, highlightTile);
         previousCellPos = cellPosition;
 
         if (Size == SizeFurniture.large && Flip == false)
         {
 
-            FloorSelect.SetTile(previousCellPos, null);
-            FloorSelect.SetTile(previousCellPos2, null);
-            FloorSelect.SetTile(cellPosition, highlightTile);
-            FloorSelect.SetTile(cellPosition + new Vector3Int(0, 1, 0), highlightTile);
+            highlight_Tile.SetTile(previousCellPos, null);
+            highlight_Tile.SetTile(previousCellPos2, null);
+            highlight_Tile.SetTile(cellPosition, highlightTile);
+            highlight_Tile.SetTile(cellPosition + new Vector3Int(0, 1, 0), highlightTile);
             previousCellPos = cellPosition;
             previousCellPos2 = cellPosition + new Vector3Int(0, 1, 0);
         }
         else if (Size == SizeFurniture.large && Flip == true)
         {
-            FloorSelect.SetTile(previousCellPos, null);
-            FloorSelect.SetTile(previousCellPos2, null);
-            FloorSelect.SetTile(cellPosition, highlightTile);
-            FloorSelect.SetTile(cellPosition + new Vector3Int(1, 0, 0), highlightTile);
+            highlight_Tile.SetTile(previousCellPos, null);
+            highlight_Tile.SetTile(previousCellPos2, null);
+            highlight_Tile.SetTile(cellPosition, highlightTile);
+            highlight_Tile  .SetTile(cellPosition + new Vector3Int(1, 0, 0), highlightTile);
             previousCellPos = cellPosition;
             previousCellPos2 = cellPosition + new Vector3Int(1, 0, 0);
         }

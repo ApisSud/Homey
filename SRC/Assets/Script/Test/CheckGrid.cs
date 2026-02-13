@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class CheckGrid : MonoBehaviour
 {
     public Grid Grid;
-    public Dictionary<Vector3Int, bool> occupiedTiles = new Dictionary<Vector3Int, bool>();
+    public Dictionary<Vector3Int, string> occupiedTiles = new Dictionary<Vector3Int, string>();
     public Dictionary<Vector3Int, bool> CheckFurniture = new Dictionary<Vector3Int, bool>();
     public static CheckGrid instance;
     [SerializeField]
@@ -27,12 +27,12 @@ public class CheckGrid : MonoBehaviour
     }
     
 
-    public void PlaceObject(Vector3Int gridPos)
+    public void PlaceObject(Vector3Int gridPos, string type)
     {
         GameObject[] furnitureItems = GameObject.FindGameObjectsWithTag("Furniture");
         if (!occupiedTiles.ContainsKey(gridPos))
         {
-            occupiedTiles.Add(gridPos, true);
+            occupiedTiles.Add(gridPos, type);
             Debug.Log($"Grid {gridPos} status is: {occupiedTiles[gridPos]}");
             //Debug.Log($"Num Fur : {furnitureItems.Length}");
 

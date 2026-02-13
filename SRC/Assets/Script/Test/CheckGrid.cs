@@ -57,9 +57,9 @@ public class CheckGrid : MonoBehaviour
 
     public void RemoveObject(Vector3Int gridPos)
     {
-        if (CheckFurniture.ContainsKey(gridPos))
+        if (occupiedTiles.ContainsKey(gridPos))
         {
-            CheckFurniture.Remove(gridPos);
+            occupiedTiles.Remove(gridPos);
         }
     }
 

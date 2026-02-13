@@ -82,7 +82,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         Debug.Log($"BeginDrag{cellPosition}");
         offset = transform.position - mousePos;
         CheckGrid.instance.RemoveObject(cellPosition);
-        CheckGrid.instance.removeFurnitureInScene(cellPosition);
+        //CheckGrid.instance.removeFurnitureInScene(cellPosition);
         if (Size == SizeFurniture.large)
         {
             if (Flip == false)
@@ -146,7 +146,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         {
             transform.position = snapPos;
             CheckGrid.instance.PlaceObject(cellPosition);
-            CheckGrid.instance.addFurnitureInScene(cellPosition);
+            //CheckGrid.instance.addFurnitureInScene(cellPosition);
             if (Size == SizeFurniture.large)
             {
                 if (Flip == false)
@@ -161,7 +161,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             transform.position = OriginalPosition;
             cellPosition = layoutGrid.WorldToCell(OriginalPosition);
             CheckGrid.instance.PlaceObject(cellPosition);
-            CheckGrid.instance.addFurnitureInScene(cellPosition);
+            //CheckGrid.instance.addFurnitureInScene(cellPosition);
             if (Size == SizeFurniture.large)
             {
                 if (Flip == false)

@@ -121,7 +121,6 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
         /*transform.position = eventData.position;
         transform.position = mousePos + offset;*/
-        transform.position = snapPos;
 
         CheckGrid.instance.CheckEmpty(cellPosition);
         Draged = true;
@@ -130,24 +129,32 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         if (Size == SizeFurniture.smaller)
         {
             Vector3Int cellPositionSmall = TableGrid.WorldToCell(mousePos);
-            snapPos = TableGrid.GetCellCenterWorld(cellPositionSmall);
 
             if (CheckGrid.instance.occupiedTiles.TryGetValue(cellPosition, out string itemName))
             {
-                sr.sortingOrder = 5;
+             
                 if (itemName == "woodlarge")
                 {
-                    Debug.Log("‡®Õ‚µÍ–‰¡È¢π“¥„À≠Ë·≈È«!");
-                }
-                if (cellPosition != previousCellPos && IsWithinBounds(cellPosition))
-                {
-                    UpdateHighlight(cellPosition, FloorTableSelect);
+                    snapPos = TableGrid.GetCellCenterWorld(cellPositionSmall);
+                    transform.position = snapPos;
+                    sr.sortingOrder = 5;
+                    Debug.Log("woodlarge");
+                    if (cellPosition != previousCellPos /*&& CheckGridStorageObj.instance.IsWithinBoundsStorage(cellPosition)*/)
+                    {
+                        UpdateHighlight(cellPosition, FloorTableSelect);
 
+                    }
+                    if (!IsWithinBounds(cellPosition))
+                    {
+                        FloorTableSelect.SetTile(previousCellPos, null);
+                    }
                 }
-                if (!IsWithinBounds(cellPosition))
+                else
                 {
-                    FloorTableSelect.SetTile(previousCellPos, null);
+                    transform.position = snapPos;
                 }
+
+               
                /* if (CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) || !IsWithinBounds(cellPosition))
                 {
                     bodyColor.color = new Color32(255, 0, 0, 255);

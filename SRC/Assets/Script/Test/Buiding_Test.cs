@@ -122,23 +122,19 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         /*transform.position = eventData.position;
         transform.position = mousePos + offset;*/
 
-        CheckGrid.instance.CheckEmpty(cellPosition);
         Draged = true;
-
-
         if (Size == SizeFurniture.smaller)
         {
-            Vector3Int cellPositionSmall = TableGrid.WorldToCell(mousePos);
-
             if (CheckGrid.instance.occupiedTiles.TryGetValue(cellPosition, out string itemName))
             {
              
                 if (itemName == "woodlarge")
                 {
+                    Vector3Int cellPositionSmall = TableGrid.WorldToCell(mousePos);
                     snapPos = TableGrid.GetCellCenterWorld(cellPositionSmall);
                     transform.position = snapPos;
                     sr.sortingOrder = 5;
-                    Debug.Log("woodlarge");
+                    Debug.Log("In storage");
                     if (cellPosition != previousCellPos /*&& CheckGridStorageObj.instance.IsWithinBoundsStorage(cellPosition)*/)
                     {
                         UpdateHighlight(cellPosition, FloorTableSelect);
@@ -148,12 +144,9 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                     {
                         FloorTableSelect.SetTile(previousCellPos, null);
                     }
-                }
-                else
-                {
-                    transform.position = snapPos;
-                }
-
+                }     
+              
+             
                
                /* if (CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) || !IsWithinBounds(cellPosition))
                 {
@@ -164,6 +157,9 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                     bodyColor.color = originalColor;
                 }*/
             }
+            Debug.Log("Not in Storage");
+            transform.position = snapPos;
+
         }
         if (Size != SizeFurniture.smaller)
         {

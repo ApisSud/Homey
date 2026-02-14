@@ -145,14 +145,14 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                 {
                     FloorTableSelect.SetTile(previousCellPos, null);
                 }
-                if (CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) || !IsWithinBounds(cellPosition))
+               /* if (CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) || !IsWithinBounds(cellPosition))
                 {
                     bodyColor.color = new Color32(255, 0, 0, 255);
                 }
                 else if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
                 {
                     bodyColor.color = originalColor;
-                }
+                }*/
             }
         }
         if (Size != SizeFurniture.smaller)

@@ -129,6 +129,9 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
         if (Size == SizeFurniture.smaller)
         {
+            Vector3Int cellPositionSmall = TableGrid.WorldToCell(mousePos);
+            snapPos = TableGrid.GetCellCenterWorld(cellPositionSmall);
+
             if (CheckGrid.instance.occupiedTiles.TryGetValue(cellPosition, out string itemName))
             {
                 sr.sortingOrder = 5;
@@ -157,6 +160,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         }
         if (Size != SizeFurniture.smaller)
         {
+            transform.position = snapPos;
             if (cellPosition != previousCellPos && IsWithinBounds(cellPosition))
             {
                 UpdateHighlight(cellPosition, FloorSelect);

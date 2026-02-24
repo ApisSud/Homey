@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -10,9 +11,21 @@ public class Scratch : MonoBehaviour
     public SpriteRenderer dirtSpriteRenderer;
     public int brushSize = 30;
 
+
+
     [Header("Win Condition")]
     [Range(0f, 1f)]
     public float winPercentage = 0.8f;
+
+    [Header("Win UI Settings")]
+    public GameObject winPanelObject;     
+    public CanvasGroup winCanvasGroup;   
+    public RectTransform winPanelRect;    
+    public float uiAnimDuration = 0.8f;   
+    public float showDelay = 2f;
+    public float offScreenPosY = 1000f;
+    public float onScreenPosY = 0f;
+
 
     private Texture2D tex;
     private Color32[] pixels;
@@ -20,29 +33,29 @@ public class Scratch : MonoBehaviour
     private int clearedPixels = 0;
     private Vector2 lastMousePos;
     private bool isGameActive = true;
+    private Vector2 originalPanelPos;
 
 
     void Start()
     {
-        // สร้าง Texture ใหม่โคลนจากรูปเดิม เพื่อไม่ให้ไฟล์ภาพต้นฉบับพัง
         Texture2D originalTex = dirtSpriteRenderer.sprite.texture;
         tex = new Texture2D(originalTex.width, originalTex.height, TextureFormat.RGBA32, false);
         tex.SetPixels32(originalTex.GetPixels32());
         tex.Apply();
 
-        // นำ Texture ที่โคลนมาใส่กลับเข้าไปใน Sprite
+        
         Sprite newSprite = Sprite.Create(tex, dirtSpriteRenderer.sprite.rect, new Vector2(0.5f, 0.5f), dirtSpriteRenderer.sprite.pixelsPerUnit);
         dirtSpriteRenderer.sprite = newSprite;
 
-        // ดึงข้อมูล Pixel ทั้งหมดมาเตรียมคำนวณ
+    
         pixels = tex.GetPixels32();
         totalPixels = pixels.Length;
     }
 
     void Update()
     {
-        // เช็ค 2 อย่าง: เกมยังไม่จบ ใช่ไหม? และ ถือไม้กวาดอยู่ ใช่ไหม?
-        if (!isGameActive || !broom.isEquipped) return; // <--- เพิ่มเช็คไม้กวาดตรงนี้
+
+        if (!isGameActive || !broom.isEquipped) return; 
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -62,7 +75,7 @@ public class Scratch : MonoBehaviour
         Vector2 endPixel = WorldToPixel(endWorld);
 
         float distance = Vector2.Distance(startPixel, endPixel);
-        int steps = Mathf.Max(1, Mathf.CeilToInt(distance / (brushSize / 4f))); // คำนวณความถี่ของจุดในเส้น
+        int steps = Mathf.Max(1, Mathf.CeilToInt(distance / (brushSize / 4f)));
 
         bool changed = false;
 
@@ -76,7 +89,7 @@ public class Scratch : MonoBehaviour
             }
         }
 
-        // ถ้ามีการลบเกิดขึ้น ให้ Update ภาพ และเช็คว่าชนะหรือยัง
+       
         if (changed)
         {
             tex.SetPixels32(pixels);
@@ -101,11 +114,11 @@ public class Scratch : MonoBehaviour
                     if (distSq <= radiusSq)
                     {
                         int index = y * tex.width + x;
-                        // ถ้าพิกเซลนี้ยังไม่โปร่งใส (Alpha > 0)
+                 
                         if (pixels[index].a > 0)
                         {
-                            pixels[index].a = 0; // ทำให้โปร่งใส (ลบออก)
-                            clearedPixels++;     // นับจำนวนที่ลบไปแล้ว
+                            pixels[index].a = 0; 
+                            clearedPixels++;    
                             changed = true;
                         }
                     }
@@ -129,7 +142,7 @@ public class Scratch : MonoBehaviour
 
     void CheckWin()
     {
-        // คำนวณหา % ที่ขูดไปแล้ว
+    
         float percentCleared = (float)clearedPixels / totalPixels;
 
         if (percentCleared >= winPercentage)
@@ -139,12 +152,42 @@ public class Scratch : MonoBehaviour
     }
     void WinGame()
     {
+        if (!isGameActive) return;
+
         isGameActive = false;
         Debug.Log("Cleaned! You Win!");
 
         dirtSpriteRenderer.gameObject.SetActive(false);
-
-        // เมื่อถูเสร็จ บังคับให้วางไม้กวาดอัตโนมัติ
         broom.UnequipBroom();
+
+        // --- เริ่มต้นเปิด Panel ---
+        winPanelObject.SetActive(true);
+
+        // 1. เซ็ตตำแหน่งเริ่มต้นให้อยู่ "นอกจอ" (offScreenPosY)
+        winPanelRect.anchoredPosition = new Vector2(winPanelRect.anchoredPosition.x, offScreenPosY);
+        winCanvasGroup.alpha = 0f;
+
+        // --- Animation ขาเข้า (มาจากข้างบน ลงมาตรงกลาง) ---
+        Sequence sequence = DOTween.Sequence();
+
+        // ใช้ DOAnchorPosY ดึงลงมาที่ onScreenPosY (ตั้ง .SetUpdate(true) ให้เล่นได้แม้เกม Pause)
+        sequence.Append(winPanelRect.DOAnchorPosY(onScreenPosY, uiAnimDuration).SetEase(Ease.OutBack).SetUpdate(true));
+        sequence.Join(winCanvasGroup.DOFade(1f, uiAnimDuration).SetUpdate(true));
+
+        Invoke("CloseWinPanel", showDelay + uiAnimDuration);
+    }
+
+    void CloseWinPanel()
+    {
+        // --- Animation ขาออก (จากตรงกลาง เด้งกลับขึ้นไปข้างบน) ---
+        Sequence sequence = DOTween.Sequence();
+
+        // ใช้ DOAnchorPosY ดันกลับขึ้นไปที่ offScreenPosY
+        sequence.Append(winPanelRect.DOAnchorPosY(offScreenPosY, uiAnimDuration).SetEase(Ease.InBack).SetUpdate(true));
+        sequence.Join(winCanvasGroup.DOFade(0f, uiAnimDuration).SetUpdate(true));
+
+        sequence.OnComplete(() => {
+            winPanelObject.SetActive(false);
+        });
     }
 }

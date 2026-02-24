@@ -4,13 +4,15 @@ using UnityEngine.EventSystems;
 public class BroomController : MonoBehaviour
 {
     [Header("Settings")]
-    public bool isEquipped = false; // สถานะว่าถือไม้กวาดอยู่ไหม
+    public bool isEquipped = false; 
     private SpriteRenderer spriteRenderer;
+    public float unequipDelay = 1.0f;
+    public GameObject Outparticle;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.enabled = false; // ซ่อนไม้กวาดตอนเริ่มเกม
+        spriteRenderer.enabled = false;
     }
 
     void Update()
@@ -41,10 +43,17 @@ public class BroomController : MonoBehaviour
 
     public void UnequipBroom()
     {
-        isEquipped = false;
-        spriteRenderer.enabled = false; // ซ่อนไม้กวาด
+        isEquipped = false;    
+        Cursor.visible = true; 
 
-        // โชว์เมาส์ปกติกลับมา
-        Cursor.visible = true;
+        Invoke("HideBroom", 1f);
+        
+    }
+
+  
+    void HideBroom()
+    {
+        spriteRenderer.enabled = false;
+        Instantiate(Outparticle, transform.position, Quaternion.identity);
     }
 }

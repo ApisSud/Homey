@@ -23,6 +23,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip PutDownFur;
     public AudioClip PutDownPotWitch;
     public AudioClip PutDownGlassBottle;
+    public AudioClip Dirtywater;
 
 
 

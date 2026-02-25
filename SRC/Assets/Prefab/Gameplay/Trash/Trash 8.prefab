@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6381419113331740767}
   - component: {fileID: 5826440273127803155}
   - component: {fileID: 2462328201335818822}
-  - component: {fileID: 7066272495250689162}
+  - component: {fileID: 2877215906075674287}
   m_Layer: 0
-  m_Name: Trash 3
+  m_Name: Trash 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 8333322025715259787, guid: eaa9feb37740e284e8cdf69bd9ce3638, type: 3}
+  m_Sprite: {fileID: -8545527877092187687, guid: eaa9feb37740e284e8cdf69bd9ce3638, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -106,8 +106,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Trashobject
   Trashparticle: {fileID: 6813416509558619124, guid: 3b7f2c753d435d647a80f1f047a113e3, type: 3}
---- !u!58 &7066272495250689162
-CircleCollider2D:
+--- !u!61 &2877215906075674287
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -140,5 +140,15 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0032269955, y: -0.015892565}
-  m_Radius: 0.79944533
+  m_Offset: {x: 0.06475711, y: 0.03453678}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.46, y: 2.45}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2.1232648, y: 1.9146768}
+  m_EdgeRadius: 0

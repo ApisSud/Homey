@@ -3146,7 +3146,7 @@ Transform:
   m_GameObject: {fileID: 1399200257}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.543, y: 0.066, z: 0}
+  m_LocalPosition: {x: 0.497, y: 0.013, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3166,10 +3166,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Isogrid
   anchorPoint: {fileID: 1399200258}
   stepX: 0.5
-  stepY: -0.25
+  stepY: 0.25
   columns: 5
   rows: 1
-  spacing: 0.36
+  spacing: 0.5
 --- !u!1 &1404811117
 GameObject:
   m_ObjectHideFlags: 0

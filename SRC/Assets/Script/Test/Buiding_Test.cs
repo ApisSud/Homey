@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Tilemaps;
+using UnityEngine.UIElements;
+using static UnityEngine.Rendering.DebugUI.Table;
 
 public enum SizeFurniture
 {
@@ -53,6 +55,8 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
     [SerializeField]  int minX = -6, maxX = 2;
     [SerializeField]  int minY = -6, maxY = 2;
+
+
 
 
     void Start()
@@ -127,28 +131,15 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         {
             if (CheckGrid.instance.occupiedTiles.TryGetValue(cellPosition, out string itemName))
             {
-             
+
                 if (itemName == "woodlarge")
                 {
-                    Vector3Int cellPositionSmall = TableGrid.WorldToCell(mousePos);
-                    snapPos = TableGrid.GetCellCenterWorld(cellPositionSmall);
-                    transform.position = snapPos;
-                    sr.sortingOrder = 5;
-                    Debug.Log("In storage");
-                    if (cellPosition != previousCellPos /*&& CheckGridStorageObj.instance.IsWithinBoundsStorage(cellPosition)*/)
-                    {
-                        UpdateHighlight(cellPosition, FloorTableSelect);
+                  
+                }
 
-                    }
-                    if (!IsWithinBounds(cellPosition))
-                    {
-                        FloorTableSelect.SetTile(previousCellPos, null);
-                    }
-                }     
-              
-             
-               
-               /* if (CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) || !IsWithinBounds(cellPosition))
+
+
+                /*if (CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) || !IsWithinBounds(cellPosition))
                 {
                     bodyColor.color = new Color32(255, 0, 0, 255);
                 }
@@ -161,9 +152,8 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             transform.position = snapPos;
 
         }
-        if (Size != SizeFurniture.smaller)
-        {
-            transform.position = snapPos;
+
+        transform.position = snapPos;
             if (cellPosition != previousCellPos && IsWithinBounds(cellPosition))
             {
                 UpdateHighlight(cellPosition, FloorSelect);
@@ -181,7 +171,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             {
                 bodyColor.color = originalColor;
             }
-        }
+        
 
 
 
@@ -290,4 +280,6 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         return (gridPosition.x >= minX && gridPosition.x <= maxX &&
                 gridPosition.y >= minY && gridPosition.y <= maxY);
     }
+
+    
 }

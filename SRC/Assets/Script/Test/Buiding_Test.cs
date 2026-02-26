@@ -132,6 +132,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
             if (CheckGrid.instance.occupiedTiles.TryGetValue(cellPosition, out string itemName))
             {
+                Debug.Log(worldPos);
                 Vector3 finalPos = worldPos;
                 sr.sortingOrder = 3;
                 if (itemName == "woodlarge")

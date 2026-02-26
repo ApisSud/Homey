@@ -47,7 +47,7 @@ public class Isogrid : MonoBehaviour
             Vector3 slotPos = GetSlotPosition(i);
             Debug.Log(slotPos);
             float distance = Vector3.Distance(mouseWorldPos, slotPos);
-
+            Debug.Log($"snap : {slotPos}+{i}");
             if (distance < snapThreshold && distance < closestDistance)
             {
                 closestDistance = distance;

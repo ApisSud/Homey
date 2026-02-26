@@ -22,16 +22,25 @@ public class Trashobject : MonoBehaviour
         {
             Trashmanager.instance.CollectTrash();
         }
-        if (Trashparticle != null)
-        {
-            
-            Instantiate(Trashparticle,transform.position, Quaternion.identity);
-        }
-        if (Type == TrashType.water)
+       
+
+        LeanTween.scale(gameObject, Vector3.zero, 0.5f)
+            .setEase(LeanTweenType.easeInBack)
+            .setOnComplete(() =>
+            {
+                Destroy(gameObject);
+                if (Trashparticle != null) 
+                {
+                    Instantiate(Trashparticle, transform.position, Quaternion.identity);
+                }
+            });
+
+
+        /*if (Type == TrashType.water)
         {
             SoundManager.instance.playSFX(SoundManager.instance.Dirtywater);
-        }
-        Destroy(gameObject);
+        }*/
+       
     }
 
    

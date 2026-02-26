@@ -25,10 +25,14 @@ public class BroomController : MonoBehaviour
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = mousePos;
         }
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            // ถ้าเมาส์ชี้โดน UI (เช่น ปุ่ม) ให้โชว์ลูกศรเมาส์
+            Cursor.visible = true;
+        }
+       
 
-        
-
-    }
+}
 
     public void ToggleBroom()
     {
@@ -39,7 +43,7 @@ public class BroomController : MonoBehaviour
         }
         else
         {
-            EquipBroom();   // ถ้ายังไม่ถือ ให้หยิบ
+            EquipBroom();  
         }
     }
     public void EquipBroom()
@@ -58,7 +62,7 @@ public class BroomController : MonoBehaviour
 
     public void UnequipBroom()
     {
-        // 1. ยกเลิกแอนิเมชันเก่าทั้งหมดเช่นกัน
+       
         LeanTween.cancel(gameObject);
 
         isEquipped = false;

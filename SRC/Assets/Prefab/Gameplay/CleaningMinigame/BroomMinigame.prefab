@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3828644980944078373}
   - component: {fileID: 6486098573016169178}
   m_Layer: 0
-  m_Name: BroomTool
+  m_Name: BroomImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3949990262494807620}
+  m_Father: {fileID: 6809441784443320827}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3828644980944078373
 SpriteRenderer:
@@ -105,8 +105,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BroomController
   isEquipped: 0
-  unequipDelay: 0.5
-  Outparticle: {fileID: 2791598157488073921, guid: 0cb138871af1a91429484ae860be1cbd, type: 3}
+  Outparticle: {fileID: 985483039366664255, guid: f91edac4d13fc4343ba96bb6a843ad05, type: 3}
+  broomImage: {fileID: 3624232116482627740}
+--- !u!1 &3624232116482627740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6809441784443320827}
+  m_Layer: 0
+  m_Name: Broomtool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6809441784443320827
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3624232116482627740}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 129739081309703662}
+  m_Father: {fileID: 3949990262494807620}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4273476524588441592
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,7 +169,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1289561818131490490}
-  - {fileID: 129739081309703662}
+  - {fileID: 6809441784443320827}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8558516825404623818
@@ -252,6 +284,6 @@ MonoBehaviour:
   winCanvasGroup: {fileID: 0}
   winPanelRect: {fileID: 0}
   uiAnimDuration: 0.8
-  showDelay: 2
+  showDelay: 2.5
   offScreenPosY: 1000
   onScreenPosY: 250

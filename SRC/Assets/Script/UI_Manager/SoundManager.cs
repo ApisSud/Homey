@@ -24,6 +24,9 @@ public class SoundManager : MonoBehaviour
     public AudioClip PutDownPotWitch;
     public AudioClip PutDownGlassBottle;
     public AudioClip Dirtywater;
+    public AudioClip Trashbag;
+    public AudioClip Brokenglass;
+    public AudioClip Dirtystain;
 
 
 

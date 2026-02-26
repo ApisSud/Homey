@@ -129,15 +129,19 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         Draged = true;
         if (Size == SizeFurniture.smaller)
         {
+
             if (CheckGrid.instance.occupiedTiles.TryGetValue(cellPosition, out string itemName))
             {
-
+                Vector3 finalPos = worldPos;
+                sr.sortingOrder = 3;
                 if (itemName == "woodlarge")
                 {
-                  
+                    Debug.Log("in Storage");
+                    finalPos = Isogrid.Instance.GetClosestSnapPoint(worldPos);
+                    
                 }
-
-
+                transform.position = finalPos;
+                Debug.Log(finalPos);
 
                 /*if (CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) || !IsWithinBounds(cellPosition))
                 {
@@ -148,12 +152,17 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                     bodyColor.color = originalColor;
                 }*/
             }
-            Debug.Log("Not in Storage");
-            transform.position = snapPos;
+            else
+            {
+                transform.position = snapPos;
+                Debug.Log("Not in Storage");
+            }
 
         }
 
-        transform.position = snapPos;
+        if (Size != SizeFurniture.smaller)
+        {
+            transform.position = snapPos;
             if (cellPosition != previousCellPos && IsWithinBounds(cellPosition))
             {
                 UpdateHighlight(cellPosition, FloorSelect);
@@ -171,11 +180,11 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             {
                 bodyColor.color = originalColor;
             }
-        
+
+        }
 
 
-
-        Debug.Log($"OnDrag{cellPosition}");
+        //Debug.Log($"OnDrag{cellPosition}");
     }
 
     public void OnEndDrag(PointerEventData eventData)

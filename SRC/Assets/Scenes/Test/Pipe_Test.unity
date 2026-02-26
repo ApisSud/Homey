@@ -141,6 +141,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7733201635487238, guid: 7a0f995372d7957449a2d98d06219339, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3091636172133176855, guid: 7a0f995372d7957449a2d98d06219339, type: 3}
       propertyPath: Trashparticle
       value: 
@@ -420,13 +424,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: BroomMinigame
       objectReference: {fileID: 0}
+    - target: {fileID: 4273476524588441592, guid: cecaaaae830416f428078310fccdba89, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6486098573016169178, guid: cecaaaae830416f428078310fccdba89, type: 3}
       propertyPath: broomImage
       value: 
       objectReference: {fileID: 764609883}
     - target: {fileID: 8813912054683430934, guid: cecaaaae830416f428078310fccdba89, type: 3}
       propertyPath: showDelay
-      value: 2.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8813912054683430934, guid: cecaaaae830416f428078310fccdba89, type: 3}
       propertyPath: winPanelRect
@@ -471,7 +479,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &560071561
 Transform:
   m_ObjectHideFlags: 0

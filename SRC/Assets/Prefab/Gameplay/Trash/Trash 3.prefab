@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6381419113331740767}
   - component: {fileID: 5826440273127803155}
   - component: {fileID: 2462328201335818822}
-  - component: {fileID: 918207917971613993}
+  - component: {fileID: 7066272495250689162}
   m_Layer: 0
   m_Name: Trash 3
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2570647767009230051}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.5, y: -0.92, z: 0}
+  m_LocalPosition: {x: 6.838, y: -0.698, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -105,9 +105,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3300d2bf4fc4a834d87c85a4ae7c7830, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Trashobject
-  Trashparticle: {fileID: 2791598157488073921, guid: 0cb138871af1a91429484ae860be1cbd, type: 3}
---- !u!61 &918207917971613993
-BoxCollider2D:
+  Trashparticle: {fileID: 6813416509558619124, guid: 3b7f2c753d435d647a80f1f047a113e3, type: 3}
+--- !u!58 &7066272495250689162
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -140,15 +140,5 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0026563406, y: -0.0026566982}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.95, y: 2.07}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 2.0360835, y: 2.1636019}
-  m_EdgeRadius: 0
+  m_Offset: {x: -0.0032269955, y: -0.015892565}
+  m_Radius: 0.79944533

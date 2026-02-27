@@ -57,7 +57,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     [SerializeField]  int minX = -6, maxX = 2;
     [SerializeField]  int minY = -6, maxY = 2;
 
-
+    private Isogrid currentTargetGrid;
 
 
     void Start()
@@ -137,8 +137,10 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             sr.sortingOrder = 3;
             if (onStorageFur)
             {
+                Debug.Log("inStorage");
                 Debug.Log($"worldPos1 : {mousePos}");
-                finalPos = Isogrid.Instance.GetClosestSnapPoint(mousePos);
+
+                finalPos = currentTargetGrid.GetClosestSnapPoint(mousePos);
                 transform.position = finalPos;
                 Debug.Log($"fur will snap : {finalPos}");
             }
@@ -315,7 +317,8 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
         if (Furniture.gameObject.layer == furnitureLayer)
         {
-            //Debug.Log("in storage");
+            Debug.Log("in storage");
+            currentTargetGrid = Furniture.GetComponent<Isogrid>();
             onStorageFur = true;
         }
 
@@ -323,6 +326,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
     private void OnTriggerExit2D(Collider2D Furniture)
     {
+        currentTargetGrid = null;
         onStorageFur = false;
     }
 

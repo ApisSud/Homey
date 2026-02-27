@@ -9,7 +9,7 @@ public class Isogrid : MonoBehaviour
     [Header("Isometric Settings")]
     public float stepX = 0.5f; // ระยะห่างเฉียงไปทางขวาลง
     public float stepY = 0.25f; // ระยะห่างเฉียงไปทางขวาขึ้น (สำหรับ Isometric 2:1)
-    public static Isogrid Instance;
+
 
     public int columns = 5;
     public int rows = 1;
@@ -17,7 +17,6 @@ public class Isogrid : MonoBehaviour
 
     void Start()
     {
-        Instance = this;
     }
 
     // Update is called once per frame

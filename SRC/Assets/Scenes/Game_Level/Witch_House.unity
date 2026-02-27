@@ -3146,7 +3146,7 @@ Transform:
   m_GameObject: {fileID: 1399200257}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.497, y: 0.013, z: 0}
+  m_LocalPosition: {x: 0.543, y: 0.066, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3166,10 +3166,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Isogrid
   anchorPoint: {fileID: 1399200258}
   stepX: 0.5
-  stepY: 0.25
-  columns: 5
+  stepY: -0.25
+  directionVector: {x: -0.5, y: 0.25}
+  columns: 3
   rows: 1
-  spacing: 0.5
+  spacing: 0.6
 --- !u!1 &1404811117
 GameObject:
   m_ObjectHideFlags: 0
@@ -3566,6 +3567,10 @@ MonoBehaviour:
   PutDownFur: {fileID: 8300000, guid: 130f680515fd2ea49828b7097cc91647, type: 3}
   PutDownPotWitch: {fileID: 8300000, guid: 711a6d5f598cded4c9a345e7cc4f51ed, type: 3}
   PutDownGlassBottle: {fileID: 8300000, guid: bad2a4edd2250c94099c9db9e1332fd0, type: 3}
+  Dirtywater: {fileID: 0}
+  Trashbag: {fileID: 0}
+  Brokenglass: {fileID: 0}
+  Dirtystain: {fileID: 0}
 --- !u!4 &1536788168
 Transform:
   m_ObjectHideFlags: 0
@@ -4565,8 +4570,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7d930c3a6cc3c114a9e362a483327a0e, type: 2}
-  m_sharedMaterial: {fileID: -2273005653316950764, guid: 7d930c3a6cc3c114a9e362a483327a0e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

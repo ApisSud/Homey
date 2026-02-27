@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Test/Building_Test.unity
     guid: b4df087ed3f5b484bb7c28620c5b66e5
   - enabled: 1
-    path: Assets/Scenes/Game_Level/Level02.unity
+    path: Assets/Scenes/Game_Level/Fairy_House.unity
     guid: c1114e8274fe3ea498828bde9ba0c9be
   - enabled: 1
     path: Assets/Scenes/Test/PuzzleTest.unity

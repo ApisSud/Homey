@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 22ac87c8dc5346b41a1b08988258fe8c
+guid: dca0241839c60db47b4647f8fe6d1d2e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8301961774509548615
-    second: Broom_0
+      213: 8529067930055124784
+    second: mud_0
+  - first:
+      213: -3722050060419468115
+    second: mud_1
+  - first:
+      213: -7254197559746735963
+    second: mud_2
+  - first:
+      213: -6161598321419040109
+    second: mud_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -24,7 +33,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,23 +109,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Broom_0
+      name: mud_2
       rect:
         serializedVersion: 2
-        x: 481
-        y: 251
-        width: 1303
-        height: 1563
-      alignment: 9
-      pivot: {x: 0.36753684, y: 0.04216967}
-      border: {x: 0, y: 0, z: 0, w: 0}
+        x: 4
+        y: 15
+        width: 281
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 744638c8f3e763370800000000000000
-      internalID: 8301961774509548615
+      spriteID: 5a05ac8f0c9e35b90800000000000000
+      internalID: -7254197559746735963
       vertices: []
       indices: 
       edges: []
@@ -125,7 +134,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 093fbe8750aa087449d677d5a80e784e
+    spriteID: 2ea69bca613b4a046beb6723edf45cf2
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +144,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Broom_0: 8301961774509548615
+      mud_0: 8529067930055124784
+      mud_1: -3722050060419468115
+      mud_2: -7254197559746735963
+      mud_3: -6161598321419040109
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

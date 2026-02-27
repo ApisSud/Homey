@@ -10,11 +10,14 @@ public class BroomController : MonoBehaviour
     public GameObject Outparticle;
 
    public GameObject broomImage;
+    private Vector3 originalScale;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.enabled = false;
+
+        originalScale = transform.localScale;
     }
 
     void Update()
@@ -51,13 +54,13 @@ public class BroomController : MonoBehaviour
         LeanTween.cancel(gameObject);
 
         isEquipped = true;
-        spriteRenderer.enabled = true; // โชว์ไม้กวาด (เพื่อเตรียมให้มันขยายตัว)
+        spriteRenderer.enabled = true; 
         Cursor.visible = false;
 
        
         transform.localScale = Vector3.zero;
 
-        LeanTween.scale(gameObject, Vector3.one, 0.5f).setEase(LeanTweenType.easeOutBack);
+        LeanTween.scale(gameObject, originalScale, 0.5f).setEase(LeanTweenType.easeOutBack);
     }
 
     public void UnequipBroom()

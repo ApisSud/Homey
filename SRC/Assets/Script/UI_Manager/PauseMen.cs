@@ -69,7 +69,7 @@ public class PauseMen : MonoBehaviour
         screenFaderCanvasGroup.gameObject.SetActive(true); 
 
 
-        await screenFaderCanvasGroup.DOFade(1.5f, TweenDuration)
+        await screenFaderCanvasGroup.DOFade(2f, TweenDuration)
             .SetUpdate(true) 
             .AsyncWaitForCompletion();
     }

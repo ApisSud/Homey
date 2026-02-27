@@ -9,7 +9,6 @@ public class Isogrid : MonoBehaviour
     [Header("Isometric Settings")]
     public float stepX = 0.5f; // ระยะห่างเฉียงไปทางขวาลง
     public float stepY = 0.25f; // ระยะห่างเฉียงไปทางขวาขึ้น (สำหรับ Isometric 2:1)
-    public Vector2 directionVector = new Vector2(-0.5f, 0.25f);
     public static Isogrid Instance;
 
     public int columns = 5;
@@ -39,35 +38,27 @@ public class Isogrid : MonoBehaviour
     }
     public Vector3 GetClosestSnapPoint(Vector3 mouseWorldPos, float snapThreshold = 2f)
     {
+        Debug.Log($"mousePos2 : {mouseWorldPos}");
         Vector3 bestPoint = mouseWorldPos;
         float closestDistance = float.MaxValue;
-
         for (int i = 0; i < columns; i++)
         {
-            Vector3 slotPos = GetSlotPosition(i);
-            Debug.Log(slotPos);
-            float distance = Vector3.Distance(mouseWorldPos, slotPos);
-            Debug.Log($"snap : {slotPos}+{i}");
-            if (distance < snapThreshold && distance < closestDistance)
+            for (int r = 0; r < rows; r++)
             {
-                closestDistance = distance;
-                bestPoint = slotPos;
+                Vector3 slotPos = GetIsoSlotPosition(i,r);
+                float distance = Vector3.Distance(mouseWorldPos, slotPos);
+                Debug.Log($"Slotsnap : {slotPos}+{i}");
+                if (distance < snapThreshold && distance < closestDistance)
+                {
+                    closestDistance = distance;
+                    bestPoint = slotPos;
+                }
             }
         }
         Debug.Log($"snap : {bestPoint}");
         return bestPoint;
     }
-    public Vector3 GetSlotPosition(int i)
-    {
-
-        Vector3 offset = new Vector3(
-            i * directionVector.x * spacing,
-            i * directionVector.y * spacing,
-            0
-        );
-
-        return anchorPoint.position + offset;
-    }
+  
     void OnDrawGizmos()
     {
         if (anchorPoint == null) return;
@@ -78,6 +69,7 @@ public class Isogrid : MonoBehaviour
             {
                 Gizmos.color = Color.green;
                 Gizmos.DrawWireSphere(GetIsoSlotPosition(c, r), 0.07f);
+                
             }
         }
     }

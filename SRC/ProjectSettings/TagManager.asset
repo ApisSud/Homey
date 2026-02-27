@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Audio
   - Furniture
+  - FurnitureStorage
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,8 @@ TagManager:
   - 
   - Water
   - UI
-  - Particle
   - 
+  - FurnitureStorage
   - 
   - 
   - 
@@ -42,21 +43,6 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: 1
-    uniqueID: 3359227203
-    locked: 0
-  - name: 2
-    uniqueID: 1176749291
-    locked: 0
-  - name: 3
-    uniqueID: 2275538739
-    locked: 0
-  - name: 4
-    uniqueID: 4065864483
-    locked: 0
-  - name: UI
-    uniqueID: 2894685995
     locked: 0
   m_RenderingLayers:
   - Default

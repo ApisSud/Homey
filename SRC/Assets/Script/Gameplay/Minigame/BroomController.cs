@@ -27,7 +27,7 @@ public class BroomController : MonoBehaviour
         }
         if (EventSystem.current.IsPointerOverGameObject())
         {
-            // ถ้าเมาส์ชี้โดน UI (เช่น ปุ่ม) ให้โชว์ลูกศรเมาส์
+           
             Cursor.visible = true;
         }
        

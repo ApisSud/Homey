@@ -11,7 +11,15 @@ public class MainMenu : MonoBehaviour
     public Image fadePanel; 
     [SerializeField] public float fadeDuration = 1.0f;
     public AudioSource buttonSound;
+   /* public GameObject tweenMenu;*/
 
+    /*void Start()
+    {
+        tweenMenu.transform.localScale = Vector3.zero;
+
+        
+        LeanTween.scale(tweenMenu, Vector3.one, 0.5f).setEase(LeanTweenType.easeOutBack);
+    }*/
     public void PlayGame()
     {
         if (buttonSound != null)

@@ -35,7 +35,7 @@ public class Isogrid : MonoBehaviour
 
         return anchorPoint.position + isoOffset;
     }
-    public Vector3 GetClosestSnapPoint(Vector3 mouseWorldPos, float snapThreshold = 2f)
+    public Vector3 GetClosestSnapPoint(Vector3 mouseWorldPos, float snapThreshold = 0.5f)
     {
         Debug.Log($"mousePos2 : {mouseWorldPos}");
         Vector3 bestPoint = mouseWorldPos;

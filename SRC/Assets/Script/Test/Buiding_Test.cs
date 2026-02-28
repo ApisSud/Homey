@@ -135,6 +135,10 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         if (Size == SizeFurniture.smaller)
         { 
             sr.sortingOrder = 3;
+            if(!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
+            {
+                transform.position = mousePos;
+            }
             if (onStorageFur)
             {
                 Debug.Log("inStorage");

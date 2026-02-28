@@ -317,7 +317,6 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
         if (Furniture.gameObject.layer == furnitureLayer)
         {
-            Debug.Log("in storage");
             currentTargetGrid = Furniture.GetComponent<Isogrid>();
             onStorageFur = true;
         }

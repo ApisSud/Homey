@@ -1,5 +1,5 @@
     using UnityEngine;
-using static Trashobject;
+using TMPro;
 
 public class Trashobject : MonoBehaviour
 {
@@ -7,43 +7,59 @@ public class Trashobject : MonoBehaviour
     {
         water,
         glass,
-        bags,
-
+        bags
     }
 
-    public GameObject Trashparticle;
-    [SerializeField]
-    private TrashType Type;
+    [Header("Trash Properties")]
+    public GameObject trashParticle;
+    [SerializeField] private TrashType type;
+
+    [Header("UI Management")]
+    public TextMeshProUGUI scoreText; 
+
+    
+    public static int totalTrash = 0;
+
+    void Start()
+    {
+        
+        UpdateScoreUI();
+    }
 
     void OnMouseDown()
     {
-   
-        if (Trashmanager.instance != null)
-        {
-            Trashmanager.instance.CollectTrash();
-        }
-       
+      
+        totalTrash++;
+        UpdateScoreUI();
 
+       
         LeanTween.scale(gameObject, Vector3.zero, 0.5f)
             .setEase(LeanTweenType.easeInBack)
             .setOnComplete(() =>
             {
                 Destroy(gameObject);
-                if (Trashparticle != null) 
+                if (trashParticle != null)
                 {
-                    Instantiate(Trashparticle, transform.position, Quaternion.identity);
+                    Instantiate(trashParticle, transform.position, Quaternion.identity);
                 }
             });
-
-
-        /*if (Type == TrashType.water)
-        {
-            SoundManager.instance.playSFX(SoundManager.instance.Dirtywater);
-        }*/
-       
     }
 
-   
+    void UpdateScoreUI()
+    {
+        if (scoreText != null)
+        {
+            scoreText.text = "Total Trash : " + totalTrash + " / 4";
+        }
+    }
+    /*if (Type == TrashType.water)
+    {
+        SoundManager.instance.playSFX(SoundManager.instance.Dirtywater);
+    }*/
+
+
+
+
 
 }
 

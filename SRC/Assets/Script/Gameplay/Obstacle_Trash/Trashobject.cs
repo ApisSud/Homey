@@ -39,6 +39,8 @@ public class Trashobject : MonoBehaviour
     {
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         offset = transform.position - mousePos;
+
+        if (BinManager.Instance != null) BinManager.Instance.SetHighlight(true);
     }
 
     void OnMouseDrag()
@@ -50,6 +52,9 @@ public class Trashobject : MonoBehaviour
     
     void OnMouseUp()
     {
+
+        if (BinManager.Instance != null) BinManager.Instance.SetHighlight(false);
+
         if (isOverBin)
         {
            

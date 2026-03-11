@@ -2,11 +2,37 @@ using UnityEngine;
 
 public class BinManager : MonoBehaviour
 {
+    public static BinManager Instance;
+
     [Header("Trash Bin GameObject")]
     public GameObject trashBin;
 
     [Header("Spawn Point")]
-    public Transform spawnPoint; 
+    public Transform spawnPoint;
+
+    [Header("Highlight Settings")]
+    public GameObject binHighlight;
+
+
+
+    private void Awake()
+    {
+        // ตั้งค่า Instance
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+    }
+
+    private void Start()
+    {
+        // ตอนเริ่มเกม ให้ซ่อนไฮไลต์เอาไว้ก่อน
+        if (binHighlight != null)
+        {
+            binHighlight.SetActive(false);
+        }
+    }
+
 
     public void ToggleTrashBin()
     {
@@ -29,6 +55,15 @@ public class BinManager : MonoBehaviour
             trashBin.SetActive(true);
             trashBin.transform.localScale = Vector3.zero;
             LeanTween.scale(trashBin, Vector3.one, 0.5f).setEase(LeanTweenType.easeOutBack);
+        }
+    }
+
+    public void SetHighlight(bool isShow)
+    {
+        // จะโชว์ไฮไลต์ก็ต่อเมื่อตั้งค่ารูปไว้ และ ถังขยะต้องเปิดอยู่เท่านั้น
+        if (binHighlight != null && trashBin.activeSelf)
+        {
+            binHighlight.SetActive(isShow);
         }
     }
 }

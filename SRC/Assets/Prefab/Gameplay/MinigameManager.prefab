@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7405058380043085977
+--- !u!1 &2397328456397714108
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,41 +8,44 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6643048652635862450}
-  - component: {fileID: 6599785269589489143}
+  - component: {fileID: 3743085327423221570}
+  - component: {fileID: 65859480132217066}
   m_Layer: 0
-  m_Name: TrashManager
+  m_Name: MinigameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6643048652635862450
+--- !u!4 &3743085327423221570
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7405058380043085977}
+  m_GameObject: {fileID: 2397328456397714108}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.54363, y: -1.28469, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6599785269589489143
+--- !u!114 &65859480132217066
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7405058380043085977}
+  m_GameObject: {fileID: 2397328456397714108}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d52eee3f41f75946a99f77067cbbcc4, type: 3}
+  m_Script: {fileID: 11500000, guid: 62ee9c8e59f96d94fb7a159c7e591da7, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
-  scoreText: {fileID: 0}
-  totalTrash: 0
+  m_EditorClassIdentifier: Assembly-CSharp::TaskManager
+  successImage: {fileID: 0}
+  successImage2: {fileID: 0}
+  isTrashCleared: 0
+  isDirtCleared: 0
+  totalTrashNeeded: 2

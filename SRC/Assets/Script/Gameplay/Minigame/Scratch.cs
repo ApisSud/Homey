@@ -1,31 +1,34 @@
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public class Scratch : MonoBehaviour
 {
+
+
+    /* [Header("Win UI Settings")]
+     public GameObject winPanelObject;     
+     public CanvasGroup winCanvasGroup;   
+     public RectTransform winPanelRect;    
+     public float uiAnimDuration = 0.8f;   
+     public float showDelay = 2f;
+     public float offScreenPosY = 1000f;
+     public float onScreenPosY = 0f;*/
+
     [Header("Tool Reference")]
-    public BroomController broom; // ลาก Object 'BroomTool' มาใส่ช่องนี้
+    public BroomController broom;
 
     [Header("Settings")]
     public SpriteRenderer dirtSpriteRenderer;
     public int brushSize = 30;
 
-
-
     [Header("Win Condition")]
     [Range(0f, 1f)]
     public float winPercentage = 0.8f;
 
-    [Header("Win UI Settings")]
-    public GameObject winPanelObject;     
-    public CanvasGroup winCanvasGroup;   
-    public RectTransform winPanelRect;    
-    public float uiAnimDuration = 0.8f;   
-    public float showDelay = 2f;
-    public float offScreenPosY = 1000f;
-    public float onScreenPosY = 0f;
-
+    [Header("UI Management")]
+    public TextMeshProUGUI progress;
 
     private Texture2D tex;
     private Color32[] pixels;
@@ -33,8 +36,6 @@ public class Scratch : MonoBehaviour
     private int clearedPixels = 0;
     private Vector2 lastMousePos;
     private bool isGameActive = true;
-    private Vector2 originalPanelPos;
-
 
     void Start()
     {
@@ -43,19 +44,43 @@ public class Scratch : MonoBehaviour
         tex.SetPixels32(originalTex.GetPixels32());
         tex.Apply();
 
-        
         Sprite newSprite = Sprite.Create(tex, dirtSpriteRenderer.sprite.rect, new Vector2(0.5f, 0.5f), dirtSpriteRenderer.sprite.pixelsPerUnit);
         dirtSpriteRenderer.sprite = newSprite;
 
-    
         pixels = tex.GetPixels32();
-        totalPixels = pixels.Length;
+
+      
+        totalPixels = 0;
+        Rect rect = dirtSpriteRenderer.sprite.textureRect;
+        int minX = Mathf.FloorToInt(rect.xMin);
+        int maxX = Mathf.FloorToInt(rect.xMax);
+        int minY = Mathf.FloorToInt(rect.yMin);
+        int maxY = Mathf.FloorToInt(rect.yMax);
+
+        for (int x = minX; x < maxX; x++)
+        {
+            for (int y = minY; y < maxY; y++)
+            {
+                if (x >= 0 && x < tex.width && y >= 0 && y < tex.height)
+                {
+                    int index = y * tex.width + x;
+                    
+                    if (pixels[index].a > 0)
+                    {
+                        totalPixels++;
+                    }
+                }
+            }
+        }
+
+       
+        if (totalPixels == 0) totalPixels = 1;
+        UpdateProgressUI(0);
     }
 
     void Update()
     {
-
-        if (!isGameActive || !broom.isEquipped) return; 
+        if (!isGameActive || !broom.isEquipped) return;
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -79,7 +104,6 @@ public class Scratch : MonoBehaviour
 
         bool changed = false;
 
-        // วนลูปวาดวงกลมลบรูปภาพ เรียงต่อกันเป็นเส้น
         for (int i = 0; i <= steps; i++)
         {
             Vector2 point = Vector2.Lerp(startPixel, endPixel, (float)i / steps);
@@ -89,7 +113,6 @@ public class Scratch : MonoBehaviour
             }
         }
 
-       
         if (changed)
         {
             tex.SetPixels32(pixels);
@@ -98,7 +121,6 @@ public class Scratch : MonoBehaviour
         }
     }
 
-    // ฟังก์ชันเจาะรูวงกลมบนรูปภาพ
     bool EraseCircle(int centerX, int centerY)
     {
         bool changed = false;
@@ -114,11 +136,10 @@ public class Scratch : MonoBehaviour
                     if (distSq <= radiusSq)
                     {
                         int index = y * tex.width + x;
-                 
                         if (pixels[index].a > 0)
                         {
-                            pixels[index].a = 0; 
-                            clearedPixels++;    
+                            pixels[index].a = 0;
+                            clearedPixels++;
                             changed = true;
                         }
                     }
@@ -128,28 +149,31 @@ public class Scratch : MonoBehaviour
         return changed;
     }
 
-    // แปลงพิกัดโลก (World Space) เป็นพิกัดของรูปภาพ (Pixel)
     Vector2 WorldToPixel(Vector2 worldPos)
     {
         Vector2 localPos = dirtSpriteRenderer.transform.InverseTransformPoint(worldPos);
         Sprite sprite = dirtSpriteRenderer.sprite;
 
-        float pixelX = (localPos.x * sprite.pixelsPerUnit) + (sprite.textureRect.width * 0.5f);
-        float pixelY = (localPos.y * sprite.pixelsPerUnit) + (sprite.textureRect.height * 0.5f);
+        
+        float pixelX = (localPos.x * sprite.pixelsPerUnit) + sprite.pivot.x + sprite.textureRect.x;
+        float pixelY = (localPos.y * sprite.pixelsPerUnit) + sprite.pivot.y + sprite.textureRect.y;
 
         return new Vector2(pixelX, pixelY);
     }
 
     void CheckWin()
     {
-    
         float percentCleared = (float)clearedPixels / totalPixels;
+
+        int displayPercent = Mathf.Clamp(Mathf.RoundToInt(percentCleared * 100), 0, 100);
+        UpdateProgressUI(displayPercent);
 
         if (percentCleared >= winPercentage)
         {
             WinGame();
         }
     }
+
     void WinGame()
     {
         if (!isGameActive) return;
@@ -157,37 +181,59 @@ public class Scratch : MonoBehaviour
         isGameActive = false;
         Debug.Log("Cleaned! You Win!");
 
+        if (progress != null)
+        {
+            progress.text = "Progress : Done!";
+        }
+
         dirtSpriteRenderer.gameObject.SetActive(false);
         broom.UnequipBroom();
 
-        // --- เริ่มต้นเปิด Panel ---
-        winPanelObject.SetActive(true);
-
-        // 1. เซ็ตตำแหน่งเริ่มต้นให้อยู่ "นอกจอ" (offScreenPosY)
-        winPanelRect.anchoredPosition = new Vector2(winPanelRect.anchoredPosition.x, offScreenPosY);
-        winCanvasGroup.alpha = 0f;
-
-        // --- Animation ขาเข้า (มาจากข้างบน ลงมาตรงกลาง) ---
-        Sequence sequence = DOTween.Sequence();
-
-        // ใช้ DOAnchorPosY ดึงลงมาที่ onScreenPosY (ตั้ง .SetUpdate(true) ให้เล่นได้แม้เกม Pause)
-        sequence.Append(winPanelRect.DOAnchorPosY(onScreenPosY, uiAnimDuration).SetEase(Ease.OutBack).SetUpdate(true));
-        sequence.Join(winCanvasGroup.DOFade(1f, uiAnimDuration).SetUpdate(true));
-
-        Invoke("CloseWinPanel", showDelay + uiAnimDuration);
+        if (TaskManager.Instance != null)
+        {
+            TaskManager.Instance.CompleteDirtTask();
+        }
     }
 
-    void CloseWinPanel()
+    void UpdateProgressUI(int percent)
     {
-        // --- Animation ขาออก (จากตรงกลาง เด้งกลับขึ้นไปข้างบน) ---
-        Sequence sequence = DOTween.Sequence();
-
-        // ใช้ DOAnchorPosY ดันกลับขึ้นไปที่ offScreenPosY
-        sequence.Append(winPanelRect.DOAnchorPosY(offScreenPosY, uiAnimDuration).SetEase(Ease.InBack).SetUpdate(true));
-        sequence.Join(winCanvasGroup.DOFade(0f, uiAnimDuration).SetUpdate(true));
-
-        sequence.OnComplete(() => {
-            winPanelObject.SetActive(false);
-        });
+        if (progress != null && isGameActive)
+        {
+            progress.text = "Progress : " + percent + "%";
+        }
     }
+
+
+
+    /*
+            // --- เริ่มต้นเปิด Panel ---
+            winPanelObject.SetActive(true);
+
+            // 1. เซ็ตตำแหน่งเริ่มต้นให้อยู่ "นอกจอ" (offScreenPosY)
+            winPanelRect.anchoredPosition = new Vector2(winPanelRect.anchoredPosition.x, offScreenPosY);
+            winCanvasGroup.alpha = 0f;
+
+            // --- Animation ขาเข้า (มาจากข้างบน ลงมาตรงกลาง) ---
+            Sequence sequence = DOTween.Sequence();
+
+            // ใช้ DOAnchorPosY ดึงลงมาที่ onScreenPosY (ตั้ง .SetUpdate(true) ให้เล่นได้แม้เกม Pause)
+            sequence.Append(winPanelRect.DOAnchorPosY(onScreenPosY, uiAnimDuration).SetEase(Ease.OutBack).SetUpdate(true));
+            sequence.Join(winCanvasGroup.DOFade(1f, uiAnimDuration).SetUpdate(true));
+
+            Invoke("CloseWinPanel", showDelay + uiAnimDuration);*/
+
+
+    /* void CloseWinPanel()
+     {
+         // --- Animation ขาออก (จากตรงกลาง เด้งกลับขึ้นไปข้างบน) ---
+         Sequence sequence = DOTween.Sequence();
+
+         // ใช้ DOAnchorPosY ดันกลับขึ้นไปที่ offScreenPosY
+         sequence.Append(winPanelRect.DOAnchorPosY(offScreenPosY, uiAnimDuration).SetEase(Ease.InBack).SetUpdate(true));
+         sequence.Join(winCanvasGroup.DOFade(0f, uiAnimDuration).SetUpdate(true));
+
+         sequence.OnComplete(() => {
+             winPanelObject.SetActive(false);
+         });
+     }*/
 }

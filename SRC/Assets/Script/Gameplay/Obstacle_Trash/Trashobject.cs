@@ -1,4 +1,4 @@
-    using UnityEngine;
+using UnityEngine;
 using TMPro;
 
 public class Trashobject : MonoBehaviour
@@ -9,39 +9,100 @@ public class Trashobject : MonoBehaviour
         glass,
         bags
     }
+    public static int totalTrash = 0;
 
-    [Header("Trash Properties")]
+    [Header("Game Settings")]
+  
+    public int targetTrashCount = 4;
+
     public GameObject trashParticle;
     [SerializeField] private TrashType type;
 
     [Header("UI Management")]
-    public TextMeshProUGUI scoreText; 
+    public TextMeshProUGUI scoreText;
 
     
-    public static int totalTrash = 0;
+
+    
+    private Vector3 offset;
+    private bool isOverBin = false; 
+    private Vector3 startPosition;
 
     void Start()
     {
-        
+        startPosition = transform.position;
         UpdateScoreUI();
     }
 
+   
     void OnMouseDown()
     {
-      
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        offset = transform.position - mousePos;
+    }
+
+    void OnMouseDrag()
+    {
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        transform.position = new Vector3(mousePos.x + offset.x, mousePos.y + offset.y, transform.position.z);
+    }
+
+    
+    void OnMouseUp()
+    {
+        if (isOverBin)
+        {
+           
+            ThrowInBin();
+        }
+        else
+        {
+           
+            LeanTween.move(gameObject, startPosition, 0.3f).setEase(LeanTweenType.easeOutBack);
+        }
+    }
+
+   
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("TrashBin"))
+        {
+            isOverBin = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("TrashBin"))
+        {
+            isOverBin = false;
+        }
+    }
+
+ 
+    void ThrowInBin()
+    {
         totalTrash++;
         UpdateScoreUI();
 
-       
-        LeanTween.scale(gameObject, Vector3.zero, 0.5f)
+        if (totalTrash >= targetTrashCount) 
+        {
+            if (TaskManager.Instance != null)
+            {
+                TaskManager.Instance.CompleteTrashTask();
+            }
+        }
+            GetComponent<Collider2D>().enabled = false;
+
+        LeanTween.scale(gameObject, Vector3.zero, 0.3f)
             .setEase(LeanTweenType.easeInBack)
             .setOnComplete(() =>
             {
-                Destroy(gameObject);
                 if (trashParticle != null)
                 {
                     Instantiate(trashParticle, transform.position, Quaternion.identity);
                 }
+                Destroy(gameObject);
             });
     }
 
@@ -49,9 +110,10 @@ public class Trashobject : MonoBehaviour
     {
         if (scoreText != null)
         {
-            scoreText.text = "Total Trash : " + totalTrash + " / 4";
+            scoreText.text = "Total Trash : " + totalTrash + " / " + targetTrashCount;
         }
     }
+    
     /*if (Type == TrashType.water)
     {
         SoundManager.instance.playSFX(SoundManager.instance.Dirtywater);

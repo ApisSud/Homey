@@ -13,7 +13,7 @@ public class Trashobject : MonoBehaviour
 
     [Header("Game Settings")]
   
-    public int targetTrashCount = 4;
+   
 
     public GameObject trashParticle;
     [SerializeField] private TrashType type;
@@ -85,14 +85,12 @@ public class Trashobject : MonoBehaviour
         totalTrash++;
         UpdateScoreUI();
 
-        if (totalTrash >= targetTrashCount) 
+        if (TaskManager.Instance != null && totalTrash >= TaskManager.Instance.totalTrashNeeded)
         {
-            if (TaskManager.Instance != null)
-            {
-                TaskManager.Instance.CompleteTrashTask();
-            }
+            TaskManager.Instance.CompleteTrashTask();
         }
-            GetComponent<Collider2D>().enabled = false;
+
+        GetComponent<Collider2D>().enabled = false;
 
         LeanTween.scale(gameObject, Vector3.zero, 0.3f)
             .setEase(LeanTweenType.easeInBack)
@@ -110,18 +108,15 @@ public class Trashobject : MonoBehaviour
     {
         if (scoreText != null)
         {
-            scoreText.text = "Total Trash : " + totalTrash + " / " + targetTrashCount;
+            scoreText.text = "Total Trash : " + totalTrash + " / " + TaskManager.Instance.totalTrashNeeded;
         }
     }
+    
     
     /*if (Type == TrashType.water)
     {
         SoundManager.instance.playSFX(SoundManager.instance.Dirtywater);
     }*/
-
-
-
-
 
 }
 

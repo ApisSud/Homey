@@ -63,7 +63,6 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         Vector3Int cellPosition = layoutGrid.WorldToCell(worldPos);
         Debug.Log(cellPosition);
         onStorageFur = false;
-
         CheckGrid.instance.PlaceObject(cellPosition, $"{Type}");
         if (GameManager.instance.IsWithinBounds(cellPosition))
         {
@@ -73,6 +72,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         {
             CheckGrid.instance.PlaceObject(cellPosition + new Vector3Int(0, 1, 0), $"{Type}");
         }
+
         originalColor = bodyColor.color;
     }
 

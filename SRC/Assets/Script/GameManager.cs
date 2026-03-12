@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] int minX = -6, maxX = 2;
     [SerializeField] int minY = -6, maxY = 2;
-    void Start()
+    void Awake()
     {
         instance = this;
     }
@@ -23,4 +23,7 @@ public class GameManager : MonoBehaviour
         return (gridPosition.x >= minX && gridPosition.x <= maxX &&
                 gridPosition.y >= minY && gridPosition.y <= maxY);
     }
+
+
+
 }

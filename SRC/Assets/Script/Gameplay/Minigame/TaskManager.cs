@@ -9,13 +9,20 @@ public class TaskManager : MonoBehaviour
     [Header("UI Elements")]
     public GameObject successImage;
     public GameObject successImage2;
+    public GameObject successImage3;
 
     [Header("Task Status")]
     public bool isTrashCleared = false;
     public bool isDirtCleared = false;
+    public bool  isMouseClear = false;
+ 
 
     [Header("Level Settings")]
     public int totalTrashNeeded = 4;
+    public int totalMouseNeeded = 0;
+
+
+
 
     private void Awake()
     {
@@ -37,9 +44,29 @@ public class TaskManager : MonoBehaviour
             successImage2.SetActive(false);
             successImage2.transform.localScale = new Vector3(0, 1, 1);
         }
+
+        if (successImage3 != null)
+        {
+            successImage3.SetActive(false);
+            successImage3.transform.localScale = new Vector3(0, 1, 1);
+        }
     }
 
-    
+
+    public void AddMouseCount()
+    {
+        if (isMouseClear) return;
+        isMouseClear = true;
+
+        CheckAllTasks();
+
+        if (successImage != null)
+        {
+            successImage3.SetActive(true);
+            
+            successImage3.transform.DOScaleX(1f, 0.5f).SetEase(Ease.OutBack);
+        }
+    }
     public void CompleteTrashTask()
     {
         if (isTrashCleared) return;
@@ -71,7 +98,7 @@ public class TaskManager : MonoBehaviour
   
     private void CheckAllTasks()
     {
-        if (isTrashCleared && isDirtCleared)
+        if (isTrashCleared && isDirtCleared && isMouseClear)
         {
             Debug.Log("All Task done");
         

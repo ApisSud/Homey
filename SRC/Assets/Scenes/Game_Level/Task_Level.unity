@@ -284,11 +284,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &175274486 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5514637583764571619, guid: a5a3f69249f39224580f4ebbf180f2c9, type: 3}
-  m_PrefabInstance: {fileID: 1040250856907257625}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &175274487 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6261988619159437506, guid: a5a3f69249f39224580f4ebbf180f2c9, type: 3}
@@ -582,7 +577,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 485816806}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1602155156}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: SelectLevel
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Fairy_House
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &485816806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -748,8 +755,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 630, y: -300}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 617.8684, y: -22.4879}
+  m_SizeDelta: {x: 213.0343, y: 655.0243}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &939505914
 MonoBehaviour:
@@ -820,7 +827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1012,8 +1019,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -630, y: -300}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -513.9458, y: 23.6151}
+  m_SizeDelta: {x: 386.4877, y: 747.2302}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1365530875
 MonoBehaviour:
@@ -1084,7 +1091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8763261, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.8763261, g: 1, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1434,11 +1441,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1602155150}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54a928bf3b5993142a8fd2710c08ec69, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b7959f8369219b48bc2e7a48753471f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Task_menu
-  menucanvas: {fileID: 175274486}
-  Clicking: {fileID: 2058731103}
+  m_EditorClassIdentifier: Assembly-CSharp::MainMenu
+  game_scene: intro
+  fadeDuration: 1
 --- !u!1 &1677600189
 GameObject:
   m_ObjectHideFlags: 0
@@ -1770,7 +1777,7 @@ PrefabInstance:
     - target: {fileID: 1810510369690394426, guid: a5a3f69249f39224580f4ebbf180f2c9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1602155156}
+      objectReference: {fileID: 0}
     - target: {fileID: 2762599708574339698, guid: a5a3f69249f39224580f4ebbf180f2c9, type: 3}
       propertyPath: Clickingmouse
       value: 

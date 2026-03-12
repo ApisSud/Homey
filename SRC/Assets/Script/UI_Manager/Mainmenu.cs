@@ -8,9 +8,9 @@ public class MainMenu : MonoBehaviour
 
     public string game_scene = "intro";
 
-    public Image fadePanel; 
+/*    public Image fadePanel; */
     [SerializeField] public float fadeDuration = 1.0f;
-    public AudioSource buttonSound;
+    /*public AudioSource buttonSound;*/
    /* public GameObject tweenMenu;*/
 
     /*void Start()
@@ -21,15 +21,16 @@ public class MainMenu : MonoBehaviour
         LeanTween.scale(tweenMenu, Vector3.one, 0.5f).setEase(LeanTweenType.easeOutBack);
     }*/
     public void PlayGame()
-    {
+    {/*
         if (buttonSound != null)
         {
             buttonSound.Play();
-        }
-        StartCoroutine(FadeAndLoadScene());
+        }*/
+        SceneManager.LoadScene(game_scene);
+      /*  StartCoroutine(FadeAndLoadScene());*/
     }
 
-    IEnumerator FadeAndLoadScene()
+   /* IEnumerator FadeAndLoadScene()
     {
    
         if (fadePanel != null)
@@ -55,13 +56,16 @@ public class MainMenu : MonoBehaviour
 
      
         SceneManager.LoadScene(game_scene);
-    }
+    }*/
     public void QuitGame()
     {
-        if (buttonSound != null) buttonSound.Play();
+        /*if (buttonSound != null) buttonSound.Play();*/
         Debug.Log("Exit");
         Application.Quit();
     }
 
- 
+    public void SelectLevel(string scenename)
+    {
+        SceneManager.LoadScene(scenename);
+    }
 }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5958478975733516079}
   - component: {fileID: 5959315613782194469}
   m_Layer: 0
-  m_Name: msVFX_Stylized Smoke 3
+  m_Name: Particle_Smoke3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

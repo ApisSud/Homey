@@ -8,6 +8,8 @@ public class FlowerObject : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public GameObject flowerParticle;
 
+    private bool isWatered = false;
+
     void Start()
     {
         
@@ -16,11 +18,16 @@ public class FlowerObject : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        
-        if (other.CompareTag("WateringCan"))
+
+        if (other.CompareTag("WateringCan") && !isWatered)
         {
-            Instantiate(flowerParticle, transform.position, Quaternion.identity);
+            
             spriteRenderer.sprite = bloomingSprite;
+            Instantiate(flowerParticle, transform.position, Quaternion.identity);
+
+            isWatered = true;
+
+            Debug.Log("Water done");
         }
     }
 }

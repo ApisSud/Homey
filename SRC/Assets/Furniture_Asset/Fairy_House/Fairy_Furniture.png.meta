@@ -1,0 +1,1729 @@
+fileFormatVersion: 2
+guid: 4500e432cf5fdb348a94ad36bddaf9c7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4664969380160052757
+    second: Fairy_Furniture_0
+  - first:
+      213: -6277089055753078254
+    second: Fairy_Furniture_1
+  - first:
+      213: -5706613183767021153
+    second: Fairy_Furniture_2
+  - first:
+      213: -6978961079158865647
+    second: Fairy_Furniture_3
+  - first:
+      213: 7015890359512005930
+    second: Fairy_Furniture_4
+  - first:
+      213: -4736413554722789774
+    second: Fairy_Furniture_5
+  - first:
+      213: -5764147838900887834
+    second: Fairy_Furniture_6
+  - first:
+      213: 4302194735846557607
+    second: Fairy_Furniture_7
+  - first:
+      213: 2301944816965529325
+    second: Fairy_Furniture_8
+  - first:
+      213: -4474930079588162574
+    second: Fairy_Furniture_9
+  - first:
+      213: -4767896486134488790
+    second: Fairy_Furniture_10
+  - first:
+      213: -2229869299065695243
+    second: Fairy_Furniture_11
+  - first:
+      213: 8810294152968353633
+    second: Fairy_Furniture_12
+  - first:
+      213: -5763683663179645611
+    second: Fairy_Furniture_13
+  - first:
+      213: 3328189092930851228
+    second: Fairy_Furniture_14
+  - first:
+      213: -6778173455942916007
+    second: Fairy_Furniture_15
+  - first:
+      213: 5787143327366705137
+    second: Fairy_Furniture_16
+  - first:
+      213: -3012278426311835099
+    second: Fairy_Furniture_17
+  - first:
+      213: -6492383606670182371
+    second: Fairy_Furniture_18
+  - first:
+      213: -7530347982761018729
+    second: Fairy_Furniture_19
+  - first:
+      213: 8974749725439233650
+    second: Fairy_Furniture_20
+  - first:
+      213: 731300632360100936
+    second: Fairy_Furniture_21
+  - first:
+      213: 1260783492536322949
+    second: Fairy_Furniture_22
+  - first:
+      213: 2896301424035440719
+    second: Fairy_Furniture_23
+  - first:
+      213: 831074043123418864
+    second: Fairy_Furniture_24
+  - first:
+      213: 7277033876093807870
+    second: Fairy_Furniture_25
+  - first:
+      213: -1534782252743256023
+    second: Fairy_Furniture_26
+  - first:
+      213: 3771664957315991224
+    second: Fairy_Furniture_27
+  - first:
+      213: 405490076038150058
+    second: Fairy_Furniture_28
+  - first:
+      213: -5915206557058660344
+    second: Fairy_Furniture_29
+  - first:
+      213: 294109398349354040
+    second: Fairy_Furniture_30
+  - first:
+      213: -7311392410715829255
+    second: Fairy_Furniture_31
+  - first:
+      213: 6170235623112442784
+    second: Fairy_Furniture_32
+  - first:
+      213: -7078480969204923234
+    second: Fairy_Furniture_33
+  - first:
+      213: -6010399685086495142
+    second: Fairy_Furniture_34
+  - first:
+      213: 1936513624873381816
+    second: Fairy_Furniture_35
+  - first:
+      213: -6616683669146661789
+    second: Fairy_Furniture_36
+  - first:
+      213: 5560677725251435382
+    second: Fairy_Furniture_37
+  - first:
+      213: 1367311756587138663
+    second: Fairy_Furniture_38
+  - first:
+      213: 2956454325639223520
+    second: Fairy_Furniture_39
+  - first:
+      213: -8747252638456275423
+    second: Fairy_Furniture_40
+  - first:
+      213: 3992931034226603766
+    second: Fairy_Furniture_41
+  - first:
+      213: 6247863126868230366
+    second: Fairy_Furniture_42
+  - first:
+      213: 5153177089681602761
+    second: Fairy_Furniture_43
+  - first:
+      213: -5286839630583985561
+    second: Fairy_Furniture_44
+  - first:
+      213: 34043992530333676
+    second: Fairy_Furniture_45
+  - first:
+      213: 3365888975906976898
+    second: Fairy_Furniture_46
+  - first:
+      213: 2575523769428995775
+    second: Fairy_Furniture_47
+  - first:
+      213: 6386831372211839899
+    second: Fairy_Furniture_48
+  - first:
+      213: -3532444300426804540
+    second: Fairy_Furniture_49
+  - first:
+      213: 6987419387497091274
+    second: Fairy_Furniture_50
+  - first:
+      213: -7162405772623108561
+    second: Fairy_Furniture_51
+  - first:
+      213: 1263213805974458403
+    second: Fairy_Furniture_52
+  - first:
+      213: -4294228861086091087
+    second: Fairy_Furniture_53
+  - first:
+      213: -7636674616055615488
+    second: Fairy_Furniture_54
+  - first:
+      213: 6999788386219220772
+    second: Fairy_Furniture_55
+  - first:
+      213: -3220472809082453063
+    second: Fairy_Furniture_56
+  - first:
+      213: -5320572754829440757
+    second: Fairy_Furniture_57
+  - first:
+      213: 8703709003576006126
+    second: Fairy_Furniture_58
+  - first:
+      213: 7645059233623348503
+    second: Fairy_Furniture_59
+  - first:
+      213: -1294190494412570509
+    second: Fairy_Furniture_60
+  - first:
+      213: -8994661538743306962
+    second: Fairy_Furniture_61
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fairy_Furniture_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1506
+        width: 134
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be16c779013b24fb0800000000000000
+      internalID: -4664969380160052757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_1
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 1506
+        width: 134
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21a7850e2cc43e8a0800000000000000
+      internalID: -6277089055753078254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_2
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1499
+        width: 135
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9971075b890ec0b0800000000000000
+      internalID: -5706613183767021153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_3
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1503
+        width: 138
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1118577efdfb52f90800000000000000
+      internalID: -6978961079158865647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_4
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 1317
+        width: 468
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2dfcc53c137d5160800000000000000
+      internalID: 7015890359512005930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_5
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 1493
+        width: 277
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 276276177f0e44eb0800000000000000
+      internalID: -4736413554722789774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_6
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 1509
+        width: 233
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ee1a7d8412a100b0800000000000000
+      internalID: -5764147838900887834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_7
+      rect:
+        serializedVersion: 2
+        x: 1892
+        y: 1513
+        width: 140
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a780b8715774bb30800000000000000
+      internalID: 4302194735846557607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_8
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1328
+        width: 134
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dee28c36d9622ff10800000000000000
+      internalID: 2301944816965529325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_9
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1328
+        width: 134
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f3ef634dcad5e1c0800000000000000
+      internalID: -4474930079588162574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_10
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 1326
+        width: 134
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a21ee12486705ddb0800000000000000
+      internalID: -4767896486134488790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_11
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1326
+        width: 134
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f3d3a5dfa9ed01e0800000000000000
+      internalID: -2229869299065695243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_12
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 1222
+        width: 184
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 167316a6ad3744a70800000000000000
+      internalID: 8810294152968353633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_13
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 1247
+        width: 318
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55d7472ee384300b0800000000000000
+      internalID: -5763683663179645611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_14
+      rect:
+        serializedVersion: 2
+        x: 1927
+        y: 1263
+        width: 105
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c911975b85a103e20800000000000000
+      internalID: 3328189092930851228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_15
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1113
+        width: 128
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9586a8477271fe1a0800000000000000
+      internalID: -6778173455942916007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_16
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1052
+        width: 161
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ffe6f3d130105050800000000000000
+      internalID: 5787143327366705137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_17
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 993
+        width: 268
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5224c132bbc3236d0800000000000000
+      internalID: -3012278426311835099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_18
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1072
+        width: 167
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d18bad2028b66e5a0800000000000000
+      internalID: -6492383606670182371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_19
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 1270
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a337c3864de7790800000000000000
+      internalID: -7530347982761018729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_20
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1001
+        width: 72
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27e07d43357bc8c70800000000000000
+      internalID: 8974749725439233650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_21
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 952
+        width: 369
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 844a7dfec0a162a00800000000000000
+      internalID: 731300632360100936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_22
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 961
+        width: 153
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58bcd4318e33f7110800000000000000
+      internalID: 1260783492536322949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_23
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 947
+        width: 120
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f482716cccab13820800000000000000
+      internalID: 2896301424035440719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_24
+      rect:
+        serializedVersion: 2
+        x: 1891
+        y: 950
+        width: 163
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f64b626071988b00800000000000000
+      internalID: 831074043123418864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_25
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 830
+        width: 142
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efc2e0341c73df460800000000000000
+      internalID: 7277033876093807870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_26
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 844
+        width: 130
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9281aa93cab53bae0800000000000000
+      internalID: -1534782252743256023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_27
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 570
+        width: 516
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b6cb98ab45a75430800000000000000
+      internalID: 3771664957315991224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_28
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 623
+        width: 249
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa73336631790a500800000000000000
+      internalID: 405490076038150058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_29
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 510
+        width: 306
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8080579f9f6f8eda0800000000000000
+      internalID: -5915206557058660344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_30
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 682
+        width: 120
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83497b580f2e41400800000000000000
+      internalID: 294109398349354040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_31
+      rect:
+        serializedVersion: 2
+        x: 1771
+        y: 672
+        width: 122
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fbcbc10757b88a90800000000000000
+      internalID: -7311392410715829255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_32
+      rect:
+        serializedVersion: 2
+        x: 1949
+        y: 701
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a30410ab9411a550800000000000000
+      internalID: 6170235623112442784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_33
+      rect:
+        serializedVersion: 2
+        x: 2062
+        y: 702
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e948d29df0f24cd90800000000000000
+      internalID: -7078480969204923234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_34
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 701
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5ebc44b455c69ca0800000000000000
+      internalID: -6010399685086495142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_35
+      rect:
+        serializedVersion: 2
+        x: 2271
+        y: 702
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bf2849b1e0efda10800000000000000
+      internalID: 1936513624873381816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_36
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 424
+        width: 262
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36c82657241dc24a0800000000000000
+      internalID: -6616683669146661789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_37
+      rect:
+        serializedVersion: 2
+        x: 1721
+        y: 444
+        width: 175
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67bf90cedee7b2d40800000000000000
+      internalID: 5560677725251435382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_38
+      rect:
+        serializedVersion: 2
+        x: 2050
+        y: 597
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e779c5ccaa9f210800000000000000
+      internalID: 1367311756587138663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_39
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 598
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e894629b8f670920800000000000000
+      internalID: 2956454325639223520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_40
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 417
+        width: 91
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12e173cf1148b9680800000000000000
+      internalID: -8747252638456275423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_41
+      rect:
+        serializedVersion: 2
+        x: 1493
+        y: 444
+        width: 123
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f6b5b3ce9db96730800000000000000
+      internalID: 3992931034226603766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_42
+      rect:
+        serializedVersion: 2
+        x: 1958
+        y: 510
+        width: 54
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed00e3a496ed4b650800000000000000
+      internalID: 6247863126868230366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_43
+      rect:
+        serializedVersion: 2
+        x: 2071
+        y: 511
+        width: 54
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c83727a243c38740800000000000000
+      internalID: 5153177089681602761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_44
+      rect:
+        serializedVersion: 2
+        x: 2167
+        y: 510
+        width: 54
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76a859aed5f51a6b0800000000000000
+      internalID: -5286839630583985561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_45
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 511
+        width: 54
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cefa181b4d2f87000800000000000000
+      internalID: 34043992530333676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_46
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 257
+        width: 167
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 284b65ab03a06be20800000000000000
+      internalID: 3365888975906976898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_47
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 165
+        width: 321
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbee36bf8391eb320800000000000000
+      internalID: 2575523769428995775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_48
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 144
+        width: 199
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b93e10d4b4592a850800000000000000
+      internalID: 6386831372211839899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_49
+      rect:
+        serializedVersion: 2
+        x: 2059
+        y: 406
+        width: 54
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c2053cdf9c3afec0800000000000000
+      internalID: -3532444300426804540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_50
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 407
+        width: 54
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac0117879ec48f060800000000000000
+      internalID: 6987419387497091274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_51
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 7
+        width: 30
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f26a799d5e50a9c90800000000000000
+      internalID: -7162405772623108561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_52
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 10
+        width: 48
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3201a748346d78110800000000000000
+      internalID: 1263213805974458403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_53
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 19
+        width: 28
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b8bbb64a95d764c0800000000000000
+      internalID: -4294228861086091087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_54
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 13
+        width: 42
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00033c4c5e4150690800000000000000
+      internalID: -7636674616055615488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_55
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 12
+        width: 72
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42f5087637e342160800000000000000
+      internalID: 6999788386219220772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_56
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 14
+        width: 61
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b306ddfa059e43d0800000000000000
+      internalID: -3220472809082453063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_57
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 7
+        width: 42
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0905c2e4478926b0800000000000000
+      internalID: -5320572754829440757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_58
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 20
+        width: 41
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee5548a7939c9c870800000000000000
+      internalID: 8703709003576006126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_59
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 66
+        width: 196
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71590f22ed4b81a60800000000000000
+      internalID: 7645059233623348503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_60
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 41
+        width: 342
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3700adc2a9c1a0ee0800000000000000
+      internalID: -1294190494412570509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Furniture_61
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 41
+        width: 255
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e25365c7cfa8c2380800000000000000
+      internalID: -8994661538743306962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Fairy_Furniture_0: -4664969380160052757
+      Fairy_Furniture_1: -6277089055753078254
+      Fairy_Furniture_10: -4767896486134488790
+      Fairy_Furniture_11: -2229869299065695243
+      Fairy_Furniture_12: 8810294152968353633
+      Fairy_Furniture_13: -5763683663179645611
+      Fairy_Furniture_14: 3328189092930851228
+      Fairy_Furniture_15: -6778173455942916007
+      Fairy_Furniture_16: 5787143327366705137
+      Fairy_Furniture_17: -3012278426311835099
+      Fairy_Furniture_18: -6492383606670182371
+      Fairy_Furniture_19: -7530347982761018729
+      Fairy_Furniture_2: -5706613183767021153
+      Fairy_Furniture_20: 8974749725439233650
+      Fairy_Furniture_21: 731300632360100936
+      Fairy_Furniture_22: 1260783492536322949
+      Fairy_Furniture_23: 2896301424035440719
+      Fairy_Furniture_24: 831074043123418864
+      Fairy_Furniture_25: 7277033876093807870
+      Fairy_Furniture_26: -1534782252743256023
+      Fairy_Furniture_27: 3771664957315991224
+      Fairy_Furniture_28: 405490076038150058
+      Fairy_Furniture_29: -5915206557058660344
+      Fairy_Furniture_3: -6978961079158865647
+      Fairy_Furniture_30: 294109398349354040
+      Fairy_Furniture_31: -7311392410715829255
+      Fairy_Furniture_32: 6170235623112442784
+      Fairy_Furniture_33: -7078480969204923234
+      Fairy_Furniture_34: -6010399685086495142
+      Fairy_Furniture_35: 1936513624873381816
+      Fairy_Furniture_36: -6616683669146661789
+      Fairy_Furniture_37: 5560677725251435382
+      Fairy_Furniture_38: 1367311756587138663
+      Fairy_Furniture_39: 2956454325639223520
+      Fairy_Furniture_4: 7015890359512005930
+      Fairy_Furniture_40: -8747252638456275423
+      Fairy_Furniture_41: 3992931034226603766
+      Fairy_Furniture_42: 6247863126868230366
+      Fairy_Furniture_43: 5153177089681602761
+      Fairy_Furniture_44: -5286839630583985561
+      Fairy_Furniture_45: 34043992530333676
+      Fairy_Furniture_46: 3365888975906976898
+      Fairy_Furniture_47: 2575523769428995775
+      Fairy_Furniture_48: 6386831372211839899
+      Fairy_Furniture_49: -3532444300426804540
+      Fairy_Furniture_5: -4736413554722789774
+      Fairy_Furniture_50: 6987419387497091274
+      Fairy_Furniture_51: -7162405772623108561
+      Fairy_Furniture_52: 1263213805974458403
+      Fairy_Furniture_53: -4294228861086091087
+      Fairy_Furniture_54: -7636674616055615488
+      Fairy_Furniture_55: 6999788386219220772
+      Fairy_Furniture_56: -3220472809082453063
+      Fairy_Furniture_57: -5320572754829440757
+      Fairy_Furniture_58: 8703709003576006126
+      Fairy_Furniture_59: 7645059233623348503
+      Fairy_Furniture_6: -5764147838900887834
+      Fairy_Furniture_60: -1294190494412570509
+      Fairy_Furniture_61: -8994661538743306962
+      Fairy_Furniture_7: 4302194735846557607
+      Fairy_Furniture_8: 2301944816965529325
+      Fairy_Furniture_9: -4474930079588162574
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

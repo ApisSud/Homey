@@ -27,6 +27,7 @@ public class TaskManager : MonoBehaviour
     [Header("Level Settings")]
     public int totalTrashNeeded = 4;
     public int totalMouseNeeded = 0;
+    private int currentMouseCount = 0;
 
 
 
@@ -66,15 +67,20 @@ public class TaskManager : MonoBehaviour
     public void AddMouseCount()
     {
         if (isMouseClear) return;
-        isMouseClear = true;
+        currentMouseCount++;
+        
 
-        CheckAllTasks();
-
-        if (successImage != null)
+       
+        if (currentMouseCount >= totalMouseNeeded)
         {
-            successImage3.SetActive(true);
-            
-            successImage3.transform.DOScaleX(1f, 0.5f).SetEase(Ease.OutBack);
+            isMouseClear = true; 
+            CheckAllTasks();     
+            if (successImage3 != null)
+            {
+                successImage3.SetActive(true);
+                
+                successImage3.transform.DOScaleX(1f, 0.7f).SetEase(Ease.OutBack);
+            }
         }
     }
     public void CompleteTrashTask()

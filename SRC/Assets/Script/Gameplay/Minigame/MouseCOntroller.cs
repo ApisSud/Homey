@@ -62,10 +62,13 @@ public class MouseCOntroller : MonoBehaviour
 
     void OnMouseDown()
     {
-       if (TaskManager.Instance != null)
+        if (TaskManager.Instance != null)
         {
             TaskManager.Instance.AddMouseCount();
         }
+
+        totalMouse++;
+        UpdateScoreUI();
         LeanTween.scale(gameObject, Vector3.zero, 0.3f)
              .setEase(LeanTweenType.easeInBack)
              .setOnComplete(() =>

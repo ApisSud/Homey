@@ -8,6 +8,7 @@ TagManager:
   - Furniture
   - FurnitureStorage
   - TrashBin
+  - WateringCan
   layers:
   - Default
   - TransparentFX

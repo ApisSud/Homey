@@ -1675,6 +1675,10 @@ PrefabInstance:
       value: 0.66
       objectReference: {fileID: 0}
     - target: {fileID: 3307886308362845348, guid: d5b2c79aa119ddf45a8675a158c5856f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7144792587531076125, guid: d572dd03f6f12b64eb3afbdbf64293e0, type: 3}
+    - target: {fileID: 3307886308362845348, guid: d5b2c79aa119ddf45a8675a158c5856f, type: 3}
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
@@ -1753,6 +1757,10 @@ PrefabInstance:
     - target: {fileID: 8454455046401545522, guid: d5b2c79aa119ddf45a8675a158c5856f, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 9104636894782412087, guid: d5b2c79aa119ddf45a8675a158c5856f, type: 3}
+      propertyPath: speed
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 9104636894782412087, guid: d5b2c79aa119ddf45a8675a158c5856f, type: 3}
       propertyPath: scoreText

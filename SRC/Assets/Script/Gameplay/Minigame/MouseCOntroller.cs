@@ -35,12 +35,12 @@ public class MouseCOntroller : MonoBehaviour
         if (directionX > 0.01f)
         {
             
-            MouseSprite.flipX = false;
+            MouseSprite.flipX = true;
         }
         
         else if (directionX < -0.01f)
         {
-            MouseSprite.flipX = true;
+            MouseSprite.flipX = false;
         }
         
         transform.position = Vector2.MoveTowards(

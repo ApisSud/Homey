@@ -170,8 +170,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7153500832045800931}
   - component: {fileID: 3307886308362845348}
-  - component: {fileID: 2231257480856821987}
   - component: {fileID: 9104636894782412087}
+  - component: {fileID: 2231257480856821987}
   m_Layer: 0
   m_Name: Mouse_Sprite
   m_TagString: Untagged
@@ -243,7 +243,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7668759429312103865, guid: 28418d495e44a8f4f95e663e8b26a604, type: 3}
+  m_Sprite: {fileID: 7144792587531076125, guid: d572dd03f6f12b64eb3afbdbf64293e0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -253,6 +253,25 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &9104636894782412087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8685731305619715527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33365e6666ed620449571f5ae75997bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MouseCOntroller
+  waypoints:
+  - {fileID: 3208336582241744853}
+  - {fileID: 8454455046401545522}
+  - {fileID: 4019416342635969105}
+  speed: 5
+  MouseParticle: {fileID: 104829970813648393, guid: d3015b7eea383f64d8b81f965cc466e7, type: 3}
+  scoreText: {fileID: 0}
 --- !u!61 &2231257480856821987
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -287,34 +306,15 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.08544421, y: 0.23004293}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.71, y: 4.44}
+    oldSize: {x: 4.88, y: 3.27}
     newSize: {x: 2.71, y: 4.44}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.71, y: 4.44}
+  m_Size: {x: 6.298673, y: 4.9000864}
   m_EdgeRadius: 0
---- !u!114 &9104636894782412087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8685731305619715527}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33365e6666ed620449571f5ae75997bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MouseCOntroller
-  waypoints:
-  - {fileID: 3208336582241744853}
-  - {fileID: 8454455046401545522}
-  - {fileID: 4019416342635969105}
-  speed: 5
-  MouseParticle: {fileID: 104829970813648393, guid: d3015b7eea383f64d8b81f965cc466e7, type: 3}
-  scoreText: {fileID: 0}

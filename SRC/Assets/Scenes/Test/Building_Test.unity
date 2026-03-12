@@ -158,10 +158,6 @@ MonoBehaviour:
   bodyColor: {fileID: 1450585738}
   Size: 2
   Type: 2
-  minX: -7
-  maxX: 3
-  minY: -8
-  maxY: 3
 --- !u!61 &6575533
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -584,7 +580,7 @@ PrefabInstance:
     - target: {fileID: 1087154882705207119, guid: 1049fb887d3a5b04295360786e1409a0, type: 3}
       propertyPath: 'FurniturePF.Array.data[1]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 632569071}
     - target: {fileID: 1087154882705207119, guid: 1049fb887d3a5b04295360786e1409a0, type: 3}
       propertyPath: 'FurniturePF.Array.data[2]'
       value: 
@@ -953,10 +949,6 @@ MonoBehaviour:
   bodyColor: {fileID: 1078473091}
   Size: 0
   Type: 0
-  minX: -100
-  maxX: 100
-  minY: -100
-  maxY: 100
 --- !u!61 &460210948
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1058,10 +1050,6 @@ MonoBehaviour:
   bodyColor: {fileID: 749279478}
   Size: 2
   Type: 2
-  minX: -7
-  maxX: 3
-  minY: -8
-  maxY: 3
 --- !u!61 &582250517
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1163,10 +1151,6 @@ MonoBehaviour:
   bodyColor: {fileID: 219168986}
   Size: 2
   Type: 2
-  minX: -7
-  maxX: 3
-  minY: -8
-  maxY: 3
 --- !u!61 &632569073
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1409,10 +1393,6 @@ MonoBehaviour:
   bodyColor: {fileID: 403634893}
   Size: 1
   Type: 1
-  minX: -6
-  maxX: 3
-  minY: -6
-  maxY: 3
 --- !u!4 &791205963
 Transform:
   m_ObjectHideFlags: 0
@@ -1853,6 +1833,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1015918295
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1015918297}
+  - component: {fileID: 1015918296}
+  m_Layer: 0
+  m_Name: Gamemanager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1015918296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015918295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27a9396cdae854d4482f29d449c4fc5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  minX: -6
+  maxX: 1
+  minY: -6
+  maxY: 3
+--- !u!4 &1015918297
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015918295}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.39411, y: -0.08091, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1025409124
 GameObject:
   m_ObjectHideFlags: 0
@@ -2031,10 +2059,6 @@ MonoBehaviour:
   bodyColor: {fileID: 1243925750}
   Size: 0
   Type: 3
-  minX: -6
-  maxX: 3
-  minY: -6
-  maxY: 3
 --- !u!61 &1155686589
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4006,10 +4030,6 @@ MonoBehaviour:
   bodyColor: {fileID: 1785935587}
   Size: 0
   Type: 0
-  minX: -6
-  maxX: 3
-  minY: -6
-  maxY: 3
 --- !u!61 &1501830157
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4416,10 +4436,6 @@ MonoBehaviour:
   bodyColor: {fileID: 1920468147}
   Size: 1
   Type: 1
-  minX: -6
-  maxX: 3
-  minY: -6
-  maxY: 3
 --- !u!4 &1580012682
 Transform:
   m_ObjectHideFlags: 0
@@ -5441,3 +5457,4 @@ SceneRoots:
   - {fileID: 108266466}
   - {fileID: 1542039997}
   - {fileID: 926172215131732253}
+  - {fileID: 1015918297}

@@ -37,12 +37,8 @@ public class CheckGrid : MonoBehaviour
             //Debug.Log($"Num Fur : {furnitureItems.Length}");
 
         }
-        UpdateFurnitureBar(furnitureItems.Length);
 
-        if (FurnitureInScene + FurnitureSpawn == furnitureItems.Length)
-        {
-            FinishButton.gameObject.SetActive(true);
-        }
+      
 
 
     }
@@ -52,6 +48,12 @@ public class CheckGrid : MonoBehaviour
         {
             CheckFurnitureinScene.Add(gridPos, true);
             Debug.Log($"Num Fur In Scene: {CheckFurnitureinScene.Count}");
+        }
+        UpdateFurnitureBar(CheckFurnitureinScene.Count);
+
+        if (FurnitureInScene + FurnitureSpawn == CheckFurnitureinScene.Count)
+        {
+            FinishButton.gameObject.SetActive(true);
         }
     }
 
@@ -66,7 +68,7 @@ public class CheckGrid : MonoBehaviour
     public void removeFurnitureInScene(Vector3 gridPos)
     {
         if (CheckFurnitureinScene.ContainsKey(gridPos))
-        { CheckFurnitureinScene.Add(gridPos, true); }
+        { CheckFurnitureinScene.Remove(gridPos); }
     }
 
     public void CheckEmpty(Vector3 gridPos)
@@ -85,5 +87,10 @@ public class CheckGrid : MonoBehaviour
     public void UpdateFurnitureBar(float NumFur)
     {
         processFurnitureBar.size = (NumFur - FurnitureInScene) / FurnitureSpawn;
+    }
+
+    public void FurinRoom()
+    {
+        
     }
 }

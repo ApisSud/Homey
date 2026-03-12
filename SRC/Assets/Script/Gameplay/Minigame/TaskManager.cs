@@ -20,7 +20,8 @@ public class TaskManager : MonoBehaviour
     public bool isTrashCleared = false;
     public bool isDirtCleared = false;
     public bool  isMouseClear = false;
- 
+    private bool allTasksCompleted = false;
+
 
     [Header("Level Settings")]
     public int totalTrashNeeded = 4;
@@ -118,8 +119,6 @@ public class TaskManager : MonoBehaviour
             {
                FurnitureButton.SetActive(true); 
  
-                FurnitureButton.transform.localScale = new Vector3(0, 1, 1);
-                FurnitureButton.transform.DOScaleX(1f, 1f).SetEase(Ease.OutBack);
             }
         }
     }

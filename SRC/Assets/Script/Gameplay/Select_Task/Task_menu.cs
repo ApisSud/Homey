@@ -42,9 +42,9 @@ public class Task_menu : MonoBehaviour
 
            
             if (isActive) 
-                Time.timeScale = 0f; // หยุดเวลา
+                Time.timeScale = 0f; 
             else 
-                Time.timeScale = 1f; // เวลาเดินต่อ
+                Time.timeScale = 1f; 
           
         }
         Clicking.Play();

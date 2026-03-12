@@ -7,7 +7,7 @@ public class BroomController : MonoBehaviour
     public bool isEquipped = false; 
     private SpriteRenderer spriteRenderer;
   
-    public GameObject Outparticle;
+    /*public GameObject Outparticle;*/
 
    public GameObject broomImage;
     private Vector3 originalScale;
@@ -78,7 +78,7 @@ public class BroomController : MonoBehaviour
             {
              
                 spriteRenderer.enabled = false;
-                Instantiate(Outparticle, transform.position, Quaternion.identity);
+              /*  Instantiate(Outparticle, transform.position, Quaternion.identity);*/
             });
     }
 

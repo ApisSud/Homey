@@ -132,7 +132,7 @@ public class TaskManager : MonoBehaviour
             }
 
           
-            DOVirtual.DelayedCall(1.5f, () =>
+            DOVirtual.DelayedCall(2f, () =>
             {
                 if (FurnitureButton != null)
                 {

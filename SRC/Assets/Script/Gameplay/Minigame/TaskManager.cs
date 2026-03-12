@@ -11,11 +11,17 @@ public class TaskManager : MonoBehaviour
     public GameObject successImage2;
     public GameObject successImage3;
 
+    [Header("Buttons Setup")] 
+    public GameObject BroomButton; 
+    public GameObject TrashbinButton; 
+    public GameObject FurnitureButton;
+
     [Header("Task Status")]
     public bool isTrashCleared = false;
     public bool isDirtCleared = false;
     public bool  isMouseClear = false;
- 
+    private bool allTasksCompleted = false;
+
 
     [Header("Level Settings")]
     public int totalTrashNeeded = 4;
@@ -50,6 +56,9 @@ public class TaskManager : MonoBehaviour
             successImage3.SetActive(false);
             successImage3.transform.localScale = new Vector3(0, 1, 1);
         }
+        if (BroomButton != null) BroomButton.SetActive(true);   // เปิดปุ่ม 1
+        if (TrashbinButton != null) TrashbinButton.SetActive(true);   // เปิดปุ่ม 2
+        if (FurnitureButton != null) FurnitureButton.SetActive(false);
     }
 
 
@@ -77,7 +86,7 @@ public class TaskManager : MonoBehaviour
         if (successImage != null)
         {
             successImage.SetActive(true);
-            // ค่อยๆ ยืดแกน X ให้กลับมาเป็น 1 (ขนาดปกติ) ภายในเวลา 0.5 วินาที
+            
             successImage.transform.DOScaleX(1f, 0.5f).SetEase(Ease.OutBack);
         }
     }
@@ -90,7 +99,7 @@ public class TaskManager : MonoBehaviour
 
         {
             successImage2.SetActive(true);
-            // ค่อยๆ ยืดแกน X 
+       
             successImage2.transform.DOScaleX(1f, 0.5f).SetEase(Ease.OutBack);
         }
     }
@@ -102,6 +111,15 @@ public class TaskManager : MonoBehaviour
         {
             Debug.Log("All Task done");
         
+
+            if ( BroomButton != null) BroomButton.SetActive(false); 
+            if (TrashbinButton != null) TrashbinButton.SetActive(false); 
+
+            if (FurnitureButton != null)
+            {
+               FurnitureButton.SetActive(true); 
+ 
+            }
         }
     }
 }

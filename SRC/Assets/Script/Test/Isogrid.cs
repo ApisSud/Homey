@@ -19,11 +19,6 @@ public class Isogrid : MonoBehaviour
     {
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public Vector3 GetIsoSlotPosition(int col, int row)
     {
 
@@ -37,7 +32,7 @@ public class Isogrid : MonoBehaviour
     }
     public Vector3 GetClosestSnapPoint(Vector3 mouseWorldPos, float snapThreshold = 0.5f)
     {
-        Debug.Log($"mousePos2 : {mouseWorldPos}");
+        //Debug.Log($"mousePos2 : {mouseWorldPos}");
         Vector3 bestPoint = mouseWorldPos;
         float closestDistance = float.MaxValue;
         for (int i = 0; i < columns; i++)
@@ -46,7 +41,7 @@ public class Isogrid : MonoBehaviour
             {
                 Vector3 slotPos = GetIsoSlotPosition(i,r);
                 float distance = Vector3.Distance(mouseWorldPos, slotPos);
-                Debug.Log($"Slotsnap : {slotPos}+{i}");
+                //Debug.Log($"Slotsnap : {slotPos}+{i}");
                 if (distance < snapThreshold && distance < closestDistance)
                 {
                     closestDistance = distance;
@@ -54,7 +49,7 @@ public class Isogrid : MonoBehaviour
                 }
             }
         }
-        Debug.Log($"snap : {bestPoint}");
+       //Debug.Log($"snap : {bestPoint}");
         return bestPoint;
     }
   
@@ -74,6 +69,5 @@ public class Isogrid : MonoBehaviour
     }
 
    
-
 
 } 

@@ -5,8 +5,8 @@ using UnityEngine.UI;
 public class CheckGrid : MonoBehaviour
 {
     public Grid Grid;
-    public Dictionary<Vector3Int, string> occupiedTiles = new Dictionary<Vector3Int, string>();
-    public Dictionary<Vector3Int, bool> CheckFurniture = new Dictionary<Vector3Int, bool>();
+    public Dictionary<Vector3, string> occupiedTiles = new Dictionary<Vector3, string>();
+    public Dictionary<Vector3, bool> CheckFurnitureinScene = new Dictionary<Vector3, bool>();
     public static CheckGrid instance;
     [SerializeField]
     private Scrollbar processFurnitureBar;
@@ -27,7 +27,7 @@ public class CheckGrid : MonoBehaviour
     }
     
 
-    public void PlaceObject(Vector3Int gridPos, string type)
+    public void PlaceObject(Vector3 gridPos, string type)
     {
         GameObject[] furnitureItems = GameObject.FindGameObjectsWithTag("Furniture");
         if (!occupiedTiles.ContainsKey(gridPos))
@@ -46,16 +46,16 @@ public class CheckGrid : MonoBehaviour
 
 
     }
-    public void addFurnitureInScene(Vector3Int gridPos)
+    public void addFurnitureInScene(Vector3 gridPos)
     {
-        if(!CheckFurniture.ContainsKey(gridPos))
+        if(!CheckFurnitureinScene.ContainsKey(gridPos))
         {
-            CheckFurniture.Add(gridPos, true);
-            Debug.Log($"Num Fur In Scene: {CheckFurniture.Count}");
+            CheckFurnitureinScene.Add(gridPos, true);
+            Debug.Log($"Num Fur In Scene: {CheckFurnitureinScene.Count}");
         }
     }
 
-    public void RemoveObject(Vector3Int gridPos)
+    public void RemoveObject(Vector3 gridPos)
     {
         if (occupiedTiles.ContainsKey(gridPos))
         {
@@ -63,21 +63,21 @@ public class CheckGrid : MonoBehaviour
         }
     }
 
-    public void removeFurnitureInScene(Vector3Int gridPos)
+    public void removeFurnitureInScene(Vector3 gridPos)
     {
-        if (CheckFurniture.ContainsKey(gridPos))
-        { CheckFurniture.Add(gridPos, true); }
+        if (CheckFurnitureinScene.ContainsKey(gridPos))
+        { CheckFurnitureinScene.Add(gridPos, true); }
     }
 
-    public void CheckEmpty(Vector3Int gridPos)
+    public void CheckEmpty(Vector3 gridPos)
     {
         if (!occupiedTiles.ContainsKey(gridPos))
         {
-            //Debug.Log($"{gridPos} empty");
+            Debug.Log($"{gridPos} empty");
         }
         else if (occupiedTiles.ContainsKey(gridPos))
         {
-            //Debug.Log($"{gridPos} not empty");
+            Debug.Log($"{gridPos} not empty");
         }
     
     }

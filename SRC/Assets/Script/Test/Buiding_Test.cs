@@ -103,7 +103,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         Vector3 worldPos = transform.position;
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(eventData.position);
         Vector3Int cellPosition = layoutGrid.WorldToCell(worldPos);
-        Debug.Log($"BeginDrag{cellPosition}");
+        //Debug.Log($"BeginDrag{cellPosition} mousePos :{mousePos}");
         offset = transform.position - mousePos;
         CheckGrid.instance.RemoveObject(cellPosition);
         //CheckGrid.instance.removeFurnitureInScene(cellPosition);
@@ -113,6 +113,12 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                 CheckGrid.instance.RemoveObject(cellPosition + new Vector3Int(0, 1, 0));
             else
                 CheckGrid.instance.RemoveObject(cellPosition + new Vector3Int(1, 0, 0));
+        }
+        if(Size == SizeFurniture.smaller && onStorageFur)
+        {
+            //finalPos = currentTargetGrid.GetClosestSnapPoint(mousePos);
+            //Debug.Log($"Remove {finalPos}");
+            CheckGrid.instance.RemoveObject(finalPos);
         }
 
     }
@@ -141,12 +147,12 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             }
             if (onStorageFur)
             {
-                Debug.Log("inStorage");
-                Debug.Log($"worldPos1 : {mousePos}");
+                //Debug.Log("inStorage");
+                //Debug.Log($"worldPos1 : {mousePos}");
 
                 finalPos = currentTargetGrid.GetClosestSnapPoint(mousePos);
                 transform.position = finalPos;
-                Debug.Log($"fur will snap : {finalPos}");
+                //Debug.Log($"fur will snap : {finalPos}");
             }
             else if(!onStorageFur)
             {
@@ -257,8 +263,17 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         }
 
         if(onStorageFur)
-        {
-           transform.position = finalPos;
+        {  if (!CheckGrid.instance.occupiedTiles.ContainsKey(finalPos))
+            {
+                transform.position = finalPos;
+                CheckGrid.instance.PlaceObject(finalPos, $"{Type}");
+            }
+            else if(CheckGrid.instance.occupiedTiles.ContainsKey(finalPos))
+            {
+                transform.position = OriginalPosition;
+                cellPosition = layoutGrid.WorldToCell(OriginalPosition);
+                CheckGrid.instance.PlaceObject(cellPosition, $"{Type}");
+            }
         }
 
         if (Type == TypeFurniture.woodlarge)

@@ -46,6 +46,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TaskManager
   successImage: {fileID: 0}
   successImage2: {fileID: 0}
+  successImage3: {fileID: 0}
   isTrashCleared: 0
   isDirtCleared: 0
+  isMouseClear: 0
   totalTrashNeeded: 2
+  totalMouseNeeded: 1

@@ -11,6 +11,8 @@ public class MouseCOntroller : MonoBehaviour
     public GameObject MouseParticle;
 
     private int currentWaypointIndex = 0;
+    private SpriteRenderer MouseSprite;
+
 
     [Header("UI Management")]
     public TextMeshProUGUI scoreText;
@@ -18,14 +20,28 @@ public class MouseCOntroller : MonoBehaviour
 
     void Start()
     {
+        MouseSprite = GetComponent<SpriteRenderer>();
         UpdateScoreUI();    
     }
 
     void Update()
     {
-        
         if (waypoints.Length == 0) return;
 
+        
+        float directionX = waypoints[currentWaypointIndex].position.x - transform.position.x;
+
+  
+        if (directionX > 0.01f)
+        {
+            
+            MouseSprite.flipX = false;
+        }
+        
+        else if (directionX < -0.01f)
+        {
+            MouseSprite.flipX = true;
+        }
         
         transform.position = Vector2.MoveTowards(
             transform.position,
@@ -33,13 +49,10 @@ public class MouseCOntroller : MonoBehaviour
             speed * Time.deltaTime
         );
 
-      
         if (Vector2.Distance(transform.position, waypoints[currentWaypointIndex].position) < 0.1f)
         {
-         
             currentWaypointIndex++;
 
-          
             if (currentWaypointIndex >= waypoints.Length)
             {
                 currentWaypointIndex = 0;
@@ -47,7 +60,6 @@ public class MouseCOntroller : MonoBehaviour
         }
     }
 
-   
     void OnMouseDown()
     {
        if (TaskManager.Instance != null)

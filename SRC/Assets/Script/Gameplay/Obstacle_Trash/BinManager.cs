@@ -60,7 +60,7 @@ public class BinManager : MonoBehaviour
 
     public void SetHighlight(bool isShow)
     {
-        // จะโชว์ไฮไลต์ก็ต่อเมื่อตั้งค่ารูปไว้ และ ถังขยะต้องเปิดอยู่เท่านั้น
+       
         if (binHighlight != null && trashBin.activeSelf)
         {
             binHighlight.SetActive(isShow);

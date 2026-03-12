@@ -10,6 +10,7 @@ public class TaskManager : MonoBehaviour
     public GameObject successImage;
     public GameObject successImage2;
     public GameObject successImage3;
+    public GameObject Trashbin;
 
     [Header("Buttons Setup")] 
     public GameObject BroomButton; 
@@ -56,8 +57,8 @@ public class TaskManager : MonoBehaviour
             successImage3.SetActive(false);
             successImage3.transform.localScale = new Vector3(0, 1, 1);
         }
-        if (BroomButton != null) BroomButton.SetActive(true);   // 嗷源回枇 1
-        if (TrashbinButton != null) TrashbinButton.SetActive(true);   // 嗷源回枇 2
+        if (BroomButton != null) BroomButton.SetActive(true);   
+        if (TrashbinButton != null) TrashbinButton.SetActive(true);   
         if (FurnitureButton != null) FurnitureButton.SetActive(false);
     }
 
@@ -81,6 +82,9 @@ public class TaskManager : MonoBehaviour
         if (isTrashCleared) return;
 
         isTrashCleared = true;
+
+        Trashbin.SetActive(false);
+
         CheckAllTasks();
 
         if (successImage != null)
@@ -107,19 +111,32 @@ public class TaskManager : MonoBehaviour
   
     private void CheckAllTasks()
     {
-        if (isTrashCleared && isDirtCleared && isMouseClear)
+        if (isTrashCleared && isDirtCleared && isMouseClear && !allTasksCompleted)
         {
             Debug.Log("All Task done");
-        
 
-            if ( BroomButton != null) BroomButton.SetActive(false); 
-            if (TrashbinButton != null) TrashbinButton.SetActive(false); 
 
-            if (FurnitureButton != null)
+            if (BroomButton != null)
             {
-               FurnitureButton.SetActive(true); 
- 
+                BroomButton.transform.DOScale(0f, 0.8f).SetEase(Ease.InBack).OnComplete(() => BroomButton.SetActive(false));
             }
+            if (TrashbinButton != null)
+            {
+                TrashbinButton.transform.DOScale(0f, 0.8f).SetEase(Ease.InBack).OnComplete(() => TrashbinButton.SetActive(false));
+            }
+
+          
+            DOVirtual.DelayedCall(1.5f, () =>
+            {
+                if (FurnitureButton != null)
+                {
+                    
+                    FurnitureButton.SetActive(true);
+                    FurnitureButton.transform.localScale = Vector3.zero;
+
+                    FurnitureButton.transform.DOScale(1f, 0.5f).SetEase(Ease.OutBack);
+                }
+            });
         }
     }
 }

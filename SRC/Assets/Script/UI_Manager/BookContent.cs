@@ -29,7 +29,15 @@ public class BookContent : MonoBehaviour
         {
             pages[i].transform.rotation = Quaternion.identity;
         }
-        pages[0].SetAsLastSibling();
+
+        for (int i = pages.Count - 1; i >= 0; i--)
+        {
+            pages[i].SetAsLastSibling();
+        }
+
+        if (forwardButton != null) forwardButton.transform.SetAsLastSibling();
+        if (backButton != null) backButton.transform.SetAsLastSibling();
+
         backButton.SetActive(false);
 
     }
@@ -50,13 +58,17 @@ public class BookContent : MonoBehaviour
     {
         if (rotate == true) { return; }
         index++;
-        float angle = 180; //in order to rotate the page forward, you need to set the rotation by 180 degrees around the y axis
+        float angle = 180;
         ForwardButtonActions();
-        pages[index].SetAsLastSibling();
-        StartCoroutine(Rotate(angle, true));
 
+        // เอากระดาษแผ่นที่กำลังจะเปิดมาไว้หน้าสุด
+        pages[index].SetAsLastSibling();
+
+        // บังคับปุ่มให้มาอยู่หน้าสุดตามกระดาษ 
         if (forwardButton != null) forwardButton.transform.SetAsLastSibling();
         if (backButton != null) backButton.transform.SetAsLastSibling();
+
+        StartCoroutine(Rotate(angle, true));
     }
 
     public void ForwardButtonActions()
@@ -74,13 +86,17 @@ public class BookContent : MonoBehaviour
     public void RotateBack()
     {
         if (rotate == true) { return; }
-        float angle = 0; //in order to rotate the page back, you need to set the rotation to 0 degrees around the y axis
-        pages[index].SetAsLastSibling();
-        BackButtonActions();
-        StartCoroutine(Rotate(angle, false));
+        float angle = 0;
 
+        pages[index].SetAsLastSibling();
+
+        BackButtonActions();
+
+        
         if (forwardButton != null) forwardButton.transform.SetAsLastSibling();
         if (backButton != null) backButton.transform.SetAsLastSibling();
+
+        StartCoroutine(Rotate(angle, false));
     }
 
     public void BackButtonActions()

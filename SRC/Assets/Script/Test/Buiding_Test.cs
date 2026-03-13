@@ -39,15 +39,13 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     private Vector3 offset;
     private Vector3 OriginalPosition;
     private Vector3Int previousCellPos;
-    private Vector3Int previousCellPos2;
-    private Vector3Int previousCellPos3;
     private Vector3 finalPos;
     [SerializeField] private SpriteRenderer bodyColor;
     private Color32 originalColor;
     private bool Flip;
     private bool Draged;
     private bool onStorageFur;
-
+    [SerializeField] private bool canMove;
     
     [SerializeField]
     private SizeFurniture Size;
@@ -56,6 +54,10 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
     private Isogrid currentTargetGrid;
 
+    [SerializeField]
+    private int rowGrid;
+    [SerializeField]
+    private int columnGrid;
 
     void Start()
     {
@@ -189,6 +191,17 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             transform.position = snapPos + offset;
             finalPos = snapPos + offset;
             //combineGridUpdateHighlight(2, 2, cellPosition);
+        }
+        if (Size == SizeFurniture.Grid1X2)
+        {
+            // 2. หาตำแหน่งกึ่งกลางของช่องแรกนั้น
+            Vector3 baseSnapPos = layoutGrid.GetCellCenterWorld(cellPosition);
+
+            float offsetX = ((2 - 1) * layoutGrid.cellSize.x) / 2f;
+            float offsetZ = ((8 - 1) * layoutGrid.cellSize.y) / 2f; 
+            Vector3 totalOffset = new Vector3(offsetX, 0, offsetZ);
+            transform.position = baseSnapPos + totalOffset;
+            finalPos = baseSnapPos + totalOffset;
         }
 
 

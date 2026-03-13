@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Game_Level/Witch_House.unity
     guid: c44f3edbb99873a409bc5e53406eb77f
   - enabled: 1
-    path: Assets/Scenes/Game_Level/Task_Level.unity
+    path: Assets/Scenes/Game_Level/Task_Select.unity
     guid: b0ca09254da47854f9b40d525d6dc1a4
   - enabled: 1
     path: Assets/Scenes/Test/Building_Test.unity

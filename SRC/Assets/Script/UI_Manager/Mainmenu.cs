@@ -1,71 +1,53 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using System.Collections;
 
 public class MainMenu : MonoBehaviour
 {
 
     public string game_scene = "intro";
 
-/*    public Image fadePanel; */
-    [SerializeField] public float fadeDuration = 1.0f;
-    /*public AudioSource buttonSound;*/
-   /* public GameObject tweenMenu;*/
+    [Header("References")]
+   
+    [SerializeField] private TransitionManager transitionManager;
 
-    /*void Start()
+    private void Start()
     {
-        tweenMenu.transform.localScale = Vector3.zero;
-
         
-        LeanTween.scale(tweenMenu, Vector3.one, 0.5f).setEase(LeanTweenType.easeOutBack);
-    }*/
-    public void PlayGame()
-    {/*
-        if (buttonSound != null)
+        if (transitionManager == null)
         {
-            buttonSound.Play();
-        }*/
-        SceneManager.LoadScene(game_scene);
-      /*  StartCoroutine(FadeAndLoadScene());*/
+            transitionManager = FindObjectOfType<TransitionManager>();
+        }
     }
 
-   /* IEnumerator FadeAndLoadScene()
+    public void PlayGame()
     {
-   
-        if (fadePanel != null)
+
+        if (transitionManager != null)
         {
-            fadePanel.gameObject.SetActive(true);
-            Color panelColor = fadePanel.color;
-            panelColor.a = 0f; 
-            fadePanel.color = panelColor;
-
-            float elapsedTime = 0f;
-
-            while (elapsedTime < fadeDuration)
-            {
-                elapsedTime += Time.deltaTime;
-                float alpha = Mathf.Clamp01(elapsedTime / fadeDuration);
-
-                panelColor.a = alpha;
-                fadePanel.color = panelColor;
-
-                yield return null; 
-            }
+            transitionManager.ChangeScene(game_scene);
         }
+        else
+        {
+            Debug.LogWarning("หา TransitionManager ไม่เจอครับ! อย่าลืมสร้าง Game Object และใส่สคริปต์ TransitionManager ไว้ในซีนนะ");
+        }
+    }
 
-     
-        SceneManager.LoadScene(game_scene);
-    }*/
+    public void SelectLevel(string scenename)
+    {
+       
+        if (transitionManager != null)
+        {
+            transitionManager.ChangeScene(scenename);
+        }
+    }
+
     public void QuitGame()
     {
         /*if (buttonSound != null) buttonSound.Play();*/
         Debug.Log("Exit");
         Application.Quit();
-    }
-
-    public void SelectLevel(string scenename)
-    {
-        SceneManager.LoadScene(scenename);
     }
 }

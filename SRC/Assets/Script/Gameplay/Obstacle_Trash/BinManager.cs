@@ -12,6 +12,7 @@ public class BinManager : MonoBehaviour
 
     [Header("Highlight Settings")]
     public GameObject binHighlight;
+ 
 
 
 
@@ -31,6 +32,10 @@ public class BinManager : MonoBehaviour
         {
             binHighlight.SetActive(false);
         }
+
+       
+
+       
     }
 
 
@@ -54,7 +59,7 @@ public class BinManager : MonoBehaviour
             
             trashBin.SetActive(true);
             trashBin.transform.localScale = Vector3.zero;
-            LeanTween.scale(trashBin, Vector3.one, 0.5f).setEase(LeanTweenType.easeOutBack);
+            LeanTween.scale(trashBin, Vector3.one * 0.5f, 0.5f).setEase(LeanTweenType.easeOutBack);
         }
     }
 
@@ -65,5 +70,7 @@ public class BinManager : MonoBehaviour
         {
             binHighlight.SetActive(isShow);
         }
+
+        
     }
 }

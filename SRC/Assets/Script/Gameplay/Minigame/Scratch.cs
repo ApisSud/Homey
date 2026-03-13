@@ -1,4 +1,3 @@
-using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using TMPro;
@@ -6,15 +5,6 @@ using TMPro;
 public class Scratch : MonoBehaviour
 {
 
-
-    /* [Header("Win UI Settings")]
-     public GameObject winPanelObject;     
-     public CanvasGroup winCanvasGroup;   
-     public RectTransform winPanelRect;    
-     public float uiAnimDuration = 0.8f;   
-     public float showDelay = 2f;
-     public float offScreenPosY = 1000f;
-     public float onScreenPosY = 0f;*/
 
     [Header("Tool Reference")]
     public BroomController broom;
@@ -203,37 +193,4 @@ public class Scratch : MonoBehaviour
         }
     }
 
-
-
-    /*
-            // --- เริ่มต้นเปิด Panel ---
-            winPanelObject.SetActive(true);
-
-            // 1. เซ็ตตำแหน่งเริ่มต้นให้อยู่ "นอกจอ" (offScreenPosY)
-            winPanelRect.anchoredPosition = new Vector2(winPanelRect.anchoredPosition.x, offScreenPosY);
-            winCanvasGroup.alpha = 0f;
-
-            // --- Animation ขาเข้า (มาจากข้างบน ลงมาตรงกลาง) ---
-            Sequence sequence = DOTween.Sequence();
-
-            // ใช้ DOAnchorPosY ดึงลงมาที่ onScreenPosY (ตั้ง .SetUpdate(true) ให้เล่นได้แม้เกม Pause)
-            sequence.Append(winPanelRect.DOAnchorPosY(onScreenPosY, uiAnimDuration).SetEase(Ease.OutBack).SetUpdate(true));
-            sequence.Join(winCanvasGroup.DOFade(1f, uiAnimDuration).SetUpdate(true));
-
-            Invoke("CloseWinPanel", showDelay + uiAnimDuration);*/
-
-
-    /* void CloseWinPanel()
-     {
-         // --- Animation ขาออก (จากตรงกลาง เด้งกลับขึ้นไปข้างบน) ---
-         Sequence sequence = DOTween.Sequence();
-
-         // ใช้ DOAnchorPosY ดันกลับขึ้นไปที่ offScreenPosY
-         sequence.Append(winPanelRect.DOAnchorPosY(offScreenPosY, uiAnimDuration).SetEase(Ease.InBack).SetUpdate(true));
-         sequence.Join(winCanvasGroup.DOFade(0f, uiAnimDuration).SetUpdate(true));
-
-         sequence.OnComplete(() => {
-             winPanelObject.SetActive(false);
-         });
-     }*/
 }

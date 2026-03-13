@@ -79,21 +79,19 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
     private void Update()
     {
-       /* if (Draged)
+        if (Draged)
         {
             if (Input.GetKeyDown(KeyCode.E) && Flip == false)
             {
                 transform.eulerAngles = new Vector3(0, -180, 0);
-                Flip = true;
-                UpdateHighlight(layoutGrid.WorldToCell(transform.position), FloorSelect);
+                Flip = true;  
             }
             else if (Input.GetKeyDown(KeyCode.E) && Flip == true)
             {
                 transform.eulerAngles = new Vector3(0, 0, 0);
                 Flip = false;
-                UpdateHighlight(layoutGrid.WorldToCell(transform.position), FloorSelect);
             }
-        }*/
+        }
 
 
     }

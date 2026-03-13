@@ -12,6 +12,7 @@ public class BinManager : MonoBehaviour
 
     [Header("Highlight Settings")]
     public GameObject binHighlight;
+ 
 
 
 
@@ -31,6 +32,10 @@ public class BinManager : MonoBehaviour
         {
             binHighlight.SetActive(false);
         }
+
+       
+
+       
     }
 
 
@@ -65,5 +70,7 @@ public class BinManager : MonoBehaviour
         {
             binHighlight.SetActive(isShow);
         }
+
+        
     }
 }

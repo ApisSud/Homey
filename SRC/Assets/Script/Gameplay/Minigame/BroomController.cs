@@ -12,9 +12,12 @@ public class BroomController : MonoBehaviour
    public GameObject broomImage;
     private Vector3 originalScale;
 
+    private Animator animator;
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>(); 
         spriteRenderer.enabled = false;
 
         originalScale = transform.localScale;
@@ -71,7 +74,8 @@ public class BroomController : MonoBehaviour
         isEquipped = false;
         Cursor.visible = true;
 
-       
+        StopScrubbing();
+
         LeanTween.scale(gameObject, Vector3.zero, 0.5f)
             .setEase(LeanTweenType.easeInBack)
             .setOnComplete(() =>
@@ -81,7 +85,21 @@ public class BroomController : MonoBehaviour
               /*  Instantiate(Outparticle, transform.position, Quaternion.identity);*/
             });
     }
+    public void StartScrubbing()
+    {
+        if (animator != null)
+        {
+            animator.SetBool("isScrubbing", true); // ส่งค่า true ไปบอก Animator
+        }
+    }
 
-  
-    
+    public void StopScrubbing()
+    {
+        if (animator != null)
+        {
+            animator.SetBool("isScrubbing", false); // ส่งค่า false ไปบอก Animator
+        }
+    }
+
+
 }

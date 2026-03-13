@@ -120,9 +120,9 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             //Debug.Log($"Remove {finalPos}");
             CheckGrid.instance.RemoveObject(finalPos);
         }
-        if (Size == SizeFurniture.Grid1X1)
+        if (rowGrid > 1 | columnGrid > 1)
         {
-            combineRemoveGrid(2,2,cellPosition);
+            combineRemoveGrid(rowGrid, columnGrid, cellPosition);
         }
     }
 
@@ -197,8 +197,8 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             // 2. หาตำแหน่งกึ่งกลางของช่องแรกนั้น
             Vector3 baseSnapPos = layoutGrid.GetCellCenterWorld(cellPosition);
 
-            float offsetX = ((2 - 1) * layoutGrid.cellSize.x) / 2f;
-            float offsetZ = ((8 - 1) * layoutGrid.cellSize.y) / 2f; 
+            float offsetX = ((rowGrid - 1) * layoutGrid.cellSize.x) / 2f;
+            float offsetZ = ((columnGrid - 1) * layoutGrid.cellSize.y) / 2f; 
             Vector3 totalOffset = new Vector3(offsetX, 0, offsetZ);
             transform.position = baseSnapPos + totalOffset;
             finalPos = baseSnapPos + totalOffset;
@@ -229,20 +229,14 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             CheckGrid.instance.PlaceObject(cellPosition, $"{Type}");
             CheckGrid.instance.addFurnitureInScene(cellPosition);
 
-            if(Size == SizeFurniture.Grid1X1)
+            if(rowGrid > 1 | columnGrid > 1)
             {
             
                 //offset = new Vector3(layoutGrid.cellSize.x / 2f, 0, layoutGrid.cellSize.y / 2f);
                 transform.position = finalPos;
-                combinePlaceGrid(2, 2, cellPosition);
+                combinePlaceGrid(rowGrid, columnGrid, cellPosition);
             }
-            if (Size == SizeFurniture.Grid1X2)
-            {
-                if (Flip == false)
-                    CheckGrid.instance.PlaceObject(cellPosition + new Vector3Int(0, 1, 0), $"{Type}");
-                else
-                    CheckGrid.instance.PlaceObject(cellPosition + new Vector3Int(1, 0, 0), $"{Type}");
-            }
+           
             Debug.Log($"{cellPosition} empty");
         }
         else
@@ -326,7 +320,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             // วนลูปแนวแถว
             for (int r = 0; r < rows; r++)
             {
-                Vector3Int targetPos = new Vector3Int(cellPosition.x - c, cellPosition.y - r, cellPosition.z);
+                Vector3Int targetPos = new Vector3Int(cellPosition.x - c, cellPosition.y - r, 0);
 
                 CheckGrid.instance.PlaceObject(targetPos, $"{Type}");
             }
@@ -340,7 +334,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             // วนลูปแนวแถว
             for (int r = 0; r < rows; r++)
             {
-                Vector3Int targetPos = new Vector3Int(cellPosition.x - c, cellPosition.y - r, cellPosition.z);
+                Vector3Int targetPos = new Vector3Int(cellPosition.x - c, cellPosition.y - r, 0);
 
                 CheckGrid.instance.RemoveObject(targetPos);
             }

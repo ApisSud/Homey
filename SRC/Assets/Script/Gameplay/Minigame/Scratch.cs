@@ -72,15 +72,33 @@ public class Scratch : MonoBehaviour
     {
         if (!isGameActive || !broom.isEquipped) return;
 
+     
+        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
+        {
+            broom.StopScrubbing();
+            return;
+        }
+
+      
         if (Input.GetMouseButtonDown(0))
         {
             lastMousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+           
+            broom.StartScrubbing();
         }
+     
         else if (Input.GetMouseButton(0))
         {
             Vector2 currentMousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             EraseLine(lastMousePos, currentMousePos);
             lastMousePos = currentMousePos;
+        }
+       
+        else if (Input.GetMouseButtonUp(0))
+        {
+            // สั่งให้ไม้กวาดหยุดเล่นอนิเมชันถู!
+            broom.StopScrubbing();
         }
     }
 
@@ -178,6 +196,8 @@ public class Scratch : MonoBehaviour
 
         dirtSpriteRenderer.gameObject.SetActive(false);
         broom.UnequipBroom();
+
+        broom.StopScrubbing();
 
         if (TaskManager.Instance != null)
         {

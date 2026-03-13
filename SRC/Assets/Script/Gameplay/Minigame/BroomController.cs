@@ -89,7 +89,7 @@ public class BroomController : MonoBehaviour
     {
         if (animator != null)
         {
-            animator.SetBool("isScrubbing", true); // ส่งค่า true ไปบอก Animator
+            animator.SetBool("isScrubbing", true); 
         }
     }
 
@@ -97,7 +97,7 @@ public class BroomController : MonoBehaviour
     {
         if (animator != null)
         {
-            animator.SetBool("isScrubbing", false); // ส่งค่า false ไปบอก Animator
+            animator.SetBool("isScrubbing", false); 
         }
     }
 

@@ -128,80 +128,83 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
     public void OnDrag(PointerEventData eventData)
     {
-        Vector3 screenPos = eventData.position;
-        screenPos.z = 10f;
+        if (canMove)
+        {
+            Vector3 screenPos = eventData.position;
+            screenPos.z = 10f;
 
-        Vector3 worldPos = transform.position;
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(screenPos);
-        mousePos.z = 0;
-        Vector3Int cellPosition = layoutGrid.WorldToCell(mousePos);
-        Vector3 snapPos = layoutGrid.GetCellCenterWorld(cellPosition);
+            Vector3 worldPos = transform.position;
+            Vector3 mousePos = Camera.main.ScreenToWorldPoint(screenPos);
+            mousePos.z = 0;
+            Vector3Int cellPosition = layoutGrid.WorldToCell(mousePos);
+            Vector3 snapPos = layoutGrid.GetCellCenterWorld(cellPosition);
 
-        /*transform.position = eventData.position;
-        transform.position = mousePos + offset;*/
+            /*transform.position = eventData.position;
+            transform.position = mousePos + offset;*/
 
-        Draged = true;
-        if (Size == SizeFurniture.small)
-        { 
-            sr.sortingOrder = 3;
-            if(!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
+            Draged = true;
+            if (Size == SizeFurniture.small)
             {
-                transform.position = mousePos;
-            }
-            if (onStorageFur)
-            {
-                //Debug.Log("inStorage");
-                //Debug.Log($"worldPos1 : {mousePos}");
+                sr.sortingOrder = 3;
+                if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
+                {
+                    transform.position = mousePos;
+                }
+                if (onStorageFur)
+                {
+                    //Debug.Log("inStorage");
+                    //Debug.Log($"worldPos1 : {mousePos}");
 
-                finalPos = currentTargetGrid.GetClosestSnapPoint(mousePos);
-                transform.position = finalPos;
-                //Debug.Log($"fur will snap : {finalPos}");
+                    finalPos = currentTargetGrid.GetClosestSnapPoint(mousePos);
+                    transform.position = finalPos;
+                    //Debug.Log($"fur will snap : {finalPos}");
+                }
+                else if (!onStorageFur)
+                {
+                    transform.position = snapPos;
+                }
+
             }
-            else if(!onStorageFur)
+            if (Size != SizeFurniture.small)
             {
                 transform.position = snapPos;
-            }
-           
-        }
-        if (Size != SizeFurniture.small)
-        {
-            transform.position = snapPos;
-            if (cellPosition != previousCellPos && GameManager.instance.IsWithinBounds(cellPosition))
-            {
-                //UpdateHighlight(cellPosition, FloorSelect);
+                if (cellPosition != previousCellPos && GameManager.instance.IsWithinBounds(cellPosition))
+                {
+                    //UpdateHighlight(cellPosition, FloorSelect);
+
+                }
+                if (!GameManager.instance.IsWithinBounds(cellPosition))
+                {
+                    FloorSelect.SetTile(previousCellPos, null);
+                }
+                if (CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) || !GameManager.instance.IsWithinBounds(cellPosition))
+                {
+                    bodyColor.color = new Color32(255, 0, 0, 255);
+                }
+                else if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
+                {
+                    bodyColor.color = originalColor;
+                }
 
             }
-            if (!GameManager.instance.IsWithinBounds(cellPosition))
+            if (Size == SizeFurniture.Grid1X1)
             {
-                FloorSelect.SetTile(previousCellPos, null);
+                offset = new Vector3(layoutGrid.cellSize.x / 2f, 0, layoutGrid.cellSize.y / 2f);
+                transform.position = snapPos + offset;
+                finalPos = snapPos + offset;
+                //combineGridUpdateHighlight(2, 2, cellPosition);
             }
-            if (CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) || !GameManager.instance.IsWithinBounds(cellPosition))
+            if (Size == SizeFurniture.Grid1X2)
             {
-                bodyColor.color = new Color32(255, 0, 0, 255);
-            }
-            else if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
-            {
-                bodyColor.color = originalColor;
-            }
+                // 2. หาตำแหน่งกึ่งกลางของช่องแรกนั้น
+                Vector3 baseSnapPos = layoutGrid.GetCellCenterWorld(cellPosition);
 
-        }
-        if (Size == SizeFurniture.Grid1X1)
-        {
-            offset = new Vector3(layoutGrid.cellSize.x / 2f, 0, layoutGrid.cellSize.y / 2f);
-            transform.position = snapPos + offset;
-            finalPos = snapPos + offset;
-            //combineGridUpdateHighlight(2, 2, cellPosition);
-        }
-        if (Size == SizeFurniture.Grid1X2)
-        {
-            // 2. หาตำแหน่งกึ่งกลางของช่องแรกนั้น
-            Vector3 baseSnapPos = layoutGrid.GetCellCenterWorld(cellPosition);
-
-            float offsetX = ((rowGrid - 1) * layoutGrid.cellSize.x) / 2f;
-            float offsetZ = ((columnGrid - 1) * layoutGrid.cellSize.y) / 2f; 
-            Vector3 totalOffset = new Vector3(offsetX, 0, offsetZ);
-            transform.position = baseSnapPos + totalOffset;
-            finalPos = baseSnapPos + totalOffset;
+                float offsetX = ((rowGrid - 1) * layoutGrid.cellSize.x) / 2f;
+                float offsetZ = ((columnGrid - 1) * layoutGrid.cellSize.y) / 2f;
+                Vector3 totalOffset = new Vector3(offsetX, 0, offsetZ);
+                transform.position = baseSnapPos + totalOffset;
+                finalPos = baseSnapPos + totalOffset;
+            }
         }
 
 

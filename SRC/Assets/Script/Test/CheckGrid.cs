@@ -47,7 +47,7 @@ public class CheckGrid : MonoBehaviour
         if(!CheckFurnitureinScene.ContainsKey(gridPos))
         {
             CheckFurnitureinScene.Add(gridPos, true);
-            Debug.Log($"Num Fur In Scene: {CheckFurnitureinScene.Count}");
+            //Debug.Log($"Num Fur In Scene: {CheckFurnitureinScene.Count}");
         }
         UpdateFurnitureBar(CheckFurnitureinScene.Count);
 

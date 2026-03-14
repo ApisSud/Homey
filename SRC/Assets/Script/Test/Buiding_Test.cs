@@ -21,10 +21,6 @@ public enum TypeFurniture
     pot
 }
 
-public enum Level
-{
-    Level1, Level2,
-}
 
 public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {

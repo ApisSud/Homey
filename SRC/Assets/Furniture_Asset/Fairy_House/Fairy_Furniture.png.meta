@@ -1214,8 +1214,8 @@ TextureImporter:
         y: 510
         width: 54
         height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.524717, y: 0.39235073}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1236,8 +1236,8 @@ TextureImporter:
         y: 512
         width: 54
         height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.38158688}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1258,8 +1258,8 @@ TextureImporter:
         y: 510
         width: 54
         height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39235172}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1280,8 +1280,8 @@ TextureImporter:
         y: 511
         width: 54
         height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37082204}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1368,8 +1368,8 @@ TextureImporter:
         y: 406
         width: 54
         height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.48763925, y: 0.37082008}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1386,12 +1386,12 @@ TextureImporter:
       name: Fairy_Furniture_50
       rect:
         serializedVersion: 2
-        x: 2172
+        x: 2173
         y: 407
         width: 54
         height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.46292228, y: 0.3923522}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []

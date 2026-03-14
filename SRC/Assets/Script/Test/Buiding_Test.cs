@@ -10,7 +10,8 @@ public enum SizeFurniture
 {
     small,
     Grid1X1,
-    Grid1X2
+    Grid1X2,
+    wall
 }
 
 public enum TypeFurniture
@@ -41,6 +42,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     private bool Flip;
     private bool Draged;
     private bool onStorageFur;
+    private bool onWall;
     [SerializeField] private bool canMove;
     
     [SerializeField]
@@ -62,6 +64,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         Vector3Int cellPosition = layoutGrid.WorldToCell(worldPos);
         Debug.Log(cellPosition);
         onStorageFur = false;
+        onWall = false;
         CheckGrid.instance.PlaceObject(cellPosition, $"{Type}");
         if (GameManager.instance.IsWithinBounds(cellPosition))
         {
@@ -116,6 +119,12 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             //Debug.Log($"Remove {finalPos}");
             CheckGrid.instance.RemoveObject(finalPos);
         }
+        if (Size == SizeFurniture.wall && onWall)
+        {
+            //finalPos = currentTargetGrid.GetClosestSnapPoint(mousePos);
+            //Debug.Log($"Remove {finalPos}");
+            CheckGrid.instance.RemoveObject(finalPos);
+        }
         if (rowGrid > 1 | columnGrid > 1)
         {
             combineRemoveGrid(rowGrid, columnGrid, cellPosition);
@@ -161,7 +170,29 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                 }
 
             }
-            if (Size != SizeFurniture.small)
+            if (Size == SizeFurniture.wall)
+            {
+                sr.sortingOrder = 3;
+                if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
+                {
+                    transform.position = mousePos;
+                }
+                if (onWall)
+                {
+                    Debug.Log("onWall");
+                    Debug.Log($"worldPos1 : {mousePos}");
+
+                    finalPos = currentTargetGrid.GetClosestSnapPoint(mousePos);
+                    transform.position = finalPos;
+                    Debug.Log($"fur will snap : {finalPos}");
+                }
+                else if (!onWall)
+                {
+                    transform.position = snapPos;
+                }
+
+            }
+            /*if (Size != SizeFurniture.small)
             {
                 transform.position = snapPos;
                 if (cellPosition != previousCellPos && GameManager.instance.IsWithinBounds(cellPosition))
@@ -182,7 +213,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                     bodyColor.color = originalColor;
                 }
 
-            }
+            }*/
             if (Size == SizeFurniture.Grid1X1)
             {
                 offset = new Vector3(layoutGrid.cellSize.x / 2f, 0, layoutGrid.cellSize.y / 2f);
@@ -258,7 +289,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             Debug.Log($"{cellPosition} not empty");
         }
 
-        if(onStorageFur)
+        if(onStorageFur | onWall)
         {  if (!CheckGrid.instance.occupiedTiles.ContainsKey(finalPos))
             {
                 transform.position = finalPos;
@@ -272,6 +303,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                 CheckGrid.instance.PlaceObject(cellPosition, $"{Type}");
             }
         }
+
 
         if (Type == TypeFurniture.woodlarge)
         {
@@ -296,12 +328,16 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
   
     private void OnTriggerStay2D(Collider2D Furniture)
     {
-        int furnitureLayer = LayerMask.NameToLayer("FurnitureStorage");
 
-        if (Furniture.gameObject.layer == furnitureLayer)
+        if (Furniture.gameObject.layer == LayerMask.NameToLayer("FurnitureStorage"))
         {
             currentTargetGrid = Furniture.GetComponent<Isogrid>();
             onStorageFur = true;
+        }
+        if (Furniture.gameObject.layer == LayerMask.NameToLayer("wall"))
+        {
+            currentTargetGrid = Furniture.GetComponent<Isogrid>();
+            onWall = true;
         }
 
     }

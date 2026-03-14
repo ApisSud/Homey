@@ -263,6 +263,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             {
                 transform.position = finalPos;
                 CheckGrid.instance.PlaceObject(finalPos, $"{Type}");
+                CheckGrid.instance.addFurnitureInScene(finalPos);
             }
             else if(CheckGrid.instance.occupiedTiles.ContainsKey(finalPos))
             {

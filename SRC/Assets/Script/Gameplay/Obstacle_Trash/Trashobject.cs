@@ -10,10 +10,10 @@ public class Trashobject : MonoBehaviour
         bags
     }
     public static int totalTrash = 0;
-
+/*
     [Header("Game Settings")]
   
-    public GameObject trashParticle;
+    public GameObject trashParticle;*/
 
     [SerializeField] private TrashType type;
 
@@ -24,6 +24,11 @@ public class Trashobject : MonoBehaviour
     public Sprite draggingSprite;
     private SpriteRenderer spriteRenderer;
 
+    [Header("Pop-up Animation Settings")]
+    public float popScaleFactor = 1.2f;
+    public float popDuration = 0.15f;
+    private Vector3 originalScale;
+
     private Vector3 offset;
     private bool isOverBin = false; 
     private Vector3 startPosition;
@@ -32,6 +37,8 @@ public class Trashobject : MonoBehaviour
     {
         startPosition = transform.position;
         UpdateScoreUI();
+
+        originalScale = transform.localScale;
 
         spriteRenderer = GetComponent<SpriteRenderer>();
 
@@ -52,6 +59,10 @@ public class Trashobject : MonoBehaviour
         if (spriteRenderer != null && draggingSprite != null)
         {
             spriteRenderer.sprite = draggingSprite;
+
+            LeanTween.cancel(gameObject);
+            LeanTween.scale(gameObject, originalScale * popScaleFactor, popDuration)
+                .setEase(LeanTweenType.easeOutBack);
         }
     }
 
@@ -66,22 +77,24 @@ public class Trashobject : MonoBehaviour
     {
         if (BinManager.Instance != null) BinManager.Instance.SetHighlight(false);
 
-        // เช็คว่าปล่อยลงถังขยะหรือไม่
+     
         if (isOverBin)
         {
-            // ---- ถ้าลงถัง: ไม่ต้องเปลี่ยนรูปกลับ ปล่อยให้เป็นรูปกำลังลาก (ขยำ) ลงถังไปเลย ----
+           
             ThrowInBin();
         }
         else
         {
-            // ---- ถ้าพลาดเป้า (ไม่ลงถัง): ค่อยเปลี่ยนรูปลับมาเป็นรูปปกติ (idleSprite) ----
+           
             if (spriteRenderer != null && idleSprite != null)
             {
                 spriteRenderer.sprite = idleSprite;
             }
 
-            // แล้วเด้งกลับที่เดิม
+
+            LeanTween.cancel(gameObject);
             LeanTween.move(gameObject, startPosition, 0.3f).setEase(LeanTweenType.easeOutBack);
+            LeanTween.scale(gameObject, originalScale, 0.2f).setEase(LeanTweenType.easeOutQuad); 
         }
     }
 
@@ -116,13 +129,13 @@ public class Trashobject : MonoBehaviour
         if (GetComponent<Collider2D>() != null) GetComponent<Collider2D>().enabled = false;
 
         LeanTween.scale(gameObject, Vector3.zero, 0.3f)
-            .setEase(LeanTweenType.easeInBack)
-            .setOnComplete(() =>
+             .setEase(LeanTweenType.easeInBack)
+             .setOnComplete(() =>
             {
-                if (trashParticle != null)
+               /* if (trashParticle != null)
                 {
                     Instantiate(trashParticle, transform.position, Quaternion.identity);
-                }
+                }*/
                 Destroy(gameObject);
             });
     }

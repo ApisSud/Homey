@@ -106,9 +106,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3300d2bf4fc4a834d87c85a4ae7c7830, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Trashobject
-  trashParticle: {fileID: 0}
   type: 0
   scoreText: {fileID: 0}
+  idleSprite: {fileID: 0}
+  draggingSprite: {fileID: 0}
+  popScaleFactor: 0.8
+  popDuration: 0.15
 --- !u!61 &2818623466281265554
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -147,7 +150,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.05, y: 0.84}
+    oldSize: {x: 1.69, y: 0.94}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

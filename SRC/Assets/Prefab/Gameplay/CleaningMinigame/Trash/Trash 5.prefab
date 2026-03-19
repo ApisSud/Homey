@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 8748228130274760430, guid: eaa9feb37740e284e8cdf69bd9ce3638, type: 3}
+  m_Sprite: {fileID: 82655054125925870, guid: 59b5a16f92406bc4fbcacf7a0134f057, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -106,9 +106,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3300d2bf4fc4a834d87c85a4ae7c7830, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Trashobject
-  trashParticle: {fileID: 0}
   type: 0
   scoreText: {fileID: 0}
+  idleSprite: {fileID: 0}
+  draggingSprite: {fileID: 0}
+  popScaleFactor: 1.2
+  popDuration: 0.15
 --- !u!61 &8678434283334396932
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -143,17 +146,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.022616625, y: 0.035809673}
+  m_Offset: {x: -0.052387714, y: -0.06541228}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.51, y: 0.73}
+    oldSize: {x: 4.47, y: 2.49}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.3366065, y: 0.5302199}
+  m_Size: {x: 4.8496065, y: 2.780922}
   m_EdgeRadius: 0
 --- !u!50 &4382885549393616394
 Rigidbody2D:

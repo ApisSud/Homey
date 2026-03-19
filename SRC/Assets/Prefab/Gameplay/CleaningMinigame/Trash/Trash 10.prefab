@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8678434283334396932}
   - component: {fileID: 4382885549393616394}
   m_Layer: 0
-  m_Name: Trash 5
+  m_Name: Trash 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 82655054125925870, guid: 59b5a16f92406bc4fbcacf7a0134f057, type: 3}
+  m_Sprite: {fileID: 4356042321308301760, guid: 59b5a16f92406bc4fbcacf7a0134f057, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Trashobject
   type: 0
   scoreText: {fileID: 0}
-  idleSprite: {fileID: 82655054125925870, guid: 59b5a16f92406bc4fbcacf7a0134f057, type: 3}
+  idleSprite: {fileID: -4051272420501029111, guid: 59b5a16f92406bc4fbcacf7a0134f057, type: 3}
   draggingSprite: {fileID: -4453074957008145678, guid: 59b5a16f92406bc4fbcacf7a0134f057, type: 3}
   popScaleFactor: 1.2
   popDuration: 0.15
@@ -146,17 +146,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.052387714, y: -0.06541228}
+  m_Offset: {x: -0.0067954063, y: -0.0002797842}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.47, y: 2.49}
+    oldSize: {x: 2.67, y: 1.71}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.8496065, y: 2.780922}
+  m_Size: {x: 3.1431346, y: 2.1556504}
   m_EdgeRadius: 0
 --- !u!50 &4382885549393616394
 Rigidbody2D:

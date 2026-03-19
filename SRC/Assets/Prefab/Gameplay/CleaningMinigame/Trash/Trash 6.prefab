@@ -108,8 +108,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Trashobject
   type: 0
   scoreText: {fileID: 0}
-  idleSprite: {fileID: 0}
-  draggingSprite: {fileID: 0}
+  idleSprite: {fileID: -248565861036220686, guid: 59b5a16f92406bc4fbcacf7a0134f057, type: 3}
+  draggingSprite: {fileID: -4453074957008145678, guid: 59b5a16f92406bc4fbcacf7a0134f057, type: 3}
   popScaleFactor: 1.2
   popDuration: 0.15
 --- !u!61 &8678434283334396932

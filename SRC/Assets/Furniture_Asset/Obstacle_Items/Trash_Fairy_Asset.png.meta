@@ -1,0 +1,897 @@
+fileFormatVersion: 2
+guid: 59b5a16f92406bc4fbcacf7a0134f057
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4356042321308301760
+    second: Trash_Fairy_Asset_0
+  - first:
+      213: 2116076007982079290
+    second: Trash_Fairy_Asset_1
+  - first:
+      213: -3341528829388804321
+    second: Trash_Fairy_Asset_2
+  - first:
+      213: 9198525836709159911
+    second: Trash_Fairy_Asset_3
+  - first:
+      213: -1531227246230484394
+    second: Trash_Fairy_Asset_4
+  - first:
+      213: -8073495242741463800
+    second: Trash_Fairy_Asset_5
+  - first:
+      213: -3174779477628147947
+    second: Trash_Fairy_Asset_6
+  - first:
+      213: 4268913208588045070
+    second: Trash_Fairy_Asset_7
+  - first:
+      213: 82655054125925870
+    second: Trash_Fairy_Asset_8
+  - first:
+      213: 7279142923656096088
+    second: Trash_Fairy_Asset_9
+  - first:
+      213: 2401812588098783625
+    second: Trash_Fairy_Asset_10
+  - first:
+      213: 2955580500518327815
+    second: Trash_Fairy_Asset_11
+  - first:
+      213: 4996364904006954340
+    second: Trash_Fairy_Asset_12
+  - first:
+      213: 3662779953024686013
+    second: Trash_Fairy_Asset_13
+  - first:
+      213: 4428237948449300241
+    second: Trash_Fairy_Asset_14
+  - first:
+      213: 3211212181044663019
+    second: Trash_Fairy_Asset_15
+  - first:
+      213: -1903358499321233934
+    second: Trash_Fairy_Asset_16
+  - first:
+      213: 3592221339906997297
+    second: Trash_Fairy_Asset_17
+  - first:
+      213: 8380303486755192184
+    second: Trash_Fairy_Asset_18
+  - first:
+      213: -7675969683191694681
+    second: Trash_Fairy_Asset_19
+  - first:
+      213: 804456763454469240
+    second: Trash_Fairy_Asset_20
+  - first:
+      213: 3176971351063416623
+    second: Trash_Fairy_Asset_21
+  - first:
+      213: -248565861036220686
+    second: Trash_Fairy_Asset_22
+  - first:
+      213: 7178530440577666013
+    second: Trash_Fairy_Asset_23
+  - first:
+      213: 627179371220798971
+    second: Trash_Fairy_Asset_24
+  - first:
+      213: 7806916180475816178
+    second: Trash_Fairy_Asset_25
+  - first:
+      213: -4453074957008145678
+    second: Trash_Fairy_Asset_26
+  - first:
+      213: -6149311787618776228
+    second: Trash_Fairy_Asset_27
+  - first:
+      213: -4051272420501029111
+    second: Trash_Fairy_Asset_28
+  - first:
+      213: 8684227377402420629
+    second: Trash_Fairy_Asset_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_0
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1364
+        width: 267
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c936247965c37c30800000000000000
+      internalID: 4356042321308301760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_1
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 1399
+        width: 183
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3d9f75faefcd5d10800000000000000
+      internalID: 2116076007982079290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_2
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 1369
+        width: 225
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1fad8ddb3180a1d0800000000000000
+      internalID: -3341528829388804321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_3
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1094
+        width: 447
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e36d4a338ab7af70800000000000000
+      internalID: 9198525836709159911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_4
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 1167
+        width: 183
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65a480eaeecffbae0800000000000000
+      internalID: -1531227246230484394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_5
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 1196
+        width: 212
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 805c6981ade25ff80800000000000000
+      internalID: -8073495242741463800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_6
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 1030
+        width: 145
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51726c3c2eae0f3d0800000000000000
+      internalID: -3174779477628147947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_7
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 993
+        width: 225
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b0dde02f93e3b30800000000000000
+      internalID: 4268913208588045070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_8
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 767
+        width: 447
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee501147556a52100800000000000000
+      internalID: 82655054125925870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_9
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 948
+        width: 54
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 859e1d92ce5b40560800000000000000
+      internalID: 7279142923656096088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_10
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 832
+        width: 61
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98980b2d2d3f45120800000000000000
+      internalID: 2401812588098783625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_11
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 838
+        width: 158
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 706577e4ec4540920800000000000000
+      internalID: 2955580500518327815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_12
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 875
+        width: 48
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46d20978867a65540800000000000000
+      internalID: 4996364904006954340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_13
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 799
+        width: 46
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db7557606fec4d230800000000000000
+      internalID: 3662779953024686013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_14
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 712
+        width: 145
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f993ac3f2447d30800000000000000
+      internalID: 4428237948449300241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_15
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 762
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be213950774809c20800000000000000
+      internalID: 3211212181044663019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_16
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 710
+        width: 36
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fdbcbf7789e595e0800000000000000
+      internalID: -1903358499321233934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_17
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 680
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13cfbb7b6422ad130800000000000000
+      internalID: 3592221339906997297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_18
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 661
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87db206de91dc4470800000000000000
+      internalID: 8380303486755192184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_19
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 620
+        width: 105
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aaf0befd3a797590800000000000000
+      internalID: -7675969683191694681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_20
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 676
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8743dd60a210a2b00800000000000000
+      internalID: 804456763454469240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_21
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 632
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2f4ab98c9ed61c20800000000000000
+      internalID: 3176971351063416623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_22
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 397
+        width: 337
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fe95a59aaaec8cf0800000000000000
+      internalID: -248565861036220686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_23
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 606
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddbc5f7f6634f9360800000000000000
+      internalID: 7178530440577666013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_24
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 513
+        width: 203
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfd8110b05034b800800000000000000
+      internalID: 627179371220798971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_25
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 370
+        width: 337
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f8a28047ecb75c60800000000000000
+      internalID: 7806916180475816178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_26
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 317
+        width: 100
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f277558bef7332c0800000000000000
+      internalID: -4453074957008145678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_27
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 48
+        width: 329
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5b4cd5728149aaa0800000000000000
+      internalID: -6149311787618776228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_28
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 48
+        width: 330
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90ff2b7b23df6c7c0800000000000000
+      internalID: -4051272420501029111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trash_Fairy_Asset_29
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 70
+        width: 142
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59d1bcae9c2948870800000000000000
+      internalID: 8684227377402420629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Trash_Fairy_Asset_0: 4356042321308301760
+      Trash_Fairy_Asset_1: 2116076007982079290
+      Trash_Fairy_Asset_10: 2401812588098783625
+      Trash_Fairy_Asset_11: 2955580500518327815
+      Trash_Fairy_Asset_12: 4996364904006954340
+      Trash_Fairy_Asset_13: 3662779953024686013
+      Trash_Fairy_Asset_14: 4428237948449300241
+      Trash_Fairy_Asset_15: 3211212181044663019
+      Trash_Fairy_Asset_16: -1903358499321233934
+      Trash_Fairy_Asset_17: 3592221339906997297
+      Trash_Fairy_Asset_18: 8380303486755192184
+      Trash_Fairy_Asset_19: -7675969683191694681
+      Trash_Fairy_Asset_2: -3341528829388804321
+      Trash_Fairy_Asset_20: 804456763454469240
+      Trash_Fairy_Asset_21: 3176971351063416623
+      Trash_Fairy_Asset_22: -248565861036220686
+      Trash_Fairy_Asset_23: 7178530440577666013
+      Trash_Fairy_Asset_24: 627179371220798971
+      Trash_Fairy_Asset_25: 7806916180475816178
+      Trash_Fairy_Asset_26: -4453074957008145678
+      Trash_Fairy_Asset_27: -6149311787618776228
+      Trash_Fairy_Asset_28: -4051272420501029111
+      Trash_Fairy_Asset_29: 8684227377402420629
+      Trash_Fairy_Asset_3: 9198525836709159911
+      Trash_Fairy_Asset_4: -1531227246230484394
+      Trash_Fairy_Asset_5: -8073495242741463800
+      Trash_Fairy_Asset_6: -3174779477628147947
+      Trash_Fairy_Asset_7: 4268913208588045070
+      Trash_Fairy_Asset_8: 82655054125925870
+      Trash_Fairy_Asset_9: 7279142923656096088
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

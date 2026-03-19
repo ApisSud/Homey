@@ -1,6 +1,4 @@
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
 
 public class CameraMovement : MonoBehaviour
 {
@@ -11,7 +9,10 @@ public class CameraMovement : MonoBehaviour
     private float zoomStep, minCamSize, maxCamSize; 
 
     [SerializeField]
-    private float scrollSensitivity = 10f; 
+    private float scrollSensitivity = 10f;
+
+    [SerializeField]
+    private float panSpeed = 15f;
 
     [SerializeField]
     private SpriteRenderer mapRenderer;
@@ -40,19 +41,27 @@ public class CameraMovement : MonoBehaviour
         HandleScrollZoom(); 
     }
 
-    
+
     private void PanCamera()
     {
-        if (Input.GetMouseButtonDown(0))
-            dragOrigin = cam.ScreenToWorldPoint(Input.mousePosition);
+        float moveX = Input.GetAxis("Horizontal");
 
-        if (Input.GetMouseButton(0))
+        // รับค่าจากปุ่ม W/S หรือ บน/ล่าง (-1 ถึง 1)
+        float moveY = Input.GetAxis("Vertical");
+
+        // ถ้ามีการกดปุ่มขยับ
+        if (moveX != 0f || moveY != 0f)
         {
-            Vector3 difference = dragOrigin - cam.ScreenToWorldPoint(Input.mousePosition);
-            cam.transform.position = ClampCamera(cam.transform.position + difference);   //ograniczenie obszaru
+            // สร้าง Vector ทิศทางการเคลื่อนที่
+            Vector3 moveDirection = new Vector3(moveX, moveY, 0f);
+
+            // คำนวณตำแหน่งใหม่ (ความเร็ว * เวลาของเฟรม เพื่อให้ขยับสมูทไม่ผูกกับเฟรมเรต)
+            Vector3 targetPosition = cam.transform.position + moveDirection * panSpeed * Time.deltaTime;
+
+            // อัปเดตตำแหน่งกล้องและจำกัดขอบเขตไม่ให้หลุดแผนที่
+            cam.transform.position = ClampCamera(targetPosition);
         }
     }
-
    
     private void HandleScrollZoom()
     {

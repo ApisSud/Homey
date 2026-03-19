@@ -13,17 +13,17 @@ public class Trashobject : MonoBehaviour
 
     [Header("Game Settings")]
   
-   
-
     public GameObject trashParticle;
+
     [SerializeField] private TrashType type;
 
     [Header("UI Management")]
     public TextMeshProUGUI scoreText;
 
-    
+    public Sprite idleSprite;
+    public Sprite draggingSprite;
+    private SpriteRenderer spriteRenderer;
 
-    
     private Vector3 offset;
     private bool isOverBin = false; 
     private Vector3 startPosition;
@@ -32,6 +32,13 @@ public class Trashobject : MonoBehaviour
     {
         startPosition = transform.position;
         UpdateScoreUI();
+
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
+        if (idleSprite == null && spriteRenderer != null)
+        {
+            idleSprite = spriteRenderer.sprite;
+        }
     }
 
    
@@ -41,6 +48,11 @@ public class Trashobject : MonoBehaviour
         offset = transform.position - mousePos;
 
         if (BinManager.Instance != null) BinManager.Instance.SetHighlight(true);
+        
+        if (spriteRenderer != null && draggingSprite != null)
+        {
+            spriteRenderer.sprite = draggingSprite;
+        }
     }
 
     void OnMouseDrag()
@@ -52,17 +64,23 @@ public class Trashobject : MonoBehaviour
     
     void OnMouseUp()
     {
-
         if (BinManager.Instance != null) BinManager.Instance.SetHighlight(false);
 
+        // เช็คว่าปล่อยลงถังขยะหรือไม่
         if (isOverBin)
         {
-           
+            // ---- ถ้าลงถัง: ไม่ต้องเปลี่ยนรูปกลับ ปล่อยให้เป็นรูปกำลังลาก (ขยำ) ลงถังไปเลย ----
             ThrowInBin();
         }
         else
         {
-           
+            // ---- ถ้าพลาดเป้า (ไม่ลงถัง): ค่อยเปลี่ยนรูปลับมาเป็นรูปปกติ (idleSprite) ----
+            if (spriteRenderer != null && idleSprite != null)
+            {
+                spriteRenderer.sprite = idleSprite;
+            }
+
+            // แล้วเด้งกลับที่เดิม
             LeanTween.move(gameObject, startPosition, 0.3f).setEase(LeanTweenType.easeOutBack);
         }
     }
@@ -95,7 +113,7 @@ public class Trashobject : MonoBehaviour
             TaskManager.Instance.CompleteTrashTask();
         }
 
-        GetComponent<Collider2D>().enabled = false;
+        if (GetComponent<Collider2D>() != null) GetComponent<Collider2D>().enabled = false;
 
         LeanTween.scale(gameObject, Vector3.zero, 0.3f)
             .setEase(LeanTweenType.easeInBack)

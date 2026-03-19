@@ -303,7 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b7959f8369219b48bc2e7a48753471f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
-  game_scene: Task_Select
+  game_scene: 03Task_Select
   transitionManager: {fileID: 1541486777}
 --- !u!4 &431616351
 Transform:

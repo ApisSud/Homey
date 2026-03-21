@@ -1,0 +1,2795 @@
+fileFormatVersion: 2
+guid: 73336de5670edfb488365b774bb6698b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7596328241572593849
+    second: New_Fairy_Asset_0
+  - first:
+      213: -816813584641528267
+    second: New_Fairy_Asset_1
+  - first:
+      213: 8101767700812457486
+    second: New_Fairy_Asset_2
+  - first:
+      213: -6900351834462241475
+    second: New_Fairy_Asset_3
+  - first:
+      213: -2100946359603067648
+    second: New_Fairy_Asset_4
+  - first:
+      213: 4725826369616555580
+    second: New_Fairy_Asset_5
+  - first:
+      213: 2519962188304883847
+    second: New_Fairy_Asset_6
+  - first:
+      213: -8614701286801027332
+    second: New_Fairy_Asset_7
+  - first:
+      213: -8099335593371164110
+    second: New_Fairy_Asset_8
+  - first:
+      213: -4106145842648173331
+    second: New_Fairy_Asset_9
+  - first:
+      213: -4053181328942146812
+    second: New_Fairy_Asset_10
+  - first:
+      213: -2018120756792959275
+    second: New_Fairy_Asset_11
+  - first:
+      213: -3189559010889907588
+    second: New_Fairy_Asset_12
+  - first:
+      213: 6024037561290846518
+    second: New_Fairy_Asset_13
+  - first:
+      213: -8126062029331510597
+    second: New_Fairy_Asset_14
+  - first:
+      213: 8267005443192230658
+    second: New_Fairy_Asset_15
+  - first:
+      213: -5677823106251647314
+    second: New_Fairy_Asset_16
+  - first:
+      213: -702703009408146441
+    second: New_Fairy_Asset_17
+  - first:
+      213: 2339498055667772246
+    second: New_Fairy_Asset_18
+  - first:
+      213: 3369731035196540183
+    second: New_Fairy_Asset_19
+  - first:
+      213: 1902238740330003475
+    second: New_Fairy_Asset_20
+  - first:
+      213: -660560175764218927
+    second: New_Fairy_Asset_21
+  - first:
+      213: 6732477544980311511
+    second: New_Fairy_Asset_22
+  - first:
+      213: -1033749066104622223
+    second: New_Fairy_Asset_23
+  - first:
+      213: -2079322919942088274
+    second: New_Fairy_Asset_24
+  - first:
+      213: 3163981031198230732
+    second: New_Fairy_Asset_25
+  - first:
+      213: -3967338491659136697
+    second: New_Fairy_Asset_26
+  - first:
+      213: -4675421431922166192
+    second: New_Fairy_Asset_27
+  - first:
+      213: -2428891595973947028
+    second: New_Fairy_Asset_28
+  - first:
+      213: -7345411834254731062
+    second: New_Fairy_Asset_29
+  - first:
+      213: -2859031808742140128
+    second: New_Fairy_Asset_30
+  - first:
+      213: -3409642244780791609
+    second: New_Fairy_Asset_31
+  - first:
+      213: -6234791509976834745
+    second: New_Fairy_Asset_32
+  - first:
+      213: -4582091569970090479
+    second: New_Fairy_Asset_33
+  - first:
+      213: -214143590923747576
+    second: New_Fairy_Asset_34
+  - first:
+      213: 744582359139768733
+    second: New_Fairy_Asset_35
+  - first:
+      213: -4610484747925993409
+    second: New_Fairy_Asset_36
+  - first:
+      213: 8391139995601051140
+    second: New_Fairy_Asset_37
+  - first:
+      213: 1466372139983753856
+    second: New_Fairy_Asset_38
+  - first:
+      213: -2418803504092411897
+    second: New_Fairy_Asset_39
+  - first:
+      213: -7585073335412821952
+    second: New_Fairy_Asset_40
+  - first:
+      213: 3802331827245963517
+    second: New_Fairy_Asset_41
+  - first:
+      213: 9152448669458136266
+    second: New_Fairy_Asset_42
+  - first:
+      213: 9202664643623699279
+    second: New_Fairy_Asset_43
+  - first:
+      213: 73824416540769378
+    second: New_Fairy_Asset_44
+  - first:
+      213: 1132749324736877757
+    second: New_Fairy_Asset_45
+  - first:
+      213: 2902361797632545721
+    second: New_Fairy_Asset_46
+  - first:
+      213: -7426920711310339331
+    second: New_Fairy_Asset_47
+  - first:
+      213: -4058101813555837081
+    second: New_Fairy_Asset_48
+  - first:
+      213: -3013104401867063967
+    second: New_Fairy_Asset_49
+  - first:
+      213: -859608080870873393
+    second: New_Fairy_Asset_50
+  - first:
+      213: -1935454592004112165
+    second: New_Fairy_Asset_51
+  - first:
+      213: -7088704994407234840
+    second: New_Fairy_Asset_52
+  - first:
+      213: -3397234420720153096
+    second: New_Fairy_Asset_53
+  - first:
+      213: 3901961697167609643
+    second: New_Fairy_Asset_54
+  - first:
+      213: -8558738190354523771
+    second: New_Fairy_Asset_55
+  - first:
+      213: 3430320054665509906
+    second: New_Fairy_Asset_56
+  - first:
+      213: 4906514819165504731
+    second: New_Fairy_Asset_57
+  - first:
+      213: 6959556842840027863
+    second: New_Fairy_Asset_58
+  - first:
+      213: 6409552067784483695
+    second: New_Fairy_Asset_59
+  - first:
+      213: -4840816409083531409
+    second: New_Fairy_Asset_60
+  - first:
+      213: -2605236324617964360
+    second: New_Fairy_Asset_61
+  - first:
+      213: 7125548612283281165
+    second: New_Fairy_Asset_62
+  - first:
+      213: -477020524548690684
+    second: New_Fairy_Asset_63
+  - first:
+      213: -3580076309264124378
+    second: New_Fairy_Asset_64
+  - first:
+      213: 3174579361642159818
+    second: New_Fairy_Asset_65
+  - first:
+      213: 5003695406920816995
+    second: New_Fairy_Asset_66
+  - first:
+      213: 7690538730382300619
+    second: New_Fairy_Asset_67
+  - first:
+      213: 8147578410612808139
+    second: New_Fairy_Asset_68
+  - first:
+      213: 4062501943335699544
+    second: New_Fairy_Asset_69
+  - first:
+      213: 8806050465207868261
+    second: New_Fairy_Asset_70
+  - first:
+      213: -2139239274323932260
+    second: New_Fairy_Asset_71
+  - first:
+      213: -8924376701883405694
+    second: New_Fairy_Asset_72
+  - first:
+      213: -1318774841682286120
+    second: New_Fairy_Asset_73
+  - first:
+      213: 5859546404871438812
+    second: New_Fairy_Asset_74
+  - first:
+      213: 2908179976252548205
+    second: New_Fairy_Asset_75
+  - first:
+      213: -819071355757125637
+    second: New_Fairy_Asset_76
+  - first:
+      213: -8443169488908125469
+    second: New_Fairy_Asset_77
+  - first:
+      213: 9166707350224578716
+    second: New_Fairy_Asset_78
+  - first:
+      213: -1753027656680402034
+    second: New_Fairy_Asset_79
+  - first:
+      213: -3989874572642444307
+    second: New_Fairy_Asset_80
+  - first:
+      213: 7559018649213830795
+    second: New_Fairy_Asset_81
+  - first:
+      213: 4517672035648797296
+    second: New_Fairy_Asset_82
+  - first:
+      213: -8336478840701426930
+    second: New_Fairy_Asset_83
+  - first:
+      213: -2237342268437958445
+    second: New_Fairy_Asset_84
+  - first:
+      213: 6232887949155849993
+    second: New_Fairy_Asset_85
+  - first:
+      213: 2018108044638262476
+    second: New_Fairy_Asset_86
+  - first:
+      213: 2776452828796715749
+    second: New_Fairy_Asset_87
+  - first:
+      213: 7745548165426896605
+    second: New_Fairy_Asset_88
+  - first:
+      213: -8694758449814893331
+    second: New_Fairy_Asset_89
+  - first:
+      213: 6597661671464383133
+    second: New_Fairy_Asset_90
+  - first:
+      213: 1291600311386694799
+    second: New_Fairy_Asset_91
+  - first:
+      213: -3876687523557092226
+    second: New_Fairy_Asset_92
+  - first:
+      213: 4852024051067626288
+    second: New_Fairy_Asset_93
+  - first:
+      213: -2674532407810491089
+    second: New_Fairy_Asset_94
+  - first:
+      213: 2833021079227545058
+    second: New_Fairy_Asset_95
+  - first:
+      213: 6585985079535915240
+    second: New_Fairy_Asset_96
+  - first:
+      213: 7560467789003951568
+    second: New_Fairy_Asset_97
+  - first:
+      213: 741732261641489839
+    second: New_Fairy_Asset_98
+  - first:
+      213: 7493669293540116593
+    second: New_Fairy_Asset_99
+  - first:
+      213: -1489997582793315354
+    second: New_Fairy_Asset_100
+  - first:
+      213: 6927324357626387739
+    second: New_Fairy_Asset_101
+  - first:
+      213: 8208952041471935723
+    second: New_Fairy_Asset_102
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: New_Fairy_Asset_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1506
+        width: 134
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b0c334e9449b6960800000000000000
+      internalID: 7596328241572593849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_1
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 1506
+        width: 134
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53e6ab75f581aa4f0800000000000000
+      internalID: -816813584641528267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_2
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1499
+        width: 135
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e06e8a38cc24f6070800000000000000
+      internalID: 8101767700812457486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_3
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1503
+        width: 138
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3db9a1f0960d30a0800000000000000
+      internalID: -6900351834462241475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_4
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 1317
+        width: 468
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00585bfca60f7d2e0800000000000000
+      internalID: -2100946359603067648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_5
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 1493
+        width: 277
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e2b2f6b02859140800000000000000
+      internalID: 4725826369616555580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_6
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 1509
+        width: 233
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78024594244b8f220800000000000000
+      internalID: 2519962188304883847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_7
+      rect:
+        serializedVersion: 2
+        x: 1892
+        y: 1513
+        width: 140
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfecf1282de627880800000000000000
+      internalID: -8614701286801027332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_8
+      rect:
+        serializedVersion: 2
+        x: 2097
+        y: 1545
+        width: 96
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2322f60a031699f80800000000000000
+      internalID: -8099335593371164110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_9
+      rect:
+        serializedVersion: 2
+        x: 2269
+        y: 1547
+        width: 96
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de432058c1a0407c0800000000000000
+      internalID: -4106145842648173331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_10
+      rect:
+        serializedVersion: 2
+        x: 2696
+        y: 1504
+        width: 86
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40b58265e0530c7c0800000000000000
+      internalID: -4053181328942146812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_11
+      rect:
+        serializedVersion: 2
+        x: 2883
+        y: 1498
+        width: 105
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5de53893dd13ef3e0800000000000000
+      internalID: -2018120756792959275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_12
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 1510
+        width: 100
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c72c2c58af86cb3d0800000000000000
+      internalID: -3189559010889907588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_13
+      rect:
+        serializedVersion: 2
+        x: 3266
+        y: 1502
+        width: 102
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 631f95ace3ea99350800000000000000
+      internalID: 6024037561290846518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_14
+      rect:
+        serializedVersion: 2
+        x: 3466
+        y: 1493
+        width: 92
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbac7e653ad6a3f80800000000000000
+      internalID: -8126062029331510597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_15
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1328
+        width: 134
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20391bd66ad4ab270800000000000000
+      internalID: 8267005443192230658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_16
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1328
+        width: 134
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea69d5e97f15431b0800000000000000
+      internalID: -5677823106251647314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_17
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 1326
+        width: 134
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f321a5065f7f36f0800000000000000
+      internalID: -702703009408146441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_18
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1326
+        width: 134
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65b6bc02611977020800000000000000
+      internalID: 2339498055667772246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_19
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 1222
+        width: 184
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 715cf7dd580b3ce20800000000000000
+      internalID: 3369731035196540183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_20
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 1247
+        width: 318
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31c3b5b4e0c166a10800000000000000
+      internalID: 1902238740330003475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_21
+      rect:
+        serializedVersion: 2
+        x: 1927
+        y: 1263
+        width: 105
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dbddca150835d6f0800000000000000
+      internalID: -660560175764218927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_22
+      rect:
+        serializedVersion: 2
+        x: 2103
+        y: 1372
+        width: 96
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dd68de28a09e6d50800000000000000
+      internalID: 6732477544980311511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_23
+      rect:
+        serializedVersion: 2
+        x: 2269
+        y: 1375
+        width: 96
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17331ff83b267a1f0800000000000000
+      internalID: -1033749066104622223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_24
+      rect:
+        serializedVersion: 2
+        x: 2678
+        y: 1262
+        width: 110
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea9168f22d2c423e0800000000000000
+      internalID: -2079322919942088274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_25
+      rect:
+        serializedVersion: 2
+        x: 2866
+        y: 1238
+        width: 154
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc805a00cf7b8eb20800000000000000
+      internalID: 3163981031198230732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_26
+      rect:
+        serializedVersion: 2
+        x: 3077
+        y: 1265
+        width: 103
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7415ce469ae21f8c0800000000000000
+      internalID: -3967338491659136697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_27
+      rect:
+        serializedVersion: 2
+        x: 3243
+        y: 1257
+        width: 127
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 056f707aaf09d1fb0800000000000000
+      internalID: -4675421431922166192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_28
+      rect:
+        serializedVersion: 2
+        x: 3448
+        y: 1263
+        width: 107
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c619a0856f7da4ed0800000000000000
+      internalID: -2428891595973947028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_29
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1113
+        width: 128
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac8db4abadadf0a90800000000000000
+      internalID: -7345411834254731062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_30
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1052
+        width: 161
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 027d16eb7bda258d0800000000000000
+      internalID: -2859031808742140128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_31
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 993
+        width: 268
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c8eca481748ea0d0800000000000000
+      internalID: -3409642244780791609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_32
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1072
+        width: 167
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74d953fa7229979a0800000000000000
+      internalID: -6234791509976834745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_33
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 1270
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11eee9b7ef32960c0800000000000000
+      internalID: -4582091569970090479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_34
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 952
+        width: 369
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80f3014e985370df0800000000000000
+      internalID: -214143590923747576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_35
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 1099
+        width: 153
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d995c8ee5b9455a00800000000000000
+      internalID: 744582359139768733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_36
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 1104
+        width: 69
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f38c3859c844400c0800000000000000
+      internalID: -4610484747925993409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_37
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 1111
+        width: 91
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40e9f5a2e51537470800000000000000
+      internalID: 8391139995601051140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_38
+      rect:
+        serializedVersion: 2
+        x: 1808
+        y: 1107
+        width: 66
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 082d24031b9995410800000000000000
+      internalID: 1466372139983753856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_39
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 1021
+        width: 362
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7080a15470fae6ed0800000000000000
+      internalID: -2418803504092411897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_40
+      rect:
+        serializedVersion: 2
+        x: 2715
+        y: 978
+        width: 111
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0407e672df76cb690800000000000000
+      internalID: -7585073335412821952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_41
+      rect:
+        serializedVersion: 2
+        x: 2953
+        y: 858
+        width: 258
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df85829b6a894c430800000000000000
+      internalID: 3802331827245963517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_42
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1001
+        width: 72
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acc7c08b297040f70800000000000000
+      internalID: 9152448669458136266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_43
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 1008
+        width: 120
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f43cc3e4cbe66bf70800000000000000
+      internalID: 9202664643623699279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_44
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 975
+        width: 63
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26cb9ab6ae6460100800000000000000
+      internalID: 73824416540769378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_45
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 980
+        width: 75
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db45180628558bf00800000000000000
+      internalID: 1132749324736877757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_46
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 972
+        width: 77
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b35d857da2474820800000000000000
+      internalID: 2902361797632545721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_47
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 851
+        width: 363
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df21b5b66f64ee890800000000000000
+      internalID: -7426920711310339331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_48
+      rect:
+        serializedVersion: 2
+        x: 2087
+        y: 986
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 767c2acb6e9bea7c0800000000000000
+      internalID: -4058101813555837081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_49
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 830
+        width: 142
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16d3c87b28d4f26d0800000000000000
+      internalID: -3013104401867063967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_50
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 844
+        width: 130
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc6e2ad310f0214f0800000000000000
+      internalID: -859608080870873393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_51
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 570
+        width: 516
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd042b49d42e325e0800000000000000
+      internalID: -1935454592004112165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_52
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 754
+        width: 163
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e2c1da7d5cdf9d90800000000000000
+      internalID: -7088704994407234840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_53
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 623
+        width: 249
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fdce3e2b499ad0d0800000000000000
+      internalID: -3397234420720153096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_54
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 841
+        width: 88
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2f0bd67d7d862630800000000000000
+      internalID: 3901961697167609643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_55
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 840
+        width: 55
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 589595646f0493980800000000000000
+      internalID: -8558738190354523771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_56
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 843
+        width: 55
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21c7c344ae1fa9f20800000000000000
+      internalID: 3430320054665509906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_57
+      rect:
+        serializedVersion: 2
+        x: 1817
+        y: 848
+        width: 48
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd4cc817b31771440800000000000000
+      internalID: 4906514819165504731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_58
+      rect:
+        serializedVersion: 2
+        x: 2744
+        y: 731
+        width: 51
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d27e934310559060800000000000000
+      internalID: 6959556842840027863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_59
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 510
+        width: 306
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f632aa975ad43f850800000000000000
+      internalID: 6409552067784483695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_60
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 709
+        width: 122
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6fa1b9af17f1dcb0800000000000000
+      internalID: -4840816409083531409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_61
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 692
+        width: 86
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b4b33bad5758dbd0800000000000000
+      internalID: -2605236324617964360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_62
+      rect:
+        serializedVersion: 2
+        x: 1817
+        y: 687
+        width: 66
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0f2ce8c5b803e260800000000000000
+      internalID: 7125548612283281165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_63
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 701
+        width: 82
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40d64bb3c584169f0800000000000000
+      internalID: -477020524548690684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_64
+      rect:
+        serializedVersion: 2
+        x: 2062
+        y: 702
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62635859093015ec0800000000000000
+      internalID: -3580076309264124378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_65
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 701
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace97f91c1f5e0c20800000000000000
+      internalID: 3174579361642159818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_66
+      rect:
+        serializedVersion: 2
+        x: 2271
+        y: 702
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 369d4cd3672b07540800000000000000
+      internalID: 5003695406920816995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_67
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 697
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc512d3aa384aba60800000000000000
+      internalID: 7690538730382300619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_68
+      rect:
+        serializedVersion: 2
+        x: 2961
+        y: 350
+        width: 358
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc9d7309563021170800000000000000
+      internalID: 8147578410612808139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_69
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 424
+        width: 262
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 854cbdf4ef7e06830800000000000000
+      internalID: 4062501943335699544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_70
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 593
+        width: 120
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56bd0ecdd30653a70800000000000000
+      internalID: 8806050465207868261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_71
+      rect:
+        serializedVersion: 2
+        x: 1721
+        y: 444
+        width: 175
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b8b54d635ef42e0800000000000000
+      internalID: -2139239274323932260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_72
+      rect:
+        serializedVersion: 2
+        x: 1948
+        y: 602
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28aa77a4cae362480800000000000000
+      internalID: -8924376701883405694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_73
+      rect:
+        serializedVersion: 2
+        x: 2061
+        y: 603
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d92ec6c445c2bde0800000000000000
+      internalID: -1318774841682286120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_74
+      rect:
+        serializedVersion: 2
+        x: 2179
+        y: 606
+        width: 54
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd18747f86a415150800000000000000
+      internalID: 5859546404871438812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_75
+      rect:
+        serializedVersion: 2
+        x: 2292
+        y: 607
+        width: 54
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d64ef6bb74eeb5820800000000000000
+      internalID: 2908179976252548205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_76
+      rect:
+        serializedVersion: 2
+        x: 2389
+        y: 602
+        width: 54
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff166a01f212a4f0800000000000000
+      internalID: -819071355757125637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_77
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 332
+        width: 30
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eaf63b6516d3da80800000000000000
+      internalID: -8443169488908125469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_78
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 417
+        width: 91
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c98291a84cfa63f70800000000000000
+      internalID: 9166707350224578716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_79
+      rect:
+        serializedVersion: 2
+        x: 1493
+        y: 444
+        width: 123
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e83112a52aefba7e0800000000000000
+      internalID: -1753027656680402034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_80
+      rect:
+        serializedVersion: 2
+        x: 1958
+        y: 510
+        width: 54
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deb9847273e11a8c0800000000000000
+      internalID: -3989874572642444307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_81
+      rect:
+        serializedVersion: 2
+        x: 2071
+        y: 511
+        width: 54
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8681fc796707e860800000000000000
+      internalID: 7559018649213830795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_82
+      rect:
+        serializedVersion: 2
+        x: 2167
+        y: 510
+        width: 54
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07aff80e7cef1be30800000000000000
+      internalID: 4517672035648797296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_83
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 511
+        width: 54
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e036e66b9a0ee4c80800000000000000
+      internalID: -8336478840701426930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_84
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 257
+        width: 167
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d0f9c09f0d53f0e0800000000000000
+      internalID: -2237342268437958445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_85
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 165
+        width: 321
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9075f36019aaf7650800000000000000
+      internalID: 6232887949155849993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_86
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 144
+        width: 199
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc4950ff292c10c10800000000000000
+      internalID: 2018108044638262476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_87
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 317
+        width: 149
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e28e043321f78620800000000000000
+      internalID: 2776452828796715749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_88
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 310
+        width: 107
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dded2fec407bd7b60800000000000000
+      internalID: 7745548165426896605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_89
+      rect:
+        serializedVersion: 2
+        x: 1817
+        y: 345
+        width: 74
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dec05f6b143065780800000000000000
+      internalID: -8694758449814893331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_90
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 400
+        width: 102
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9238d3955a9f8b50800000000000000
+      internalID: 6597661671464383133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_91
+      rect:
+        serializedVersion: 2
+        x: 2061
+        y: 29
+        width: 375
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f84ecf7d3aface110800000000000000
+      internalID: 1291600311386694799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_92
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 7
+        width: 30
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e74d035ac3d333ac0800000000000000
+      internalID: -3876687523557092226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_93
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 10
+        width: 48
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 033a985da2ad55340800000000000000
+      internalID: 4852024051067626288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_94
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 19
+        width: 28
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2d7f2402f622ead0800000000000000
+      internalID: -2674532407810491089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_95
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 13
+        width: 42
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e53d8c59a9e05720800000000000000
+      internalID: 2833021079227545058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_96
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 12
+        width: 72
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e0d2c9298e166b50800000000000000
+      internalID: 6585985079535915240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_97
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 14
+        width: 61
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dd0d53a56d2ce860800000000000000
+      internalID: 7560467789003951568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_98
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 7
+        width: 42
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fad8695ef892b4a00800000000000000
+      internalID: 741732261641489839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_99
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 20
+        width: 41
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17806b1f48cdef760800000000000000
+      internalID: 7493669293540116593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_100
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 66
+        width: 196
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ebe961c717725be0800000000000000
+      internalID: -1489997582793315354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_101
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 41
+        width: 342
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1d5b3cfcccc22060800000000000000
+      internalID: 6927324357626387739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_Fairy_Asset_102
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 41
+        width: 255
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be4072a836e0ce170800000000000000
+      internalID: 8208952041471935723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      New_Fairy_Asset_0: 7596328241572593849
+      New_Fairy_Asset_1: -816813584641528267
+      New_Fairy_Asset_10: -4053181328942146812
+      New_Fairy_Asset_100: -1489997582793315354
+      New_Fairy_Asset_101: 6927324357626387739
+      New_Fairy_Asset_102: 8208952041471935723
+      New_Fairy_Asset_11: -2018120756792959275
+      New_Fairy_Asset_12: -3189559010889907588
+      New_Fairy_Asset_13: 6024037561290846518
+      New_Fairy_Asset_14: -8126062029331510597
+      New_Fairy_Asset_15: 8267005443192230658
+      New_Fairy_Asset_16: -5677823106251647314
+      New_Fairy_Asset_17: -702703009408146441
+      New_Fairy_Asset_18: 2339498055667772246
+      New_Fairy_Asset_19: 3369731035196540183
+      New_Fairy_Asset_2: 8101767700812457486
+      New_Fairy_Asset_20: 1902238740330003475
+      New_Fairy_Asset_21: -660560175764218927
+      New_Fairy_Asset_22: 6732477544980311511
+      New_Fairy_Asset_23: -1033749066104622223
+      New_Fairy_Asset_24: -2079322919942088274
+      New_Fairy_Asset_25: 3163981031198230732
+      New_Fairy_Asset_26: -3967338491659136697
+      New_Fairy_Asset_27: -4675421431922166192
+      New_Fairy_Asset_28: -2428891595973947028
+      New_Fairy_Asset_29: -7345411834254731062
+      New_Fairy_Asset_3: -6900351834462241475
+      New_Fairy_Asset_30: -2859031808742140128
+      New_Fairy_Asset_31: -3409642244780791609
+      New_Fairy_Asset_32: -6234791509976834745
+      New_Fairy_Asset_33: -4582091569970090479
+      New_Fairy_Asset_34: -214143590923747576
+      New_Fairy_Asset_35: 744582359139768733
+      New_Fairy_Asset_36: -4610484747925993409
+      New_Fairy_Asset_37: 8391139995601051140
+      New_Fairy_Asset_38: 1466372139983753856
+      New_Fairy_Asset_39: -2418803504092411897
+      New_Fairy_Asset_4: -2100946359603067648
+      New_Fairy_Asset_40: -7585073335412821952
+      New_Fairy_Asset_41: 3802331827245963517
+      New_Fairy_Asset_42: 9152448669458136266
+      New_Fairy_Asset_43: 9202664643623699279
+      New_Fairy_Asset_44: 73824416540769378
+      New_Fairy_Asset_45: 1132749324736877757
+      New_Fairy_Asset_46: 2902361797632545721
+      New_Fairy_Asset_47: -7426920711310339331
+      New_Fairy_Asset_48: -4058101813555837081
+      New_Fairy_Asset_49: -3013104401867063967
+      New_Fairy_Asset_5: 4725826369616555580
+      New_Fairy_Asset_50: -859608080870873393
+      New_Fairy_Asset_51: -1935454592004112165
+      New_Fairy_Asset_52: -7088704994407234840
+      New_Fairy_Asset_53: -3397234420720153096
+      New_Fairy_Asset_54: 3901961697167609643
+      New_Fairy_Asset_55: -8558738190354523771
+      New_Fairy_Asset_56: 3430320054665509906
+      New_Fairy_Asset_57: 4906514819165504731
+      New_Fairy_Asset_58: 6959556842840027863
+      New_Fairy_Asset_59: 6409552067784483695
+      New_Fairy_Asset_6: 2519962188304883847
+      New_Fairy_Asset_60: -4840816409083531409
+      New_Fairy_Asset_61: -2605236324617964360
+      New_Fairy_Asset_62: 7125548612283281165
+      New_Fairy_Asset_63: -477020524548690684
+      New_Fairy_Asset_64: -3580076309264124378
+      New_Fairy_Asset_65: 3174579361642159818
+      New_Fairy_Asset_66: 5003695406920816995
+      New_Fairy_Asset_67: 7690538730382300619
+      New_Fairy_Asset_68: 8147578410612808139
+      New_Fairy_Asset_69: 4062501943335699544
+      New_Fairy_Asset_7: -8614701286801027332
+      New_Fairy_Asset_70: 8806050465207868261
+      New_Fairy_Asset_71: -2139239274323932260
+      New_Fairy_Asset_72: -8924376701883405694
+      New_Fairy_Asset_73: -1318774841682286120
+      New_Fairy_Asset_74: 5859546404871438812
+      New_Fairy_Asset_75: 2908179976252548205
+      New_Fairy_Asset_76: -819071355757125637
+      New_Fairy_Asset_77: -8443169488908125469
+      New_Fairy_Asset_78: 9166707350224578716
+      New_Fairy_Asset_79: -1753027656680402034
+      New_Fairy_Asset_8: -8099335593371164110
+      New_Fairy_Asset_80: -3989874572642444307
+      New_Fairy_Asset_81: 7559018649213830795
+      New_Fairy_Asset_82: 4517672035648797296
+      New_Fairy_Asset_83: -8336478840701426930
+      New_Fairy_Asset_84: -2237342268437958445
+      New_Fairy_Asset_85: 6232887949155849993
+      New_Fairy_Asset_86: 2018108044638262476
+      New_Fairy_Asset_87: 2776452828796715749
+      New_Fairy_Asset_88: 7745548165426896605
+      New_Fairy_Asset_89: -8694758449814893331
+      New_Fairy_Asset_9: -4106145842648173331
+      New_Fairy_Asset_90: 6597661671464383133
+      New_Fairy_Asset_91: 1291600311386694799
+      New_Fairy_Asset_92: -3876687523557092226
+      New_Fairy_Asset_93: 4852024051067626288
+      New_Fairy_Asset_94: -2674532407810491089
+      New_Fairy_Asset_95: 2833021079227545058
+      New_Fairy_Asset_96: 6585985079535915240
+      New_Fairy_Asset_97: 7560467789003951568
+      New_Fairy_Asset_98: 741732261641489839
+      New_Fairy_Asset_99: 7493669293540116593
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

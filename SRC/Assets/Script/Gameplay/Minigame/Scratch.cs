@@ -10,7 +10,7 @@ public class Scratch : MonoBehaviour
     public BroomController broom;
 
     [Header("Settings")]
-    public SpriteRenderer dirtSpriteRenderer;
+    public SpriteRenderer[] dirtSprites;
     public int brushSize = 30;
 
     [Header("Win Condition")]
@@ -20,51 +20,67 @@ public class Scratch : MonoBehaviour
     [Header("UI Management")]
     public TextMeshProUGUI progress;
 
-    private Texture2D tex;
-    private Color32[] pixels;
-    private int totalPixels;
-    private int clearedPixels = 0;
+    private Texture2D[] textures;
+    private Color32[][] pixelsArray;
+    private int[] totalPixelsArray;
+    private int[] clearedPixelsArray;
+    private bool[] isCleanedArray;
+
     private Vector2 lastMousePos;
     private bool isGameActive = true;
 
     void Start()
     {
-        Texture2D originalTex = dirtSpriteRenderer.sprite.texture;
-        tex = new Texture2D(originalTex.width, originalTex.height, TextureFormat.RGBA32, false);
-        tex.SetPixels32(originalTex.GetPixels32());
-        tex.Apply();
+        int dirtCount = dirtSprites.Length;
+        textures = new Texture2D[dirtCount];
+        pixelsArray = new Color32[dirtCount][];
+        totalPixelsArray = new int[dirtCount];
+        clearedPixelsArray = new int[dirtCount];
+        isCleanedArray = new bool[dirtCount];
 
-        Sprite newSprite = Sprite.Create(tex, dirtSpriteRenderer.sprite.rect, new Vector2(0.5f, 0.5f), dirtSpriteRenderer.sprite.pixelsPerUnit);
-        dirtSpriteRenderer.sprite = newSprite;
-
-        pixels = tex.GetPixels32();
-
-      
-        totalPixels = 0;
-        Rect rect = dirtSpriteRenderer.sprite.textureRect;
-        int minX = Mathf.FloorToInt(rect.xMin);
-        int maxX = Mathf.FloorToInt(rect.xMax);
-        int minY = Mathf.FloorToInt(rect.yMin);
-        int maxY = Mathf.FloorToInt(rect.yMax);
-
-        for (int x = minX; x < maxX; x++)
+        // วนลูปตั้งค่าให้กับคราบสกปรกทุกชิ้น
+        for (int i = 0; i < dirtCount; i++)
         {
-            for (int y = minY; y < maxY; y++)
+            SpriteRenderer sr = dirtSprites[i];
+            Texture2D originalTex = sr.sprite.texture;
+
+            // สร้าง Texture โคลนนิ่ง
+            Texture2D tex = new Texture2D(originalTex.width, originalTex.height, TextureFormat.RGBA32, false);
+            tex.SetPixels32(originalTex.GetPixels32());
+            tex.Apply();
+
+            Sprite newSprite = Sprite.Create(tex, sr.sprite.rect, new Vector2(0.5f, 0.5f), sr.sprite.pixelsPerUnit);
+            sr.sprite = newSprite;
+
+            textures[i] = tex;
+            pixelsArray[i] = tex.GetPixels32();
+
+            // นับจำนวนพิกเซลที่มีสีของแต่ละคราบ
+            int tPixels = 0;
+            Rect rect = sr.sprite.textureRect;
+            int minX = Mathf.FloorToInt(rect.xMin);
+            int maxX = Mathf.FloorToInt(rect.xMax);
+            int minY = Mathf.FloorToInt(rect.yMin);
+            int maxY = Mathf.FloorToInt(rect.yMax);
+
+            for (int x = minX; x < maxX; x++)
             {
-                if (x >= 0 && x < tex.width && y >= 0 && y < tex.height)
+                for (int y = minY; y < maxY; y++)
                 {
-                    int index = y * tex.width + x;
-                    
-                    if (pixels[index].a > 0)
+                    if (x >= 0 && x < tex.width && y >= 0 && y < tex.height)
                     {
-                        totalPixels++;
+                        int index = y * tex.width + x;
+                        if (pixelsArray[i][index].a > 0)
+                        {
+                            tPixels++;
+                        }
                     }
                 }
             }
+            if (tPixels == 0) tPixels = 1; // กัน Error หาร 0
+            totalPixelsArray[i] = tPixels;
         }
 
-       
-        if (totalPixels == 0) totalPixels = 1;
         UpdateProgressUI(0);
     }
 
@@ -72,67 +88,75 @@ public class Scratch : MonoBehaviour
     {
         if (!isGameActive || !broom.isEquipped) return;
 
-     
         if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
         {
             broom.StopScrubbing();
             return;
         }
 
-      
         if (Input.GetMouseButtonDown(0))
         {
             lastMousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-           
             broom.StartScrubbing();
         }
-     
         else if (Input.GetMouseButton(0))
         {
             Vector2 currentMousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             EraseLine(lastMousePos, currentMousePos);
             lastMousePos = currentMousePos;
         }
-       
         else if (Input.GetMouseButtonUp(0))
         {
-            // สั่งให้ไม้กวาดหยุดเล่นอนิเมชันถู!
             broom.StopScrubbing();
         }
     }
 
     void EraseLine(Vector2 startWorld, Vector2 endWorld)
     {
-        Vector2 startPixel = WorldToPixel(startWorld);
-        Vector2 endPixel = WorldToPixel(endWorld);
+        bool anyChanged = false;
 
-        float distance = Vector2.Distance(startPixel, endPixel);
-        int steps = Mathf.Max(1, Mathf.CeilToInt(distance / (brushSize / 4f)));
-
-        bool changed = false;
-
-        for (int i = 0; i <= steps; i++)
+        // วนลูปเช็คคราบสกปรกทุกชิ้นว่าเมาส์ถูโดนชิ้นไหนบ้าง
+        for (int d = 0; d < dirtSprites.Length; d++)
         {
-            Vector2 point = Vector2.Lerp(startPixel, endPixel, (float)i / steps);
-            if (EraseCircle((int)point.x, (int)point.y))
+            if (isCleanedArray[d]) continue; // ถ้าคราบชิ้นนี้สะอาดแล้ว ให้ข้ามไปไม่ต้องเช็ค
+
+            Vector2 startPixel = WorldToPixel(startWorld, dirtSprites[d]);
+            Vector2 endPixel = WorldToPixel(endWorld, dirtSprites[d]);
+
+            float distance = Vector2.Distance(startPixel, endPixel);
+            int steps = Mathf.Max(1, Mathf.CeilToInt(distance / (brushSize / 4f)));
+
+            bool changed = false;
+
+            for (int i = 0; i <= steps; i++)
             {
-                changed = true;
+                Vector2 point = Vector2.Lerp(startPixel, endPixel, (float)i / steps);
+                if (EraseCircle((int)point.x, (int)point.y, d))
+                {
+                    changed = true;
+                    anyChanged = true;
+                }
+            }
+
+            if (changed)
+            {
+                textures[d].SetPixels32(pixelsArray[d]);
+                textures[d].Apply();
             }
         }
 
-        if (changed)
+        if (anyChanged)
         {
-            tex.SetPixels32(pixels);
-            tex.Apply();
             CheckWin();
         }
     }
 
-    bool EraseCircle(int centerX, int centerY)
+    bool EraseCircle(int centerX, int centerY, int dirtIndex)
     {
         bool changed = false;
         int radiusSq = brushSize * brushSize;
+        Texture2D tex = textures[dirtIndex];
+        Color32[] pixels = pixelsArray[dirtIndex];
 
         for (int x = centerX - brushSize; x <= centerX + brushSize; x++)
         {
@@ -147,7 +171,7 @@ public class Scratch : MonoBehaviour
                         if (pixels[index].a > 0)
                         {
                             pixels[index].a = 0;
-                            clearedPixels++;
+                            clearedPixelsArray[dirtIndex]++;
                             changed = true;
                         }
                     }
@@ -157,12 +181,11 @@ public class Scratch : MonoBehaviour
         return changed;
     }
 
-    Vector2 WorldToPixel(Vector2 worldPos)
+    Vector2 WorldToPixel(Vector2 worldPos, SpriteRenderer sr)
     {
-        Vector2 localPos = dirtSpriteRenderer.transform.InverseTransformPoint(worldPos);
-        Sprite sprite = dirtSpriteRenderer.sprite;
+        Vector2 localPos = sr.transform.InverseTransformPoint(worldPos);
+        Sprite sprite = sr.sprite;
 
-        
         float pixelX = (localPos.x * sprite.pixelsPerUnit) + sprite.pivot.x + sprite.textureRect.x;
         float pixelY = (localPos.y * sprite.pixelsPerUnit) + sprite.pivot.y + sprite.textureRect.y;
 
@@ -171,12 +194,34 @@ public class Scratch : MonoBehaviour
 
     void CheckWin()
     {
-        float percentCleared = (float)clearedPixels / totalPixels;
+        int globalCleared = 0;
+        int globalTotal = 0;
 
-        int displayPercent = Mathf.Clamp(Mathf.RoundToInt(percentCleared * 100), 0, 100);
+        // รวมคะแนนจากทุกคราบ
+        for (int i = 0; i < dirtSprites.Length; i++)
+        {
+            globalCleared += clearedPixelsArray[i];
+            globalTotal += totalPixelsArray[i];
+
+            // เช็คว่าคราบ "ชิ้นย่อย" ชิ้นนี้ สะอาดถึงเกณฑ์หรือยัง (ถ้าถึงแล้วให้ซ่อนชิ้นนี้ไปก่อน)
+            if (!isCleanedArray[i])
+            {
+                float localPercent = (float)clearedPixelsArray[i] / totalPixelsArray[i];
+                if (localPercent >= winPercentage)
+                {
+                    isCleanedArray[i] = true;
+                    dirtSprites[i].gameObject.SetActive(false);
+                }
+            }
+        }
+
+        // คำนวณเปอร์เซ็นต์ "รวมทั้งหมด" เพื่อแสดงขึ้น UI
+        float globalPercent = (float)globalCleared / globalTotal;
+        int displayPercent = Mathf.Clamp(Mathf.RoundToInt(globalPercent * 100), 0, 100);
         UpdateProgressUI(displayPercent);
 
-        if (percentCleared >= winPercentage)
+        // ถ้าค่ารวมทั้งหมดถึงเกณฑ์ ชนะเกม!
+        if (globalPercent >= winPercentage)
         {
             WinGame();
         }
@@ -187,17 +232,21 @@ public class Scratch : MonoBehaviour
         if (!isGameActive) return;
 
         isGameActive = false;
-        Debug.Log("Cleaned! You Win!");
+        Debug.Log("Cleaned All! You Win!");
 
         if (progress != null)
         {
             progress.text = "Progress : Done!";
         }
 
-        dirtSpriteRenderer.gameObject.SetActive(false);
-        broom.UnequipBroom();
+        // ปิดการแสดงผลคราบทุกชิ้นที่อาจจะยังหลงเหลืออยู่
+        for (int i = 0; i < dirtSprites.Length; i++)
+        {
+            if (dirtSprites[i] != null) dirtSprites[i].gameObject.SetActive(false);
+        }
 
         broom.StopScrubbing();
+        broom.UnequipBroom();
 
         if (TaskManager.Instance != null)
         {

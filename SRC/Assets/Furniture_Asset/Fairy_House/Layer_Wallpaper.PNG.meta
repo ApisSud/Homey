@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: 4223a6cebdd2ddd40b1965052215df44
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7903418441409344994
+    second: Layer_Wallpaper_0
+  - first:
+      213: -6733105648958817346
+    second: Layer_Wallpaper_1
+  - first:
+      213: 4353480013470755984
+    second: Layer_Wallpaper_2
+  - first:
+      213: 7602238398546613758
+    second: Layer_Wallpaper_3
+  - first:
+      213: 4691746923298530734
+    second: Layer_Wallpaper_4
+  - first:
+      213: 9028489219458290209
+    second: Layer_Wallpaper_5
+  - first:
+      213: 3276109900403263678
+    second: Layer_Wallpaper_6
+  - first:
+      213: -3414185819848764118
+    second: Layer_Wallpaper_7
+  - first:
+      213: 7413863440082827134
+    second: Layer_Wallpaper_8
+  - first:
+      213: -7680185406342154905
+    second: Layer_Wallpaper_9
+  - first:
+      213: 5503978575835629529
+    second: Layer_Wallpaper_10
+  - first:
+      213: -2111704916795024360
+    second: Layer_Wallpaper_11
+  - first:
+      213: 8316938179575220645
+    second: Layer_Wallpaper_12
+  - first:
+      213: -6720530283868565001
+    second: Layer_Wallpaper_13
+  - first:
+      213: -7551541519364752318
+    second: Layer_Wallpaper_14
+  - first:
+      213: -1348601449770882734
+    second: Layer_Wallpaper_15
+  - first:
+      213: -2208788927921454398
+    second: Layer_Wallpaper_16
+  - first:
+      213: -3516264246948130110
+    second: Layer_Wallpaper_17
+  - first:
+      213: 3876754087264280475
+    second: Layer_Wallpaper_18
+  - first:
+      213: 6703538558441229565
+    second: Layer_Wallpaper_19
+  - first:
+      213: -1131941729345047686
+    second: Layer_Wallpaper_20
+  - first:
+      213: -2878951272983999155
+    second: Layer_Wallpaper_21
+  - first:
+      213: -2184540980520483669
+    second: Layer_Wallpaper_22
+  - first:
+      213: 4858626699492760648
+    second: Layer_Wallpaper_23
+  - first:
+      213: 8393103023242154046
+    second: Layer_Wallpaper_24
+  - first:
+      213: -1409492109001363438
+    second: Layer_Wallpaper_25
+  - first:
+      213: -1022696033411838016
+    second: Layer_Wallpaper_26
+  - first:
+      213: 4716950985403085515
+    second: Layer_Wallpaper_27
+  - first:
+      213: 2975522451606431309
+    second: Layer_Wallpaper_28
+  - first:
+      213: 565660234214321495
+    second: Layer_Wallpaper_29
+  - first:
+      213: -24939027653069936
+    second: Layer_Wallpaper_30
+  - first:
+      213: 949665206022966349
+    second: Layer_Wallpaper_31
+  - first:
+      213: 1145925425077326833
+    second: Layer_Wallpaper_32
+  - first:
+      213: -1655710964279099622
+    second: Layer_Wallpaper_33
+  - first:
+      213: -8030953104466570610
+    second: Layer_Wallpaper_34
+  - first:
+      213: 5317369655408769796
+    second: Layer_Wallpaper_35
+  - first:
+      213: 5998122374044931360
+    second: Layer_Wallpaper_36
+  - first:
+      213: -6998592917073657164
+    second: Layer_Wallpaper_37
+  - first:
+      213: 881578144831872329
+    second: Layer_Wallpaper_38
+  - first:
+      213: 6766023721382650098
+    second: Layer_Wallpaper_39
+  - first:
+      213: 4480891961382082406
+    second: Layer_Wallpaper_40
+  - first:
+      213: -4912218797548671148
+    second: Layer_Wallpaper_41
+  - first:
+      213: 6647864375853355636
+    second: Layer_Wallpaper_42
+  - first:
+      213: 4249184234712939048
+    second: Layer_Wallpaper_43
+  - first:
+      213: 4376947880815120108
+    second: Layer_Wallpaper_44
+  - first:
+      213: 3854299429724112664
+    second: Layer_Wallpaper_45
+  - first:
+      213: -4906724517785121873
+    second: Layer_Wallpaper_46
+  - first:
+      213: 6959231483277517557
+    second: Layer_Wallpaper_47
+  - first:
+      213: 2625311047200615774
+    second: Layer_Wallpaper_48
+  - first:
+      213: -4888521412717691384
+    second: Layer_Wallpaper_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Layer_Wallpaper_0
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1552
+        width: 132
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1a46883dca615290800000000000000
+      internalID: -7903418441409344994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_1
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1549
+        width: 144
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebb32a6f5143f82a0800000000000000
+      internalID: -6733105648958817346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_2
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 1553
+        width: 132
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09cefaba10baa6c30800000000000000
+      internalID: 4353480013470755984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_3
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1552
+        width: 132
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef5943b8b83908960800000000000000
+      internalID: 7602238398546613758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_4
+      rect:
+        serializedVersion: 2
+        x: 1783
+        y: 1549
+        width: 144
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea5ad3308fe6c1140800000000000000
+      internalID: 4691746923298530734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_5
+      rect:
+        serializedVersion: 2
+        x: 2168
+        y: 1553
+        width: 132
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12251403c13ab4d70800000000000000
+      internalID: 9028489219458290209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_6
+      rect:
+        serializedVersion: 2
+        x: 2558
+        y: 1552
+        width: 132
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb84daac894177d20800000000000000
+      internalID: 3276109900403263678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_7
+      rect:
+        serializedVersion: 2
+        x: 2941
+        y: 1549
+        width: 144
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a251db206106e90d0800000000000000
+      internalID: -3414185819848764118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_8
+      rect:
+        serializedVersion: 2
+        x: 3326
+        y: 1553
+        width: 132
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e777467b48553e660800000000000000
+      internalID: 7413863440082827134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_9
+      rect:
+        serializedVersion: 2
+        x: 3718
+        y: 1552
+        width: 132
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76536d570108a6590800000000000000
+      internalID: -7680185406342154905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_10
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 1161
+        width: 144
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d70b087a5f026c40800000000000000
+      internalID: 5503978575835629529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_11
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 1165
+        width: 132
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81c9cf30197b1b2e0800000000000000
+      internalID: -2111704916795024360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_12
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 1164
+        width: 132
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a907749533bb6370800000000000000
+      internalID: 8316938179575220645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_13
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 1161
+        width: 144
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f152cf4051ebb2a0800000000000000
+      internalID: -6720530283868565001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_14
+      rect:
+        serializedVersion: 2
+        x: 1787
+        y: 1165
+        width: 132
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24c76a77ff8833790800000000000000
+      internalID: -7551541519364752318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_15
+      rect:
+        serializedVersion: 2
+        x: 2177
+        y: 1164
+        width: 132
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25964da602ec84de0800000000000000
+      internalID: -1348601449770882734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_16
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1161
+        width: 144
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c20d673c2ec851e0800000000000000
+      internalID: -2208788927921454398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_17
+      rect:
+        serializedVersion: 2
+        x: 2945
+        y: 1165
+        width: 132
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c210402c48b33fc0800000000000000
+      internalID: -3516264246948130110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_18
+      rect:
+        serializedVersion: 2
+        x: 3337
+        y: 1164
+        width: 132
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9f5eec6d4ffcc530800000000000000
+      internalID: 3876754087264280475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_19
+      rect:
+        serializedVersion: 2
+        x: 3725
+        y: 1161
+        width: 132
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfc06025dc0c70d50800000000000000
+      internalID: 6703538558441229565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_20
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 774
+        width: 132
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7372f39ef88a40f0800000000000000
+      internalID: -1131941729345047686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_21
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 773
+        width: 132
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4d41201219eb08d0800000000000000
+      internalID: -2878951272983999155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_22
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 770
+        width: 144
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba40bca6d83fea1e0800000000000000
+      internalID: -2184540980520483669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_23
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 774
+        width: 132
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84c9e77bd3f4d6340800000000000000
+      internalID: 4858626699492760648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_24
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 773
+        width: 132
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e301b972bba4a7470800000000000000
+      internalID: 8393103023242154046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_25
+      rect:
+        serializedVersion: 2
+        x: 2174
+        y: 770
+        width: 144
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 210f149056a707ce0800000000000000
+      internalID: -1409492109001363438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_26
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 774
+        width: 132
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cf49474067aec1f0800000000000000
+      internalID: -1022696033411838016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_27
+      rect:
+        serializedVersion: 2
+        x: 2951
+        y: 773
+        width: 132
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc231e30ee9f57140800000000000000
+      internalID: 4716950985403085515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_28
+      rect:
+        serializedVersion: 2
+        x: 3339
+        y: 770
+        width: 132
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d46633d97ed2b4920800000000000000
+      internalID: 2975522451606431309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_29
+      rect:
+        serializedVersion: 2
+        x: 3713
+        y: 771
+        width: 144
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75da8eb6cf0a9d700800000000000000
+      internalID: 565660234214321495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_30
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 391
+        width: 132
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 093f1b3261667aff0800000000000000
+      internalID: -24939027653069936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_31
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 388
+        width: 144
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c0c8c2973ed2d00800000000000000
+      internalID: 949665206022966349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_32
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 392
+        width: 132
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f392dc4a1527ef00800000000000000
+      internalID: 1145925425077326833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_33
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 391
+        width: 132
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1fbc6b76abb509e0800000000000000
+      internalID: -1655710964279099622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_34
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 388
+        width: 144
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e82137883b25c8090800000000000000
+      internalID: -8030953104466570610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_35
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 392
+        width: 132
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40bb41a67871bc940800000000000000
+      internalID: 5317369655408769796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_36
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 391
+        width: 132
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0255540158c9d3350800000000000000
+      internalID: 5998122374044931360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_37
+      rect:
+        serializedVersion: 2
+        x: 2948
+        y: 388
+        width: 144
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b2824272d000ee90800000000000000
+      internalID: -6998592917073657164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_38
+      rect:
+        serializedVersion: 2
+        x: 3333
+        y: 392
+        width: 132
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d9374e6aefb3c00800000000000000
+      internalID: 881578144831872329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_39
+      rect:
+        serializedVersion: 2
+        x: 3725
+        y: 391
+        width: 132
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f021e60abeb5ed50800000000000000
+      internalID: 6766023721382650098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_40
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 20
+        width: 144
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66715138f735f2e30800000000000000
+      internalID: 4480891961382082406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_41
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 24
+        width: 132
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45f6d19970b44dbb0800000000000000
+      internalID: -4912218797548671148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_42
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 23
+        width: 132
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47296bd8d65f14c50800000000000000
+      internalID: 6647864375853355636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_43
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 20
+        width: 144
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82a314f5c8228fa30800000000000000
+      internalID: 4249184234712939048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_44
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 24
+        width: 132
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cee426458ea0ebc30800000000000000
+      internalID: 4376947880815120108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_45
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 23
+        width: 132
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81742be09e83d7530800000000000000
+      internalID: 3854299429724112664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_46
+      rect:
+        serializedVersion: 2
+        x: 2558
+        y: 20
+        width: 144
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fabc7ba4c00d7ebb0800000000000000
+      internalID: -4906724517785121873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_47
+      rect:
+        serializedVersion: 2
+        x: 2943
+        y: 24
+        width: 132
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f2a8769928249060800000000000000
+      internalID: 6959231483277517557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_48
+      rect:
+        serializedVersion: 2
+        x: 3335
+        y: 23
+        width: 132
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5d2d49ec7afe6420800000000000000
+      internalID: 2625311047200615774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layer_Wallpaper_49
+      rect:
+        serializedVersion: 2
+        x: 3723
+        y: 20
+        width: 132
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e3216fcab782cb0800000000000000
+      internalID: -4888521412717691384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Layer_Wallpaper_0: -7903418441409344994
+      Layer_Wallpaper_1: -6733105648958817346
+      Layer_Wallpaper_10: 5503978575835629529
+      Layer_Wallpaper_11: -2111704916795024360
+      Layer_Wallpaper_12: 8316938179575220645
+      Layer_Wallpaper_13: -6720530283868565001
+      Layer_Wallpaper_14: -7551541519364752318
+      Layer_Wallpaper_15: -1348601449770882734
+      Layer_Wallpaper_16: -2208788927921454398
+      Layer_Wallpaper_17: -3516264246948130110
+      Layer_Wallpaper_18: 3876754087264280475
+      Layer_Wallpaper_19: 6703538558441229565
+      Layer_Wallpaper_2: 4353480013470755984
+      Layer_Wallpaper_20: -1131941729345047686
+      Layer_Wallpaper_21: -2878951272983999155
+      Layer_Wallpaper_22: -2184540980520483669
+      Layer_Wallpaper_23: 4858626699492760648
+      Layer_Wallpaper_24: 8393103023242154046
+      Layer_Wallpaper_25: -1409492109001363438
+      Layer_Wallpaper_26: -1022696033411838016
+      Layer_Wallpaper_27: 4716950985403085515
+      Layer_Wallpaper_28: 2975522451606431309
+      Layer_Wallpaper_29: 565660234214321495
+      Layer_Wallpaper_3: 7602238398546613758
+      Layer_Wallpaper_30: -24939027653069936
+      Layer_Wallpaper_31: 949665206022966349
+      Layer_Wallpaper_32: 1145925425077326833
+      Layer_Wallpaper_33: -1655710964279099622
+      Layer_Wallpaper_34: -8030953104466570610
+      Layer_Wallpaper_35: 5317369655408769796
+      Layer_Wallpaper_36: 5998122374044931360
+      Layer_Wallpaper_37: -6998592917073657164
+      Layer_Wallpaper_38: 881578144831872329
+      Layer_Wallpaper_39: 6766023721382650098
+      Layer_Wallpaper_4: 4691746923298530734
+      Layer_Wallpaper_40: 4480891961382082406
+      Layer_Wallpaper_41: -4912218797548671148
+      Layer_Wallpaper_42: 6647864375853355636
+      Layer_Wallpaper_43: 4249184234712939048
+      Layer_Wallpaper_44: 4376947880815120108
+      Layer_Wallpaper_45: 3854299429724112664
+      Layer_Wallpaper_46: -4906724517785121873
+      Layer_Wallpaper_47: 6959231483277517557
+      Layer_Wallpaper_48: 2625311047200615774
+      Layer_Wallpaper_49: -4888521412717691384
+      Layer_Wallpaper_5: 9028489219458290209
+      Layer_Wallpaper_6: 3276109900403263678
+      Layer_Wallpaper_7: -3414185819848764118
+      Layer_Wallpaper_8: 7413863440082827134
+      Layer_Wallpaper_9: -7680185406342154905
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

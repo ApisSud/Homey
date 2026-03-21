@@ -127,7 +127,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             }
             if (Flip == true)
             {
-                combineRemoveGrid(columnGrid, columnGrid, cellPosition);
+                combineRemoveGrid(columnGrid, rowGrid, cellPosition);
             }
         }
     }

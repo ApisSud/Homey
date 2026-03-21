@@ -180,7 +180,7 @@ Transform:
   m_GameObject: {fileID: 14611502}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 51.52, y: 8.52, z: 0}
+  m_LocalPosition: {x: 41.73, y: 8.58, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1301,7 +1301,7 @@ MonoBehaviour:
   canMove: 1
   Size: 2
   Type: 1
-  rowGrid: 3
+  rowGrid: 4
   columnGrid: 2
 --- !u!4 &251951054
 Transform:
@@ -1348,7 +1348,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 289095802}
   - {fileID: 1787670755}
   - {fileID: 1125011995}
   - {fileID: 1955898164}
@@ -1361,15 +1360,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 285901333}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5773998698002991551, guid: 70fc486c354b1d640bcbeec8bdf754d1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.8476534
+      value: 0.28211975
       objectReference: {fileID: 0}
     - target: {fileID: 5773998698002991551, guid: 70fc486c354b1d640bcbeec8bdf754d1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.6515903
+      value: 0.06161976
       objectReference: {fileID: 0}
     - target: {fileID: 5773998698002991551, guid: 70fc486c354b1d640bcbeec8bdf754d1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3554,7 +3553,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4273476524588441592, guid: cecaaaae830416f428078310fccdba89, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6809441784443320827, guid: cecaaaae830416f428078310fccdba89, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3998,6 +3997,10 @@ PrefabInstance:
     - target: {fileID: 2397328456397714108, guid: a565ecd25f7a09241b11a9a16b42c2ed, type: 3}
       propertyPath: m_Name
       value: MinigameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397328456397714108, guid: a565ecd25f7a09241b11a9a16b42c2ed, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3743085327423221570, guid: a565ecd25f7a09241b11a9a16b42c2ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5251,7 +5254,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2285968720848053600, guid: d5b2c79aa119ddf45a8675a158c5856f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3208336582241744853, guid: d5b2c79aa119ddf45a8675a158c5856f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7077,7 +7080,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1512667142
 Transform:
   m_ObjectHideFlags: 0
@@ -7937,7 +7940,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1796874878
 Transform:
   m_ObjectHideFlags: 0
@@ -8232,7 +8235,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.35, y: 0.08}
     oldSize: {x: 1.34, y: 1.1503843}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -9361,6 +9364,7 @@ SceneRoots:
   - {fileID: 616294504}
   - {fileID: 285901333}
   - {fileID: 14611503}
+  - {fileID: 289095801}
   - {fileID: 1272274467}
   - {fileID: 308317594}
   - {fileID: 391486727}

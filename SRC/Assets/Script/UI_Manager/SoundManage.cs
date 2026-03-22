@@ -59,7 +59,7 @@ public class SoundManage : MonoBehaviour
     {
         AudioClip clipToPlay = null;
 
-        // เช็คหมวดหมู่ที่ส่งมา แล้วเลือกแผ่นเสียงให้ถูก
+       
         switch (type)
         {
             case FurnitureType.light: 

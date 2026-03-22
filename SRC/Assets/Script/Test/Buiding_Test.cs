@@ -14,12 +14,11 @@ public enum SizeFurniture
     wall
 }
 
-public enum TypeFurniture
+public enum FurnitureType
 {
-    woodSmall,
-    woodlarge,
-    glass,
-    pot
+    light,   
+    Heavy,  
+    Glass  
 }
 
 
@@ -48,7 +47,8 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     [SerializeField]
     private SizeFurniture Size;
     [SerializeField]
-    private TypeFurniture Type;
+    private FurnitureType Type;
+
 
     private Isogrid currentTargetGrid;
 
@@ -309,23 +309,29 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         }
 
 
-        if (Type == TypeFurniture.woodlarge)
-        {
-            SoundManager.instance.playSFX(SoundManager.instance.PutDownHeavyFur);
-        }
-        if (Type == TypeFurniture.woodSmall)
-        {
-            SoundManager.instance.playSFX(SoundManager.instance.PutDownFur);
-        }
-        if (Type == TypeFurniture.pot)
-        {
-            SoundManager.instance.playSFX(SoundManager.instance.PutDownPotWitch);
-        }
-        if (Type == TypeFurniture.glass)
-        {
-            SoundManager.instance.playSFX(SoundManager.instance.PutDownGlassBottle);
-        }
 
+        if (SoundManage.Instance != null)
+        {
+            SoundManage.Instance.PlayFurnitureSFX(Type);
+        }
+        /*
+                if (Type == TypeFurniture.woodlarge)
+                {
+                    SoundManager.instance.playSFX(SoundManager.instance.PutDownHeavyFur);
+                }
+                if (Type == TypeFurniture.woodSmall)
+                {
+                    SoundManager.instance.playSFX(SoundManager.instance.PutDownFur);
+                }
+                if (Type == TypeFurniture.pot)
+                {
+                    SoundManager.instance.playSFX(SoundManager.instance.PutDownPotWitch);
+                }
+                if (Type == TypeFurniture.glass)
+                {
+                    SoundManager.instance.playSFX(SoundManager.instance.PutDownGlassBottle);
+                }
+        */
     }
 
    

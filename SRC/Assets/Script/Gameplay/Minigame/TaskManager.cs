@@ -30,7 +30,7 @@ public class TaskManager : MonoBehaviour
     private int currentMouseCount = 0;
 
 
-
+    public GameObject trashBin;
 
     private void Awake()
     {
@@ -89,7 +89,13 @@ public class TaskManager : MonoBehaviour
 
         isTrashCleared = true;
 
-        Trashbin.SetActive(false);
+        if (trashBin.activeSelf)
+        {
+
+            LeanTween.scale(trashBin, Vector3.zero, 0.3f)
+                .setEase(LeanTweenType.easeInBack)
+                .setOnComplete(() => trashBin.SetActive(false));
+        }
 
         CheckAllTasks();
 

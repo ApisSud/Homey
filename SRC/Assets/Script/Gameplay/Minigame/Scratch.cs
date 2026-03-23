@@ -194,39 +194,53 @@ public class Scratch : MonoBehaviour
 
     void CheckWin()
     {
-        int globalCleared = 0;
-        int globalTotal = 0;
+        int fullyCleanedSpotsCount = 0;
+        float totalProgressSum = 0f;
 
-        // รวมคะแนนจากทุกคราบ
+        // วนลูปเช็คคราบทีละชิ้น
         for (int i = 0; i < dirtSprites.Length; i++)
         {
-            globalCleared += clearedPixelsArray[i];
-            globalTotal += totalPixelsArray[i];
+            // คำนวณเปอร์เซ็นต์ความสะอาดของ "คราบชิ้นนี้ชิ้นเดียว"
+            float localPercent = (float)clearedPixelsArray[i] / totalPixelsArray[i];
 
-            // เช็คว่าคราบ "ชิ้นย่อย" ชิ้นนี้ สะอาดถึงเกณฑ์หรือยัง (ถ้าถึงแล้วให้ซ่อนชิ้นนี้ไปก่อน)
+            // 1. คำนวณความคืบหน้าสำหรับโชว์ UI 
+            // แปลงสัดส่วนให้เนียนขึ้น (ถ้าถึง winPercentage ถือว่าชิ้นนี้ 100% หรือ 1.0)
+            float normalizedProgress = Mathf.Clamp01(localPercent / winPercentage);
+            totalProgressSum += normalizedProgress;
+
+            // 2. เช็คว่าคราบชิ้นนี้สะอาดผ่านเกณฑ์หรือยัง
             if (!isCleanedArray[i])
             {
-                float localPercent = (float)clearedPixelsArray[i] / totalPixelsArray[i];
                 if (localPercent >= winPercentage)
                 {
-                    isCleanedArray[i] = true;
-                    dirtSprites[i].gameObject.SetActive(false);
+                    isCleanedArray[i] = true; // มาร์คว่าชิ้นนี้เสร็จแล้ว
+                    if (dirtSprites[i] != null)
+                    {
+                        dirtSprites[i].gameObject.SetActive(false); // ซ่อนเฉพาะชิ้นที่เสร็จ
+                    }
                 }
+            }
+
+            // 3. นับจำนวนคราบที่เสร็จสมบูรณ์
+            if (isCleanedArray[i])
+            {
+                fullyCleanedSpotsCount++;
             }
         }
 
-        // คำนวณเปอร์เซ็นต์ "รวมทั้งหมด" เพื่อแสดงขึ้น UI
-        float globalPercent = (float)globalCleared / globalTotal;
+        // --- คำนวณ UI Progress แบบใหม่ ---
+        // เอาความคืบหน้าของทุกชิ้นมารวมกัน หารด้วยจำนวนคราบทั้งหมด
+        float globalPercent = totalProgressSum / dirtSprites.Length;
         int displayPercent = Mathf.Clamp(Mathf.RoundToInt(globalPercent * 100), 0, 100);
         UpdateProgressUI(displayPercent);
 
-        // ถ้าค่ารวมทั้งหมดถึงเกณฑ์ ชนะเกม!
-        if (globalPercent >= winPercentage)
+        // --- เงื่อนไขการชนะที่แก้ใหม่ ---
+        // จะชนะก็ต่อเมื่อ "คราบถูกเช็ดจนสะอาด ครบทุกชิ้นแล้วจริงๆ"
+        if (fullyCleanedSpotsCount >= dirtSprites.Length)
         {
             WinGame();
         }
     }
-
     void WinGame()
     {
         if (!isGameActive) return;

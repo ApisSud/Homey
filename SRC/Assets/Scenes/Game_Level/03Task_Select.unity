@@ -1618,6 +1618,63 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &1537500269
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3450851120426827247, guid: 48f38120e8bd82a498b4f4fd12468a95, type: 3}
+      propertyPath: m_Name
+      value: Soundmanager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744102479935662377, guid: 48f38120e8bd82a498b4f4fd12468a95, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 658.7072
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744102479935662377, guid: 48f38120e8bd82a498b4f4fd12468a95, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 664.62085
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744102479935662377, guid: 48f38120e8bd82a498b4f4fd12468a95, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744102479935662377, guid: 48f38120e8bd82a498b4f4fd12468a95, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744102479935662377, guid: 48f38120e8bd82a498b4f4fd12468a95, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744102479935662377, guid: 48f38120e8bd82a498b4f4fd12468a95, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744102479935662377, guid: 48f38120e8bd82a498b4f4fd12468a95, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744102479935662377, guid: 48f38120e8bd82a498b4f4fd12468a95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744102479935662377, guid: 48f38120e8bd82a498b4f4fd12468a95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744102479935662377, guid: 48f38120e8bd82a498b4f4fd12468a95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 48f38120e8bd82a498b4f4fd12468a95, type: 3}
 --- !u!1 &1602155150
 GameObject:
   m_ObjectHideFlags: 0
@@ -1736,6 +1793,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
   game_scene: intro
   transitionManager: {fileID: 0}
+--- !u!1 &1621901325
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1621901326}
+  - component: {fileID: 1621901327}
+  m_Layer: 0
+  m_Name: BGM_Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1621901326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621901325}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 658.7072, y: 664.62085, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1621901327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621901325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1750991b441a09a4a898264d367fa583, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneBGMPlayer
+  sceneBGM: {fileID: 8300000, guid: bea93a38b71b64b598109b3a3b1a0048, type: 3}
 --- !u!1 &1677600189
 GameObject:
   m_ObjectHideFlags: 0
@@ -2193,3 +2295,5 @@ SceneRoots:
   - {fileID: 1466684010}
   - {fileID: 1447905904}
   - {fileID: 4616716}
+  - {fileID: 1537500269}
+  - {fileID: 1621901326}

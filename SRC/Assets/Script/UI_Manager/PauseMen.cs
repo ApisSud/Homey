@@ -14,8 +14,26 @@ public class PauseMen : MonoBehaviour
     [SerializeField] CanvasGroup screenFaderCanvasGroup;
 
     [SerializeField] CanvasGroup CanvasGroup;
+
+    private bool isPaused = false;
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (isPaused)
+            {
+                Resumemenu();
+            }
+            else
+            {
+                Pausemenu();  
+            }
+        }
+    }
     public void Pausemenu()
     {
+        isPaused = true;
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         pausepanelIntro();
@@ -24,12 +42,13 @@ public class PauseMen : MonoBehaviour
     public async void Home()
     {
         await FadeOutScene();
-        SceneManager.LoadScene("Main_Menu");
+        SceneManager.LoadScene("01Main_Menu");
         Time.timeScale = 1f;
     }
 
     public async void Resumemenu()
     {
+        isPaused = false;
         await pausepaneloutro();
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
@@ -41,6 +60,13 @@ public class PauseMen : MonoBehaviour
         await FadeOutScene();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1f;
+    }
+
+    public async void QuitGame()
+    {
+        await FadeOutScene(); 
+        Debug.Log("Quit Game Executed!"); 
+        Application.Quit(); 
     }
 
     void pausepanelIntro()

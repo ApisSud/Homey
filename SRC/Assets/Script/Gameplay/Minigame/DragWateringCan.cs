@@ -7,7 +7,7 @@ public class DragWateringCan : MonoBehaviour
 
     void Start()
     {
-        // ตอนเริ่มเกม ให้หา Object ทั้งหมดที่มีสคริปต์ Flower แปะอยู่ มาเก็บไว้
+        
         allFlowers = FindObjectsOfType<FlowerObject>();
     }
 

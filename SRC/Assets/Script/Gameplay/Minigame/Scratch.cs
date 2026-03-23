@@ -5,7 +5,6 @@ using TMPro;
 public class Scratch : MonoBehaviour
 {
 
-
     [Header("Tool Reference")]
     public BroomController broom;
 
@@ -38,13 +37,11 @@ public class Scratch : MonoBehaviour
         clearedPixelsArray = new int[dirtCount];
         isCleanedArray = new bool[dirtCount];
 
-        // วนลูปตั้งค่าให้กับคราบสกปรกทุกชิ้น
         for (int i = 0; i < dirtCount; i++)
         {
             SpriteRenderer sr = dirtSprites[i];
             Texture2D originalTex = sr.sprite.texture;
 
-            // สร้าง Texture โคลนนิ่ง
             Texture2D tex = new Texture2D(originalTex.width, originalTex.height, TextureFormat.RGBA32, false);
             tex.SetPixels32(originalTex.GetPixels32());
             tex.Apply();
@@ -55,7 +52,6 @@ public class Scratch : MonoBehaviour
             textures[i] = tex;
             pixelsArray[i] = tex.GetPixels32();
 
-            // นับจำนวนพิกเซลที่มีสีของแต่ละคราบ
             int tPixels = 0;
             Rect rect = sr.sprite.textureRect;
             int minX = Mathf.FloorToInt(rect.xMin);
@@ -70,14 +66,15 @@ public class Scratch : MonoBehaviour
                     if (x >= 0 && x < tex.width && y >= 0 && y < tex.height)
                     {
                         int index = y * tex.width + x;
-                        if (pixelsArray[i][index].a > 0)
+                        // แก้ไข 1: นับเฉพาะพิกเซลที่มีสีจริงๆ (Alpha > 10) ป้องกันบัคขอบภาพ
+                        if (pixelsArray[i][index].a > 10)
                         {
                             tPixels++;
                         }
                     }
                 }
             }
-            if (tPixels == 0) tPixels = 1; // กัน Error หาร 0
+            if (tPixels == 0) tPixels = 1;
             totalPixelsArray[i] = tPixels;
         }
 
@@ -115,10 +112,9 @@ public class Scratch : MonoBehaviour
     {
         bool anyChanged = false;
 
-        // วนลูปเช็คคราบสกปรกทุกชิ้นว่าเมาส์ถูโดนชิ้นไหนบ้าง
         for (int d = 0; d < dirtSprites.Length; d++)
         {
-            if (isCleanedArray[d]) continue; // ถ้าคราบชิ้นนี้สะอาดแล้ว ให้ข้ามไปไม่ต้องเช็ค
+            if (isCleanedArray[d]) continue;
 
             Vector2 startPixel = WorldToPixel(startWorld, dirtSprites[d]);
             Vector2 endPixel = WorldToPixel(endWorld, dirtSprites[d]);
@@ -158,17 +154,27 @@ public class Scratch : MonoBehaviour
         Texture2D tex = textures[dirtIndex];
         Color32[] pixels = pixelsArray[dirtIndex];
 
+        // ดึงขอบเขตของรูปภาพคราบสกปรกชิ้นนี้
+        Rect rect = dirtSprites[dirtIndex].sprite.textureRect;
+        int minX = Mathf.FloorToInt(rect.xMin);
+        int maxX = Mathf.FloorToInt(rect.xMax);
+        int minY = Mathf.FloorToInt(rect.yMin);
+        int maxY = Mathf.FloorToInt(rect.yMax);
+
         for (int x = centerX - brushSize; x <= centerX + brushSize; x++)
         {
             for (int y = centerY - brushSize; y <= centerY + brushSize; y++)
             {
-                if (x >= 0 && x < tex.width && y >= 0 && y < tex.height)
+                // แก้ไข 2: บังคับให้ลบได้เฉพาะ "ในกรอบสี่เหลี่ยมของรูปนี้เท่านั้น" 
+                // ถูอากาศนอกกรอบจะไม่เกิดอะไรขึ้นแล้ว
+                if (x >= minX && x < maxX && y >= minY && y < maxY && x >= 0 && x < tex.width && y >= 0 && y < tex.height)
                 {
                     int distSq = (x - centerX) * (x - centerX) + (y - centerY) * (y - centerY);
                     if (distSq <= radiusSq)
                     {
                         int index = y * tex.width + x;
-                        if (pixels[index].a > 0)
+                        // แก้ไข 3: ลบเฉพาะพิกเซลที่มีสีอยู่จริง (Alpha > 10)
+                        if (pixels[index].a > 10)
                         {
                             pixels[index].a = 0;
                             clearedPixelsArray[dirtIndex]++;
@@ -197,63 +203,43 @@ public class Scratch : MonoBehaviour
         int fullyCleanedSpotsCount = 0;
         float totalProgressSum = 0f;
 
-        // วนลูปเช็คคราบทีละชิ้น
         for (int i = 0; i < dirtSprites.Length; i++)
         {
-            // คำนวณเปอร์เซ็นต์ความสะอาดของ "คราบชิ้นนี้ชิ้นเดียว"
             float localPercent = (float)clearedPixelsArray[i] / totalPixelsArray[i];
-
-            // 1. คำนวณความคืบหน้าสำหรับโชว์ UI 
-            // แปลงสัดส่วนให้เนียนขึ้น (ถ้าถึง winPercentage ถือว่าชิ้นนี้ 100% หรือ 1.0)
             float normalizedProgress = Mathf.Clamp01(localPercent / winPercentage);
             totalProgressSum += normalizedProgress;
 
-            // 2. เช็คว่าคราบชิ้นนี้สะอาดผ่านเกณฑ์หรือยัง
             if (!isCleanedArray[i])
             {
                 if (localPercent >= winPercentage)
                 {
-                    isCleanedArray[i] = true; // มาร์คว่าชิ้นนี้เสร็จแล้ว
-                    if (dirtSprites[i] != null)
-                    {
-                        dirtSprites[i].gameObject.SetActive(false); // ซ่อนเฉพาะชิ้นที่เสร็จ
-                    }
+                    isCleanedArray[i] = true;
+                    if (dirtSprites[i] != null) dirtSprites[i].gameObject.SetActive(false);
                 }
             }
 
-            // 3. นับจำนวนคราบที่เสร็จสมบูรณ์
-            if (isCleanedArray[i])
-            {
-                fullyCleanedSpotsCount++;
-            }
+            if (isCleanedArray[i]) fullyCleanedSpotsCount++;
         }
 
-        // --- คำนวณ UI Progress แบบใหม่ ---
-        // เอาความคืบหน้าของทุกชิ้นมารวมกัน หารด้วยจำนวนคราบทั้งหมด
         float globalPercent = totalProgressSum / dirtSprites.Length;
-        int displayPercent = Mathf.Clamp(Mathf.RoundToInt(globalPercent * 100), 0, 100);
+
+        // แก้ไข: เปลี่ยนมาใช้ FloorToInt เพื่อให้ UI ไม่ปัดเศษขึ้น (ต้องเต็ม 100 จริงๆ ถึงจะโชว์ 100)
+        int displayPercent = Mathf.Clamp(Mathf.FloorToInt(globalPercent * 100), 0, 100);
         UpdateProgressUI(displayPercent);
 
-        // --- เงื่อนไขการชนะที่แก้ใหม่ ---
-        // จะชนะก็ต่อเมื่อ "คราบถูกเช็ดจนสะอาด ครบทุกชิ้นแล้วจริงๆ"
         if (fullyCleanedSpotsCount >= dirtSprites.Length)
         {
             WinGame();
         }
     }
+
     void WinGame()
     {
         if (!isGameActive) return;
-
         isGameActive = false;
-        Debug.Log("Cleaned All! You Win!");
 
-        if (progress != null)
-        {
-            progress.text = "Progress : Done!";
-        }
+        if (progress != null) progress.text = "Progress : Done!";
 
-        // ปิดการแสดงผลคราบทุกชิ้นที่อาจจะยังหลงเหลืออยู่
         for (int i = 0; i < dirtSprites.Length; i++)
         {
             if (dirtSprites[i] != null) dirtSprites[i].gameObject.SetActive(false);
@@ -262,9 +248,16 @@ public class Scratch : MonoBehaviour
         broom.StopScrubbing();
         broom.UnequipBroom();
 
+        // --- เพิ่มตัวเช็ค TaskManager เพื่อให้รู้ว่าบัคเกิดจากตรงนี้ไหม ---
         if (TaskManager.Instance != null)
         {
+            Debug.Log("Found TaskManager CompleteDirtTask...");
             TaskManager.Instance.CompleteDirtTask();
+        }
+        else
+        {
+            // ถ้าขึ้น Error สีแดงประโยคนี้ แปลว่าระบบ TaskManager ของคุณมีปัญหาครับ
+            Debug.LogError("Bug");
         }
     }
 

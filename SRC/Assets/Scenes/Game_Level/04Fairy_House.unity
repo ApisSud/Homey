@@ -476,6 +476,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796874878}
     m_Modifications:
+    - target: {fileID: 2462328201335818822, guid: 58f9d1c3b092ec44b8c6baab149a48db, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 408299581}
     - target: {fileID: 2570647767009230051, guid: 58f9d1c3b092ec44b8c6baab149a48db, type: 3}
       propertyPath: m_Name
       value: Trash 16
@@ -1126,6 +1130,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796874878}
     m_Modifications:
+    - target: {fileID: 2462328201335818822, guid: e00a848f74791ac44a9b3acd5cdd9788, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 408299581}
     - target: {fileID: 2570647767009230051, guid: e00a848f74791ac44a9b3acd5cdd9788, type: 3}
       propertyPath: m_Name
       value: Trash 13
@@ -1828,6 +1836,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796874878}
     m_Modifications:
+    - target: {fileID: 2462328201335818822, guid: a12ee3bd66ee6844ab4dbd7881805aef, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 408299581}
     - target: {fileID: 2570647767009230051, guid: a12ee3bd66ee6844ab4dbd7881805aef, type: 3}
       propertyPath: m_Name
       value: Trash 15
@@ -2002,7 +2014,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &360313145
 Transform:
   m_ObjectHideFlags: 0
@@ -2329,6 +2341,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796874878}
     m_Modifications:
+    - target: {fileID: 2462328201335818822, guid: d0212a7ef246d3c4fb9daf0a201133ae, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 408299581}
     - target: {fileID: 2570647767009230051, guid: d0212a7ef246d3c4fb9daf0a201133ae, type: 3}
       propertyPath: m_Name
       value: Trash 9
@@ -3165,6 +3181,51 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &477230317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 477230318}
+  - component: {fileID: 477230319}
+  m_Layer: 0
+  m_Name: BGM_Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &477230318
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477230317}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1888979043}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &477230319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477230317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1750991b441a09a4a898264d367fa583, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneBGMPlayer
+  sceneBGM: {fileID: 8300000, guid: acf33c1b3ca52a440ba1f8736efb9adf, type: 3}
 --- !u!1 &482745329
 GameObject:
   m_ObjectHideFlags: 0
@@ -3902,6 +3963,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4581650311093740343, guid: af8c3a29014ca6a40b483a8c113e34fd, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 408299581}
     - target: {fileID: 4581650311093740343, guid: af8c3a29014ca6a40b483a8c113e34fd, type: 3}
       propertyPath: popScaleFactor
       value: 1
@@ -5074,6 +5139,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796874878}
     m_Modifications:
+    - target: {fileID: 2462328201335818822, guid: 35dc39bed4d5a5547af6a28186ae149c, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 408299581}
     - target: {fileID: 2570647767009230051, guid: 35dc39bed4d5a5547af6a28186ae149c, type: 3}
       propertyPath: m_Name
       value: Trash 10
@@ -5131,6 +5200,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796874878}
     m_Modifications:
+    - target: {fileID: 2462328201335818822, guid: 98564b82613055b4db9bfb7c5ee5468b, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 408299581}
     - target: {fileID: 2570647767009230051, guid: 98564b82613055b4db9bfb7c5ee5468b, type: 3}
       propertyPath: m_Name
       value: Trash 6
@@ -5825,6 +5898,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796874878}
     m_Modifications:
+    - target: {fileID: 2462328201335818822, guid: 58f9d1c3b092ec44b8c6baab149a48db, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 408299581}
     - target: {fileID: 2570647767009230051, guid: 58f9d1c3b092ec44b8c6baab149a48db, type: 3}
       propertyPath: m_Name
       value: Trash 18
@@ -6273,6 +6350,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796874878}
     m_Modifications:
+    - target: {fileID: 2462328201335818822, guid: e00a848f74791ac44a9b3acd5cdd9788, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 408299581}
     - target: {fileID: 2570647767009230051, guid: e00a848f74791ac44a9b3acd5cdd9788, type: 3}
       propertyPath: m_Name
       value: Trash 12
@@ -6427,6 +6508,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796874878}
     m_Modifications:
+    - target: {fileID: 2462328201335818822, guid: d0212a7ef246d3c4fb9daf0a201133ae, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 408299581}
     - target: {fileID: 2570647767009230051, guid: d0212a7ef246d3c4fb9daf0a201133ae, type: 3}
       propertyPath: m_Name
       value: Trash 14
@@ -7572,6 +7657,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796874878}
     m_Modifications:
+    - target: {fileID: 2462328201335818822, guid: 58f9d1c3b092ec44b8c6baab149a48db, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 408299581}
     - target: {fileID: 2570647767009230051, guid: 58f9d1c3b092ec44b8c6baab149a48db, type: 3}
       propertyPath: m_Name
       value: Trash 7
@@ -7762,7 +7851,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1373731438
 Transform:
   m_ObjectHideFlags: 0
@@ -9851,6 +9940,7 @@ Transform:
   - {fileID: 381033734}
   - {fileID: 889719427}
   - {fileID: 1310561058}
+  - {fileID: 477230318}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1919530648 stripped
@@ -10312,6 +10402,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796874878}
     m_Modifications:
+    - target: {fileID: 2462328201335818822, guid: a12ee3bd66ee6844ab4dbd7881805aef, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 408299581}
     - target: {fileID: 2570647767009230051, guid: a12ee3bd66ee6844ab4dbd7881805aef, type: 3}
       propertyPath: m_Name
       value: Trash 8
@@ -11328,6 +11422,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796874878}
     m_Modifications:
+    - target: {fileID: 2462328201335818822, guid: 35dc39bed4d5a5547af6a28186ae149c, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 408299581}
     - target: {fileID: 2570647767009230051, guid: 35dc39bed4d5a5547af6a28186ae149c, type: 3}
       propertyPath: m_Name
       value: Trash 17

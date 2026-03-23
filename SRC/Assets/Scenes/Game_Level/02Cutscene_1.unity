@@ -253,8 +253,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: This is test dialouge eiei za 55+
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7d930c3a6cc3c114a9e362a483327a0e, type: 2}
-  m_sharedMaterial: {fileID: -2273005653316950764, guid: 7d930c3a6cc3c114a9e362a483327a0e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -434,6 +434,63 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1001 &766269148
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3450851120426827247, guid: 48f38120e8bd82a498b4f4fd12468a95, type: 3}
+      propertyPath: m_Name
+      value: Soundmanager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744102479935662377, guid: 48f38120e8bd82a498b4f4fd12468a95, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.8634
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744102479935662377, guid: 48f38120e8bd82a498b4f4fd12468a95, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.06284
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744102479935662377, guid: 48f38120e8bd82a498b4f4fd12468a95, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744102479935662377, guid: 48f38120e8bd82a498b4f4fd12468a95, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744102479935662377, guid: 48f38120e8bd82a498b4f4fd12468a95, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744102479935662377, guid: 48f38120e8bd82a498b4f4fd12468a95, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744102479935662377, guid: 48f38120e8bd82a498b4f4fd12468a95, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744102479935662377, guid: 48f38120e8bd82a498b4f4fd12468a95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744102479935662377, guid: 48f38120e8bd82a498b4f4fd12468a95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744102479935662377, guid: 48f38120e8bd82a498b4f4fd12468a95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 48f38120e8bd82a498b4f4fd12468a95, type: 3}
 --- !u!1 &772236254
 GameObject:
   m_ObjectHideFlags: 0
@@ -1280,8 +1337,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: skip
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7d930c3a6cc3c114a9e362a483327a0e, type: 2}
-  m_sharedMaterial: {fileID: -2273005653316950764, guid: 7d930c3a6cc3c114a9e362a483327a0e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1633,3 +1690,4 @@ SceneRoots:
   - {fileID: 1851738052}
   - {fileID: 724990612}
   - {fileID: 1716939050}
+  - {fileID: 766269148}

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Audio;
+using DG.Tweening;
 
 public class SoundManage : MonoBehaviour
 {
@@ -15,7 +16,11 @@ public class SoundManage : MonoBehaviour
     [Header("Furniture Sound Categories")]
     public AudioClip LightSound;  
     public AudioClip HeavySound; 
-    public AudioClip GlassSound; 
+    public AudioClip GlassSound;
+
+    [Header("Fade Settings")]
+    public float fadeDuration = 1.5f;
+
     private void Awake()
     {
         if (Instance == null)
@@ -37,22 +42,41 @@ public class SoundManage : MonoBehaviour
 
     public void PlayBGM(AudioClip bgmClip)
     {
+        if (bgmSource.clip == bgmClip) return;
+
+       
+        bgmSource.DOKill();
+
+       
         if (bgmClip == null)
         {
-            bgmSource.Stop();
-            bgmSource.clip = null;
+            bgmSource.DOFade(0f, fadeDuration).OnComplete(() =>
+            {
+                bgmSource.Stop();
+                bgmSource.clip = null;
+                bgmSource.volume = 1f; 
+            });
             return;
         }
 
        
-        if (bgmSource.clip == bgmClip)
+        if (bgmSource.isPlaying)
         {
-            return;
+            bgmSource.DOFade(0f, fadeDuration).OnComplete(() =>
+            {
+                bgmSource.clip = bgmClip;
+                bgmSource.Play();
+                bgmSource.DOFade(1f, fadeDuration); 
+            });
         }
-
-      
-        bgmSource.clip = bgmClip;
-        bgmSource.Play();
+     
+        else
+        {
+            bgmSource.volume = 0f; 
+            bgmSource.clip = bgmClip;
+            bgmSource.Play();
+            bgmSource.DOFade(1f, fadeDuration); 
+        }
     }
 
     public void PlayFurnitureSFX(FurnitureType type)
@@ -73,7 +97,7 @@ public class SoundManage : MonoBehaviour
                 break;
         }
 
-        // เอาแผ่นเสียงที่เลือก ไปเปิดออกลำโพง
+        
         if (clipToPlay != null)
         {
             sfxSource.PlayOneShot(clipToPlay);

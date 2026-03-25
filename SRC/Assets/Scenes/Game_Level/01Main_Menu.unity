@@ -530,6 +530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
   game_scene: 02Cutscene_1
   transitionManager: {fileID: 1541486777}
+  ButtonClick: {fileID: 8300000, guid: fe47a758c2935934193b0762d25f5475, type: 3}
 --- !u!4 &431616351
 Transform:
   m_ObjectHideFlags: 0
@@ -5949,6 +5950,7 @@ MonoBehaviour:
   optionsMenuPanel: {fileID: 2083270573}
   bgmSlider: {fileID: 1260004411}
   sfxSlider: {fileID: 1526118479}
+  ButtonClick: {fileID: 8300000, guid: fe47a758c2935934193b0762d25f5475, type: 3}
 --- !u!1 &905897148
 GameObject:
   m_ObjectHideFlags: 0

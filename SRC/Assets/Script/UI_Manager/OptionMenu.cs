@@ -6,7 +6,10 @@ public class OptionMenu : MonoBehaviour
     [Header("UI References")]
     public GameObject optionsMenuPanel; 
     public Slider bgmSlider;           
-    public Slider sfxSlider;            
+    public Slider sfxSlider;
+    public AudioClip ButtonClick;
+
+
     private void Start()
     {
        
@@ -27,12 +30,20 @@ public class OptionMenu : MonoBehaviour
     
     public void OpenMenu()
     {
+        if (ButtonClick != null && SoundManage.Instance != null)
+        {
+            SoundManage.Instance.PlaySFX(ButtonClick);
+        }
         optionsMenuPanel.SetActive(true);
     }
 
     
     public void CloseMenu()
     {
+        if (ButtonClick != null && SoundManage.Instance != null)
+        {
+            SoundManage.Instance.PlaySFX(ButtonClick);
+        }
         optionsMenuPanel.SetActive(false);
     }
 

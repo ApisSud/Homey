@@ -13,6 +13,7 @@ public class MainMenu : MonoBehaviour
    
     [SerializeField] private TransitionManager transitionManager;
 
+    public AudioClip ButtonClick;
     private void Start()
     {
         
@@ -24,20 +25,21 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
+        if (ButtonClick != null && SoundManage.Instance != null)
+        {
+            SoundManage.Instance.PlaySFX(ButtonClick);
+        }
 
         if (transitionManager != null)
         {
             transitionManager.ChangeScene(game_scene);
         }
-        else
-        {
-            Debug.LogWarning("หา TransitionManager ไม่เจอครับ! อย่าลืมสร้าง Game Object และใส่สคริปต์ TransitionManager ไว้ในซีนนะ");
-        }
+      
     }
 
     public void SelectLevel(string scenename)
     {
-       
+
         if (transitionManager != null)
         {
             transitionManager.ChangeScene(scenename);
@@ -46,6 +48,10 @@ public class MainMenu : MonoBehaviour
 
     public void QuitGame()
     {
+        if (ButtonClick != null && SoundManage.Instance != null)
+        {
+            SoundManage.Instance.PlaySFX(ButtonClick);
+        }
         /*if (buttonSound != null) buttonSound.Play();*/
         Debug.Log("Exit");
         Application.Quit();

@@ -105,7 +105,15 @@ public class SoundManage : MonoBehaviour
     }
 
 
-
+    public void PlaySFX(AudioClip sfxClip)
+    {
+      
+        if (sfxClip != null)
+        {
+         
+            sfxSource.PlayOneShot(sfxClip);
+        }
+    }
     public void SetBGMVolume(float sliderValue)
     {
         float volume = Mathf.Max(sliderValue, 0.0001f);

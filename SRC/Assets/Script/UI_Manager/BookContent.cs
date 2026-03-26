@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using UnityEngine.UI;
 
 public class BookContent : MonoBehaviour
 {
@@ -17,14 +18,22 @@ public class BookContent : MonoBehaviour
     [SerializeField] Vector3 targetPosition;
     [SerializeField] float showDuration = 1.2f;
 
+    [SerializeField] GameObject Panel;
+
+    public bool isBookopen = false;
+
     private void Start()
     {
         InitialState();
         transform.localPosition = startPosition;
+
+       
     }
 
     public void InitialState()
     {
+       
+
         for (int i = 0; i < pages.Count; i++)
         {
             pages[i].transform.rotation = Quaternion.identity;
@@ -39,13 +48,15 @@ public class BookContent : MonoBehaviour
         if (backButton != null) backButton.transform.SetAsLastSibling();
 
         backButton.SetActive(false);
-
+       
     }
 
 
     public void ShowBookAndOpen()
     {
+         isBookopen = true;
 
+        Panel.SetActive(true);
         transform.DOLocalMove(targetPosition, showDuration)
             .SetEase(Ease.OutBack)
             .OnComplete(() =>
@@ -143,7 +154,7 @@ public class BookContent : MonoBehaviour
 
     private IEnumerator HideRoutine()
     {
-        
+        isBookopen = false;
         if (rotate)
         {
             yield return new WaitUntil(() => rotate == false);
@@ -168,5 +179,6 @@ public class BookContent : MonoBehaviour
                 index = -1;
                 InitialState();
             });
+        Panel.SetActive(false);
     }
 }

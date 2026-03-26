@@ -2,6 +2,7 @@ using UnityEngine;
 using DG.Tweening;
 using UnityEngine.SceneManagement;
 using System.Threading.Tasks;
+using UnityEngine.UI;
 
 
 public class PauseMen : MonoBehaviour
@@ -12,6 +13,7 @@ public class PauseMen : MonoBehaviour
     [SerializeField] float topPosY, middlePosY;
     [SerializeField] float TweenDuration;
     [SerializeField] CanvasGroup screenFaderCanvasGroup;
+   
 
     [SerializeField] CanvasGroup CanvasGroup;
 

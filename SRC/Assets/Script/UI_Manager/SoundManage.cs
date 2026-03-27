@@ -14,9 +14,29 @@ public class SoundManage : MonoBehaviour
     public AudioSource sfxSource;
 
     [Header("Furniture Sound Categories")]
-    public AudioClip LightSound;  
+    public AudioClip LightSound;
+    public AudioClip LightSound2;
+  /*  public AudioClip LightSound3;*/
+
     public AudioClip HeavySound; 
+    public AudioClip HeavySound2;
+    public AudioClip HeavySound3;
+
     public AudioClip GlassSound;
+    public AudioClip GlassSound2;
+   /* public AudioClip GlassSound3;*/
+
+    public AudioClip ClothSound;
+    public AudioClip ClothSound2;
+   /* public AudioClip ClothSound3;*/
+
+    public AudioClip WoodSound;
+    public AudioClip WoodSound2;
+   /* public AudioClip WoodSound3;*/
+
+    public AudioClip SackSound;
+    public AudioClip SackSound2;
+   /* public AudioClip SackSound3;*/
 
     [Header("Fade Settings")]
     public float fadeDuration = 1.5f;
@@ -89,12 +109,60 @@ public class SoundManage : MonoBehaviour
             case FurnitureType.light: 
                 clipToPlay = LightSound;
                 break;
+
+            case FurnitureType.light2:
+                clipToPlay = LightSound2;
+                break;
+
+              
+
             case FurnitureType.Heavy:
                 clipToPlay = HeavySound;
                 break;
+
+            case FurnitureType.Heavy2:
+                clipToPlay = HeavySound2;
+                break;
+
+            
+
+
             case FurnitureType.Glass:
                 clipToPlay = GlassSound;
                 break;
+
+                case FurnitureType.Glass2:
+                    clipToPlay = GlassSound2;
+                break;
+
+                
+
+            case FurnitureType.cloth:
+                clipToPlay = ClothSound;
+                break;
+
+             case FurnitureType.cloth2:
+                    clipToPlay = ClothSound2;
+                break;
+
+               
+
+            case FurnitureType.sack:
+                clipToPlay = SackSound;
+                break;
+
+                case FurnitureType.sack2:
+                    clipToPlay = SackSound2;
+                break;
+               
+            case FurnitureType.wood:
+                clipToPlay = WoodSound;
+                break;
+                case FurnitureType.wood2:
+                clipToPlay = WoodSound2;
+                break;
+              
+              
         }
 
         

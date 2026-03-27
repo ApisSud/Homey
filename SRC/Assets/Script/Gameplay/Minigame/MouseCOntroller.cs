@@ -17,7 +17,12 @@ public class MouseCOntroller : MonoBehaviour
     [Header("UI Management")]
     public TextMeshProUGUI scoreText;
 
+    [Header("Audio Settings")]
+    public AudioClip walkSound;     
+    public AudioClip dieSound;    
+    public float walkSoundInterval = 0.5f; 
 
+    private float walkTimer = 0f;
     void Start()
     {
         MouseSprite = GetComponent<SpriteRenderer>();
@@ -48,6 +53,16 @@ public class MouseCOntroller : MonoBehaviour
             waypoints[currentWaypointIndex].position,
             speed * Time.deltaTime
         );
+        walkTimer -= Time.deltaTime;
+        if (walkTimer <= 0f)
+        {
+            
+            if (walkSound != null && SoundManage.Instance != null)
+            {
+                SoundManage.Instance.PlaySFX(walkSound);
+            }
+            walkTimer = walkSoundInterval; 
+        }
 
         if (Vector2.Distance(transform.position, waypoints[currentWaypointIndex].position) < 0.1f)
         {
@@ -62,6 +77,12 @@ public class MouseCOntroller : MonoBehaviour
 
     void OnMouseDown()
     {
+
+        if (dieSound != null && SoundManage.Instance != null)
+        {
+            SoundManage.Instance.PlaySFX(dieSound);
+        }
+
         if (TaskManager.Instance != null)
         {
             TaskManager.Instance.AddMouseCount();

@@ -17,9 +17,24 @@ public enum SizeFurniture
 
 public enum FurnitureType
 {
-    light,   
-    Heavy,  
-    Glass  
+    light,
+    light2,
+   /* light3,*/
+    Heavy,
+    Heavy2,
+   /* Heavy3,*/
+    Glass ,
+    Glass2,
+ /*   Glass3,*/
+    cloth ,
+    cloth2,
+   /* cloth3,*/
+    wood ,
+    wood2 ,
+   /* wood3 ,*/
+    sack ,
+    sack2 ,
+   /* sack3 */
 }
 
 

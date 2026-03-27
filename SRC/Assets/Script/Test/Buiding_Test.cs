@@ -381,7 +381,6 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
         if (Furniture.gameObject.layer == LayerMask.NameToLayer("FurnitureStorage") && Size == SizeFurniture.small)
         {
-            Debug.Log("StorageFur");
             currentTargetGrid = Furniture.GetComponent<Isogrid>();
             onStorageFur = true;
         }

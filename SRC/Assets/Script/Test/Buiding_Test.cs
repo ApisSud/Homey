@@ -60,6 +60,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
         Vector3 worldPos = transform.position;
         Vector3Int cellPosition = layoutGrid.WorldToCell(worldPos);
         Debug.Log(cellPosition);
@@ -146,7 +147,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             mousePos.z = 0;
             Vector3Int cellPosition = layoutGrid.WorldToCell(mousePos);
             Vector3 snapPos = layoutGrid.GetCellCenterWorld(cellPosition);
-
+            Color tempColor = sr.color;
             /*transform.position = eventData.position;
             transform.position = mousePos + offset;*/
 
@@ -212,6 +213,19 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                 Vector3 totalOffset = new Vector3(offsetX, 0, offsetZ);
                 transform.position = baseSnapPos + totalOffset;
                 finalPos = baseSnapPos + totalOffset;
+            }
+
+            if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
+            {
+                sr.sortingOrder = 2;
+                tempColor.a = 1f;
+                sr.color = tempColor;
+            }
+            else if (CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
+            {
+                sr.sortingOrder = 3;
+                tempColor.a = 0.5f;
+                sr.color = tempColor;
             }
         }
 

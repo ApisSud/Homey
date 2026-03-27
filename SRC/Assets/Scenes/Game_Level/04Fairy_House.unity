@@ -9774,7 +9774,7 @@ Transform:
   m_GameObject: {fileID: 1097546631}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.34, y: -0.28, z: -0.037987802}
+  m_LocalPosition: {x: -1.31, y: -0.25, z: -0.037987802}
   m_LocalScale: {x: 0.67041, y: 0.67041, z: 0.67041}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9876,9 +9876,9 @@ MonoBehaviour:
   anchorPoint: {fileID: 1097546632}
   stepX: 0.5
   stepY: 0.25
-  columns: 5
+  columns: 4
   rows: 1
-  spacing: 0.65
+  spacing: 0.7
 --- !u!4 &1101095425 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6381419113331740767, guid: 58f9d1c3b092ec44b8c6baab149a48db, type: 3}

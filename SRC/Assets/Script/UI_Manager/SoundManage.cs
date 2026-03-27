@@ -20,7 +20,7 @@ public class SoundManage : MonoBehaviour
 
     public AudioClip HeavySound; 
     public AudioClip HeavySound2;
-    public AudioClip HeavySound3;
+   /* public AudioClip HeavySound3;*/
 
     public AudioClip GlassSound;
     public AudioClip GlassSound2;

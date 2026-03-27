@@ -102,46 +102,49 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
-        OriginalPosition = transform.position;
-        Vector3 worldPos = transform.position;
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(eventData.position);
-        Vector3Int cellPosition = layoutGrid.WorldToCell(worldPos);
-        //Debug.Log($"BeginDrag{cellPosition} mousePos :{mousePos}");
-        offset = transform.position - mousePos;
-        CheckGrid.instance.RemoveObject(cellPosition);
-        CheckGrid.instance.removeFurnitureInScene(cellPosition);
-        
-        if (Size == SizeFurniture.small && onStorageFur)
+        if (canMove)
         {
-            //finalPos = currentTargetGrid.GetClosestSnapPoint(mousePos);
-            //Debug.Log($"Remove {finalPos}");
-            CheckGrid.instance.RemoveObject(finalPos);
-            CheckGrid.instance.removeFurnitureInScene(finalPos);
-        }
-        if (Size == SizeFurniture.wall && onWall)
-        {
-            //finalPos = currentTargetGrid.GetClosestSnapPoint(mousePos);
-            //Debug.Log($"Remove {finalPos}");
-            CheckGrid.instance.RemoveObject(finalPos);
-            CheckGrid.instance.removeFurnitureInScene(finalPos);
-        }
+            OriginalPosition = transform.position;
+            Vector3 worldPos = transform.position;
+            Vector3 mousePos = Camera.main.ScreenToWorldPoint(eventData.position);
+            Vector3Int cellPosition = layoutGrid.WorldToCell(worldPos);
+            //Debug.Log($"BeginDrag{cellPosition} mousePos :{mousePos}");
+            offset = transform.position - mousePos;
+            CheckGrid.instance.RemoveObject(cellPosition);
+            CheckGrid.instance.removeFurnitureInScene(cellPosition);
 
-        if (Size == SizeFurniture.cloth && onCloset)
-        {
-            //finalPos = currentTargetGrid.GetClosestSnapPoint(mousePos);
-            //Debug.Log($"Remove {finalPos}");
-            CheckGrid.instance.RemoveObject(finalPos);
-            CheckGrid.instance.removeFurnitureInScene(finalPos);
-        }
-        if (rowGrid > 1 | columnGrid > 1)
-        {
-            if (Flip == false)
+            if (Size == SizeFurniture.small && onStorageFur)
             {
-                combineRemoveGrid(rowGrid, columnGrid, cellPosition); 
+                //finalPos = currentTargetGrid.GetClosestSnapPoint(mousePos);
+                //Debug.Log($"Remove {finalPos}");
+                CheckGrid.instance.RemoveObject(finalPos);
+                CheckGrid.instance.removeFurnitureInScene(finalPos);
             }
-            if (Flip == true)
+            if (Size == SizeFurniture.wall && onWall)
             {
-                combineRemoveGrid(columnGrid, rowGrid, cellPosition);
+                //finalPos = currentTargetGrid.GetClosestSnapPoint(mousePos);
+                //Debug.Log($"Remove {finalPos}");
+                CheckGrid.instance.RemoveObject(finalPos);
+                CheckGrid.instance.removeFurnitureInScene(finalPos);
+            }
+
+            if (Size == SizeFurniture.cloth && onCloset)
+            {
+                //finalPos = currentTargetGrid.GetClosestSnapPoint(mousePos);
+                //Debug.Log($"Remove {finalPos}");
+                CheckGrid.instance.RemoveObject(finalPos);
+                CheckGrid.instance.removeFurnitureInScene(finalPos);
+            }
+            if (rowGrid > 1 | columnGrid > 1)
+            {
+                if (Flip == false)
+                {
+                    combineRemoveGrid(rowGrid, columnGrid, cellPosition);
+                }
+                if (Flip == true)
+                {
+                    combineRemoveGrid(columnGrid, rowGrid, cellPosition);
+                }
             }
         }
     }
@@ -165,7 +168,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             Draged = true;
             if (Size == SizeFurniture.small)
             {
-                sr.sortingOrder = 3;
+                sr.sortingOrder = 5;
                 if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
                 {
                     transform.position = mousePos;
@@ -366,17 +369,18 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     private void OnTriggerStay2D(Collider2D Furniture)
     {
 
-        if (Furniture.gameObject.layer == LayerMask.NameToLayer("FurnitureStorage"))
+        if (Furniture.gameObject.layer == LayerMask.NameToLayer("FurnitureStorage") && Size == SizeFurniture.small)
         {
+            Debug.Log("StorageFur");
             currentTargetGrid = Furniture.GetComponent<Isogrid>();
             onStorageFur = true;
         }
-        if (Furniture.gameObject.layer == LayerMask.NameToLayer("wall"))
+        if (Furniture.gameObject.layer == LayerMask.NameToLayer("wall") && Size == SizeFurniture.wall)
         {
             currentTargetGrid = Furniture.GetComponent<Isogrid>();
             onWall = true;
         }
-        if (Furniture.gameObject.layer == LayerMask.NameToLayer("Closet"))
+        if (Furniture.gameObject.layer == LayerMask.NameToLayer("Closet") && Size == SizeFurniture.cloth)
         {
             currentTargetGrid = Furniture.GetComponent<Isogrid>();
             onCloset = true;

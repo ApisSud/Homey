@@ -17,24 +17,9 @@ public enum SizeFurniture
 
 public enum FurnitureType
 {
-    light,
-    light2,
-   /* light3,*/
-    Heavy,
-    Heavy2,
-   /* Heavy3,*/
-    Glass ,
-    Glass2,
- /*   Glass3,*/
-    cloth ,
-    cloth2,
-   /* cloth3,*/
-    wood ,
-    wood2 ,
-   /* wood3 ,*/
-    sack ,
-    sack2 ,
-   /* sack3 */
+    light,   
+    Heavy,  
+    Glass  
 }
 
 
@@ -265,7 +250,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
             if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) && GameManager.instance.IsWithinBounds(cellPosition))
             {
-                sr.sortingOrder = 2;
+                sr.sortingOrder = 3;
                 tempColor.a = 1f;
                 sr.color = tempColor;
             }
@@ -273,7 +258,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             {
                 if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
                 {
-                    sr.sortingOrder = 2;
+                    sr.sortingOrder = 3;
                     tempColor.a = 1f;
                     sr.color = tempColor;
                 }
@@ -281,7 +266,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             }
             else
             {
-                sr.sortingOrder = 3;
+                sr.sortingOrder = 4;
                 tempColor.a = 0.5f;
                 sr.color = tempColor;
             }

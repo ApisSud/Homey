@@ -3,19 +3,19 @@ using TMPro;
 
 public class Trashobject : MonoBehaviour
 {
-    public enum TrashType
+   /* public enum TrashType
     {
         water,
         glass,
         bags
-    }
+    }*/
     public static int totalTrash = 0;
 /*
     [Header("Game Settings")]
   
     public GameObject trashParticle;*/
 
-    [SerializeField] private TrashType type;
+   /* [SerializeField] private TrashType type;*/
 
     [Header("UI Management")]
     public TextMeshProUGUI scoreText;
@@ -32,6 +32,11 @@ public class Trashobject : MonoBehaviour
     private Vector3 offset;
     private bool isOverBin = false; 
     private Vector3 startPosition;
+
+    [Header("Audio Settings")]
+    public AudioClip pickupSound; 
+    public AudioClip throwSound;  
+    public AudioClip dropSound;   
 
     void Start()
     {
@@ -51,6 +56,12 @@ public class Trashobject : MonoBehaviour
    
     void OnMouseDown()
     {
+
+        if (pickupSound != null && SoundManage.Instance != null)
+        {
+            SoundManage.Instance.PlaySFX(pickupSound);
+        }
+
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         offset = transform.position - mousePos;
 
@@ -85,7 +96,12 @@ public class Trashobject : MonoBehaviour
         }
         else
         {
-           
+
+            if (dropSound != null && SoundManage.Instance != null)
+            {
+                SoundManage.Instance.PlaySFX(dropSound);
+            }
+
             if (spriteRenderer != null && idleSprite != null)
             {
                 spriteRenderer.sprite = idleSprite;
@@ -118,6 +134,12 @@ public class Trashobject : MonoBehaviour
  
     void ThrowInBin()
     {
+
+        if (throwSound != null && SoundManage.Instance != null)
+        {
+            SoundManage.Instance.PlaySFX(throwSound);
+        }
+
         totalTrash++;
         UpdateScoreUI();
 
@@ -132,10 +154,7 @@ public class Trashobject : MonoBehaviour
              .setEase(LeanTweenType.easeInBack)
              .setOnComplete(() =>
             {
-               /* if (trashParticle != null)
-                {
-                    Instantiate(trashParticle, transform.position, Quaternion.identity);
-                }*/
+               
                 Destroy(gameObject);
             });
     }
@@ -148,11 +167,6 @@ public class Trashobject : MonoBehaviour
         }
     }
     
-    
-    /*if (Type == TrashType.water)
-    {
-        SoundManager.instance.playSFX(SoundManager.instance.Dirtywater);
-    }*/
-
+   
 }
 

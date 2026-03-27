@@ -106,12 +106,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3300d2bf4fc4a834d87c85a4ae7c7830, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Trashobject
-  type: 0
   scoreText: {fileID: 0}
   idleSprite: {fileID: 4428237948449300241, guid: 59b5a16f92406bc4fbcacf7a0134f057, type: 3}
   draggingSprite: {fileID: 8684227377402420629, guid: 59b5a16f92406bc4fbcacf7a0134f057, type: 3}
   popScaleFactor: 0.8
   popDuration: 0.15
+  pickupSound: {fileID: 8300000, guid: fc5cc6d3387287e4d90e4d8c5f004fe8, type: 3}
+  throwSound: {fileID: 8300000, guid: fc5cc6d3387287e4d90e4d8c5f004fe8, type: 3}
+  dropSound: {fileID: 8300000, guid: 0085259fa223a8d4da4897eb6a21797c, type: 3}
 --- !u!61 &1631828932148940334
 BoxCollider2D:
   m_ObjectHideFlags: 0

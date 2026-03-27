@@ -11,7 +11,8 @@ public enum SizeFurniture
     small,
     Grid1X1,
     Grid1X2,
-    wall
+    wall,
+    cloth
 }
 
 public enum FurnitureType
@@ -42,6 +43,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     private bool Draged;
     private bool onStorageFur;
     private bool onWall;
+    private bool onCloset;
     [SerializeField] private bool canMove;
     
     [SerializeField]
@@ -66,6 +68,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         Debug.Log(cellPosition);
         onStorageFur = false;
         onWall = false;
+        onCloset = false;
         CheckGrid.instance.PlaceObject(cellPosition, $"{Type}");
         if (GameManager.instance.IsWithinBounds(cellPosition))
         {
@@ -122,6 +125,14 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             CheckGrid.instance.RemoveObject(finalPos);
             CheckGrid.instance.removeFurnitureInScene(finalPos);
         }
+
+        if (Size == SizeFurniture.cloth && onCloset)
+        {
+            //finalPos = currentTargetGrid.GetClosestSnapPoint(mousePos);
+            //Debug.Log($"Remove {finalPos}");
+            CheckGrid.instance.RemoveObject(finalPos);
+            CheckGrid.instance.removeFurnitureInScene(finalPos);
+        }
         if (rowGrid > 1 | columnGrid > 1)
         {
             if (Flip == false)
@@ -161,12 +172,9 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                 }
                 if (onStorageFur)
                 {
-                    //Debug.Log("inStorage");
-                    //Debug.Log($"worldPos1 : {mousePos}");
-
+          
                     finalPos = currentTargetGrid.GetClosestSnapPoint(mousePos);
                     transform.position = finalPos;
-                    //Debug.Log($"fur will snap : {finalPos}");
                 }
                 else if (!onStorageFur)
                 {
@@ -196,7 +204,29 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                 }
 
             }
-          
+            if (Size == SizeFurniture.cloth)
+            {
+                sr.sortingOrder = 3;
+                if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
+                {
+                    transform.position = mousePos;
+                }
+                if (onCloset)
+                {
+                    Debug.Log("onCloset");
+                    Debug.Log($"worldPos1 : {mousePos}");
+
+                    finalPos = currentTargetGrid.GetClosestSnapPoint(mousePos);
+                    transform.position = finalPos;
+                    Debug.Log($"fur will snap : {finalPos}");
+                }
+                else if (!onCloset)
+                {
+                    transform.position = snapPos;
+                }
+
+            }
+
             if (Size == SizeFurniture.Grid1X1)
             {
                 offset = new Vector3(layoutGrid.cellSize.x / 2f, 0, layoutGrid.cellSize.y / 2f);
@@ -215,18 +245,30 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                 finalPos = baseSnapPos + totalOffset;
             }
 
-            if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
+            if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) && GameManager.instance.IsWithinBounds(cellPosition))
             {
                 sr.sortingOrder = 2;
                 tempColor.a = 1f;
                 sr.color = tempColor;
             }
-            else if (CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
+            else if(onCloset | onWall | onStorageFur)
+            {
+                if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
+                {
+                    sr.sortingOrder = 2;
+                    tempColor.a = 1f;
+                    sr.color = tempColor;
+                }
+                
+            }
+            else
             {
                 sr.sortingOrder = 3;
                 tempColor.a = 0.5f;
                 sr.color = tempColor;
             }
+
+            
         }
 
 
@@ -277,14 +319,15 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             Debug.Log($"{cellPosition} not empty");
         }
 
-        if(onStorageFur | onWall)
-        {  if (!CheckGrid.instance.occupiedTiles.ContainsKey(finalPos))
+        if(onStorageFur | onWall | onCloset)
+        {
+            if (!CheckGrid.instance.occupiedTiles.ContainsKey(finalPos))
             {
                 transform.position = finalPos;
                 CheckGrid.instance.PlaceObject(finalPos, $"{Type}");
                 CheckGrid.instance.addFurnitureInScene(finalPos);
             }
-            else if(CheckGrid.instance.occupiedTiles.ContainsKey(finalPos))
+            else if (CheckGrid.instance.occupiedTiles.ContainsKey(finalPos))
             {
                 transform.position = OriginalPosition;
                 cellPosition = layoutGrid.WorldToCell(OriginalPosition);
@@ -333,6 +376,11 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             currentTargetGrid = Furniture.GetComponent<Isogrid>();
             onWall = true;
         }
+        if (Furniture.gameObject.layer == LayerMask.NameToLayer("Closet"))
+        {
+            currentTargetGrid = Furniture.GetComponent<Isogrid>();
+            onCloset = true;
+        }
 
     }
 
@@ -340,6 +388,8 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     {
         currentTargetGrid = null;
         onStorageFur = false;
+        onWall = false;
+        onCloset = false;
     }
 
     private void combinePlaceGrid(int rows, int columns, Vector3Int cellPosition)

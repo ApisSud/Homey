@@ -80,6 +80,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         }
 
         originalColor = bodyColor.color;
+        Debug.Log("Heeha");
     }
 
     private void Update()

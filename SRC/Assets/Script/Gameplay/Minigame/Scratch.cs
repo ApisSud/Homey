@@ -28,6 +28,10 @@ public class Scratch : MonoBehaviour
     private Vector2 lastMousePos;
     private bool isGameActive = true;
 
+    [Header("Audio Settings")]
+    public AudioClip scrubSound;
+    public float scrubSoundInterval = 0.2f; 
+    private float scrubTimer = 0f;
     void Start()
     {
         int dirtCount = dirtSprites.Length;
@@ -99,6 +103,19 @@ public class Scratch : MonoBehaviour
         else if (Input.GetMouseButton(0))
         {
             Vector2 currentMousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            if (Vector2.Distance(lastMousePos, currentMousePos) > 0.01f)
+            {
+                scrubTimer -= Time.deltaTime;
+                if (scrubTimer <= 0f)
+                {
+                    // เล่นเสียงถู
+                    if (scrubSound != null && SoundManage.Instance != null)
+                    {
+                        SoundManage.Instance.PlaySFX(scrubSound);
+                    }
+                    scrubTimer = scrubSoundInterval; // ตั้งเวลารอรอบถัดไป
+                }
+            }
             EraseLine(lastMousePos, currentMousePos);
             lastMousePos = currentMousePos;
         }

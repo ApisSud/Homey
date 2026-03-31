@@ -49,6 +49,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     [SerializeField] private SpriteRenderer bodyColor;
     private Color32 originalColor;
     private bool Flip;
+    public bool Canplace;
     private bool Draged;
     private bool onStorageFur;
     private bool onWall;
@@ -89,7 +90,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         }
 
         originalColor = bodyColor.color;
-        Debug.Log("Heeha");
+    
     }
 
     private void Update()
@@ -125,23 +126,22 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
             if (Size == SizeFurniture.small && onStorageFur)
             {
-                //finalPos = currentTargetGrid.GetClosestSnapPoint(mousePos);
-                //Debug.Log($"Remove {finalPos}");
+ 
+                Debug.Log("SmallItem");
                 CheckGrid.instance.RemoveObject(finalPos);
                 CheckGrid.instance.removeFurnitureInScene(finalPos);
             }
             if (Size == SizeFurniture.wall && onWall)
             {
-                //finalPos = currentTargetGrid.GetClosestSnapPoint(mousePos);
-                //Debug.Log($"Remove {finalPos}");
+               
+                Debug.Log("WallItem");
                 CheckGrid.instance.RemoveObject(finalPos);
                 CheckGrid.instance.removeFurnitureInScene(finalPos);
             }
 
             if (Size == SizeFurniture.cloth && onCloset)
             {
-                //finalPos = currentTargetGrid.GetClosestSnapPoint(mousePos);
-                //Debug.Log($"Remove {finalPos}");
+                Debug.Log("ClothItem");
                 CheckGrid.instance.RemoveObject(finalPos);
                 CheckGrid.instance.removeFurnitureInScene(finalPos);
             }
@@ -204,12 +204,12 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                 }
                 if (onWall)
                 {
-                    Debug.Log("onWall");
-                    Debug.Log($"worldPos1 : {mousePos}");
+                    //Debug.Log("onWall");
+                    //Debug.Log($"worldPos1 : {mousePos}");
 
                     finalPos = currentTargetGrid.GetClosestSnapPoint(mousePos);
                     transform.position = finalPos;
-                    Debug.Log($"fur will snap : {finalPos}");
+                    //Debug.Log($"fur will snap : {finalPos}");
                 }
                 else if (!onWall)
                 {
@@ -226,12 +226,12 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                 }
                 if (onCloset)
                 {
-                    Debug.Log("onCloset");
-                    Debug.Log($"worldPos1 : {mousePos}");
+                    //Debug.Log("onCloset");
+                    //Debug.Log($"worldPos1 : {mousePos}");
 
                     finalPos = currentTargetGrid.GetClosestSnapPoint(mousePos);
                     transform.position = finalPos;
-                    Debug.Log($"fur will snap : {finalPos}");
+                    //Debug.Log($"fur will snap : {finalPos}");
                 }
                 else if (!onCloset)
                 {

@@ -2530,6 +2530,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1570641313538475666, guid: 70fc486c354b1d640bcbeec8bdf754d1, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1570641313538475666, guid: 70fc486c354b1d640bcbeec8bdf754d1, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1570641313538475666, guid: 70fc486c354b1d640bcbeec8bdf754d1, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5773998698002991551, guid: 70fc486c354b1d640bcbeec8bdf754d1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.28211975
@@ -9104,7 +9116,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 13
+  orthographic size: 9
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -18950,8 +18962,8 @@ Transform:
   m_GameObject: {fileID: 2029563517}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.27, y: 4.21, z: 0}
-  m_LocalScale: {x: 1.8704414, y: 1.8704414, z: 1.8704414}
+  m_LocalPosition: {x: 0.67, y: 4.21, z: 0}
+  m_LocalScale: {x: 1.1828579, y: 1.1828579, z: 1.1828579}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 289095802}

@@ -4650,7 +4650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1750991b441a09a4a898264d367fa583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneBGMPlayer
-  sceneBGM: {fileID: 8300000, guid: acf33c1b3ca52a440ba1f8736efb9adf, type: 3}
+  sceneBGM: {fileID: 8300000, guid: 42005c160f7f03642ac42891e8b662d1, type: 3}
 --- !u!1001 &485786798
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -52,14 +52,30 @@ public class CameraMovement : MonoBehaviour
         // ถ้ามีการกดปุ่มขยับ
         if (moveX != 0f || moveY != 0f)
         {
-            // สร้าง Vector ทิศทางการเคลื่อนที่
+           
             Vector3 moveDirection = new Vector3(moveX, moveY, 0f);
 
-            // คำนวณตำแหน่งใหม่ (ความเร็ว * เวลาของเฟรม เพื่อให้ขยับสมูทไม่ผูกกับเฟรมเรต)
+           
             Vector3 targetPosition = cam.transform.position + moveDirection * panSpeed * Time.deltaTime;
 
-            // อัปเดตตำแหน่งกล้องและจำกัดขอบเขตไม่ให้หลุดแผนที่
+            
             cam.transform.position = ClampCamera(targetPosition);
+        }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            
+            dragOrigin = cam.ScreenToWorldPoint(Input.mousePosition);
+        }
+
+        
+        if (Input.GetMouseButton(1))
+        {
+           
+            Vector3 difference = dragOrigin - cam.ScreenToWorldPoint(Input.mousePosition);
+
+          
+            cam.transform.position = ClampCamera(cam.transform.position + difference);
         }
     }
    

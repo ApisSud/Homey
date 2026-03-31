@@ -5,8 +5,8 @@ public class OptionMenu : MonoBehaviour
 {
     [Header("UI References")]
     public GameObject optionsMenuPanel; 
-    public Slider bgmSlider;           
-    public Slider sfxSlider;
+   /* public Slider bgmSlider;           
+    public Slider sfxSlider;*/
     public AudioClip ButtonClick;
 
 
@@ -15,7 +15,7 @@ public class OptionMenu : MonoBehaviour
        
         optionsMenuPanel.SetActive(false);
 
-       
+     /*  
         float savedBGM = PlayerPrefs.GetFloat("SavedBGMVolume", 1f);
         float savedSFX = PlayerPrefs.GetFloat("SavedSFXVolume", 1f);
 
@@ -24,7 +24,7 @@ public class OptionMenu : MonoBehaviour
 
         
         bgmSlider.onValueChanged.AddListener(UpdateBGM);
-        sfxSlider.onValueChanged.AddListener(UpdateSFX);
+        sfxSlider.onValueChanged.AddListener(UpdateSFX);*/
     }
 
     
@@ -48,20 +48,5 @@ public class OptionMenu : MonoBehaviour
     }
 
 
-    private void UpdateBGM(float value)
-    {
-        
-        if (SoundManage.Instance != null)
-        {
-            SoundManage.Instance.SetBGMVolume(value);
-        }
-    }
-
-    private void UpdateSFX(float value)
-    {
-        if (SoundManage.Instance != null)
-        {
-            SoundManage.Instance.SetSFXVolume(value);
-        }
-    }
+   
 }

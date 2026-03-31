@@ -5687,6 +5687,7 @@ GameObject:
   m_Component:
   - component: {fileID: 751761740}
   - component: {fileID: 751761741}
+  - component: {fileID: 751761742}
   m_Layer: 5
   m_Name: OptionMenu
   m_TagString: Untagged
@@ -5727,9 +5728,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OptionMenu
   optionsMenuPanel: {fileID: 2083270573}
+  ButtonClick: {fileID: 8300000, guid: d22016563c0ea7a46ac0dc443ac0073d, type: 3}
+--- !u!114 &751761742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751761739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 274935693d81c6c42a4eae8b871660fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Soundslider
   bgmSlider: {fileID: 1260004411}
   sfxSlider: {fileID: 1526118479}
-  ButtonClick: {fileID: 8300000, guid: d22016563c0ea7a46ac0dc443ac0073d, type: 3}
 --- !u!1 &920892696
 GameObject:
   m_ObjectHideFlags: 0

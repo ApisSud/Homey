@@ -9116,7 +9116,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 9
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -12009,11 +12009,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27a9396cdae854d4482f29d449c4fc5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  level: 0
-  minX: -3
-  maxX: 8
-  minY: -9
-  maxY: 6
+  level: 1
+  minX: -4
+  maxX: 1
+  minY: -10
+  maxY: -1
 --- !u!4 &1214951785
 Transform:
   m_ObjectHideFlags: 0
@@ -18962,8 +18962,8 @@ Transform:
   m_GameObject: {fileID: 2029563517}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.67, y: 4.21, z: 0}
-  m_LocalScale: {x: 1.1828579, y: 1.1828579, z: 1.1828579}
+  m_LocalPosition: {x: 0.64, y: 3.75, z: 0}
+  m_LocalScale: {x: 1.1931528, y: 1.1931528, z: 1.1931528}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 289095802}
@@ -19018,7 +19018,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6937963036682899546, guid: c31613c008cd97c47931c6de88bbeca7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.46226418, g: 0.36850303, b: 0.36850303, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

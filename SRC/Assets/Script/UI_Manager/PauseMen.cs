@@ -13,7 +13,7 @@ public class PauseMen : MonoBehaviour
     [SerializeField] float topPosY, middlePosY;
     [SerializeField] float TweenDuration;
     [SerializeField] CanvasGroup screenFaderCanvasGroup;
-   
+    public AudioClip ButtonClick;
 
     [SerializeField] CanvasGroup CanvasGroup;
 
@@ -21,6 +21,11 @@ public class PauseMen : MonoBehaviour
 
     void Update()
     {
+        if (ButtonClick != null && SoundManage.Instance != null)
+        {
+            SoundManage.Instance.PlaySFX(ButtonClick);
+        }
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (isPaused)
@@ -43,6 +48,10 @@ public class PauseMen : MonoBehaviour
 
     public async void Home()
     {
+        if (ButtonClick != null && SoundManage.Instance != null)
+        {
+            SoundManage.Instance.PlaySFX(ButtonClick);
+        }
         await FadeOutScene();
         SceneManager.LoadScene("01Main_Menu");
         Time.timeScale = 1f;
@@ -50,6 +59,10 @@ public class PauseMen : MonoBehaviour
 
     public async void Resumemenu()
     {
+        if (ButtonClick != null && SoundManage.Instance != null)
+        {
+            SoundManage.Instance.PlaySFX(ButtonClick);
+        }
         isPaused = false;
         await pausepaneloutro();
         pauseMenu.SetActive(false);
@@ -59,6 +72,10 @@ public class PauseMen : MonoBehaviour
 
     public async void Restart()
     {
+        if (ButtonClick != null && SoundManage.Instance != null)
+        {
+            SoundManage.Instance.PlaySFX(ButtonClick);
+        }
         await FadeOutScene();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1f;
@@ -66,6 +83,10 @@ public class PauseMen : MonoBehaviour
 
     public async void QuitGame()
     {
+        if (ButtonClick != null && SoundManage.Instance != null)
+        {
+            SoundManage.Instance.PlaySFX(ButtonClick);
+        }
         await FadeOutScene(); 
         Debug.Log("Quit Game Executed!"); 
         Application.Quit(); 
@@ -81,7 +102,7 @@ public class PauseMen : MonoBehaviour
     {
         CanvasGroup.DOFade(0, TweenDuration).SetUpdate(true);
         await PausepanelRect.DOAnchorPosY(topPosY, TweenDuration).SetUpdate(true).AsyncWaitForCompletion();
-        PausebuttonRect.DOAnchorPosX(-120, TweenDuration).SetUpdate(true);
+        PausebuttonRect.DOAnchorPosX(-70, TweenDuration).SetUpdate(true);
     }
 
     private async Task FadeOutScene()

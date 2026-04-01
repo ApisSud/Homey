@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BinManager : MonoBehaviour
@@ -12,8 +13,9 @@ public class BinManager : MonoBehaviour
 
     [Header("Highlight Settings")]
     public GameObject binHighlight;
- 
 
+
+    public AudioClip ButtonClick;
 
 
     private void Awake()
@@ -41,6 +43,11 @@ public class BinManager : MonoBehaviour
 
     public void ToggleTrashBin()
     {
+        if (ButtonClick != null && SoundManage.Instance != null)
+        {
+            SoundManage.Instance.PlaySFX(ButtonClick);
+        }
+
         if (trashBin.activeSelf)
         {
           

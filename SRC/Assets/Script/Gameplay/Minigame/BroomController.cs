@@ -11,7 +11,7 @@ public class BroomController : MonoBehaviour
 
    public GameObject broomImage;
     private Vector3 originalScale;
-
+    public AudioClip ButtonClick;
     private Animator animator;
 
     void Start()
@@ -42,6 +42,10 @@ public class BroomController : MonoBehaviour
 
     public void ToggleBroom()
     {
+        if (ButtonClick != null && SoundManage.Instance != null)
+        {
+            SoundManage.Instance.PlaySFX(ButtonClick);
+        }
         Cursor.visible = true;
         if (isEquipped)
         {

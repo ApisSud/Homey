@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -11,9 +12,15 @@ public class Inventory : MonoBehaviour
 
     private int currentClickIndex = 0;
 
-   
+    public AudioClip ButtonClick;
+
     public void SpawnItem()
     {
+        if (ButtonClick != null && SoundManage.Instance != null)
+        {
+            SoundManage.Instance.PlaySFX(ButtonClick);
+        }
+
         if (currentClickIndex < maxSpawnLimit && currentClickIndex < FurniturePF.Length)
         {
             if (FurniturePF[currentClickIndex] != null)

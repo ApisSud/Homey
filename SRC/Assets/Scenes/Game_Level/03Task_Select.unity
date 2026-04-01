@@ -988,8 +988,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 617.8684, y: -22.4879}
-  m_SizeDelta: {x: 213.0343, y: 655.0243}
+  m_AnchoredPosition: {x: 643.0478, y: -22.4879}
+  m_SizeDelta: {x: 162.6757, y: 655.0243}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &939505914
 MonoBehaviour:
@@ -1316,8 +1316,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -513.9458, y: 23.6151}
-  m_SizeDelta: {x: 386.4877, y: 747.2302}
+  m_AnchoredPosition: {x: -651.7414, y: 23.6151}
+  m_SizeDelta: {x: 110.8966, y: 747.2302}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1365530875
 MonoBehaviour:
@@ -1786,7 +1786,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1517423872}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1602155156}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: SelectLevel
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 05Witch_House
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1517423872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1800,14 +1812,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5176471}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8421005934136883533, guid: 7fd0892e3566dd145a2b07b4e7df384f, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

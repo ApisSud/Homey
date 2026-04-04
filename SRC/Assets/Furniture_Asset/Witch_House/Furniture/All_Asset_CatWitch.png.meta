@@ -1,0 +1,1963 @@
+fileFormatVersion: 2
+guid: 0baedd911a19ee240af6c1191cd46296
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1523439718564740184
+    second: All_Asset_CatWitch_0
+  - first:
+      213: -3471154002211857236
+    second: All_Asset_CatWitch_1
+  - first:
+      213: -3211083238842926025
+    second: All_Asset_CatWitch_2
+  - first:
+      213: 4196189418700852557
+    second: All_Asset_CatWitch_3
+  - first:
+      213: -6988062446757715115
+    second: All_Asset_CatWitch_4
+  - first:
+      213: 4507972236419825295
+    second: All_Asset_CatWitch_5
+  - first:
+      213: -5773861677798046464
+    second: All_Asset_CatWitch_6
+  - first:
+      213: -5531015635883712814
+    second: All_Asset_CatWitch_7
+  - first:
+      213: -2946293641985214157
+    second: All_Asset_CatWitch_8
+  - first:
+      213: -4674535204263466076
+    second: All_Asset_CatWitch_9
+  - first:
+      213: 4365801225066390297
+    second: All_Asset_CatWitch_10
+  - first:
+      213: -3511394637745932318
+    second: All_Asset_CatWitch_11
+  - first:
+      213: -5409038554175986915
+    second: All_Asset_CatWitch_12
+  - first:
+      213: -5950772398714607256
+    second: All_Asset_CatWitch_13
+  - first:
+      213: 1403526898735958656
+    second: All_Asset_CatWitch_14
+  - first:
+      213: -818728956667922081
+    second: All_Asset_CatWitch_15
+  - first:
+      213: -812554800318226264
+    second: All_Asset_CatWitch_16
+  - first:
+      213: 7441840934853088432
+    second: All_Asset_CatWitch_17
+  - first:
+      213: -4240922340637671488
+    second: All_Asset_CatWitch_18
+  - first:
+      213: 8690861390322709836
+    second: All_Asset_CatWitch_19
+  - first:
+      213: -8117875493973751287
+    second: All_Asset_CatWitch_20
+  - first:
+      213: 4889146123020120290
+    second: All_Asset_CatWitch_21
+  - first:
+      213: -7688424574932759384
+    second: All_Asset_CatWitch_22
+  - first:
+      213: -7453698421839845333
+    second: All_Asset_CatWitch_23
+  - first:
+      213: 2227372734009793273
+    second: All_Asset_CatWitch_24
+  - first:
+      213: -6723266091501940597
+    second: All_Asset_CatWitch_25
+  - first:
+      213: 555139781232342034
+    second: All_Asset_CatWitch_26
+  - first:
+      213: 4690680662492706208
+    second: All_Asset_CatWitch_27
+  - first:
+      213: 1049080043786529664
+    second: All_Asset_CatWitch_28
+  - first:
+      213: 4661653039777365108
+    second: All_Asset_CatWitch_29
+  - first:
+      213: -1924177999384675732
+    second: All_Asset_CatWitch_30
+  - first:
+      213: 743502621897741499
+    second: All_Asset_CatWitch_31
+  - first:
+      213: 5917721151215477878
+    second: All_Asset_CatWitch_32
+  - first:
+      213: -8298611471074632407
+    second: All_Asset_CatWitch_33
+  - first:
+      213: 5071934183230217218
+    second: All_Asset_CatWitch_34
+  - first:
+      213: 2118001617127574812
+    second: All_Asset_CatWitch_35
+  - first:
+      213: 3120192255421102465
+    second: All_Asset_CatWitch_36
+  - first:
+      213: -2168694899566986878
+    second: All_Asset_CatWitch_37
+  - first:
+      213: 7652436243107033173
+    second: All_Asset_CatWitch_38
+  - first:
+      213: 4799464898140321216
+    second: All_Asset_CatWitch_39
+  - first:
+      213: 7443445186992740666
+    second: All_Asset_CatWitch_40
+  - first:
+      213: 7640942281403068303
+    second: All_Asset_CatWitch_41
+  - first:
+      213: 7365156061595991436
+    second: All_Asset_CatWitch_42
+  - first:
+      213: -3411857236877523138
+    second: All_Asset_CatWitch_43
+  - first:
+      213: 2311961074318286507
+    second: All_Asset_CatWitch_44
+  - first:
+      213: -8953442605982918193
+    second: All_Asset_CatWitch_45
+  - first:
+      213: -203694203971085042
+    second: All_Asset_CatWitch_46
+  - first:
+      213: 2709488079219837999
+    second: All_Asset_CatWitch_47
+  - first:
+      213: 875602195903253879
+    second: All_Asset_CatWitch_48
+  - first:
+      213: -3024916438564824153
+    second: All_Asset_CatWitch_49
+  - first:
+      213: -2852839790667130482
+    second: All_Asset_CatWitch_50
+  - first:
+      213: 5018317102574427224
+    second: All_Asset_CatWitch_51
+  - first:
+      213: 5757632491391099234
+    second: All_Asset_CatWitch_52
+  - first:
+      213: -4161611337766961654
+    second: All_Asset_CatWitch_53
+  - first:
+      213: -51202685182273243
+    second: All_Asset_CatWitch_54
+  - first:
+      213: -8606664183575552972
+    second: All_Asset_CatWitch_55
+  - first:
+      213: -4106594886124712094
+    second: All_Asset_CatWitch_56
+  - first:
+      213: 1367032662890836507
+    second: All_Asset_CatWitch_57
+  - first:
+      213: 6990931405741320758
+    second: All_Asset_CatWitch_58
+  - first:
+      213: -2179564551536681579
+    second: All_Asset_CatWitch_59
+  - first:
+      213: 7429641380303692652
+    second: All_Asset_CatWitch_60
+  - first:
+      213: 5641676127885170780
+    second: All_Asset_CatWitch_61
+  - first:
+      213: 8361690734555134160
+    second: All_Asset_CatWitch_62
+  - first:
+      213: 3233488432198150761
+    second: All_Asset_CatWitch_63
+  - first:
+      213: 450637891980879991
+    second: All_Asset_CatWitch_64
+  - first:
+      213: 3328353232080436697
+    second: All_Asset_CatWitch_65
+  - first:
+      213: -3251112606257611611
+    second: All_Asset_CatWitch_66
+  - first:
+      213: -8201584708196032193
+    second: All_Asset_CatWitch_67
+  - first:
+      213: -8655481238417995749
+    second: All_Asset_CatWitch_68
+  - first:
+      213: 1655343310488871691
+    second: All_Asset_CatWitch_69
+  - first:
+      213: -1641699749434398164
+    second: All_Asset_CatWitch_70
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1458
+        width: 359
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a34a32c5a7abdae0800000000000000
+      internalID: -1523439718564740184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_1
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1477
+        width: 229
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cac9c7173dbf3dfc0800000000000000
+      internalID: -3471154002211857236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_2
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 1458
+        width: 353
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73c7e8caec0ff63d0800000000000000
+      internalID: -3211083238842926025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_3
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 1422
+        width: 97
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4dcaef3b0cdb3a30800000000000000
+      internalID: 4196189418700852557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_4
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 1312
+        width: 203
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55362c0aa3a650f90800000000000000
+      internalID: -6988062446757715115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_5
+      rect:
+        serializedVersion: 2
+        x: 1956
+        y: 1502
+        width: 184
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8e70216dd88f8e30800000000000000
+      internalID: 4507972236419825295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_6
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1232
+        width: 85
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0054b90356f1fdfa0800000000000000
+      internalID: -5773861677798046464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_7
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 1227
+        width: 150
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2de15007592ed33b0800000000000000
+      internalID: -5531015635883712814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_8
+      rect:
+        serializedVersion: 2
+        x: 2657
+        y: 187
+        width: 1420
+        height: 1235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 339ba71fa89ac17d0800000000000000
+      internalID: -2946293641985214157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_9
+      rect:
+        serializedVersion: 2
+        x: 2911
+        y: 1363
+        width: 37
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab61db9ff6b02fb0800000000000000
+      internalID: -4674535204263466076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_10
+      rect:
+        serializedVersion: 2
+        x: 3344
+        y: 1348
+        width: 37
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9132c0c4511769c30800000000000000
+      internalID: 4365801225066390297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_11
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 1270
+        width: 62
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e731fe5e25054fc0800000000000000
+      internalID: -3511394637745932318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_12
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 1277
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d13a2f1e71c3fe4b0800000000000000
+      internalID: -5409038554175986915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_13
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 1275
+        width: 67
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 869aa6b280c9a6da0800000000000000
+      internalID: -5950772398714607256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_14
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 1273
+        width: 45
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08accd737445a7310800000000000000
+      internalID: 1403526898735958656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_15
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 1272
+        width: 45
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f597b7a0a5a43a4f0800000000000000
+      internalID: -818728956667922081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_16
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 1269
+        width: 45
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a06e76d6b939b4f0800000000000000
+      internalID: -812554800318226264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_17
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 1274
+        width: 45
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b411e4d6eab64760800000000000000
+      internalID: 7441840934853088432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_18
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1275
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cff54eb9973525c0800000000000000
+      internalID: -4240922340637671488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_19
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 1273
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c45b75a63642c9870800000000000000
+      internalID: 8690861390322709836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_20
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 1268
+        width: 55
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90a88d2af33875f80800000000000000
+      internalID: -8117875493973751287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_21
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 1270
+        width: 57
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e0b79dbe7cb9d340800000000000000
+      internalID: 4889146123020120290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_22
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 1223
+        width: 190
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8accfb8859a3d4590800000000000000
+      internalID: -7688424574932759384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_23
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1109
+        width: 43
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b28a857d6c42f8890800000000000000
+      internalID: -7453698421839845333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_24
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 984
+        width: 167
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fa5b0153b739ee10800000000000000
+      internalID: 2227372734009793273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_25
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 1098
+        width: 85
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8019957c1922b2a0800000000000000
+      internalID: -6723266091501940597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_26
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1100
+        width: 73
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214ba0590b044b700800000000000000
+      internalID: 555139781232342034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_27
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 1108
+        width: 72
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a5fba2d535a81140800000000000000
+      internalID: 4690680662492706208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_28
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1110
+        width: 69
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08be8d6ddb41f8e00800000000000000
+      internalID: 1049080043786529664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_29
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 1109
+        width: 69
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47cbc0ebdb481b040800000000000000
+      internalID: 4661653039777365108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_30
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 1109
+        width: 70
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6afd06ed42fb45e0800000000000000
+      internalID: -1924177999384675732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_31
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 1118
+        width: 57
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb459c302b3715a00800000000000000
+      internalID: 743502621897741499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_32
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 1122
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 674a30a9808ff1250800000000000000
+      internalID: 5917721151215477878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_33
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 1122
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92d5d91c5d865dc80800000000000000
+      internalID: -8298611471074632407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_34
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 1122
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20c19937441236640800000000000000
+      internalID: 5071934183230217218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_35
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 1127
+        width: 192
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1d8796cf37a46d10800000000000000
+      internalID: 2118001617127574812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_36
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 978
+        width: 118
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 189bc4723562d4b20800000000000000
+      internalID: 3120192255421102465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_37
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 899
+        width: 57
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 289bb15aa7f37e1e0800000000000000
+      internalID: -2168694899566986878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_38
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 895
+        width: 57
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55038b0083ae23a60800000000000000
+      internalID: 7652436243107033173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_39
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 895
+        width: 57
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c53c9d65ef1b9240800000000000000
+      internalID: 4799464898140321216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_40
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 891
+        width: 57
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a391bc3e5fd6c4760800000000000000
+      internalID: 7443445186992740666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_41
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 891
+        width: 74
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8fea4085841a0a60800000000000000
+      internalID: 7640942281403068303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_42
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 891
+        width: 71
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8d7ebe6a6a463660800000000000000
+      internalID: 7365156061595991436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_43
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 891
+        width: 61
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e37c19b7be5a6a0d0800000000000000
+      internalID: -3411857236877523138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_44
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 680
+        width: 229
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae9549095cb51020800000000000000
+      internalID: 2311961074318286507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_45
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 779
+        width: 225
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc95a81236bfeb380800000000000000
+      internalID: -8953442605982918193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_46
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 968
+        width: 192
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0d5f7163355c2df0800000000000000
+      internalID: -203694203971085042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_47
+      rect:
+        serializedVersion: 2
+        x: 1927
+        y: 936
+        width: 242
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2ccd057d090a9520800000000000000
+      internalID: 2709488079219837999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_48
+      rect:
+        serializedVersion: 2
+        x: 2598
+        y: 930
+        width: 37
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d8d5bde83c62c00800000000000000
+      internalID: 875602195903253879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_49
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 835
+        width: 35
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab9a1c96865506d0800000000000000
+      internalID: -3024916438564824153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_50
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 844
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e899f2c435da868d0800000000000000
+      internalID: -2852839790667130482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_51
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 840
+        width: 49
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85c573d01d4a4a540800000000000000
+      internalID: 5018317102574427224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_52
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 779
+        width: 47
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2612d94ee3837ef40800000000000000
+      internalID: 5757632491391099234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_53
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 831
+        width: 64
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0e7927998cfe36c0800000000000000
+      internalID: -4161611337766961654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_54
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 754
+        width: 111
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5291a2add671a4ff0800000000000000
+      internalID: -51202685182273243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_55
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 601
+        width: 270
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43cd6ec668cfe8880800000000000000
+      internalID: -8606664183575552972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_56
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 727
+        width: 74
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26fc91075b17207c0800000000000000
+      internalID: -4106594886124712094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_57
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 717
+        width: 75
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b12f6fbc6fca8f210800000000000000
+      internalID: 1367032662890836507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_58
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 731
+        width: 61
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63a6550f217c40160800000000000000
+      internalID: 6990931405741320758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_59
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 797
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59d5f949691a0c1e0800000000000000
+      internalID: -2179564551536681579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_60
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 52
+        width: 199
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c636b81b8736b1760800000000000000
+      internalID: 7429641380303692652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_61
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 18
+        width: 213
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5895642c824b4e40800000000000000
+      internalID: 5641676127885170780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_62
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 271
+        width: 132
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d875d2cb61ba0470800000000000000
+      internalID: 8361690734555134160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_63
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 389
+        width: 296
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96a618ae898afdc20800000000000000
+      internalID: 3233488432198150761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_64
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 376
+        width: 308
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 778e9d176ccf04600800000000000000
+      internalID: 450637891980879991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_65
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 368
+        width: 358
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dd7d2551afa03e20800000000000000
+      internalID: 3328353232080436697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_66
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 44
+        width: 270
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac783b4f4ab1e2d0800000000000000
+      internalID: -3251112606257611611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_67
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 18
+        width: 206
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3123b8692e1e2e80800000000000000
+      internalID: -8201584708196032193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_68
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 17
+        width: 206
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1889002cad81e780800000000000000
+      internalID: -8655481238417995749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_69
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 301
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b03220378f5f8f610800000000000000
+      internalID: 1655343310488871691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_Asset_CatWitch_70
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 100
+        width: 143
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2a6d17a6c28739e0800000000000000
+      internalID: -1641699749434398164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      All_Asset_CatWitch_0: -1523439718564740184
+      All_Asset_CatWitch_1: -3471154002211857236
+      All_Asset_CatWitch_10: 4365801225066390297
+      All_Asset_CatWitch_11: -3511394637745932318
+      All_Asset_CatWitch_12: -5409038554175986915
+      All_Asset_CatWitch_13: -5950772398714607256
+      All_Asset_CatWitch_14: 1403526898735958656
+      All_Asset_CatWitch_15: -818728956667922081
+      All_Asset_CatWitch_16: -812554800318226264
+      All_Asset_CatWitch_17: 7441840934853088432
+      All_Asset_CatWitch_18: -4240922340637671488
+      All_Asset_CatWitch_19: 8690861390322709836
+      All_Asset_CatWitch_2: -3211083238842926025
+      All_Asset_CatWitch_20: -8117875493973751287
+      All_Asset_CatWitch_21: 4889146123020120290
+      All_Asset_CatWitch_22: -7688424574932759384
+      All_Asset_CatWitch_23: -7453698421839845333
+      All_Asset_CatWitch_24: 2227372734009793273
+      All_Asset_CatWitch_25: -6723266091501940597
+      All_Asset_CatWitch_26: 555139781232342034
+      All_Asset_CatWitch_27: 4690680662492706208
+      All_Asset_CatWitch_28: 1049080043786529664
+      All_Asset_CatWitch_29: 4661653039777365108
+      All_Asset_CatWitch_3: 4196189418700852557
+      All_Asset_CatWitch_30: -1924177999384675732
+      All_Asset_CatWitch_31: 743502621897741499
+      All_Asset_CatWitch_32: 5917721151215477878
+      All_Asset_CatWitch_33: -8298611471074632407
+      All_Asset_CatWitch_34: 5071934183230217218
+      All_Asset_CatWitch_35: 2118001617127574812
+      All_Asset_CatWitch_36: 3120192255421102465
+      All_Asset_CatWitch_37: -2168694899566986878
+      All_Asset_CatWitch_38: 7652436243107033173
+      All_Asset_CatWitch_39: 4799464898140321216
+      All_Asset_CatWitch_4: -6988062446757715115
+      All_Asset_CatWitch_40: 7443445186992740666
+      All_Asset_CatWitch_41: 7640942281403068303
+      All_Asset_CatWitch_42: 7365156061595991436
+      All_Asset_CatWitch_43: -3411857236877523138
+      All_Asset_CatWitch_44: 2311961074318286507
+      All_Asset_CatWitch_45: -8953442605982918193
+      All_Asset_CatWitch_46: -203694203971085042
+      All_Asset_CatWitch_47: 2709488079219837999
+      All_Asset_CatWitch_48: 875602195903253879
+      All_Asset_CatWitch_49: -3024916438564824153
+      All_Asset_CatWitch_5: 4507972236419825295
+      All_Asset_CatWitch_50: -2852839790667130482
+      All_Asset_CatWitch_51: 5018317102574427224
+      All_Asset_CatWitch_52: 5757632491391099234
+      All_Asset_CatWitch_53: -4161611337766961654
+      All_Asset_CatWitch_54: -51202685182273243
+      All_Asset_CatWitch_55: -8606664183575552972
+      All_Asset_CatWitch_56: -4106594886124712094
+      All_Asset_CatWitch_57: 1367032662890836507
+      All_Asset_CatWitch_58: 6990931405741320758
+      All_Asset_CatWitch_59: -2179564551536681579
+      All_Asset_CatWitch_6: -5773861677798046464
+      All_Asset_CatWitch_60: 7429641380303692652
+      All_Asset_CatWitch_61: 5641676127885170780
+      All_Asset_CatWitch_62: 8361690734555134160
+      All_Asset_CatWitch_63: 3233488432198150761
+      All_Asset_CatWitch_64: 450637891980879991
+      All_Asset_CatWitch_65: 3328353232080436697
+      All_Asset_CatWitch_66: -3251112606257611611
+      All_Asset_CatWitch_67: -8201584708196032193
+      All_Asset_CatWitch_68: -8655481238417995749
+      All_Asset_CatWitch_69: 1655343310488871691
+      All_Asset_CatWitch_7: -5531015635883712814
+      All_Asset_CatWitch_70: -1641699749434398164
+      All_Asset_CatWitch_8: -2946293641985214157
+      All_Asset_CatWitch_9: -4674535204263466076
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

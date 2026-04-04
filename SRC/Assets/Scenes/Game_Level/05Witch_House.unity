@@ -876,7 +876,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &251951051
 Rigidbody2D:
   serializedVersion: 5
@@ -2325,8 +2325,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3456b257063db2c409300857b915a0fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TransitionManager
-  startTransitionPrefab: {fileID: 8241042319798137277, guid: 3a8fee7690da8ea47a7323deee5ecd20, type: 3}
-  endTransitionPrefab: {fileID: 2679913693061001785, guid: 5a23874e2b9930e4c942db4f61b00d56, type: 3}
+  startTransitionPrefab: {fileID: 8241042319798137277, guid: 75328977eebe3914e8eb59d972cbdef5, type: 3}
+  endTransitionPrefab: {fileID: 2679913693061001785, guid: 31d197ba03d29f442b1679ec8d29cc3d, type: 3}
   mainCanvas: {fileID: 496528573}
 --- !u!4 &381033734
 Transform:

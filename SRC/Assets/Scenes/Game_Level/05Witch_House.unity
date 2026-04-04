@@ -2355,6 +2355,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Note
       objectReference: {fileID: 0}
+    - target: {fileID: 101624412865776350, guid: 297e2e6bdd659ef47b1a3437c5010234, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -115.1
+      objectReference: {fileID: 0}
     - target: {fileID: 2126354045014328288, guid: 297e2e6bdd659ef47b1a3437c5010234, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -2595,6 +2599,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5945879284517787284, guid: 297e2e6bdd659ef47b1a3437c5010234, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -114.7
+      objectReference: {fileID: 0}
     - target: {fileID: 6773604906997672549, guid: 297e2e6bdd659ef47b1a3437c5010234, type: 3}
       propertyPath: m_SizeDelta.x
       value: 267.9213
@@ -2639,6 +2647,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: -5211587532304296907, guid: 8ba7a30c12192bb4ebf8047484110e12, type: 2}
+    - target: {fileID: 7872608698480774891, guid: 297e2e6bdd659ef47b1a3437c5010234, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -115.8
+      objectReference: {fileID: 0}
     - target: {fileID: 7962985935434645551, guid: 297e2e6bdd659ef47b1a3437c5010234, type: 3}
       propertyPath: m_Type
       value: 0
@@ -5153,6 +5165,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e94b9fc89006eac49ab79ff6e8215d83, type: 3}
+--- !u!1 &755916821 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5416673737187898510, guid: 297e2e6bdd659ef47b1a3437c5010234, type: 3}
+  m_PrefabInstance: {fileID: 408299576}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &760527793
 GameObject:
   m_ObjectHideFlags: 0
@@ -5904,6 +5921,18 @@ PrefabInstance:
       propertyPath: trashBin
       value: 
       objectReference: {fileID: 2082325747}
+    - target: {fileID: 65859480132217066, guid: a565ecd25f7a09241b11a9a16b42c2ed, type: 3}
+      propertyPath: Checkbox1
+      value: 
+      objectReference: {fileID: 755916821}
+    - target: {fileID: 65859480132217066, guid: a565ecd25f7a09241b11a9a16b42c2ed, type: 3}
+      propertyPath: Checkbox2
+      value: 
+      objectReference: {fileID: 1177461706}
+    - target: {fileID: 65859480132217066, guid: a565ecd25f7a09241b11a9a16b42c2ed, type: 3}
+      propertyPath: Checkbox3
+      value: 
+      objectReference: {fileID: 1421117504}
     - target: {fileID: 65859480132217066, guid: a565ecd25f7a09241b11a9a16b42c2ed, type: 3}
       propertyPath: BroomButton
       value: 
@@ -8333,6 +8362,11 @@ MonoBehaviour:
   columns: 5
   rows: 3
   spacing: 0.6
+--- !u!1 &1177461706 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1859944409498238386, guid: 297e2e6bdd659ef47b1a3437c5010234, type: 3}
+  m_PrefabInstance: {fileID: 408299576}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1206811183
 GameObject:
   m_ObjectHideFlags: 0
@@ -9163,6 +9197,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3537533053899901642, guid: e94b9fc89006eac49ab79ff6e8215d83, type: 3}
   m_PrefabInstance: {fileID: 1773582519}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1421117504 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6231961689638087277, guid: 297e2e6bdd659ef47b1a3437c5010234, type: 3}
+  m_PrefabInstance: {fileID: 408299576}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1441100646
 GameObject:

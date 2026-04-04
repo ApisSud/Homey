@@ -11,6 +11,9 @@ public class TaskManager : MonoBehaviour
     public GameObject successImage2;
     public GameObject successImage3;
     public GameObject Trashbin;
+    public GameObject Checkbox1;
+    public GameObject Checkbox2;
+    public GameObject Checkbox3;
 
     [Header("Buttons Setup")] 
     public GameObject BroomButton; 
@@ -58,6 +61,11 @@ public class TaskManager : MonoBehaviour
             successImage3.SetActive(false);
             successImage3.transform.localScale = new Vector3(0, 1, 1);
         }
+
+        if (Checkbox1 != null) { Checkbox1.SetActive(false); }
+        if (Checkbox2 != null) { Checkbox2.SetActive(false);}
+        if (Checkbox3 != null) { Checkbox3.SetActive(false);  }
+
         if (BroomButton != null) BroomButton.SetActive(true);   
         if (TrashbinButton != null) TrashbinButton.SetActive(true);   
         if (FurnitureButton != null) FurnitureButton.SetActive(false);
@@ -68,7 +76,7 @@ public class TaskManager : MonoBehaviour
     {
         if (isMouseClear) return;
         currentMouseCount++;
-        
+
 
        
         if (currentMouseCount >= totalMouseNeeded)
@@ -81,7 +89,16 @@ public class TaskManager : MonoBehaviour
                 
                 successImage3.transform.DOScaleX(1f, 0.7f).SetEase(Ease.OutBack);
             }
+            if (Checkbox3 != null)
+            {
+                Checkbox3.SetActive(true);
+
+            }
         }
+
+       
+
+
     }
     public void CompleteTrashTask()
     {
@@ -105,6 +122,12 @@ public class TaskManager : MonoBehaviour
             
             successImage.transform.DOScaleX(1f, 0.5f).SetEase(Ease.OutBack);
         }
+
+        if (Checkbox1 != null)
+        {
+            Checkbox1.SetActive(true);
+           
+        }
     }
 
    
@@ -117,6 +140,11 @@ public class TaskManager : MonoBehaviour
             successImage2.SetActive(true);
        
             successImage2.transform.DOScaleX(1f, 0.5f).SetEase(Ease.OutBack);
+        }
+        if (Checkbox2 != null)
+        {
+            Checkbox2.SetActive(true);
+          
         }
     }
 

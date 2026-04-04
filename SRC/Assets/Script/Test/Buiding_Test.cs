@@ -182,6 +182,26 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                 sr.sortingOrder = 3;
                 tempColor.a = 1f;
                 sr.color = tempColor;
+
+                    offset = new Vector3(layoutGrid.cellSize.x / 2f, 0, layoutGrid.cellSize.y / 2f);
+                    transform.position = snapPos + offset;
+                    finalPos = snapPos + offset;
+                
+                if (Size == SizeFurniture.Grid1X2)
+                {
+                    // 2. หาตำแหน่งกึ่งกลางของช่องแรกนั้น
+                    Vector3 baseSnapPos = layoutGrid.GetCellCenterWorld(cellPosition);
+
+                    float offsetX = ((rowGrid - 1) * layoutGrid.cellSize.x) / 2f;
+                    float offsetZ = ((columnGrid - 1) * layoutGrid.cellSize.y) / 2f;
+                    Vector3 totalOffset = new Vector3(offsetX, 0, offsetZ);
+                    transform.position = baseSnapPos + totalOffset;
+                    finalPos = baseSnapPos + totalOffset;
+                }
+
+            }
+            else if(onCloset | onWall | onStorageFur)
+            {
                 if (Size == SizeFurniture.small)
                 {
                     sr.sortingOrder = 5;
@@ -237,28 +257,6 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                     }
 
                 }
-
-                if (Size == SizeFurniture.Grid1X1)
-                {
-                    offset = new Vector3(layoutGrid.cellSize.x / 2f, 0, layoutGrid.cellSize.y / 2f);
-                    transform.position = snapPos + offset;
-                    finalPos = snapPos + offset;
-                }
-                if (Size == SizeFurniture.Grid1X2)
-                {
-                    // 2. หาตำแหน่งกึ่งกลางของช่องแรกนั้น
-                    Vector3 baseSnapPos = layoutGrid.GetCellCenterWorld(cellPosition);
-
-                    float offsetX = ((rowGrid - 1) * layoutGrid.cellSize.x) / 2f;
-                    float offsetZ = ((columnGrid - 1) * layoutGrid.cellSize.y) / 2f;
-                    Vector3 totalOffset = new Vector3(offsetX, 0, offsetZ);
-                    transform.position = baseSnapPos + totalOffset;
-                    finalPos = baseSnapPos + totalOffset;
-                }
-
-            }
-            else if(onCloset | onWall | onStorageFur)
-            {
                 if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
                 {
                     sr.sortingOrder = 3;

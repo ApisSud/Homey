@@ -45,34 +45,26 @@ public class Isogrid : MonoBehaviour
         //Debug.Log($"mousePos2 : {mouseWorldPos}");
         Vector3 bestPoint = mouseWorldPos;
         float closestDistance = float.MaxValue;
+        canplace = false;
         for (int i = 0; i < columns; i++)
         {
             for (int r = 0; r < rows; r++)
             {
                 Vector3 slotPos = GetIsoSlotPosition(i,r);
                 float distance = Vector3.Distance(mouseWorldPos, slotPos);
-                Debug.Log($"Slotsnap : {slotPos}+{i}");
+                //Debug.Log($"Slotsnap : {slotPos}+{i}");
                 if (distance < snapThreshold && distance < closestDistance)
                 {
+                    canplace = true;
                     closestDistance = distance;
                     bestPoint = slotPos;
                   
                 }
-
-                if(distance > snapThreshold)
-                {
-                    canplace = false;
-                    Debug.Log($"{canplace}+{distance}+{snapThreshold}");
-                }
-                else 
-                {
-                    canplace = true ;
-                    Debug.Log(canplace);
-
-                }
+               
+            
             }
         }
-        Debug.Log($"snap : {bestPoint}");
+        //Debug.Log($"snap : {bestPoint}");
         return bestPoint;
     }
   

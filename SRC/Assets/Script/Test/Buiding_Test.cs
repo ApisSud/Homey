@@ -221,7 +221,6 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                         sr.sortingOrder = currentTargetGrid.layer;
                         finalPos = currentTargetGrid.GetClosestSnapPoint(mousePos);
                         transform.position = finalPos;
-                        Debug.Log(currentTargetGrid.layer);
                     }
                     else if (!onStorageFur)
                     {

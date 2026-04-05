@@ -198,7 +198,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 6
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2418803504092411897, guid: 73336de5670edfb488365b774bb6698b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -240,7 +240,7 @@ Transform:
   m_GameObject: {fileID: 14611502}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 60.53, y: 13.01, z: 0}
+  m_LocalPosition: {x: 48.73, y: 12.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5367,7 +5367,7 @@ MonoBehaviour:
   anchorPoint: {fileID: 466361025}
   stepX: -0.5
   stepY: 0.25
-  layer: 0
+  layer: 3
   columns: 4
   rows: 1
   spacing: 0.65
@@ -6866,7 +6866,7 @@ Transform:
   m_GameObject: {fileID: 590895855}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.09, y: -0.39, z: -0.037987802}
+  m_LocalPosition: {x: -0.07, y: -0.31, z: -0.037987802}
   m_LocalScale: {x: 0.67041, y: 0.67041, z: 0.67041}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6969,9 +6969,9 @@ MonoBehaviour:
   stepX: 0.5
   stepY: 0.25
   layer: 0
-  columns: 5
-  rows: 5
-  spacing: 0.7
+  columns: 4
+  rows: 4
+  spacing: 0.8
   canplace: 0
 --- !u!1001 &606325077
 PrefabInstance:
@@ -7489,7 +7489,7 @@ MonoBehaviour:
   anchorPoint: {fileID: 663175514}
   stepX: -0.5
   stepY: 0.25
-  layer: 0
+  layer: 7
   columns: 4
   rows: 1
   spacing: 0.7
@@ -12324,7 +12324,7 @@ MonoBehaviour:
   anchorPoint: {fileID: 1097546632}
   stepX: 0.5
   stepY: 0.25
-  layer: 0
+  layer: 3
   columns: 4
   rows: 1
   spacing: 0.7
@@ -18852,7 +18852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6704760995418815148, guid: 5e32067b1991ce549afe50fd91baca0f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6775461188415730344, guid: 5e32067b1991ce549afe50fd91baca0f, type: 3}
       propertyPath: m_AnchorMax.y
@@ -19285,7 +19285,7 @@ MonoBehaviour:
   anchorPoint: {fileID: 1754700796}
   stepX: 0.5
   stepY: 0.25
-  layer: 0
+  layer: 7
   columns: 5
   rows: 1
   spacing: 0.65
@@ -21985,7 +21985,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1993908006
 Transform:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Rendering;
 
+
 public class Isogrid : MonoBehaviour
 {
     [Header("Placement Settings")]
@@ -9,16 +10,23 @@ public class Isogrid : MonoBehaviour
     [Header("Isometric Settings")]
     public float stepX = 0.5f; // ระยะห่างเฉียงไปทางขวาลง
     public float stepY = 0.25f; // ระยะห่างเฉียงไปทางขวาขึ้น (สำหรับ Isometric 2:1)
-    public int layer;
+    public int layer = 4;
 
     public int columns = 5;
     public int rows = 1;
     public float spacing = 0.5f;
     public bool canplace;
-    private Buiding_Test buiding;
+
+    [SerializeField] private int x, y, row, column;
+
     void Start()
     {
         canplace = false;
+        if(gameObject.layer == LayerMask.NameToLayer("FurnitureStorage"))
+        {
+            Vector3Int cellPosition = new Vector3Int(x, y, 0);
+            combinePlaceGrid(row,column, cellPosition);
+        }
     }
 
     public Vector3 GetIsoSlotPosition(int col, int row)
@@ -83,6 +91,21 @@ public class Isogrid : MonoBehaviour
         }
     }
 
-   
+    private void combinePlaceGrid(int rows, int columns, Vector3Int cellPosition)
+    {
+        Debug.Log($"input : {cellPosition}");
+        for (int c = 0; c < columns; c++)
+        {
+            // วนลูปแนวแถว
+            for (int r = 0; r < rows; r++)
+            {
+                Vector3Int targetPos = new Vector3Int(cellPosition.x - c, cellPosition.y - r, 0);
+
+                CheckGrid.instance.PlaceObject(targetPos, $"Storage");
+            }
+        }
+    }
+
+
 
 } 

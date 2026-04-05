@@ -211,16 +211,17 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             {
                 if (Size == SizeFurniture.small)
                 {
-                    sr.sortingOrder = 5;
+ 
                     if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
                     {
                         transform.position = mousePos;
                     }
                     if (onStorageFur)
                     {
-
+                        sr.sortingOrder = currentTargetGrid.layer;
                         finalPos = currentTargetGrid.GetClosestSnapPoint(mousePos);
                         transform.position = finalPos;
+                        Debug.Log(currentTargetGrid.layer);
                     }
                     else if (!onStorageFur)
                     {
@@ -266,13 +267,13 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                 }
                 if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) && currentTargetGrid.canplace == true)
                 {
-                    sr.sortingOrder = 3;
+              
                     tempColor.a = 1f;
                     sr.color = tempColor;
                 }
                 else if (currentTargetGrid.canplace == false)
                 {
-                    sr.sortingOrder = 4;
+                  
                     tempColor.a = 0.5f;
                     sr.color = tempColor;
                 }

@@ -1,49 +1,10 @@
 fileFormatVersion: 2
-guid: a664b806173c11c40bc13883dc6b5b18
+guid: f31b2d5fb03b41840a6d101a375b5c38
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8857946688505897167
-    second: book1_0
-  - first:
-      213: 6436583979023528649
-    second: book1_1
-  - first:
-      213: -9186844377207041546
-    second: book1_2
-  - first:
-      213: -5167574475352912017
-    second: book1_3
-  - first:
-      213: 6162467456683613804
-    second: book1_4
-  - first:
-      213: -932764336686243357
-    second: book1_5
-  - first:
-      213: -1113415194264207705
-    second: book1_6
-  - first:
-      213: -6335527855034403721
-    second: book1_7
-  - first:
-      213: -8429486834171323099
-    second: book1_8
-  - first:
-      213: 724257475644029311
-    second: book1_9
-  - first:
-      213: -1018144276614064008
-    second: book1_10
-  - first:
-      213: 3535065759076205364
-    second: book1_11
-  - first:
-      213: 4289849418943468621
-    second: book1_12
-  - first:
-      213: -1987238548871033950
-    second: book1_13
+      213: -7296303295682274107
+    second: fairy_1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: book1_0
+      name: fairy_1_0
       rect:
         serializedVersion: 2
-        x: 59
-        y: 42
-        width: 1111
-        height: 776
+        x: 297
+        y: 63
+        width: 1332
+        height: 943
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 13f12401b60421580800000000000000
-      internalID: -8857946688505897167
+      spriteID: 5cc985f5fc25eba90800000000000000
+      internalID: -7296303295682274107
       vertices: []
       indices: 
       edges: []
@@ -164,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: df3be67f16a10ca419608a3d0d453141
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -174,21 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      book1_0: -8857946688505897167
-      book1_1: 6436583979023528649
-      book1_10: -1018144276614064008
-      book1_11: 3535065759076205364
-      book1_12: 4289849418943468621
-      book1_13: -1987238548871033950
-      book1_14: -1473413555
-      book1_2: -9186844377207041546
-      book1_3: -5167574475352912017
-      book1_4: 6162467456683613804
-      book1_5: -932764336686243357
-      book1_6: -1113415194264207705
-      book1_7: -6335527855034403721
-      book1_8: -8429486834171323099
-      book1_9: 724257475644029311
+      fairy_1_0: -7296303295682274107
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

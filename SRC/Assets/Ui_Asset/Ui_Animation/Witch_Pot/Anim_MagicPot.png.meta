@@ -145,19 +145,19 @@ TextureImporter:
       name: Anim_MagicPot_0
       rect:
         serializedVersion: 2
-        x: 2107
-        y: 959
-        width: 99
-        height: 95
+        x: 0
+        y: 0
+        width: 871
+        height: 1146
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 60d9ea2aebe25c450800000000000000
+      spriteID: 501b0127a0966ad40ab2e96878dd436c
       internalID: 6108339865905962246
       vertices: []
       indices: 
@@ -167,19 +167,19 @@ TextureImporter:
       name: Anim_MagicPot_1
       rect:
         serializedVersion: 2
-        x: 2948
-        y: 1004
-        width: 57
-        height: 39
+        x: 871
+        y: 0
+        width: 871
+        height: 1146
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e1eb8c678553c96d0800000000000000
+      spriteID: 49bc7906797e71d469b831a00b170fec
       internalID: -2982450199159849442
       vertices: []
       indices: 
@@ -189,19 +189,19 @@ TextureImporter:
       name: Anim_MagicPot_2
       rect:
         serializedVersion: 2
-        x: 3015
-        y: 1022
-        width: 31
-        height: 58
+        x: 1742
+        y: 0
+        width: 871
+        height: 1146
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e3950fe5747df6570800000000000000
+      spriteID: 73966e0170d561842bd895eeae1fa0da
       internalID: 8462218926387910974
       vertices: []
       indices: 
@@ -211,262 +211,20 @@ TextureImporter:
       name: Anim_MagicPot_3
       rect:
         serializedVersion: 2
-        x: 3045
-        y: 993
-        width: 46
-        height: 31
+        x: 2613
+        y: 0
+        width: 871
+        height: 1146
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bac3e35ed9f224a00800000000000000
+      spriteID: 348422dfa97cb9e4a9a05c9b6e3087a6
       internalID: 739205644044614827
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anim_MagicPot_4
-      rect:
-        serializedVersion: 2
-        x: 2952
-        y: 959
-        width: 50
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2d0869a291e45cf50800000000000000
-      internalID: 6901007874010808530
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anim_MagicPot_5
-      rect:
-        serializedVersion: 2
-        x: 3011
-        y: 996
-        width: 24
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: db626dcc5f162ec00800000000000000
-      internalID: 928412181523211965
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anim_MagicPot_6
-      rect:
-        serializedVersion: 2
-        x: 1202
-        y: 887
-        width: 99
-        height: 99
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 306bb16a2f67d7de0800000000000000
-      internalID: -1333779130090801661
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anim_MagicPot_7
-      rect:
-        serializedVersion: 2
-        x: 2260
-        y: 885
-        width: 72
-        height: 74
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ae3b88068e6cca380800000000000000
-      internalID: -8958566857392475158
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anim_MagicPot_8
-      rect:
-        serializedVersion: 2
-        x: 3000
-        y: 933
-        width: 28
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b826c581a6be9b700800000000000000
-      internalID: 556734869864735371
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anim_MagicPot_9
-      rect:
-        serializedVersion: 2
-        x: 3111
-        y: 870
-        width: 80
-        height: 106
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: da53030eb90f8ecf0800000000000000
-      internalID: -222663629282986579
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anim_MagicPot_10
-      rect:
-        serializedVersion: 2
-        x: 944
-        y: 281
-        width: 734
-        height: 626
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4aedec1ea69a851c0800000000000000
-      internalID: -4514672349918863708
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anim_MagicPot_11
-      rect:
-        serializedVersion: 2
-        x: 3171
-        y: 900
-        width: 42
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3659fd7efb94136a0800000000000000
-      internalID: -6471310100976921245
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anim_MagicPot_12
-      rect:
-        serializedVersion: 2
-        x: 71
-        y: 281
-        width: 734
-        height: 586
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6351656edad140970800000000000000
-      internalID: 8720127411227071798
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anim_MagicPot_13
-      rect:
-        serializedVersion: 2
-        x: 1810
-        y: 279
-        width: 738
-        height: 611
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8490bd2343069af10800000000000000
-      internalID: 2281460463547648328
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anim_MagicPot_14
-      rect:
-        serializedVersion: 2
-        x: 2680
-        y: 279
-        width: 738
-        height: 615
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1f4af56cf5cefb5a0800000000000000
-      internalID: -6503219440805501711
       vertices: []
       indices: 
       edges: []
@@ -475,7 +233,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1b3c5d7b0b5e48645a4d962422217a28
     internalID: 0
     vertices: []
     indices: 
@@ -483,23 +241,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":871.0,"y":1146.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Anim_MagicPot_0: 6108339865905962246
       Anim_MagicPot_1: -2982450199159849442
-      Anim_MagicPot_10: -4514672349918863708
-      Anim_MagicPot_11: -6471310100976921245
-      Anim_MagicPot_12: 8720127411227071798
-      Anim_MagicPot_13: 2281460463547648328
-      Anim_MagicPot_14: -6503219440805501711
       Anim_MagicPot_2: 8462218926387910974
       Anim_MagicPot_3: 739205644044614827
-      Anim_MagicPot_4: 6901007874010808530
-      Anim_MagicPot_5: 928412181523211965
-      Anim_MagicPot_6: -1333779130090801661
-      Anim_MagicPot_7: -8958566857392475158
-      Anim_MagicPot_8: 556734869864735371
-      Anim_MagicPot_9: -222663629282986579
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

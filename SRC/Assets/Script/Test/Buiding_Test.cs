@@ -9,6 +9,7 @@ using static UnityEngine.Rendering.DebugUI.Table;
 public enum SizeFurniture
 {
     small,
+    smallFloor,
     Grid1X1,
     Grid1X2,
     wall,
@@ -44,7 +45,6 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     [SerializeField] private SpriteRenderer sr;
     private Vector3 offset;
     private Vector3 OriginalPosition;
-    private Vector3Int previousCellPos;
     private Vector3 finalPos;
     [SerializeField] private SpriteRenderer bodyColor;
     private Color32 originalColor;
@@ -172,8 +172,6 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             Vector3Int cellPosition = layoutGrid.WorldToCell(mousePos);
             Vector3 snapPos = layoutGrid.GetCellCenterWorld(cellPosition);
             Color tempColor = sr.color;
-            /*transform.position = eventData.position;
-            transform.position = mousePos + offset;*/
 
             Draged = true;
            
@@ -183,9 +181,17 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                 tempColor.a = 1f;
                 sr.color = tempColor;
 
+                if (Size == SizeFurniture.small | Size == SizeFurniture.smallFloor)
+                {
+                    transform.position = snapPos;
+                    finalPos = snapPos;
+                }
+                if (Size == SizeFurniture.Grid1X1)
+                {
                     offset = new Vector3(layoutGrid.cellSize.x / 2f, 0, layoutGrid.cellSize.y / 2f);
                     transform.position = snapPos + offset;
                     finalPos = snapPos + offset;
+                }
                 
                 if (Size == SizeFurniture.Grid1X2)
                 {

@@ -604,7 +604,7 @@ TextureImporter:
         width: 67
         height: 76
       alignment: 9
-      pivot: {x: 0.5871937, y: 0.25658536}
+      pivot: {x: 0.5316262, y: 0.09125559}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1242,7 +1242,7 @@ TextureImporter:
         width: 61
         height: 87
       alignment: 9
-      pivot: {x: 0.2887103, y: 0.203708}
+      pivot: {x: 0.5927394, y: 0.3102922}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1545,7 +1545,7 @@ TextureImporter:
       name: All_Asset_CatWitch_58
       rect:
         serializedVersion: 2
-        x: 1149
+        x: 1150
         y: 731
         width: 61
         height: 89

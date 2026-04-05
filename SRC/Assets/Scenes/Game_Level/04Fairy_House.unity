@@ -2476,6 +2476,7 @@ MonoBehaviour:
   columns: 6
   rows: 1
   spacing: 0.6
+  canplace: 0
 --- !u!1001 &200666088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3063,7 +3064,6 @@ MonoBehaviour:
   FloorTableSelect: {fileID: 0}
   sr: {fileID: 1981259511}
   bodyColor: {fileID: 1981259511}
-  Canplace: 0
   canMove: 1
   Size: 3
   Type: 3
@@ -3618,7 +3618,6 @@ MonoBehaviour:
   FloorTableSelect: {fileID: 0}
   sr: {fileID: 158111522}
   bodyColor: {fileID: 158111522}
-  Canplace: 0
   canMove: 1
   Size: 2
   Type: 1
@@ -4941,6 +4940,7 @@ MonoBehaviour:
   columns: 6
   rows: 1
   spacing: 0.6
+  canplace: 0
 --- !u!1 &463903134
 GameObject:
   m_ObjectHideFlags: 0
@@ -5075,6 +5075,7 @@ MonoBehaviour:
   columns: 5
   rows: 1
   spacing: 0.4
+  canplace: 0
 --- !u!1 &466361024
 GameObject:
   m_ObjectHideFlags: 0
@@ -5207,6 +5208,7 @@ MonoBehaviour:
   columns: 4
   rows: 1
   spacing: 0.65
+  canplace: 0
 --- !u!1 &471895181 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1859944409498238386, guid: 297e2e6bdd659ef47b1a3437c5010234, type: 3}
@@ -6803,6 +6805,7 @@ MonoBehaviour:
   columns: 5
   rows: 5
   spacing: 0.7
+  canplace: 0
 --- !u!1001 &606325077
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7319,6 +7322,7 @@ MonoBehaviour:
   columns: 4
   rows: 1
   spacing: 0.7
+  canplace: 0
 --- !u!1001 &668863345
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11533,11 +11537,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3208336582241744853, guid: d5b2c79aa119ddf45a8675a158c5856f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.72
+      value: 0.97
       objectReference: {fileID: 0}
     - target: {fileID: 3208336582241744853, guid: d5b2c79aa119ddf45a8675a158c5856f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.68
+      value: -1.51
       objectReference: {fileID: 0}
     - target: {fileID: 3307886308362845348, guid: d5b2c79aa119ddf45a8675a158c5856f, type: 3}
       propertyPath: m_Sprite
@@ -11629,7 +11633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8454455046401545522, guid: d5b2c79aa119ddf45a8675a158c5856f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.25
+      value: 2.66
       objectReference: {fileID: 0}
     - target: {fileID: 8454455046401545522, guid: d5b2c79aa119ddf45a8675a158c5856f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12045,6 +12049,7 @@ MonoBehaviour:
   columns: 4
   rows: 1
   spacing: 0.7
+  canplace: 0
 --- !u!4 &1101095425 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6381419113331740767, guid: 58f9d1c3b092ec44b8c6baab149a48db, type: 3}
@@ -12579,7 +12584,6 @@ MonoBehaviour:
   FloorTableSelect: {fileID: 0}
   sr: {fileID: 242047844}
   bodyColor: {fileID: 242047844}
-  Canplace: 0
   canMove: 1
   Size: 3
   Type: 1
@@ -13935,6 +13939,7 @@ MonoBehaviour:
   maxX: 1
   minY: -18
   maxY: -1
+  PopUpNpc: {fileID: 0}
 --- !u!4 &1214951785
 Transform:
   m_ObjectHideFlags: 0
@@ -16212,6 +16217,7 @@ MonoBehaviour:
   columns: 10
   rows: 1
   spacing: 0.55
+  canplace: 0
 --- !u!4 &1522391383
 Transform:
   m_ObjectHideFlags: 0
@@ -17142,7 +17148,6 @@ MonoBehaviour:
   FloorTableSelect: {fileID: 0}
   sr: {fileID: 1022855289}
   bodyColor: {fileID: 1022855289}
-  Canplace: 0
   canMove: 1
   Size: 3
   Type: 1
@@ -18027,6 +18032,7 @@ MonoBehaviour:
   columns: 2
   rows: 1
   spacing: 4
+  canplace: 0
 --- !u!4 &1677414939
 Transform:
   m_ObjectHideFlags: 0
@@ -18189,6 +18195,7 @@ MonoBehaviour:
   columns: 4
   rows: 1
   spacing: 3.2
+  canplace: 0
 --- !u!1 &1709083345
 GameObject:
   m_ObjectHideFlags: 0
@@ -18750,6 +18757,7 @@ MonoBehaviour:
   columns: 5
   rows: 1
   spacing: 0.65
+  canplace: 0
 --- !u!4 &1756844230 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2575390201943677009, guid: d6c6eebacaa6041408648a627c8f94b0, type: 3}
@@ -20867,6 +20875,7 @@ MonoBehaviour:
   columns: 2
   rows: 2
   spacing: 1.4
+  canplace: 0
 --- !u!1 &1977452634
 GameObject:
   m_ObjectHideFlags: 0

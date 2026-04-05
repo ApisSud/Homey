@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: ca617b638320492419a3fb39c18750ce
+guid: bd311c406c284a845b6d8dfaa2e20315
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7697181282367904870
-    second: Character_CatWitch_0
+      213: -1717568799293585879
+    second: Character_Fairy_0
   - first:
-      213: -6907634257254481573
-    second: Character_CatWitch_1
+      213: 7790382734581660280
+    second: Character_Fairy_1
   - first:
-      213: -7615791676093353542
-    second: Character_CatWitch_2
+      213: -2470697711119397388
+    second: Character_Fairy_2
   - first:
-      213: 1769909866821174269
-    second: Character_CatWitch_3
+      213: -8599096852810138322
+    second: Character_Fairy_3
+  - first:
+      213: 9054093745109610008
+    second: Character_Fairy_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Character_CatWitch_0
+      name: Character_Fairy_0
       rect:
         serializedVersion: 2
         x: 253
-        y: 310
-        width: 426
-        height: 500
+        y: 334
+        width: 352
+        height: 451
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +127,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 66c135b4891e1da60800000000000000
-      internalID: 7697181282367904870
+      spriteID: 926cfc0f648f928e0800000000000000
+      internalID: -1717568799293585879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_CatWitch_1
+      name: Character_Fairy_1
       rect:
         serializedVersion: 2
-        x: 917
-        y: 310
-        width: 426
-        height: 500
+        x: 837
+        y: 334
+        width: 352
+        height: 451
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b510702cd372320a0800000000000000
-      internalID: -6907634257254481573
+      spriteID: 87a731762dffc1c60800000000000000
+      internalID: 7790382734581660280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_CatWitch_2
+      name: Character_Fairy_2
       rect:
         serializedVersion: 2
-        x: 1584
-        y: 310
-        width: 426
-        height: 500
+        x: 1397
+        y: 334
+        width: 352
+        height: 451
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ab1341f12d54f4690800000000000000
-      internalID: -7615791676093353542
+      spriteID: 4fd8b55a58156bdd0800000000000000
+      internalID: -2470697711119397388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_CatWitch_3
+      name: Character_Fairy_3
       rect:
         serializedVersion: 2
-        x: 2248
-        y: 309
-        width: 426
-        height: 500
+        x: 1933
+        y: 333
+        width: 352
+        height: 451
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,8 +193,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: df3c55085abff8810800000000000000
-      internalID: 1769909866821174269
+      spriteID: e2d721be8fed9a880800000000000000
+      internalID: -8599096852810138322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Fairy_4
+      rect:
+        serializedVersion: 2
+        x: 2453
+        y: 337
+        width: 352
+        height: 451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81e28506a4a96ad70800000000000000
+      internalID: 9054093745109610008
       vertices: []
       indices: 
       edges: []
@@ -210,10 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Character_CatWitch_0: 7697181282367904870
-      Character_CatWitch_1: -6907634257254481573
-      Character_CatWitch_2: -7615791676093353542
-      Character_CatWitch_3: 1769909866821174269
+      Character_Fairy_0: -1717568799293585879
+      Character_Fairy_1: 7790382734581660280
+      Character_Fairy_2: -2470697711119397388
+      Character_Fairy_3: -8599096852810138322
+      Character_Fairy_4: 9054093745109610008
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

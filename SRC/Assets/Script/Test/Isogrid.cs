@@ -14,9 +14,11 @@ public class Isogrid : MonoBehaviour
     public int columns = 5;
     public int rows = 1;
     public float spacing = 0.5f;
-
+    public bool canplace;
+    private Buiding_Test buiding;
     void Start()
     {
+        canplace = false;
     }
 
     public Vector3 GetIsoSlotPosition(int col, int row)
@@ -46,6 +48,19 @@ public class Isogrid : MonoBehaviour
                 {
                     closestDistance = distance;
                     bestPoint = slotPos;
+                  
+                }
+
+                if(distance > snapThreshold)
+                {
+                    canplace = false;
+                    Debug.Log($"{canplace}+{distance}+{snapThreshold}");
+                }
+                else 
+                {
+                    canplace = true ;
+                    Debug.Log(canplace);
+
                 }
             }
         }

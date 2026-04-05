@@ -462,12 +462,12 @@ TextureImporter:
       name: Fairy_Furniture_8
       rect:
         serializedVersion: 2
-        x: 13
-        y: 1326
+        x: 14
+        y: 1325
         width: 134
         height: 132
       alignment: 9
-      pivot: {x: 0.4902554, y: 0.27218628}
+      pivot: {x: 0.6179837, y: 0.36126894}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -489,7 +489,7 @@ TextureImporter:
         width: 134
         height: 130
       alignment: 9
-      pivot: {x: 0.5258493, y: 0.29562518}
+      pivot: {x: 0.5885192, y: 0.33999774}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -511,7 +511,7 @@ TextureImporter:
         width: 134
         height: 124
       alignment: 9
-      pivot: {x: 0.50824565, y: 0.3023603}
+      pivot: {x: 0.6247923, y: 0.35294268}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -528,12 +528,12 @@ TextureImporter:
       name: Fairy_Furniture_11
       rect:
         serializedVersion: 2
-        x: 532
+        x: 533
         y: 1326
         width: 134
         height: 120
       alignment: 9
-      pivot: {x: 0.4959357, y: 0.2806498}
+      pivot: {x: 0.5956972, y: 0.3871409}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []

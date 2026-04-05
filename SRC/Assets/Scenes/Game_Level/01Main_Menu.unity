@@ -5728,6 +5728,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OptionMenu
   optionsMenuPanel: {fileID: 2083270573}
+  menuRect: {fileID: 2083270574}
+  popDuration: 0.3
   ButtonClick: {fileID: 8300000, guid: d22016563c0ea7a46ac0dc443ac0073d, type: 3}
 --- !u!114 &751761742
 MonoBehaviour:

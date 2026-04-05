@@ -1391,10 +1391,10 @@ TextureImporter:
       name: All_Asset_CatWitch_51
       rect:
         serializedVersion: 2
-        x: 257
-        y: 840
-        width: 49
-        height: 70
+        x: 260
+        y: 781
+        width: 138
+        height: 155
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1405,50 +1405,6 @@ TextureImporter:
       bones: []
       spriteID: 85c573d01d4a4a540800000000000000
       internalID: 5018317102574427224
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: All_Asset_CatWitch_52
-      rect:
-        serializedVersion: 2
-        x: 293
-        y: 779
-        width: 47
-        height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2612d94ee3837ef40800000000000000
-      internalID: 5757632491391099234
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: All_Asset_CatWitch_53
-      rect:
-        serializedVersion: 2
-        x: 333
-        y: 831
-        width: 64
-        height: 103
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a0e7927998cfe36c0800000000000000
-      internalID: -4161611337766961654
       vertices: []
       indices: 
       edges: []

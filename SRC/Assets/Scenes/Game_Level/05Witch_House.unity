@@ -134,7 +134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &14611503
 Transform:
   m_ObjectHideFlags: 0
@@ -5643,6 +5643,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2082325747}
     - target: {fileID: 65859480132217066, guid: a565ecd25f7a09241b11a9a16b42c2ed, type: 3}
+      propertyPath: Checkbox1
+      value: 
+      objectReference: {fileID: 1169452916}
+    - target: {fileID: 65859480132217066, guid: a565ecd25f7a09241b11a9a16b42c2ed, type: 3}
+      propertyPath: Checkbox2
+      value: 
+      objectReference: {fileID: 883237139}
+    - target: {fileID: 65859480132217066, guid: a565ecd25f7a09241b11a9a16b42c2ed, type: 3}
+      propertyPath: Checkbox3
+      value: 
+      objectReference: {fileID: 970826749}
+    - target: {fileID: 65859480132217066, guid: a565ecd25f7a09241b11a9a16b42c2ed, type: 3}
       propertyPath: BroomButton
       value: 
       objectReference: {fileID: 1334064956}
@@ -6548,6 +6560,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1289561818131490490, guid: cecaaaae830416f428078310fccdba89, type: 3}
   m_PrefabInstance: {fileID: 668863345}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &883237139 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1859944409498238386, guid: 297e2e6bdd659ef47b1a3437c5010234, type: 3}
+  m_PrefabInstance: {fileID: 408299576}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &887134408
 GameObject:
   m_ObjectHideFlags: 0
@@ -7023,6 +7040,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b58869ade0a6fb1489913e4e224c0ca0, type: 3}
+--- !u!1 &970826749 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6231961689638087277, guid: 297e2e6bdd659ef47b1a3437c5010234, type: 3}
+  m_PrefabInstance: {fileID: 408299576}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &979945729
 GameObject:
   m_ObjectHideFlags: 0
@@ -8035,6 +8057,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1677414939}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1169452916 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5416673737187898510, guid: 297e2e6bdd659ef47b1a3437c5010234, type: 3}
+  m_PrefabInstance: {fileID: 408299576}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1169698199
 GameObject:
   m_ObjectHideFlags: 0
@@ -12400,7 +12427,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1993908006
 Transform:
   m_ObjectHideFlags: 0

@@ -2485,6 +2485,10 @@ MonoBehaviour:
   rows: 1
   spacing: 0.6
   canplace: 0
+  x: 0
+  y: 0
+  row: 0
+  column: 0
 --- !u!1001 &200666088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5104,6 +5108,10 @@ MonoBehaviour:
   rows: 1
   spacing: 0.6
   canplace: 0
+  x: 0
+  y: 0
+  row: 0
+  column: 0
 --- !u!1 &463903134
 GameObject:
   m_ObjectHideFlags: 0
@@ -5239,6 +5247,10 @@ MonoBehaviour:
   rows: 1
   spacing: 0.4
   canplace: 0
+  x: 0
+  y: 0
+  row: 0
+  column: 0
 --- !u!1 &466361024
 GameObject:
   m_ObjectHideFlags: 0
@@ -5372,6 +5384,10 @@ MonoBehaviour:
   rows: 1
   spacing: 0.65
   canplace: 0
+  x: 0
+  y: 0
+  row: 0
+  column: 0
 --- !u!1 &471895181 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1859944409498238386, guid: 297e2e6bdd659ef47b1a3437c5010234, type: 3}
@@ -6945,13 +6961,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.072623715, y: 2.3777885}
-      - {x: -2.502819, y: 1.063362}
-      - {x: -2.53489, y: 0.10189648}
-      - {x: 0.010446429, y: -1.1679221}
-      - {x: 2.5226402, y: 0.14646268}
-      - {x: 2.565738, y: 1.0664144}
-      - {x: 1.4713826, y: 1.6181105}
+    - - {x: -0.074793175, y: 2.0010564}
+      - {x: -2.2735038, y: 0.8831858}
+      - {x: -2.3055747, y: 0.60966545}
+      - {x: -0.0878315, y: -0.51273596}
+      - {x: 2.2769456, y: 0.6869913}
+      - {x: 2.2545247, y: 0.9026178}
+      - {x: 1.1929286, y: 1.405175}
   m_UseDelaunayMesh: 1
 --- !u!114 &590895859
 MonoBehaviour:
@@ -6973,6 +6989,10 @@ MonoBehaviour:
   rows: 4
   spacing: 0.8
   canplace: 0
+  x: -14
+  y: -6
+  row: 4
+  column: 4
 --- !u!1001 &606325077
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7494,6 +7514,10 @@ MonoBehaviour:
   rows: 1
   spacing: 0.7
   canplace: 0
+  x: 0
+  y: 0
+  row: 0
+  column: 0
 --- !u!1001 &668863345
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9889,7 +9913,7 @@ Transform:
   m_GameObject: {fileID: 880143397}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.57, y: -3.15, z: 0}
+  m_LocalPosition: {x: 0.42, y: -3.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12329,6 +12353,10 @@ MonoBehaviour:
   rows: 1
   spacing: 0.7
   canplace: 0
+  x: 0
+  y: 0
+  row: 0
+  column: 0
 --- !u!4 &1101095425 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6381419113331740767, guid: 58f9d1c3b092ec44b8c6baab149a48db, type: 3}
@@ -16580,6 +16608,10 @@ MonoBehaviour:
   rows: 1
   spacing: 0.55
   canplace: 0
+  x: 0
+  y: 0
+  row: 0
+  column: 0
 --- !u!4 &1522391383
 Transform:
   m_ObjectHideFlags: 0
@@ -18399,6 +18431,10 @@ MonoBehaviour:
   rows: 1
   spacing: 4
   canplace: 0
+  x: 0
+  y: 0
+  row: 0
+  column: 0
 --- !u!4 &1677414939
 Transform:
   m_ObjectHideFlags: 0
@@ -18637,6 +18673,10 @@ MonoBehaviour:
   rows: 1
   spacing: 3.2
   canplace: 0
+  x: 0
+  y: 0
+  row: 0
+  column: 0
 --- !u!1 &1709083345
 GameObject:
   m_ObjectHideFlags: 0
@@ -19290,6 +19330,10 @@ MonoBehaviour:
   rows: 1
   spacing: 0.65
   canplace: 0
+  x: 0
+  y: 0
+  row: 0
+  column: 0
 --- !u!4 &1756844230 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2575390201943677009, guid: d6c6eebacaa6041408648a627c8f94b0, type: 3}
@@ -21412,6 +21456,10 @@ MonoBehaviour:
   rows: 2
   spacing: 1.4
   canplace: 0
+  x: 0
+  y: 0
+  row: 0
+  column: 0
 --- !u!1 &1977452634
 GameObject:
   m_ObjectHideFlags: 0

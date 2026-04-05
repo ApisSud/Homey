@@ -1,4 +1,6 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum Level
 {
@@ -14,7 +16,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] int minX = -6, maxX = 2;
     [SerializeField] int minY = -6, maxY = 2;
     [SerializeField] private GameObject PopUpNpc;
-     
+
+    [SerializeField]
+    private TMP_Text TextNPC;
+
     void Awake()
     {
         instance = this;
@@ -45,6 +50,11 @@ public class GameManager : MonoBehaviour
         return mainArea | floor2;
 
 
+    }
+
+    public void ChangeTextNpc(string n)
+    {
+        TextNPC.text = n;
     }
 
 

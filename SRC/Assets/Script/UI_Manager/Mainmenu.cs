@@ -46,6 +46,7 @@ public class MainMenu : MonoBehaviour
         }
     }
 
+   
     public void QuitGame()
     {
         if (ButtonClick != null && SoundManage.Instance != null)

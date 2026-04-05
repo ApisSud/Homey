@@ -31,9 +31,11 @@ public class TaskManager : MonoBehaviour
     public int totalTrashNeeded = 4;
     public int totalMouseNeeded = 0;
     private int currentMouseCount = 0;
-
-
     public GameObject trashBin;
+
+
+    [Header("Tutorial System")]
+    public FurnitureTutorial furnitureTutorialObj;
 
     private void Awake()
     {
@@ -148,13 +150,13 @@ public class TaskManager : MonoBehaviour
         }
     }
 
-  
+
     private void CheckAllTasks()
     {
         if (isTrashCleared && isDirtCleared && isMouseClear && !allTasksCompleted)
         {
+            allTasksCompleted = true; 
             Debug.Log("All Task done");
-
 
             if (BroomButton != null)
             {
@@ -165,16 +167,25 @@ public class TaskManager : MonoBehaviour
                 TrashbinButton.transform.DOScale(0f, 0.8f).SetEase(Ease.InBack).OnComplete(() => TrashbinButton.SetActive(false));
             }
 
-          
             DOVirtual.DelayedCall(2f, () =>
             {
                 if (FurnitureButton != null)
                 {
-                    
                     FurnitureButton.SetActive(true);
                     FurnitureButton.transform.localScale = Vector3.zero;
 
-                    FurnitureButton.transform.DOScale(1f, 0.5f).SetEase(Ease.OutBack);
+                   
+                    FurnitureButton.transform.DOScale(1f, 0.5f).SetEase(Ease.OutBack).OnComplete(() =>
+                    {
+                       
+                        DOVirtual.DelayedCall(0.3f, () =>
+                        {
+                            if (furnitureTutorialObj != null)
+                            {
+                                furnitureTutorialObj.ShowTutorial();
+                            }
+                        });
+                    });
                 }
             });
         }

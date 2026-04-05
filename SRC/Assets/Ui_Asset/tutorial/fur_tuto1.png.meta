@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3df096d09b1e8194a800ad15ab08367a
+guid: 5f65a3f30fb477f44b61e97a2746df30
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7531395826836010430
-    second: TrashBag_Witch_0
+      213: -866223365700366092
+    second: Art uuuuuupdate (2)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TrashBag_Witch_0
+      name: Art uuuuuupdate (2)_0
       rect:
         serializedVersion: 2
-        x: 426
-        y: 328
-        width: 435
-        height: 467
-      alignment: 9
-      pivot: {x: 0.52190435, y: 0.4673543}
+        x: 465
+        y: 88
+        width: 990
+        height: 903
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eb57b69f994e48860800000000000000
-      internalID: 7531395826836010430
+      spriteID: 4f05947307e8af3f0800000000000000
+      internalID: -866223365700366092
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e4cdd9bdf189fdc4094c82b22ec13aed
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TrashBag_Witch_0: 7531395826836010430
+      Art uuuuuupdate (2)_0: -866223365700366092
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

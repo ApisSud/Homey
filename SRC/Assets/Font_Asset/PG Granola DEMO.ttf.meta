@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e50e564eba56a9f4ea4fbbb2b0e40343
+guid: 590b2bf60f28d8444b58227fc5f32a87
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Lmf_kaolao Demo
+  - PG Granola DEMO
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

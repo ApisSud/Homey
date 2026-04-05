@@ -41,18 +41,18 @@ public class TutorialManager : MonoBehaviour
     private RectTransform panelRectTransform;
     void Awake()
     {
-        // เก็บค่า RectTransform ไว้ตั้งแต่ต้น
+      
         if (tutorialPanel != null)
             panelRectTransform = tutorialPanel.GetComponent<RectTransform>();
     }
 
     void Start()
     {
-        // 1. ปิดหน้าต่างและพื้นหลังไว้ก่อน
+        
         tutorialPanel.SetActive(false);
         darkPanel.SetActive(false);
 
-        // 2. สั่งให้เริ่มทำงานแบบหน่วงเวลา
+        
         StartCoroutine(ShowTutorialWithDelay());
     }
 

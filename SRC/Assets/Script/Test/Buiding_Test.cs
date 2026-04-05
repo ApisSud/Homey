@@ -49,7 +49,6 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     [SerializeField] private SpriteRenderer bodyColor;
     private Color32 originalColor;
     private bool Flip;
-    public bool Canplace;
     private bool Draged;
     private bool onStorageFur;
     private bool onWall;
@@ -147,6 +146,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             }
             if (rowGrid > 1 | columnGrid > 1)
             {
+                cellPosition = Vector3Int.RoundToInt(finalPos); 
                 if (Flip == false)
                 {
                     combineRemoveGrid(rowGrid, columnGrid, cellPosition);
@@ -173,15 +173,16 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             Vector3 snapPos = layoutGrid.GetCellCenterWorld(cellPosition);
             Color tempColor = sr.color;
 
+
             Draged = true;
-           
+
             if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) && GameManager.instance.IsWithinBounds(cellPosition))
             {
                 sr.sortingOrder = 3;
                 tempColor.a = 1f;
                 sr.color = tempColor;
 
-                if (Size == SizeFurniture.small | Size == SizeFurniture.smallFloor)
+                if (Size == SizeFurniture.small | Size == SizeFurniture.smallFloor | Size == SizeFurniture.wall | Size == SizeFurniture.cloth)
                 {
                     transform.position = snapPos;
                     finalPos = snapPos;
@@ -263,10 +264,16 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                     }
 
                 }
-                if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
+                if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) && currentTargetGrid.canplace == true)
                 {
                     sr.sortingOrder = 3;
                     tempColor.a = 1f;
+                    sr.color = tempColor;
+                }
+                else if (currentTargetGrid.canplace == false)
+                {
+                    sr.sortingOrder = 4;
+                    tempColor.a = 0.5f;
                     sr.color = tempColor;
                 }
                 
@@ -312,6 +319,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                 {
                     combinePlaceGrid(columnGrid, rowGrid, cellPosition);
                 }
+                finalPos = cellPosition;
             }
            
             Debug.Log($"{cellPosition} empty");
@@ -352,24 +360,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         {
             SoundManage.Instance.PlayFurnitureSFX(Type);
         }
-        /*
-                if (Type == TypeFurniture.woodlarge)
-                {
-                    SoundManager.instance.playSFX(SoundManager.instance.PutDownHeavyFur);
-                }
-                if (Type == TypeFurniture.woodSmall)
-                {
-                    SoundManager.instance.playSFX(SoundManager.instance.PutDownFur);
-                }
-                if (Type == TypeFurniture.pot)
-                {
-                    SoundManager.instance.playSFX(SoundManager.instance.PutDownPotWitch);
-                }
-                if (Type == TypeFurniture.glass)
-                {
-                    SoundManager.instance.playSFX(SoundManager.instance.PutDownGlassBottle);
-                }
-        */
+       
     }
 
    

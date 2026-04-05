@@ -9,14 +9,16 @@ public class Isogrid : MonoBehaviour
     [Header("Isometric Settings")]
     public float stepX = 0.5f; // ระยะห่างเฉียงไปทางขวาลง
     public float stepY = 0.25f; // ระยะห่างเฉียงไปทางขวาขึ้น (สำหรับ Isometric 2:1)
-
+    public int layer;
 
     public int columns = 5;
     public int rows = 1;
     public float spacing = 0.5f;
-
+    public bool canplace;
+    private Buiding_Test buiding;
     void Start()
     {
+        canplace = false;
     }
 
     public Vector3 GetIsoSlotPosition(int col, int row)
@@ -46,6 +48,19 @@ public class Isogrid : MonoBehaviour
                 {
                     closestDistance = distance;
                     bestPoint = slotPos;
+                  
+                }
+
+                if(distance > snapThreshold)
+                {
+                    canplace = false;
+                    Debug.Log($"{canplace}+{distance}+{snapThreshold}");
+                }
+                else 
+                {
+                    canplace = true ;
+                    Debug.Log(canplace);
+
                 }
             }
         }

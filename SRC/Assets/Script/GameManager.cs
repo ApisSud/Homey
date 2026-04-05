@@ -15,10 +15,7 @@ public class GameManager : MonoBehaviour
     private bool floor2;
     [SerializeField] int minX = -6, maxX = 2;
     [SerializeField] int minY = -6, maxY = 2;
-    [SerializeField] private GameObject PopUpNpc;
-
-    [SerializeField]
-    private TMP_Text TextNPC;
+ 
 
     void Awake()
     {
@@ -26,7 +23,7 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
-        PopUpNpc.SetActive(false);
+       
     }
 
     public bool IsWithinBounds(Vector3Int gridPosition)
@@ -52,11 +49,7 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public void ChangeTextNpc(string n)
-    {
-        TextNPC.text = n;
-    }
-
+ 
 
 
 }

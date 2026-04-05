@@ -9,7 +9,7 @@ public class Isogrid : MonoBehaviour
     [Header("Isometric Settings")]
     public float stepX = 0.5f; // ระยะห่างเฉียงไปทางขวาลง
     public float stepY = 0.25f; // ระยะห่างเฉียงไปทางขวาขึ้น (สำหรับ Isometric 2:1)
-
+    public int layer;
 
     public int columns = 5;
     public int rows = 1;

@@ -147,6 +147,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             }
             if (rowGrid > 1 | columnGrid > 1)
             {
+                cellPosition = Vector3Int.RoundToInt(finalPos); 
                 if (Flip == false)
                 {
                     combineRemoveGrid(rowGrid, columnGrid, cellPosition);
@@ -172,6 +173,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             Vector3Int cellPosition = layoutGrid.WorldToCell(mousePos);
             Vector3 snapPos = layoutGrid.GetCellCenterWorld(cellPosition);
             Color tempColor = sr.color;
+
 
             Draged = true;
            
@@ -312,6 +314,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                 {
                     combinePlaceGrid(columnGrid, rowGrid, cellPosition);
                 }
+                finalPos = cellPosition;
             }
            
             Debug.Log($"{cellPosition} empty");
@@ -352,24 +355,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         {
             SoundManage.Instance.PlayFurnitureSFX(Type);
         }
-        /*
-                if (Type == TypeFurniture.woodlarge)
-                {
-                    SoundManager.instance.playSFX(SoundManager.instance.PutDownHeavyFur);
-                }
-                if (Type == TypeFurniture.woodSmall)
-                {
-                    SoundManager.instance.playSFX(SoundManager.instance.PutDownFur);
-                }
-                if (Type == TypeFurniture.pot)
-                {
-                    SoundManager.instance.playSFX(SoundManager.instance.PutDownPotWitch);
-                }
-                if (Type == TypeFurniture.glass)
-                {
-                    SoundManager.instance.playSFX(SoundManager.instance.PutDownGlassBottle);
-                }
-        */
+       
     }
 
    

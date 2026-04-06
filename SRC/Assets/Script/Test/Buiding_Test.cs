@@ -174,7 +174,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
             Draged = true;
 
-            if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) && GameManager.instance.IsWithinBounds(cellPosition))
+            if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) && GameManager.instance.IsWithinBounds(cellPosition) && (!onCloset && !onWall && !onStorageFur))
             {
                 sr.sortingOrder = 3;
                 tempColor.a = 1f;
@@ -244,6 +244,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                     }
 
                 }
+
                 if (Size == SizeFurniture.cloth)
                 {
                     sr.sortingOrder = 3;

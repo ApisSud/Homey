@@ -1585,8 +1585,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   layoutGrid: {fileID: 289095803}
-  FloorSelect: {fileID: 289095804}
-  highlightTile: {fileID: 11400000, guid: f5a0efe4287f5244e926c95cf90e777f, type: 2}
   TableGrid: {fileID: 0}
   FloorTableSelect: {fileID: 0}
   sr: {fileID: 0}
@@ -2232,8 +2230,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   layoutGrid: {fileID: 289095803}
-  FloorSelect: {fileID: 289095804}
-  highlightTile: {fileID: 11400000, guid: f5a0efe4287f5244e926c95cf90e777f, type: 2}
   TableGrid: {fileID: 0}
   FloorTableSelect: {fileID: 0}
   sr: {fileID: 158111522}
@@ -6367,7 +6363,7 @@ Transform:
   m_GameObject: {fileID: 783035061}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.445, y: -1.192, z: 0}
+  m_LocalPosition: {x: 0.445, y: -1.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6419,11 +6415,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.0038024, y: 0.63446945}
-      - {x: -1.283859, y: 0.49741238}
-      - {x: -1.3110975, y: 0.36797687}
-      - {x: 0.15153266, y: -0.37510377}
-      - {x: 0.14236164, y: 0.07978958}
+    - - {x: -1.0142097, y: 0.6619847}
+      - {x: -1.2133541, y: 0.53571594}
+      - {x: -1.2768402, y: 0.49603674}
+      - {x: -1.1935756, y: 0.46031535}
+      - {x: 0.1599266, y: -0.21560988}
+      - {x: 0.2450695, y: -0.0077840984}
   m_UseDelaunayMesh: 1
 --- !u!50 &783035064
 Rigidbody2D:
@@ -6475,7 +6472,7 @@ MonoBehaviour:
   x: 7
   y: 1
   row: 4
-  column: 1
+  column: 2
 --- !u!1 &798520380
 GameObject:
   m_ObjectHideFlags: 0
@@ -11329,7 +11326,7 @@ Transform:
   m_GameObject: {fileID: 1522391379}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.28, y: 4.06, z: 0}
+  m_LocalPosition: {x: 8.31, y: 4.09, z: 0}
   m_LocalScale: {x: 1.2121, y: 1.2121, z: 1.2121}
   m_ConstrainProportionsScale: 0
   m_Children:

@@ -1,7 +1,8 @@
-using UnityEngine;
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
-using DG.Tweening;
+using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 
 public class BookContent : MonoBehaviour
@@ -21,6 +22,10 @@ public class BookContent : MonoBehaviour
     [SerializeField] GameObject Panel;
 
     public bool isBookopen = false;
+
+    [Header("Audio Settings")]
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip pageFlipSound;
 
     private void Start()
     {
@@ -79,6 +84,7 @@ public class BookContent : MonoBehaviour
         if (forwardButton != null) forwardButton.transform.SetAsLastSibling();
         if (backButton != null) backButton.transform.SetAsLastSibling();
 
+        PlayFlipSound();
         StartCoroutine(Rotate(angle, true));
     }
 
@@ -109,6 +115,8 @@ public class BookContent : MonoBehaviour
         if (backButton != null) backButton.transform.SetAsLastSibling();
 
         StartCoroutine(Rotate(angle, false));
+
+        PlayFlipSound();
     }
 
     public void BackButtonActions()
@@ -181,5 +189,16 @@ public class BookContent : MonoBehaviour
                 InitialState();
             });
         Panel.SetActive(false);
+    }
+
+    private void PlayFlipSound()
+    {
+        if (audioSource != null && pageFlipSound != null)
+        {
+            // ใช้ PlayOneShot เพื่อให้เสียงเล่นซ้อนกันได้ (เผื่อผู้เล่นกดรัวๆ)
+            // และปรับ Pitch สุ่มนิดหน่อยให้เสียงแต่ละครั้งไม่เหมือนกันเป๊ะๆ (ทำให้ดูสมจริงขึ้น)
+            audioSource.pitch = Random.Range(0.9f, 1.1f);
+            audioSource.PlayOneShot(pageFlipSound);
+        }
     }
 }

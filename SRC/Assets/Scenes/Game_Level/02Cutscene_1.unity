@@ -908,6 +908,7 @@ MonoBehaviour:
   skipButton: {fileID: 774426072}
   game_scene: 03Task_Select
   sceneTransitionOverlay: {fileID: 1617486998}
+  ButtonClick: {fileID: 8300000, guid: d22016563c0ea7a46ac0dc443ac0073d, type: 3}
 --- !u!1 &1378065027
 GameObject:
   m_ObjectHideFlags: 0

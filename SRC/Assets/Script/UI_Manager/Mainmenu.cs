@@ -39,6 +39,10 @@ public class MainMenu : MonoBehaviour
 
     public void SelectLevel(string scenename)
     {
+        if (ButtonClick != null && SoundManage.Instance != null)
+        {
+            SoundManage.Instance.PlaySFX(ButtonClick);
+        }
 
         if (transitionManager != null)
         {
@@ -53,7 +57,7 @@ public class MainMenu : MonoBehaviour
         {
             SoundManage.Instance.PlaySFX(ButtonClick);
         }
-        /*if (buttonSound != null) buttonSound.Play();*/
+     
         Debug.Log("Exit");
         Application.Quit();
     }

@@ -1,8 +1,9 @@
+using DG.Tweening;
+using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using DG.Tweening;
-using System.Collections;
 
 
 
@@ -19,6 +20,8 @@ public class OpeningCutscene : MonoBehaviour
     public GameObject skipButton;
     public string game_scene = "SampleScene";
     public CanvasGroup sceneTransitionOverlay;
+
+    public AudioClip ButtonClick;
 
     void Start()
     {
@@ -70,6 +73,12 @@ public class OpeningCutscene : MonoBehaviour
 
     public void GoToNextPage()
     {
+
+        if (ButtonClick != null && SoundManage.Instance != null)
+        {
+            SoundManage.Instance.PlaySFX(ButtonClick);
+        }
+
         GameObject currentPage = tutorialPages[currentPageIndex];
         if (currentPage.TryGetComponent<CanvasGroup>(out CanvasGroup cg))
         {
@@ -110,6 +119,11 @@ public class OpeningCutscene : MonoBehaviour
 
     public void Skip()
     {
+        if (ButtonClick != null && SoundManage.Instance != null)
+        {
+            SoundManage.Instance.PlaySFX(ButtonClick);
+        }
+
         HideButtons();
         SceneManager.LoadScene(game_scene);
     }

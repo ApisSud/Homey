@@ -1,55 +1,55 @@
 fileFormatVersion: 2
-guid: e1ab7babb0fa1974e8e40640f0b1b46e
+guid: 40680eb87bd741f479c191ae2e58e576
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5940246243576988120
-    second: Anim_Magicpot_Witch_0
+      213: 7679967102354999738
+    second: Anim_Fix_Magicpot_0
   - first:
-      213: -6497108454371858212
-    second: Anim_Magicpot_Witch_1
+      213: -6192707633008158807
+    second: Anim_Fix_Magicpot_1
   - first:
-      213: 6424280005407743393
-    second: Anim_Magicpot_Witch_2
+      213: -1617396371707081952
+    second: Anim_Fix_Magicpot_2
   - first:
-      213: -1902319819760469258
-    second: Anim_Magicpot_Witch_3
+      213: 4708900793841048246
+    second: Anim_Fix_Magicpot_3
   - first:
-      213: -4907328409954218758
-    second: Anim_Magicpot_Witch_4
+      213: -8728488726479856741
+    second: Anim_Fix_Magicpot_4
   - first:
-      213: -733185024782319922
-    second: Anim_Magicpot_Witch_5
+      213: 3888298346461824900
+    second: Anim_Fix_Magicpot_5
   - first:
-      213: 2546556562283708240
-    second: Anim_Magicpot_Witch_6
+      213: -7848562573179323600
+    second: Anim_Fix_Magicpot_6
   - first:
-      213: 2844893991548710606
-    second: Anim_Magicpot_Witch_7
+      213: 6893931695256393453
+    second: Anim_Fix_Magicpot_7
   - first:
-      213: -2535455137862264128
-    second: Anim_Magicpot_Witch_8
+      213: 6456497869798072058
+    second: Anim_Fix_Magicpot_8
   - first:
-      213: -5133148243050314368
-    second: Anim_Magicpot_Witch_9
+      213: -173867439752949387
+    second: Anim_Fix_Magicpot_9
   - first:
-      213: 4995074774240903622
-    second: Anim_Magicpot_Witch_10
+      213: -107035512974197624
+    second: Anim_Fix_Magicpot_10
   - first:
-      213: -1037664723322221119
-    second: Anim_Magicpot_Witch_11
+      213: -8863092446742258020
+    second: Anim_Fix_Magicpot_11
   - first:
-      213: 7016012692440604154
-    second: Anim_Magicpot_Witch_12
+      213: 4168421600162056507
+    second: Anim_Fix_Magicpot_12
   - first:
-      213: 8552957586793366691
-    second: Anim_Magicpot_Witch_13
+      213: 785882837937628063
+    second: Anim_Fix_Magicpot_13
   - first:
-      213: -1027658231284034192
-    second: Anim_Magicpot_Witch_14
+      213: 5500790261344809155
+    second: Anim_Fix_Magicpot_14
   - first:
-      213: -4736142505293942448
-    second: Anim_Magicpot_Witch_15
+      213: -1348731146233234023
+    second: Anim_Fix_Magicpot_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -145,12 +145,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Anim_Magicpot_Witch_0
+      name: Anim_Fix_Magicpot_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 736
+        width: 608
         height: 1111
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -160,19 +160,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 82ebe35a381009da0800000000000000
-      internalID: -5940246243576988120
+      spriteID: ab94e8ea369b49a60800000000000000
+      internalID: 7679967102354999738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_Magicpot_Witch_1
+      name: Anim_Fix_Magicpot_1
       rect:
         serializedVersion: 2
-        x: 736
+        x: 608
         y: 0
-        width: 736
+        width: 608
         height: 1111
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -182,19 +182,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cd86afda842a5d5a0800000000000000
-      internalID: -6497108454371858212
+      spriteID: 9a7d2b8d7351f0aa0800000000000000
+      internalID: -6192707633008158807
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_Magicpot_Witch_2
+      name: Anim_Fix_Magicpot_2
       rect:
         serializedVersion: 2
-        x: 1472
+        x: 1216
         y: 0
-        width: 736
+        width: 608
         height: 1111
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -204,19 +204,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1ad19fba0a0a72950800000000000000
-      internalID: 6424280005407743393
+      spriteID: 02bc46bb19add89e0800000000000000
+      internalID: -1617396371707081952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_Magicpot_Witch_3
+      name: Anim_Fix_Magicpot_3
       rect:
         serializedVersion: 2
-        x: 2208
+        x: 1826
         y: 0
-        width: 736
+        width: 608
         height: 1111
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -226,19 +226,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6fafdfde33a9995e0800000000000000
-      internalID: -1902319819760469258
+      spriteID: 6ba537bb250695140800000000000000
+      internalID: 4708900793841048246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_Magicpot_Witch_4
+      name: Anim_Fix_Magicpot_4
       rect:
         serializedVersion: 2
-        x: 2944
+        x: 2432
         y: 0
-        width: 736
+        width: 608
         height: 1111
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -248,8 +248,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: afc0f70bfcaa5ebb0800000000000000
-      internalID: -4907328409954218758
+      spriteID: b9b9a20bfbd2ed680800000000000000
+      internalID: -8728488726479856741
       vertices: []
       indices: 
       edges: []
@@ -258,7 +258,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a2943f68d67150d46a11fa20b38a405a
+    spriteID: c3f0f4e18c9078a499184b5b21299e06
     internalID: 0
     vertices: []
     indices: 
@@ -268,13 +268,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":1.0},"gridSpriteSize":{"x":736.0,"y":1111.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":1.0},"gridSpriteSize":{"x":608.0,"y":1111.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Anim_Magicpot_Witch_0: -5940246243576988120
-      Anim_Magicpot_Witch_1: -6497108454371858212
-      Anim_Magicpot_Witch_2: 6424280005407743393
-      Anim_Magicpot_Witch_3: -1902319819760469258
-      Anim_Magicpot_Witch_4: -4907328409954218758
+      Anim_Fix_Magicpot_0: 7679967102354999738
+      Anim_Fix_Magicpot_1: -6192707633008158807
+      Anim_Fix_Magicpot_2: -1617396371707081952
+      Anim_Fix_Magicpot_3: 4708900793841048246
+      Anim_Fix_Magicpot_4: -8728488726479856741
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

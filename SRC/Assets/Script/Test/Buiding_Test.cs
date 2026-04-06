@@ -167,6 +167,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(screenPos);
             mousePos.z = 0;
             Vector3Int cellPosition = layoutGrid.WorldToCell(mousePos);
+            Vector3Int cellPositionForCeck = layoutGrid.WorldToCell(worldPos);
             Vector3 snapPos = layoutGrid.GetCellCenterWorld(cellPosition);
             Color tempColor = sr.color;
 
@@ -210,7 +211,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                     if (Flip == false)
                     {
                        
-                        if (!CheckemptyMultiGrid(rowGrid, columnGrid, cellPosition))
+                        if (!CheckemptyMultiGrid(rowGrid, columnGrid, cellPositionForCeck))
                         {
                             sr.sortingOrder = 4;
                             tempColor.a = 0.5f;
@@ -220,7 +221,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                     }
                     else
                     {
-                        if (!CheckemptyMultiGrid(columnGrid, rowGrid, cellPosition))
+                        if (!CheckemptyMultiGrid(columnGrid, rowGrid, cellPositionForCeck))
                         {
                             sr.sortingOrder = 4;
                             tempColor.a = 0.5f;
@@ -439,12 +440,13 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
     private bool CheckemptyMultiGrid(int rows, int columns, Vector3Int cellPosition)
     {
-       
+        Debug.Log($"input : {cellPosition}");
         for (int c = 0; c < columns; c++)
         {
             for (int r = 0; r < rows; r++)
             {
                 Vector3Int targetPos = new Vector3Int(cellPosition.x - c, cellPosition.y - r, 0);
+                Debug.Log($"check : {targetPos}");
                 if(CheckGrid.instance.occupiedTiles.ContainsKey(targetPos) | !GameManager.instance.IsWithinBounds(targetPos))
                 {
                     return false;

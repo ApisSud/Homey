@@ -6464,12 +6464,12 @@ MonoBehaviour:
   anchorPoint: {fileID: 783035062}
   stepX: -0.5
   stepY: 0.25
-  layer: 0
+  layer: 1
   columns: 4
   rows: 1
   spacing: 0.8
   canplace: 0
-  x: 7
+  x: 8
   y: 1
   row: 4
   column: 2

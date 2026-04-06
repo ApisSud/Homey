@@ -33,7 +33,7 @@ public class CheckGrid : MonoBehaviour
         if (!occupiedTiles.ContainsKey(gridPos))
         {
             occupiedTiles.Add(gridPos, type);
-            Debug.Log($"Grid {gridPos} status is: {occupiedTiles[gridPos]}");
+            //Debug.Log($"Grid {gridPos} status is: {occupiedTiles[gridPos]}");
             //Debug.Log($"Num Fur : {furnitureItems.Length}");
 
         }

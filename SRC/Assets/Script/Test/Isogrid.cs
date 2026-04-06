@@ -52,7 +52,7 @@ public class Isogrid : MonoBehaviour
             {
                 Vector3 slotPos = GetIsoSlotPosition(i,r);
                 float distance = Vector3.Distance(mouseWorldPos, slotPos);
-                Debug.Log($"Slotsnap : {slotPos}+{i}");
+                //Debug.Log($"Slotsnap : {slotPos}+{i}");
                 if (distance < snapThreshold && distance < closestDistance)
                 {
                     canplace = true;
@@ -64,7 +64,7 @@ public class Isogrid : MonoBehaviour
             
             }
         }
-        Debug.Log($"snap : {bestPoint}");
+        //Debug.Log($"snap : {bestPoint}");
         return bestPoint;
     }
   
@@ -85,7 +85,7 @@ public class Isogrid : MonoBehaviour
 
     private void combinePlaceGrid(int rows, int columns, Vector3Int cellPosition)
     {
-        Debug.Log($"input : {cellPosition}");
+        //Debug.Log($"input : {cellPosition}");
         for (int c = 0; c < columns; c++)
         {
             // Ç¹ÅÙ»á¹Çá¶Ç

@@ -36,8 +36,6 @@ public enum FurnitureType
 public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     [SerializeField] private Grid layoutGrid;
-    [SerializeField] private Tilemap FloorSelect;
-    [SerializeField] private TileBase highlightTile;
     [SerializeField] private Grid TableGrid;
     [SerializeField] private Tilemap FloorTableSelect;
 

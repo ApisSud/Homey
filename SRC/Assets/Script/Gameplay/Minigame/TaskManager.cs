@@ -108,12 +108,21 @@ public class TaskManager : MonoBehaviour
 
         isTrashCleared = true;
 
-        if (trashBin.activeSelf)
+        if (trashBin != null && trashBin.activeSelf)
         {
-
-            LeanTween.scale(trashBin, Vector3.zero, 0.3f)
-                .setEase(LeanTweenType.easeInBack)
-                .setOnComplete(() => trashBin.SetActive(false));
+            
+            if (trashBin.GetComponent<TrashBin>() != null)
+            {
+                LeanTween.scale(trashBin, Vector3.zero, 0.3f)
+                    .setEase(LeanTweenType.easeInBack)
+                    .setOnComplete(() => trashBin.SetActive(false));
+            }
+           
+            else if (trashBin.GetComponent<CauldronManager>() != null)
+            {
+                
+                Debug.Log("โยนลงหม้อครบแล้ว! (หม้อไม่หายไป)");
+            }
         }
 
         CheckAllTasks();

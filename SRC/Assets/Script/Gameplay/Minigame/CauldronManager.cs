@@ -8,8 +8,8 @@ public class CauldronManager : MonoBehaviour
    
     public GameObject cauldronHighlight;
 
-    [SerializeField]
-    private Animator binAnimator;
+   /* [SerializeField]
+    private Animator binAnimator;*/
 
 
 
@@ -42,10 +42,10 @@ public class CauldronManager : MonoBehaviour
         }
     }
 
-    public void playAnimation()
+    /*public void playAnimation()
     {
         binAnimator.SetTrigger("OnDrop");
         Debug.Log("Trigger ja");
 
-    }
+    }*/
 }

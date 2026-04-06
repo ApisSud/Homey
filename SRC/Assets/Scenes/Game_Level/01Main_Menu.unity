@@ -5672,7 +5672,8 @@ PrefabInstance:
       propertyPath: sceneBGM
       value: 
       objectReference: {fileID: 8300000, guid: efc219993f935694bbc7a5773c0ba12a, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3369842319687149134, guid: 48f38120e8bd82a498b4f4fd12468a95, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5877,7 +5878,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8964752473116663902, guid: 055547aaea55ae44991d27df35d449cb, type: 3}
+  m_Sprite: {fileID: 2885343357719985820, guid: c08bc5e745c55cb4baeaf68428b3ed16, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -66,7 +66,8 @@ public class Trashobject : MonoBehaviour
         offset = transform.position - mousePos;
 
         if (BinManager.Instance != null) BinManager.Instance.SetHighlight(true);
-        
+        if (CauldronManager.Instance != null) CauldronManager.Instance.SetHighlight(true);
+
         if (spriteRenderer != null && draggingSprite != null)
         {
             spriteRenderer.sprite = draggingSprite;
@@ -87,8 +88,9 @@ public class Trashobject : MonoBehaviour
     void OnMouseUp()
     {
         if (BinManager.Instance != null) BinManager.Instance.SetHighlight(false);
+        if (BinManager.Instance != null) CauldronManager.Instance.SetHighlight(false);
 
-     
+
         if (isOverBin)
         {
            

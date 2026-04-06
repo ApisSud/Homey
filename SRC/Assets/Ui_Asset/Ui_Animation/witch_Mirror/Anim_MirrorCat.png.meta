@@ -1,52 +1,22 @@
 fileFormatVersion: 2
-guid: a25378cb69d89c643a8f1e960a5cae47
+guid: bc85c40b4a2780348ad78c58366794b8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6108339865905962246
-    second: Anim_MagicPot_0
+      213: 2387793440124079384
+    second: Anim_MirrorCat_0
   - first:
-      213: -2982450199159849442
-    second: Anim_MagicPot_1
+      213: 6355462373259041919
+    second: Anim_MirrorCat_1
   - first:
-      213: 8462218926387910974
-    second: Anim_MagicPot_2
+      213: 3111987023284949478
+    second: Anim_MirrorCat_2
   - first:
-      213: 739205644044614827
-    second: Anim_MagicPot_3
+      213: -8229670388337234878
+    second: Anim_MirrorCat_3
   - first:
-      213: 6901007874010808530
-    second: Anim_MagicPot_4
-  - first:
-      213: 928412181523211965
-    second: Anim_MagicPot_5
-  - first:
-      213: -1333779130090801661
-    second: Anim_MagicPot_6
-  - first:
-      213: -8958566857392475158
-    second: Anim_MagicPot_7
-  - first:
-      213: 556734869864735371
-    second: Anim_MagicPot_8
-  - first:
-      213: -222663629282986579
-    second: Anim_MagicPot_9
-  - first:
-      213: -4514672349918863708
-    second: Anim_MagicPot_10
-  - first:
-      213: -6471310100976921245
-    second: Anim_MagicPot_11
-  - first:
-      213: 8720127411227071798
-    second: Anim_MagicPot_12
-  - first:
-      213: 2281460463547648328
-    second: Anim_MagicPot_13
-  - first:
-      213: -6503219440805501711
-    second: Anim_MagicPot_14
+      213: -2771610405850523308
+    second: Anim_MirrorCat_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -142,89 +112,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Anim_MagicPot_0
+      name: Anim_MirrorCat_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 871
-        height: 1146
+        x: 177
+        y: 298
+        width: 226
+        height: 515
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 501b0127a0966ad40ab2e96878dd436c
-      internalID: 6108339865905962246
+      spriteID: 81d8a939b75232120800000000000000
+      internalID: 2387793440124079384
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_MagicPot_1
+      name: Anim_MirrorCat_1
       rect:
         serializedVersion: 2
-        x: 871
-        y: 0
-        width: 871
-        height: 1146
+        x: 758
+        y: 297
+        width: 226
+        height: 515
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 49bc7906797e71d469b831a00b170fec
-      internalID: -2982450199159849442
+      spriteID: f7c57751b53233850800000000000000
+      internalID: 6355462373259041919
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_MagicPot_2
+      name: Anim_MirrorCat_2
       rect:
         serializedVersion: 2
-        x: 1742
-        y: 0
-        width: 871
-        height: 1146
+        x: 1338
+        y: 293
+        width: 226
+        height: 515
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 73966e0170d561842bd895eeae1fa0da
-      internalID: 8462218926387910974
+      spriteID: 6e1568ca5bfff2b20800000000000000
+      internalID: 3111987023284949478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_MagicPot_3
+      name: Anim_MirrorCat_3
       rect:
         serializedVersion: 2
-        x: 2613
-        y: 0
-        width: 871
-        height: 1146
+        x: 1914
+        y: 298
+        width: 227
+        height: 515
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 348422dfa97cb9e4a9a05c9b6e3087a6
-      internalID: 739205644044614827
+      spriteID: 24cab9c62665acd80800000000000000
+      internalID: -8229670388337234878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_MirrorCat_4
+      rect:
+        serializedVersion: 2
+        x: 2495
+        y: 291
+        width: 227
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 459d08f35034989d0800000000000000
+      internalID: -2771610405850523308
       vertices: []
       indices: 
       edges: []
@@ -233,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1b3c5d7b0b5e48645a4d962422217a28
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -241,14 +233,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":871.0,"y":1146.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Anim_MagicPot_0: 6108339865905962246
-      Anim_MagicPot_1: -2982450199159849442
-      Anim_MagicPot_2: 8462218926387910974
-      Anim_MagicPot_3: 739205644044614827
+      Anim_MirrorCat_0: 2387793440124079384
+      Anim_MirrorCat_1: 6355462373259041919
+      Anim_MirrorCat_2: 3111987023284949478
+      Anim_MirrorCat_3: -8229670388337234878
+      Anim_MirrorCat_4: -2771610405850523308
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

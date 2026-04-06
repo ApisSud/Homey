@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Pot_Bubble_Aniamtion
+  m_Name: Pot_Anim
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,13 +21,9 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 6108339865905962246, guid: a25378cb69d89c643a8f1e960a5cae47, type: 3}
-    - time: 0.13333334
-      value: {fileID: -2982450199159849442, guid: a25378cb69d89c643a8f1e960a5cae47, type: 3}
-    - time: 0.28333333
-      value: {fileID: 8462218926387910974, guid: a25378cb69d89c643a8f1e960a5cae47, type: 3}
-    - time: 0.41666666
-      value: {fileID: 739205644044614827, guid: a25378cb69d89c643a8f1e960a5cae47, type: 3}
+      value: {fileID: -5940246243576988120, guid: e1ab7babb0fa1974e8e40640f0b1b46e, type: 3}
+    - time: 0.35
+      value: {fileID: -5940246243576988120, guid: e1ab7babb0fa1974e8e40640f0b1b46e, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -50,16 +46,14 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 6108339865905962246, guid: a25378cb69d89c643a8f1e960a5cae47, type: 3}
-    - {fileID: -2982450199159849442, guid: a25378cb69d89c643a8f1e960a5cae47, type: 3}
-    - {fileID: 8462218926387910974, guid: a25378cb69d89c643a8f1e960a5cae47, type: 3}
-    - {fileID: 739205644044614827, guid: a25378cb69d89c643a8f1e960a5cae47, type: 3}
+    - {fileID: -5940246243576988120, guid: e1ab7babb0fa1974e8e40640f0b1b46e, type: 3}
+    - {fileID: -5940246243576988120, guid: e1ab7babb0fa1974e8e40640f0b1b46e, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.43333334
+    m_StopTime: 0.36666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

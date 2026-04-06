@@ -76,6 +76,10 @@ public class PauseMen : MonoBehaviour
         {
             SoundManage.Instance.PlaySFX(ButtonClick);
         }
+
+        MouseCOntroller.totalMouse = 0;
+        Trashobject.totalTrash = 0;
+
         await FadeOutScene();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1f;

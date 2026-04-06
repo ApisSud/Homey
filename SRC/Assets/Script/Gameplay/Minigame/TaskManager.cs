@@ -47,6 +47,12 @@ public class TaskManager : MonoBehaviour
 
     private void Start()
     {
+
+        currentMouseCount = 0;      
+        isTrashCleared = false;     
+        isDirtCleared = false;      
+        isMouseClear = false;     
+        allTasksCompleted = false;
         if (successImage != null)
         {
             successImage.SetActive(false);

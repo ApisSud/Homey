@@ -72,7 +72,6 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         SpriteRenderer sr = GetComponent<SpriteRenderer>();
         Vector3 worldPos = transform.position;
         Vector3Int cellPosition = layoutGrid.WorldToCell(worldPos);
-        Debug.Log(cellPosition);
         onStorageFur = false;
         onWall = false;
         onCloset = false;
@@ -174,7 +173,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
 
             Draged = true;
 
-            if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) && GameManager.instance.IsWithinBounds(cellPosition) && (!onCloset && !onWall && !onStorageFur))
+            if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) && GameManager.instance.IsWithinBounds(cellPosition))
             {
                 sr.sortingOrder = 3;
                 tempColor.a = 1f;
@@ -185,31 +184,60 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                     transform.position = snapPos;
                     finalPos = snapPos;
                 }
-                if (Size == SizeFurniture.Grid1X1)
-                {
-                    offset = new Vector3(layoutGrid.cellSize.x / 2f, 0, layoutGrid.cellSize.y / 2f);
-                    transform.position = snapPos + offset;
-                    finalPos = snapPos + offset;
-                }
-                
-                if (Size == SizeFurniture.Grid1X2)
-                {
-                    // 2. หาตำแหน่งกึ่งกลางของช่องแรกนั้น
-                    Vector3 baseSnapPos = layoutGrid.GetCellCenterWorld(cellPosition);
+           
 
-                    float offsetX = ((rowGrid - 1) * layoutGrid.cellSize.x) / 2f;
-                    float offsetZ = ((columnGrid - 1) * layoutGrid.cellSize.y) / 2f;
-                    Vector3 totalOffset = new Vector3(offsetX, 0, offsetZ);
-                    transform.position = baseSnapPos + totalOffset;
-                    finalPos = baseSnapPos + totalOffset;
-                }
+                if (rowGrid > 1 | columnGrid > 1)
+                {
+                    if (Size == SizeFurniture.Grid1X1)
+                    {
+                        offset = new Vector3(layoutGrid.cellSize.x / 2f, 0, layoutGrid.cellSize.y / 2f);
+                        transform.position = snapPos + offset;
+                        finalPos = snapPos + offset;
+                    }
 
+                    if (Size == SizeFurniture.Grid1X2)
+                    {
+                        // 2. หาตำแหน่งกึ่งกลางของช่องแรกนั้น
+                        Vector3 baseSnapPos = layoutGrid.GetCellCenterWorld(cellPosition);
+
+                        float offsetX = ((rowGrid - 1) * layoutGrid.cellSize.x) / 2f;
+                        float offsetZ = ((columnGrid - 1) * layoutGrid.cellSize.y) / 2f;
+                        Vector3 totalOffset = new Vector3(offsetX, 0, offsetZ);
+                        transform.position = baseSnapPos + totalOffset;
+                        finalPos = baseSnapPos + totalOffset;
+                    }
+
+                    if (Flip == false)
+                    {
+                       
+                        if (!CheckemptyMultiGrid(rowGrid, columnGrid, cellPosition))
+                        {
+                            sr.sortingOrder = 4;
+                            tempColor.a = 0.5f;
+                            sr.color = tempColor;
+                            transform.position = mousePos;
+                            Debug.Log(CheckemptyMultiGrid(rowGrid, columnGrid, cellPosition));
+                        }
+                    }
+                    else if (Flip == true)
+                    {
+                        if (!CheckemptyMultiGrid(columnGrid, rowGrid, cellPosition))
+                        {
+                            sr.sortingOrder = 4;
+                            tempColor.a = 0.5f;
+                            sr.color = tempColor;
+                            transform.position = mousePos;
+                            Debug.Log(CheckemptyMultiGrid(rowGrid, columnGrid, cellPosition));
+                        }
+                    }
+                }
             }
-            else if(onCloset | onWall | onStorageFur)
+
+            else if (onCloset | onWall | onStorageFur)
             {
                 if (Size == SizeFurniture.small)
                 {
- 
+
                     if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition))
                     {
                         transform.position = mousePos;
@@ -265,17 +293,17 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                 }
                 if (!CheckGrid.instance.occupiedTiles.ContainsKey(cellPosition) && currentTargetGrid.canplace == true)
                 {
-              
+
                     tempColor.a = 1f;
                     sr.color = tempColor;
                 }
                 else if (currentTargetGrid.canplace == false)
                 {
-                  
+
                     tempColor.a = 0.5f;
                     sr.color = tempColor;
                 }
-                
+
             }
             else
             {
@@ -284,6 +312,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                 sr.color = tempColor;
                 transform.position = mousePos;
             }
+
 
             
         }
@@ -398,7 +427,6 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
         Debug.Log($"input : {cellPosition}");
         for (int c = 0; c < columns; c++)
         {
-            // วนลูปแนวแถว
             for (int r = 0; r < rows; r++)
             {
                 Vector3Int targetPos = new Vector3Int(cellPosition.x - c, cellPosition.y - r, 0);
@@ -407,6 +435,26 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             }
         }
     }
+
+    private bool CheckemptyMultiGrid(int rows, int columns, Vector3Int cellPosition)
+    {
+       
+        for (int c = 0; c < columns; c++)
+        {
+            for (int r = 0; r < rows; r++)
+            {
+                Vector3Int targetPos = new Vector3Int(cellPosition.x - c, cellPosition.y - r, 0);
+                if(CheckGrid.instance.occupiedTiles.ContainsKey(targetPos) | !GameManager.instance.IsWithinBounds(targetPos))
+                {
+                    return false;
+                }
+
+ 
+            }
+        }
+        return true;
+    }
+
     private void combineRemoveGrid(int rows, int columns, Vector3Int cellPosition)
     {
         Debug.Log($"input : {cellPosition}");

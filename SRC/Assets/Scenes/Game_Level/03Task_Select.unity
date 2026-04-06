@@ -2305,7 +2305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8692071f0387d0b41b4aa1be61a68017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BookContent
-  pageSpeed: 0.05
+  pageSpeed: 0.08
   pages:
   - {fileID: 1503350497}
   - {fileID: 788132205}
@@ -2548,7 +2548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
   game_scene: intro
   transitionManager: {fileID: 1519919594}
-  ButtonClick: {fileID: 8300000, guid: b9a22310e016f894a970cfdd6303522b, type: 3}
+  ButtonClick: {fileID: 8300000, guid: d22016563c0ea7a46ac0dc443ac0073d, type: 3}
 --- !u!1 &1650870635
 GameObject:
   m_ObjectHideFlags: 0

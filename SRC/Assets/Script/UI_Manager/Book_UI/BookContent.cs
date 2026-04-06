@@ -1,7 +1,8 @@
-using UnityEngine;
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
-using DG.Tweening;
+using Unity.VisualScripting;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class BookContent : MonoBehaviour
@@ -21,6 +22,7 @@ public class BookContent : MonoBehaviour
     [SerializeField] GameObject Panel;
 
     public bool isBookopen = false;
+    public AudioClip ButtonClick;
 
     private void Start()
     {
@@ -67,6 +69,10 @@ public class BookContent : MonoBehaviour
     }
     public void RotateForward()
     {
+        if (ButtonClick != null && SoundManage.Instance != null)
+        {
+            SoundManage.Instance.PlaySFX(ButtonClick);
+        }
         if (rotate == true) { return; }
         index++;
         float angle = 180;
@@ -96,6 +102,11 @@ public class BookContent : MonoBehaviour
 
     public void RotateBack()
     {
+        if (ButtonClick != null && SoundManage.Instance != null)
+        {
+            SoundManage.Instance.PlaySFX(ButtonClick);
+        }
+
         if (rotate == true) { return; }
         float angle = 0;
 

@@ -29,6 +29,7 @@ public class Trashobject : MonoBehaviour
 
     private Transform currentTargetBin;
 
+
     void Start()
     {
         startPosition = transform.position;
@@ -105,6 +106,7 @@ public class Trashobject : MonoBehaviour
             LeanTween.move(gameObject, startPosition, 0.3f).setEase(LeanTweenType.easeOutBack);
             LeanTween.scale(gameObject, originalScale, 0.2f).setEase(LeanTweenType.easeOutQuad); 
         }
+
     }
 
    
@@ -134,15 +136,7 @@ public class Trashobject : MonoBehaviour
             TaskManager.Instance.CompleteTrashTask();
         }
 
-        if (currentTargetBin != null)
-        {
-            Animator binAnimator = currentTargetBin.GetComponent<Animator>();
-            
-                binAnimator.SetTrigger("OnDrop");
-                Debug.Log("Trigger ja");
-            
-          
-        }
+       
      
         if (GetComponent<Collider2D>() != null) GetComponent<Collider2D>().enabled = false;
 

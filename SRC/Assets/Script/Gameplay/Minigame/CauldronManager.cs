@@ -8,7 +8,11 @@ public class CauldronManager : MonoBehaviour
    
     public GameObject cauldronHighlight;
 
-    
+    [SerializeField]
+    private Animator binAnimator;
+
+
+
 
     private void Awake()
     {
@@ -26,8 +30,9 @@ public class CauldronManager : MonoBehaviour
             cauldronHighlight.SetActive(false);
         }
     }
+  
 
-    
+
     public void SetHighlight(bool isShow)
     {
        
@@ -35,5 +40,12 @@ public class CauldronManager : MonoBehaviour
         {
             cauldronHighlight.SetActive(isShow);
         }
+    }
+
+    public void playAnimation()
+    {
+        binAnimator.SetTrigger("OnDrop");
+        Debug.Log("Trigger ja");
+
     }
 }

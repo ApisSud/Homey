@@ -754,6 +754,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1796874878}
     m_Modifications:
     - target: {fileID: 2462328201335818822, guid: fe2c5c6d70585c24f8043e25c2a73be0, type: 3}
+      propertyPath: havePot
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462328201335818822, guid: fe2c5c6d70585c24f8043e25c2a73be0, type: 3}
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 408299581}
@@ -761,6 +765,10 @@ PrefabInstance:
       propertyPath: idleSprite
       value: 
       objectReference: {fileID: -3251112606257611611, guid: 0baedd911a19ee240af6c1191cd46296, type: 3}
+    - target: {fileID: 2462328201335818822, guid: fe2c5c6d70585c24f8043e25c2a73be0, type: 3}
+      propertyPath: binAnimator
+      value: 
+      objectReference: {fileID: 425033399}
     - target: {fileID: 2462328201335818822, guid: fe2c5c6d70585c24f8043e25c2a73be0, type: 3}
       propertyPath: popDuration
       value: 0.2
@@ -3630,6 +3638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CauldronManager
   cauldronHighlight: {fileID: 1402446755}
+  binAnimator: {fileID: 425033399}
 --- !u!4 &428741345 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2994463848488724307, guid: e0f55151111695649b365f85c7fa2e49, type: 3}
@@ -8160,6 +8169,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1796874878}
     m_Modifications:
     - target: {fileID: 2462328201335818822, guid: b58869ade0a6fb1489913e4e224c0ca0, type: 3}
+      propertyPath: havePot
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462328201335818822, guid: b58869ade0a6fb1489913e4e224c0ca0, type: 3}
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 408299581}
@@ -8167,6 +8180,10 @@ PrefabInstance:
       propertyPath: idleSprite
       value: 
       objectReference: {fileID: -1641699749434398164, guid: 0baedd911a19ee240af6c1191cd46296, type: 3}
+    - target: {fileID: 2462328201335818822, guid: b58869ade0a6fb1489913e4e224c0ca0, type: 3}
+      propertyPath: binAnimator
+      value: 
+      objectReference: {fileID: 425033399}
     - target: {fileID: 2462328201335818822, guid: b58869ade0a6fb1489913e4e224c0ca0, type: 3}
       propertyPath: popDuration
       value: 0.2
@@ -12505,6 +12522,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1796874878}
     m_Modifications:
     - target: {fileID: 2462328201335818822, guid: 5b2b3714b7a4e6d45bc991308d35c241, type: 3}
+      propertyPath: havePot
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462328201335818822, guid: 5b2b3714b7a4e6d45bc991308d35c241, type: 3}
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 408299581}
@@ -12512,6 +12533,10 @@ PrefabInstance:
       propertyPath: idleSprite
       value: 
       objectReference: {fileID: 3328353232080436697, guid: 0baedd911a19ee240af6c1191cd46296, type: 3}
+    - target: {fileID: 2462328201335818822, guid: 5b2b3714b7a4e6d45bc991308d35c241, type: 3}
+      propertyPath: binAnimator
+      value: 
+      objectReference: {fileID: 425033399}
     - target: {fileID: 2462328201335818822, guid: 5b2b3714b7a4e6d45bc991308d35c241, type: 3}
       propertyPath: popDuration
       value: 0.2

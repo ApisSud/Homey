@@ -448,6 +448,7 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                 if(CheckGrid.instance.occupiedTiles.ContainsKey(targetPos) | !GameManager.instance.IsWithinBounds(targetPos))
                 {
                     return false;
+                    
                 }
 
  

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5744102479935662377}
-  - component: {fileID: 3369842319687149134}
+  - component: {fileID: 7050251632327247948}
   m_Layer: 0
   m_Name: Soundmanager
   m_TagString: Untagged
@@ -34,7 +34,7 @@ Transform:
   - {fileID: 3305737291881678642}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3369842319687149134
+--- !u!114 &7050251632327247948
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49,9 +49,19 @@ MonoBehaviour:
   audioMixer: {fileID: 24100000, guid: cbaa4f725bd7e14488a6bed101d59472, type: 2}
   bgmSource: {fileID: 7622219508234405055}
   sfxSource: {fileID: 6807597398946704606}
-  LightSound: {fileID: 8300000, guid: 43a0ce24d9399e349ab2662beb09dffa, type: 3}
-  HeavySound: {fileID: 8300000, guid: f025a0e0a2c0e534c869d2d7c0d6bcd4, type: 3}
-  GlassSound: {fileID: 8300000, guid: f025a0e0a2c0e534c869d2d7c0d6bcd4, type: 3}
+  LightSound: {fileID: 8300000, guid: 8982a9af17d804144aeaedab686b177e, type: 3}
+  LightSound2: {fileID: 8300000, guid: ee81911a91b117a40a3e846e87c8dca7, type: 3}
+  HeavySound: {fileID: 8300000, guid: b91f3cc22571ea34f9da07221b5107ca, type: 3}
+  HeavySound2: {fileID: 8300000, guid: 8abd38bb022bc114ba22c6fa64ce6d8a, type: 3}
+  GlassSound: {fileID: 8300000, guid: 42287378788ba416d87accb07f5f8795, type: 3}
+  GlassSound2: {fileID: 8300000, guid: 5f0da7ac2370c433b86820b22eb42c92, type: 3}
+  ClothSound: {fileID: 8300000, guid: d2b5c139eaa389047b0b5ad74f050271, type: 3}
+  ClothSound2: {fileID: 8300000, guid: c043561e1073b104fbd11928af24a56a, type: 3}
+  WoodSound: {fileID: 8300000, guid: d22016563c0ea7a46ac0dc443ac0073d, type: 3}
+  WoodSound2: {fileID: 8300000, guid: 768f934ec47e34e409f20a9dcdd61da5, type: 3}
+  SackSound: {fileID: 8300000, guid: fc5cc6d3387287e4d90e4d8c5f004fe8, type: 3}
+  SackSound2: {fileID: 8300000, guid: 0085259fa223a8d4da4897eb6a21797c, type: 3}
+  fadeDuration: 1.5
 --- !u!1 &4102885112908942931
 GameObject:
   m_ObjectHideFlags: 0

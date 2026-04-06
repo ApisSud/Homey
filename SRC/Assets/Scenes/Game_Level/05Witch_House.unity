@@ -13687,6 +13687,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 496528573}
     m_Modifications:
+    - target: {fileID: 224156838060155483, guid: 5e32067b1991ce549afe50fd91baca0f, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224156838060155483, guid: 5e32067b1991ce549afe50fd91baca0f, type: 3}
+      propertyPath: m_BlocksRaycasts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 330509858727355739, guid: 5e32067b1991ce549afe50fd91baca0f, type: 3}
       propertyPath: m_text
       value: "The house looks so much better.\n Now I can finally read my spellbooks
@@ -13766,7 +13774,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2727562452232671351, guid: 5e32067b1991ce549afe50fd91baca0f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2968021158543519715, guid: 5e32067b1991ce549afe50fd91baca0f, type: 3}
       propertyPath: m_Sprite
@@ -13775,6 +13783,14 @@ PrefabInstance:
     - target: {fileID: 3082718077185652384, guid: 5e32067b1991ce549afe50fd91baca0f, type: 3}
       propertyPath: m_Name
       value: Next
+      objectReference: {fileID: 0}
+    - target: {fileID: 3460778022351845508, guid: 5e32067b1991ce549afe50fd91baca0f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3460778022351845508, guid: 5e32067b1991ce549afe50fd91baca0f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4297542952597582967, guid: 5e32067b1991ce549afe50fd91baca0f, type: 3}
       propertyPath: m_SizeDelta.y
@@ -13878,27 +13894,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6830097116053429704, guid: 5e32067b1991ce549afe50fd91baca0f, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6830097116053429704, guid: 5e32067b1991ce549afe50fd91baca0f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6830097116053429704, guid: 5e32067b1991ce549afe50fd91baca0f, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6830097116053429704, guid: 5e32067b1991ce549afe50fd91baca0f, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6830097116053429704, guid: 5e32067b1991ce549afe50fd91baca0f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6830097116053429704, guid: 5e32067b1991ce549afe50fd91baca0f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6830097116053429704, guid: 5e32067b1991ce549afe50fd91baca0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14002,7 +14018,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7588559424809670923, guid: 5e32067b1991ce549afe50fd91baca0f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7857241048797663118, guid: 5e32067b1991ce549afe50fd91baca0f, type: 3}
       propertyPath: m_Type

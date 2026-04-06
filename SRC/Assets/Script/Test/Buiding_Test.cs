@@ -216,10 +216,9 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                             tempColor.a = 0.5f;
                             sr.color = tempColor;
                             transform.position = mousePos;
-                            Debug.Log(CheckemptyMultiGrid(rowGrid, columnGrid, cellPosition));
                         }
                     }
-                    else if (Flip == true)
+                    else
                     {
                         if (!CheckemptyMultiGrid(columnGrid, rowGrid, cellPosition))
                         {
@@ -227,7 +226,6 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
                             tempColor.a = 0.5f;
                             sr.color = tempColor;
                             transform.position = mousePos;
-                            Debug.Log(CheckemptyMultiGrid(rowGrid, columnGrid, cellPosition));
                         }
                     }
                 }
@@ -342,7 +340,10 @@ public class Buiding_Test : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             
                 //offset = new Vector3(layoutGrid.cellSize.x / 2f, 0, layoutGrid.cellSize.y / 2f);
                 transform.position = finalPos;
-                combinePlaceGrid(rowGrid, columnGrid, cellPosition);
+                if (Flip == false)
+                {
+                    combinePlaceGrid(rowGrid, columnGrid, cellPosition);
+                }
                 if(Flip == true)
                 {
                     combinePlaceGrid(columnGrid, rowGrid, cellPosition);

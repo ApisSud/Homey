@@ -1338,7 +1338,7 @@ TextureImporter:
         width: 50
         height: 61
       alignment: 9
-      pivot: {x: 0.5073462, y: 0.12072354}
+      pivot: {x: 0.5101817, y: 0.2831151}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1487,12 +1487,12 @@ TextureImporter:
       name: New_Fairy_Asset_49
       rect:
         serializedVersion: 2
-        x: 11
+        x: 13
         y: 830
         width: 142
         height: 133
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5450414, y: 0.29161313}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1646,7 +1646,7 @@ TextureImporter:
         width: 55
         height: 88
       alignment: 9
-      pivot: {x: 0.48453036, y: 0.09397333}
+      pivot: {x: 0.46449974, y: 0.119013004}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1756,7 +1756,7 @@ TextureImporter:
         width: 86
         height: 103
       alignment: 9
-      pivot: {x: 0.4901066, y: 0.06224934}
+      pivot: {x: 0.5029183, y: 0.11573095}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1778,7 +1778,7 @@ TextureImporter:
         width: 66
         height: 99
       alignment: 9
-      pivot: {x: 0.5644476, y: 0.07034209}
+      pivot: {x: 0.5310632, y: 0.14824145}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2129,8 +2129,8 @@ TextureImporter:
         y: 417
         width: 91
         height: 131
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.49999866, y: 0.28843236}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2261,8 +2261,8 @@ TextureImporter:
         y: 257
         width: 167
         height: 204
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4999999, y: 0.43089294}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []

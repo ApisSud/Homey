@@ -1,55 +1,55 @@
 fileFormatVersion: 2
-guid: 40680eb87bd741f479c191ae2e58e576
+guid: 28e8ec78168c0b048aba2a99d56b35f0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7679967102354999738
-    second: Anim_Fix_Magicpot_0
+      213: -6529908857966218938
+    second: Anim_Fix_Pot_0
   - first:
-      213: -6192707633008158807
-    second: Anim_Fix_Magicpot_1
+      213: -4469049003824426847
+    second: Anim_Fix_Pot_1
   - first:
-      213: -1617396371707081952
-    second: Anim_Fix_Magicpot_2
+      213: -203341381747244488
+    second: Anim_Fix_Pot_2
   - first:
-      213: 4708900793841048246
-    second: Anim_Fix_Magicpot_3
+      213: -9130986022013245979
+    second: Anim_Fix_Pot_3
   - first:
-      213: -8728488726479856741
-    second: Anim_Fix_Magicpot_4
+      213: -5030324468201610490
+    second: Anim_Fix_Pot_4
   - first:
-      213: 3888298346461824900
-    second: Anim_Fix_Magicpot_5
+      213: 5131384218806955717
+    second: Anim_Fix_Pot_5
   - first:
-      213: -7848562573179323600
-    second: Anim_Fix_Magicpot_6
+      213: 8376999692409434568
+    second: Anim_Fix_Pot_6
   - first:
-      213: 6893931695256393453
-    second: Anim_Fix_Magicpot_7
+      213: -6687222906124491695
+    second: Anim_Fix_Pot_7
   - first:
-      213: 6456497869798072058
-    second: Anim_Fix_Magicpot_8
+      213: -8310681891881591890
+    second: Anim_Fix_Pot_8
   - first:
-      213: -173867439752949387
-    second: Anim_Fix_Magicpot_9
+      213: -1102327118799433550
+    second: Anim_Fix_Pot_9
   - first:
-      213: -107035512974197624
-    second: Anim_Fix_Magicpot_10
+      213: -6861145723510192057
+    second: Anim_Fix_Pot_10
   - first:
-      213: -8863092446742258020
-    second: Anim_Fix_Magicpot_11
+      213: -2961715562837259180
+    second: Anim_Fix_Pot_11
   - first:
-      213: 4168421600162056507
-    second: Anim_Fix_Magicpot_12
+      213: -6829234845369487795
+    second: Anim_Fix_Pot_12
   - first:
-      213: 785882837937628063
-    second: Anim_Fix_Magicpot_13
+      213: -7175865761168464235
+    second: Anim_Fix_Pot_13
   - first:
-      213: 5500790261344809155
-    second: Anim_Fix_Magicpot_14
+      213: 3572382269313090837
+    second: Anim_Fix_Pot_14
   - first:
-      213: -1348731146233234023
-    second: Anim_Fix_Magicpot_15
+      213: -4590019075116839130
+    second: Anim_Fix_Pot_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -145,10 +145,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Anim_Fix_Magicpot_0
+      name: Anim_Fix_Pot_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 0
         width: 608
         height: 1111
@@ -160,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ab94e8ea369b49a60800000000000000
-      internalID: 7679967102354999738
+      spriteID: 6413f399d7a1165a0800000000000000
+      internalID: -6529908857966218938
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_Fix_Magicpot_1
+      name: Anim_Fix_Pot_1
       rect:
         serializedVersion: 2
         x: 608
@@ -182,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a7d2b8d7351f0aa0800000000000000
-      internalID: -6192707633008158807
+      spriteID: 1a05b3beb9fbaf1c0800000000000000
+      internalID: -4469049003824426847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_Fix_Magicpot_2
+      name: Anim_Fix_Pot_2
       rect:
         serializedVersion: 2
         x: 1216
@@ -204,17 +204,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 02bc46bb19add89e0800000000000000
-      internalID: -1617396371707081952
+      spriteID: 83281d437169d2df0800000000000000
+      internalID: -203341381747244488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_Fix_Magicpot_3
+      name: Anim_Fix_Pot_3
       rect:
         serializedVersion: 2
-        x: 1826
+        x: 1824
         y: 0
         width: 608
         height: 1111
@@ -226,14 +226,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6ba537bb250695140800000000000000
-      internalID: 4708900793841048246
+      spriteID: 5e5e7dc4798384180800000000000000
+      internalID: -9130986022013245979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_Fix_Magicpot_4
+      name: Anim_Fix_Pot_4
       rect:
         serializedVersion: 2
         x: 2432
@@ -248,8 +248,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b9b9a20bfbd2ed680800000000000000
-      internalID: -8728488726479856741
+      spriteID: 60323e74c82b03ab0800000000000000
+      internalID: -5030324468201610490
       vertices: []
       indices: 
       edges: []
@@ -258,7 +258,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c3f0f4e18c9078a499184b5b21299e06
+    spriteID: 4627adca939ee394aa69942cdf2505b4
     internalID: 0
     vertices: []
     indices: 
@@ -270,11 +270,11 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":1.0},"gridSpriteSize":{"x":608.0,"y":1111.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Anim_Fix_Magicpot_0: 7679967102354999738
-      Anim_Fix_Magicpot_1: -6192707633008158807
-      Anim_Fix_Magicpot_2: -1617396371707081952
-      Anim_Fix_Magicpot_3: 4708900793841048246
-      Anim_Fix_Magicpot_4: -8728488726479856741
+      Anim_Fix_Pot_0: -6529908857966218938
+      Anim_Fix_Pot_1: -4469049003824426847
+      Anim_Fix_Pot_2: -203341381747244488
+      Anim_Fix_Pot_3: -9130986022013245979
+      Anim_Fix_Pot_4: -5030324468201610490
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

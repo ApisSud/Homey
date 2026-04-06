@@ -3,19 +3,8 @@ using TMPro;
 
 public class Trashobject : MonoBehaviour
 {
-   /* public enum TrashType
-    {
-        water,
-        glass,
-        bags
-    }*/
-    public static int totalTrash = 0;
-/*
-    [Header("Game Settings")]
-  
-    public GameObject trashParticle;*/
 
-   /* [SerializeField] private TrashType type;*/
+    public static int totalTrash = 0;
 
     [Header("UI Management")]
     public TextMeshProUGUI scoreText;
@@ -36,7 +25,9 @@ public class Trashobject : MonoBehaviour
     [Header("Audio Settings")]
     public AudioClip pickupSound; 
     public AudioClip throwSound;  
-    public AudioClip dropSound;   
+    public AudioClip dropSound;
+
+    private Transform currentTargetBin;
 
     void Start()
     {
@@ -133,30 +124,40 @@ public class Trashobject : MonoBehaviour
         }
     }
 
- 
+
     void ThrowInBin()
     {
-
-        if (throwSound != null && SoundManage.Instance != null)
-        {
-            SoundManage.Instance.PlaySFX(throwSound);
-        }
-
         totalTrash++;
         UpdateScoreUI();
-
         if (TaskManager.Instance != null && totalTrash >= TaskManager.Instance.totalTrashNeeded)
         {
             TaskManager.Instance.CompleteTrashTask();
         }
 
+        if (currentTargetBin != null)
+        {
+            Animator binAnimator = currentTargetBin.GetComponent<Animator>();
+            
+                binAnimator.SetTrigger("OnDrop");
+                Debug.Log("Trigger ja");
+            
+          
+        }
+     
         if (GetComponent<Collider2D>() != null) GetComponent<Collider2D>().enabled = false;
 
-        LeanTween.scale(gameObject, Vector3.zero, 0.3f)
-             .setEase(LeanTweenType.easeInBack)
-             .setOnComplete(() =>
+        Vector3 dropPosition = currentTargetBin != null ? currentTargetBin.position : transform.position;
+
+        LeanTween.cancel(gameObject);
+        LeanTween.move(gameObject, dropPosition, 0.4f).setEase(LeanTweenType.easeInBack);
+        LeanTween.rotateAround(gameObject, Vector3.forward, -180f, 0.4f);
+
+        // อนิเมชั่นของขยะหดเล็กลง (เอาคำสั่งเรียกอนิเมชั่นหม้อออกไปแล้ว)
+        LeanTween.scale(gameObject, Vector3.zero, 0.4f)
+            .setEase(LeanTweenType.easeInBack)
+            .setOnComplete(() =>
             {
-               
+                
                 Destroy(gameObject);
             });
     }

@@ -49,11 +49,11 @@ MonoBehaviour:
   audioMixer: {fileID: 24100000, guid: cbaa4f725bd7e14488a6bed101d59472, type: 2}
   bgmSource: {fileID: 7622219508234405055}
   sfxSource: {fileID: 6807597398946704606}
-  LightSound: {fileID: 8300000, guid: 8982a9af17d804144aeaedab686b177e, type: 3}
+  LightSound: {fileID: 8300000, guid: 7e2c8e5508463a74eb8f29541a40f255, type: 3}
   LightSound2: {fileID: 8300000, guid: ee81911a91b117a40a3e846e87c8dca7, type: 3}
-  HeavySound: {fileID: 8300000, guid: b91f3cc22571ea34f9da07221b5107ca, type: 3}
-  HeavySound2: {fileID: 8300000, guid: 8abd38bb022bc114ba22c6fa64ce6d8a, type: 3}
-  GlassSound: {fileID: 8300000, guid: 42287378788ba416d87accb07f5f8795, type: 3}
+  HeavySound: {fileID: 8300000, guid: 15c891daa50ed5f4a9c6be583c353a15, type: 3}
+  HeavySound2: {fileID: 8300000, guid: 68a8e86f53338534698340f4deacfd0a, type: 3}
+  GlassSound: {fileID: 8300000, guid: 50799a244a2ec437ca16a07d7675eec6, type: 3}
   GlassSound2: {fileID: 8300000, guid: 5f0da7ac2370c433b86820b22eb42c92, type: 3}
   ClothSound: {fileID: 8300000, guid: d2b5c139eaa389047b0b5ad74f050271, type: 3}
   ClothSound2: {fileID: 8300000, guid: c043561e1073b104fbd11928af24a56a, type: 3}

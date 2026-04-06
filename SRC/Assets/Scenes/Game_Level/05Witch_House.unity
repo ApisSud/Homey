@@ -144,7 +144,7 @@ Transform:
   m_GameObject: {fileID: 14611502}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.94, y: 10.66, z: 0}
+  m_LocalPosition: {x: 81.46, y: 9.79, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6592,6 +6592,8 @@ GameObject:
   m_Component:
   - component: {fileID: 783035062}
   - component: {fileID: 783035065}
+  - component: {fileID: 783035067}
+  - component: {fileID: 783035066}
   m_Layer: 7
   m_Name: pointSnap
   m_TagString: Untagged
@@ -6638,6 +6640,85 @@ MonoBehaviour:
   y: 1
   row: 4
   column: 2
+--- !u!50 &783035066
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783035061}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &783035067
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783035061}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -1.0275307, y: 0.68651605}
+      - {x: -1.3516191, y: 0.52671397}
+      - {x: -0.60520107, y: 0.087895036}
+      - {x: 0.28300923, y: -0.38233057}
+      - {x: 0.49824643, y: -0.16991669}
+  m_UseDelaunayMesh: 1
 --- !u!1 &786740263 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 456878494645649871, guid: e94b9fc89006eac49ab79ff6e8215d83, type: 3}
@@ -7047,7 +7128,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 284a92101210843c59a3c7d570178922, type: 3}
     - target: {fileID: 1087154882705207119, guid: 1049fb887d3a5b04295360786e1409a0, type: 3}
       propertyPath: maxSpawnLimit
-      value: 12
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 1087154882705207119, guid: 1049fb887d3a5b04295360786e1409a0, type: 3}
       propertyPath: FurniturePF.Array.size
@@ -9350,7 +9431,7 @@ PrefabInstance:
       objectReference: {fileID: 935101480}
     - target: {fileID: 7198400628670130706, guid: 400432bdff299df438951e36014af9e3, type: 3}
       propertyPath: FurnitureSpawn
-      value: 1
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 7198400628670130706, guid: 400432bdff299df438951e36014af9e3, type: 3}
       propertyPath: FurnitureInScene
@@ -11742,6 +11823,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1467711546}
   - component: {fileID: 1467711549}
+  - component: {fileID: 1467711551}
+  - component: {fileID: 1467711550}
   m_Layer: 7
   m_Name: pointSnap
   m_TagString: Untagged
@@ -11788,6 +11871,85 @@ MonoBehaviour:
   y: 5
   row: 1
   column: 4
+--- !u!60 &1467711550
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467711545}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.9950324, y: 0.7377433}
+      - {x: -1.3213012, y: 0.5172795}
+      - {x: -0.45665696, y: 0.06260055}
+      - {x: 0.13269326, y: -0.33078423}
+      - {x: 0.42654324, y: -0.15378875}
+  m_UseDelaunayMesh: 1
+--- !u!50 &1467711551
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467711545}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1471935066 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 456878494645649871, guid: e94b9fc89006eac49ab79ff6e8215d83, type: 3}
@@ -15580,7 +15742,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1993908006
 Transform:
   m_ObjectHideFlags: 0

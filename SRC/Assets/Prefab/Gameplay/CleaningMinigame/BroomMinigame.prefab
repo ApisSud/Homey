@@ -106,6 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BroomController
   isEquipped: 0
   broomImage: {fileID: 3624232116482627740}
+  ButtonClick: {fileID: 0}
 --- !u!1 &3624232116482627740
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,7 +277,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Scratch
   broom: {fileID: 6486098573016169178}
-  dirtSpriteRenderer: {fileID: 8976615130855075749}
+  dirtSprites: []
   brushSize: 20
   winPercentage: 1
   progress: {fileID: 0}
+  scrubSound: {fileID: 0}
+  scrubSoundInterval: 0.6

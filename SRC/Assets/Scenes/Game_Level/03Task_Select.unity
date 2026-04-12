@@ -2434,7 +2434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8692071f0387d0b41b4aa1be61a68017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BookContent
-  pageSpeed: 0.08
+  pageSpeed: 0.09
   pages:
   - {fileID: 1503350497}
   - {fileID: 788132205}

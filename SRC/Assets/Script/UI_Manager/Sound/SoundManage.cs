@@ -16,7 +16,7 @@ public class SoundManage : MonoBehaviour
     [Header("Furniture Sound Categories")]
     public AudioClip LightSound;
     public AudioClip LightSound2;
-  /*  public AudioClip LightSound3;*/
+    public AudioClip LightSound3;
 
     public AudioClip HeavySound; 
     public AudioClip HeavySound2;
@@ -114,7 +114,10 @@ public class SoundManage : MonoBehaviour
                 clipToPlay = LightSound2;
                 break;
 
-              
+            case FurnitureType.light3:
+                clipToPlay = LightSound3;
+                break;
+
 
             case FurnitureType.Heavy:
                 clipToPlay = HeavySound;

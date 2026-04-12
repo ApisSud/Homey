@@ -20,6 +20,7 @@ public enum FurnitureType
 {
     light,
     light2,
+    light3,
     Heavy,
     Heavy2,
     Glass,

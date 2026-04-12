@@ -7764,14 +7764,14 @@ PrefabInstance:
     - target: {fileID: 8813912054683430934, guid: cecaaaae830416f428078310fccdba89, type: 3}
       propertyPath: scrubSound
       value: 
-      objectReference: {fileID: 8300000, guid: 03d7622f0400275468ec7c66bfaf08d4, type: 3}
+      objectReference: {fileID: 8300000, guid: 62ba44f67ce520c4cac995434a750f39, type: 3}
     - target: {fileID: 8813912054683430934, guid: cecaaaae830416f428078310fccdba89, type: 3}
       propertyPath: winPercentage
       value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 8813912054683430934, guid: cecaaaae830416f428078310fccdba89, type: 3}
       propertyPath: scrubSoundInterval
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8813912054683430934, guid: cecaaaae830416f428078310fccdba89, type: 3}
       propertyPath: dirtSprites.Array.size
@@ -21081,7 +21081,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2994463848488724307, guid: e0f55151111695649b365f85c7fa2e49, type: 3}
       propertyPath: m_LocalScale.x
-      value: 48.22346
+      value: 48.079998
       objectReference: {fileID: 0}
     - target: {fileID: 2994463848488724307, guid: e0f55151111695649b365f85c7fa2e49, type: 3}
       propertyPath: m_LocalScale.y
@@ -21089,7 +21089,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2994463848488724307, guid: e0f55151111695649b365f85c7fa2e49, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.0719
       objectReference: {fileID: 0}
     - target: {fileID: 2994463848488724307, guid: e0f55151111695649b365f85c7fa2e49, type: 3}
       propertyPath: m_LocalPosition.y

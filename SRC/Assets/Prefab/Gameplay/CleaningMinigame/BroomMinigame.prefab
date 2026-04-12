@@ -281,5 +281,5 @@ MonoBehaviour:
   brushSize: 20
   winPercentage: 1
   progress: {fileID: 0}
-  scrubSound: {fileID: 0}
+  scrubSound: {fileID: 8300000, guid: 62ba44f67ce520c4cac995434a750f39, type: 3}
   scrubSoundInterval: 0.6

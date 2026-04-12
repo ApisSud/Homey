@@ -5683,14 +5683,14 @@ PrefabInstance:
     - target: {fileID: 8813912054683430934, guid: cecaaaae830416f428078310fccdba89, type: 3}
       propertyPath: scrubSound
       value: 
-      objectReference: {fileID: 8300000, guid: 03d7622f0400275468ec7c66bfaf08d4, type: 3}
+      objectReference: {fileID: 8300000, guid: 62ba44f67ce520c4cac995434a750f39, type: 3}
     - target: {fileID: 8813912054683430934, guid: cecaaaae830416f428078310fccdba89, type: 3}
       propertyPath: winPercentage
       value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 8813912054683430934, guid: cecaaaae830416f428078310fccdba89, type: 3}
       propertyPath: scrubSoundInterval
-      value: 0.2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8813912054683430934, guid: cecaaaae830416f428078310fccdba89, type: 3}
       propertyPath: dirtSprites.Array.size
@@ -9565,7 +9565,7 @@ PrefabInstance:
       objectReference: {fileID: 935101480}
     - target: {fileID: 7198400628670130706, guid: 400432bdff299df438951e36014af9e3, type: 3}
       propertyPath: FurnitureSpawn
-      value: 38
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7198400628670130706, guid: 400432bdff299df438951e36014af9e3, type: 3}
       propertyPath: FurnitureInScene
@@ -14153,7 +14153,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7588559424809670923, guid: 5e32067b1991ce549afe50fd91baca0f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7857241048797663118, guid: 5e32067b1991ce549afe50fd91baca0f, type: 3}
       propertyPath: m_Type
